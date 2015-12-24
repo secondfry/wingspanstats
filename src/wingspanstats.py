@@ -19,6 +19,7 @@ from rules.recons import Recons
 from rules.t3cruiser import T3Cruiser
 from rules.capitals import Capitals
 from rules.explorerhunter import ExplorerHunter
+from rules.minerbumper import MinerBumper
 
 
 def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awox_monthly):
@@ -57,6 +58,7 @@ def analyze_data(db_list):
         T3Cruiser(),
         Capitals(),
         ExplorerHunter(),
+        MinerBumper(),
     ]
     awox_alltime = Awox()
 
@@ -79,6 +81,7 @@ def analyze_data(db_list):
                 T3Cruiser(),
                 Capitals(),
                 ExplorerHunter(),
+                MinerBumper(),
             ]
             awox_monthly = Awox()
             print "Analyzing", db_dir
