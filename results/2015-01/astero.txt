@@ -1,0 +1,35 @@
+Top Astero pilots - ships destroyed
+--------------------------------------------
+#01 - Damien Oxytocin - 23 ships
+#02 - Vargo Shahni - 10 ships
+#03 - Flaya Noong - 7 ships
+#04 - Verak Padecain - 6 ships
+#05 - Banshee Legend - 5 ships
+#06 - shepard locknear - 4 ships
+#07 - Exmoore Appoloosa - 4 ships
+#08 - Dj Turner - 3 ships
+#09 - Allbur Chellak - 3 ships
+#10 - Saladiin - 3 ships
+#11 - Gillion Wyrddych - 2 ships
+#12 - Over Zealos - 2 ships
+#13 - Ninja Yoda - 1 ships
+#14 - Skelir Abhorsen - 1 ships
+#15 - Eriol Hiiragizawa - 1 ships
+
+Top Astero pilots - ISK destroyed
+--------------------------------------------
+#01 - shepard locknear - 1.10b
+#02 - Damien Oxytocin - 0.83b
+#03 - Verak Padecain - 0.82b
+#04 - Exmoore Appoloosa - 0.45b
+#05 - Vargo Shahni - 0.40b
+#06 - Flaya Noong - 0.24b
+#07 - Dj Turner - 0.18b
+#08 - Banshee Legend - 0.17b
+#09 - Skelir Abhorsen - 0.10b
+#10 - Allbur Chellak - 0.02b
+#11 - Over Zealos - 0.01b
+#12 - Ninja Yoda - 0.01b
+#13 - Saladiin - 0.01b
+#14 - Gillion Wyrddych - 0.00b
+#15 - Eriol Hiiragizawa - 0.00b

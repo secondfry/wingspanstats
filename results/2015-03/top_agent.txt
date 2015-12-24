@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - Valtyr Farshield - 71 ships
+#02 - NoGo Rose - 62 ships
+#03 - Amaru Skye - 56 ships
+#04 - Alebrelle Kuatu - 46 ships
+#05 - Revan Wake - 45 ships
+#06 - Saladiin - 37 ships
+#07 - General Waaargh - 36 ships
+#08 - Orianna Okanata - 34 ships
+#09 - Tali Lyrae - 33 ships
+#10 - inta Vakaria - 30 ships
+#11 - Dakodai - 28 ships
+#12 - Authawy - 27 ships
+#13 - Xee Yoona-451 - 25 ships
+#14 - Dakota Frost - 25 ships
+#15 - Vince Condor - 24 ships
+#16 - Cap'n Rick Clusterbomb - 24 ships
+#17 - AnalogTom Rotineque - 23 ships
+#18 - Glade Radner - 21 ships
+#19 - Gillion Wyrddych - 20 ships
+#20 - Wee Lad - 20 ships
+#21 - Zeke Airuta - 19 ships
+#22 - Vothor - 18 ships
+#23 - Bleda Katona - 17 ships
+#24 - Banshee Legend - 16 ships
+#25 - Piter Bakunin - 15 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Amaru Skye - 12.71b
+#02 - Valtyr Farshield - 9.95b
+#03 - Glade Radner - 8.15b
+#04 - Alebrelle Kuatu - 7.37b
+#05 - Vince Condor - 7.37b
+#06 - General Waaargh - 7.05b
+#07 - Banshee Legend - 6.85b
+#08 - inta Vakaria - 6.40b
+#09 - Revan Wake - 5.97b
+#10 - Wee Lad - 5.53b
+#11 - Rob Tsukaya - 5.44b
+#12 - Dakota Frost - 5.08b
+#13 - Authawy - 4.80b
+#14 - Dakodai - 4.77b
+#15 - Orianna Okanata - 4.51b
+#16 - Zeke Airuta - 4.10b
+#17 - Gigi McQuaid - 3.98b
+#18 - AnalogTom Rotineque - 3.47b
+#19 - Bustrr Bluth - 3.46b
+#20 - Xee Yoona-451 - 3.37b
+#21 - Gillion Wyrddych - 3.35b
+#22 - NoGo Rose - 2.89b
+#23 - Trip Erata - 2.89b
+#24 - Sayed Monarch - 2.85b
+#25 - Gismo Resperio - 2.66b

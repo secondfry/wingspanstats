@@ -1,0 +1,55 @@
+Top Stratios pilots - ships destroyed
+--------------------------------------------
+#01 - NovaMoon Enaka - 56 ships
+#02 - Cap'n Rick Clusterbomb - 49 ships
+#03 - Glade Radner - 43 ships
+#04 - Dakodai - 30 ships
+#05 - Rob Tsukaya - 30 ships
+#06 - Dakota Frost - 25 ships
+#07 - Gillion Wyrddych - 19 ships
+#08 - Bierrt - 15 ships
+#09 - Amaru Skye - 11 ships
+#10 - Damien Oxytocin - 10 ships
+#11 - Nathaniel HeiFlieger - 10 ships
+#12 - inta Vakaria - 9 ships
+#13 - EnShone uzumaki - 8 ships
+#14 - Sabrez Haklar - 8 ships
+#15 - Valtyr Farshield - 7 ships
+#16 - Vince Condor - 6 ships
+#17 - Try2CatchMe ActEstFabula - 6 ships
+#18 - Cynthera Noir - 6 ships
+#19 - M104 - 6 ships
+#20 - Junako Zelkarr - 5 ships
+#21 - Zappity - 5 ships
+#22 - Xeromos - 4 ships
+#23 - Jedi VanDiemen - 4 ships
+#24 - Orianna Okanata - 3 ships
+#25 - Zeke Airuta - 3 ships
+
+Top Stratios pilots - ISK destroyed
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 9.68b
+#02 - Glade Radner - 8.47b
+#03 - NovaMoon Enaka - 7.60b
+#04 - Rob Tsukaya - 4.91b
+#05 - Valtyr Farshield - 3.26b
+#06 - Cynthera Noir - 3.16b
+#07 - Gillion Wyrddych - 2.85b
+#08 - Nathaniel HeiFlieger - 2.52b
+#09 - Dakota Frost - 2.41b
+#10 - Dakodai - 2.02b
+#11 - Vothor - 1.87b
+#12 - Damien Oxytocin - 1.86b
+#13 - Amaru Skye - 1.79b
+#14 - Bierrt - 1.62b
+#15 - inta Vakaria - 1.61b
+#16 - Sabrez Haklar - 1.21b
+#17 - Try2CatchMe ActEstFabula - 0.86b
+#18 - Wako Stargrazer - 0.86b
+#19 - EnShone uzumaki - 0.75b
+#20 - Vince Condor - 0.69b
+#21 - Zappity - 0.67b
+#22 - Junako Zelkarr - 0.58b
+#23 - M104 - 0.57b
+#24 - Narcisse Nightmare - 0.48b
+#25 - Artik Fawkes - 0.34b

@@ -1,0 +1,31 @@
+Top Recon pilots - ships destroyed
+--------------------------------------------
+#01 - Dakodai - 18 ships
+#02 - Bleda Katona - 12 ships
+#03 - NoGo Rose - 6 ships
+#04 - MightBLying - 5 ships
+#05 - Cap'n Rick Clusterbomb - 4 ships
+#06 - Wako Stargrazer - 4 ships
+#07 - Orianna Okanata - 3 ships
+#08 - Louis Ferreira - 3 ships
+#09 - Black Aivo - 2 ships
+#10 - AnalogTom Rotineque - 1 ships
+#11 - Gismo Resperio - 1 ships
+#12 - Tali Lyrae - 1 ships
+#13 - Epoch Veli - 1 ships
+
+Top Recon pilots - ISK destroyed
+--------------------------------------------
+#01 - Dakodai - 4.57b
+#02 - Wako Stargrazer - 1.03b
+#03 - Orianna Okanata - 0.89b
+#04 - MightBLying - 0.82b
+#05 - Black Aivo - 0.82b
+#06 - Gismo Resperio - 0.66b
+#07 - Bleda Katona - 0.51b
+#08 - Tali Lyrae - 0.38b
+#09 - NoGo Rose - 0.21b
+#10 - Louis Ferreira - 0.15b
+#11 - Cap'n Rick Clusterbomb - 0.06b
+#12 - Epoch Veli - 0.05b
+#13 - AnalogTom Rotineque - 0.01b

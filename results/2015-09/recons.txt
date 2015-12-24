@@ -1,0 +1,29 @@
+Top Recon pilots - ships destroyed
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 29 ships
+#02 - Aldore Udan - 25 ships
+#03 - Trip Erata - 24 ships
+#04 - Zeke Airuta - 24 ships
+#05 - NoGo Rose - 3 ships
+#06 - Milenny - 2 ships
+#07 - Abaddon Nergal - 2 ships
+#08 - Rob Tsukaya - 2 ships
+#09 - HandsHouses - 2 ships
+#10 - Bustrr Bluth - 1 ships
+#11 - Valtyr Farshield - 1 ships
+#12 - Gillion Wyrddych - 1 ships
+
+Top Recon pilots - ISK destroyed
+--------------------------------------------
+#01 - Trip Erata - 6.27b
+#02 - Aldore Udan - 4.95b
+#03 - Abaddon Nergal - 4.33b
+#04 - Zeke Airuta - 2.19b
+#05 - Cap'n Rick Clusterbomb - 1.97b
+#06 - Rob Tsukaya - 0.40b
+#07 - Milenny - 0.35b
+#08 - NoGo Rose - 0.29b
+#09 - Gillion Wyrddych - 0.12b
+#10 - HandsHouses - 0.08b
+#11 - Bustrr Bluth - 0.03b
+#12 - Valtyr Farshield - 0.01b

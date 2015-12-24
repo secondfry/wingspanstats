@@ -1,0 +1,17 @@
+Top T3 Cruiser pilots - ships destroyed
+--------------------------------------------
+#01 - Sabrez Haklar - 57 ships
+#02 - Wee Lad - 8 ships
+#03 - Aldore Udan - 7 ships
+#04 - Mishka Privyet - 7 ships
+#05 - Revan Wake - 3 ships
+#06 - Flaya Noong - 3 ships
+
+Top T3 Cruiser pilots - ISK destroyed
+--------------------------------------------
+#01 - Sabrez Haklar - 6.55b
+#02 - Aldore Udan - 3.94b
+#03 - Wee Lad - 1.21b
+#04 - Mishka Privyet - 0.77b
+#05 - Revan Wake - 0.23b
+#06 - Flaya Noong - 0.08b

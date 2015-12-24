@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - togi yuki - 93 ships
+#02 - inta Vakaria - 92 ships
+#03 - Tasmine Cha-Tien - 90 ships
+#04 - Lainis Pootis - 84 ships
+#05 - Valtyr Farshield - 75 ships
+#06 - Vothor - 69 ships
+#07 - Gigi McQuaid - 66 ships
+#08 - Orianna Okanata - 63 ships
+#09 - Cap'n Rick Clusterbomb - 63 ships
+#10 - Sabrez Haklar - 60 ships
+#11 - Jerythas - 57 ships
+#12 - Caboosette - 55 ships
+#13 - Aurelie Solvay - 51 ships
+#14 - Saria Dehmov - 47 ships
+#15 - Ransom Odunen - 46 ships
+#16 - Vintata Uhad - 44 ships
+#17 - Lenai Chelien - 42 ships
+#18 - Glade Radner - 40 ships
+#19 - Sasuke Solette - 38 ships
+#20 - Abaddon Nergal - 38 ships
+#21 - Mei Long - 38 ships
+#22 - Karnisher - 36 ships
+#23 - Malak Saren - 34 ships
+#24 - Tali Lyrae - 33 ships
+#25 - Shift Saratoga - 32 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Valtyr Farshield - 17.73b
+#02 - Orianna Okanata - 14.18b
+#03 - Malak Saren - 13.79b
+#04 - Sabrez Haklar - 13.74b
+#05 - Tasmine Cha-Tien - 13.11b
+#06 - Gigi McQuaid - 13.09b
+#07 - inta Vakaria - 12.74b
+#08 - togi yuki - 12.30b
+#09 - Cap'n Rick Clusterbomb - 12.20b
+#10 - Jerythas - 11.99b
+#11 - Vintata Uhad - 11.36b
+#12 - Glade Radner - 11.35b
+#13 - Abaddon Nergal - 9.79b
+#14 - Ransom Odunen - 9.61b
+#15 - Caboosette - 9.60b
+#16 - Calypso Ceph - 9.06b
+#17 - Vothor - 8.86b
+#18 - Lainis Pootis - 8.37b
+#19 - Jedi VanDiemen - 6.97b
+#20 - Bonz Andrard - 6.45b
+#21 - choo t - 5.97b
+#22 - Zeke Airuta - 5.81b
+#23 - Aurelie Solvay - 5.15b
+#24 - Narcisse Nightmare - 5.04b
+#25 - Zakir Abramovich - 4.83b

@@ -1,0 +1,47 @@
+Top Astero pilots - ships destroyed
+--------------------------------------------
+#01 - Revan Wake - 27 ships
+#02 - Valtyr Farshield - 26 ships
+#03 - Gillion Wyrddych - 10 ships
+#04 - Katu Hodor - 9 ships
+#05 - Vargo Shahni - 6 ships
+#06 - Judor - 4 ships
+#07 - Fapulous McDoogle - 4 ships
+#08 - Orianna Okanata - 3 ships
+#09 - Alebrelle Kuatu - 3 ships
+#10 - khajay v virras - 3 ships
+#11 - Salama Messiah - 3 ships
+#12 - Freddey - 2 ships
+#13 - LVL69 Charmander - 2 ships
+#14 - Cap'n Rick Clusterbomb - 2 ships
+#15 - Tali Lyrae - 2 ships
+#16 - Aaril - 2 ships
+#17 - Xavier Hex - 2 ships
+#18 - Banshee Legend - 2 ships
+#19 - Allstate Thompson - 1 ships
+#20 - Ransom Odunen - 1 ships
+#21 - Gibrun McQuaid - 1 ships
+
+Top Astero pilots - ISK destroyed
+--------------------------------------------
+#01 - Valtyr Farshield - 2.99b
+#02 - Gillion Wyrddych - 1.39b
+#03 - Revan Wake - 1.16b
+#04 - Katu Hodor - 0.97b
+#05 - LVL69 Charmander - 0.56b
+#06 - Orianna Okanata - 0.55b
+#07 - Freddey - 0.41b
+#08 - Cap'n Rick Clusterbomb - 0.40b
+#09 - Vargo Shahni - 0.28b
+#10 - Tali Lyrae - 0.27b
+#11 - Judor - 0.25b
+#12 - Salama Messiah - 0.11b
+#13 - Fapulous McDoogle - 0.07b
+#14 - Alebrelle Kuatu - 0.07b
+#15 - Allstate Thompson - 0.06b
+#16 - khajay v virras - 0.04b
+#17 - Gibrun McQuaid - 0.03b
+#18 - Xavier Hex - 0.02b
+#19 - Aaril - 0.00b
+#20 - Banshee Legend - 0.00b
+#21 - Ransom Odunen - 0.00b

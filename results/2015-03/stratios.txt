@@ -1,0 +1,39 @@
+Top Stratios pilots - ships destroyed
+--------------------------------------------
+#01 - Amaru Skye - 56 ships
+#02 - Dakota Frost - 24 ships
+#03 - Authawy - 20 ships
+#04 - Glade Radner - 19 ships
+#05 - Rob Tsukaya - 12 ships
+#06 - Banshee Legend - 9 ships
+#07 - Vince Condor - 7 ships
+#08 - AnalogTom Rotineque - 5 ships
+#09 - Zero Eto - 5 ships
+#10 - Bustrr Bluth - 4 ships
+#11 - Tali Lyrae - 4 ships
+#12 - Reed Icculus - 2 ships
+#13 - Gaius Valencia - 1 ships
+#14 - Zeke Airuta - 1 ships
+#15 - Joe Pascalani - 1 ships
+#16 - Black Aivo - 1 ships
+#17 - Allbur Chellak - 1 ships
+
+Top Stratios pilots - ISK destroyed
+--------------------------------------------
+#01 - Amaru Skye - 12.71b
+#02 - Glade Radner - 8.03b
+#03 - Banshee Legend - 6.07b
+#04 - Dakota Frost - 5.01b
+#05 - Rob Tsukaya - 4.93b
+#06 - Vince Condor - 3.71b
+#07 - Authawy - 3.55b
+#08 - Bustrr Bluth - 3.42b
+#09 - Zeke Airuta - 2.07b
+#10 - Zero Eto - 0.69b
+#11 - Joe Pascalani - 0.66b
+#12 - AnalogTom Rotineque - 0.51b
+#13 - Tali Lyrae - 0.32b
+#14 - Black Aivo - 0.17b
+#15 - Allbur Chellak - 0.13b
+#16 - Reed Icculus - 0.09b
+#17 - Gaius Valencia - 0.04b

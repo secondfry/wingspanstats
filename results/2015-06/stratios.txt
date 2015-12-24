@@ -1,0 +1,55 @@
+Top Stratios pilots - ships destroyed
+--------------------------------------------
+#01 - Valtyr Farshield - 47 ships
+#02 - M104 - 40 ships
+#03 - Gillion Wyrddych - 22 ships
+#04 - Dakodai - 22 ships
+#05 - Sabrez Haklar - 21 ships
+#06 - Glade Radner - 15 ships
+#07 - Ransom Odunen - 14 ships
+#08 - Chance Ravinne - 13 ships
+#09 - Hanzl Lang - 11 ships
+#10 - Cap'n Rick Clusterbomb - 11 ships
+#11 - General Waaargh - 10 ships
+#12 - Rob Tsukaya - 10 ships
+#13 - Vince Condor - 9 ships
+#14 - Banshee Legend - 7 ships
+#15 - Caleb Arody - 5 ships
+#16 - Nyrram - 4 ships
+#17 - Alebrelle Kuatu - 4 ships
+#18 - Zeke Airuta - 4 ships
+#19 - Sagwald Tian - 4 ships
+#20 - Dakota Frost - 4 ships
+#21 - Jake Lanks - 3 ships
+#22 - Artik Fawkes - 3 ships
+#23 - Lanin Suruni - 3 ships
+#24 - Reed Icculus - 2 ships
+#25 - Miner Goth - 2 ships
+
+Top Stratios pilots - ISK destroyed
+--------------------------------------------
+#01 - Valtyr Farshield - 8.82b
+#02 - Gillion Wyrddych - 3.56b
+#03 - Ransom Odunen - 3.45b
+#04 - Glade Radner - 3.39b
+#05 - Hanzl Lang - 3.00b
+#06 - Rob Tsukaya - 2.31b
+#07 - Sabrez Haklar - 2.09b
+#08 - General Waaargh - 1.93b
+#09 - Vince Condor - 1.86b
+#10 - Chance Ravinne - 1.78b
+#11 - Dakodai - 1.22b
+#12 - Zeke Airuta - 1.15b
+#13 - Banshee Legend - 1.00b
+#14 - Cap'n Rick Clusterbomb - 0.88b
+#15 - M104 - 0.80b
+#16 - Nyrram - 0.69b
+#17 - Caleb Arody - 0.67b
+#18 - Dakota Frost - 0.52b
+#19 - Lanin Suruni - 0.49b
+#20 - Alebrelle Kuatu - 0.33b
+#21 - Artik Fawkes - 0.25b
+#22 - Jake Lanks - 0.23b
+#23 - Amaru Skye - 0.23b
+#24 - Miner Goth - 0.21b
+#25 - Sagwald Tian - 0.20b

@@ -1,0 +1,27 @@
+Top Recon pilots - ships destroyed
+--------------------------------------------
+#01 - NoGo Rose - 11 ships
+#02 - Saladiin - 9 ships
+#03 - Orianna Okanata - 7 ships
+#04 - Epoch Veli - 7 ships
+#05 - Verak Padecain - 4 ships
+#06 - Docnagol - 3 ships
+#07 - Dakodai - 3 ships
+#08 - Bleda Katona - 2 ships
+#09 - Nyrram - 1 ships
+#10 - DERELICT MYBALLS - 1 ships
+#11 - BATEAU47 - 1 ships
+
+Top Recon pilots - ISK destroyed
+--------------------------------------------
+#01 - NoGo Rose - 2.13b
+#02 - Epoch Veli - 1.62b
+#03 - Dakodai - 1.37b
+#04 - Saladiin - 1.33b
+#05 - Orianna Okanata - 0.59b
+#06 - Verak Padecain - 0.47b
+#07 - Bleda Katona - 0.11b
+#08 - Docnagol - 0.10b
+#09 - DERELICT MYBALLS - 0.03b
+#10 - BATEAU47 - 0.00b
+#11 - Nyrram - 0.00b

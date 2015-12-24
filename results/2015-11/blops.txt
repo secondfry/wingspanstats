@@ -1,0 +1,11 @@
+Top BLOPS pilots - ships destroyed
+--------------------------------------------
+#01 - Vothor - 3 ships
+#02 - Saria Dehmov - 3 ships
+#03 - Ransom Odunen - 2 ships
+
+Top BLOPS pilots - ISK destroyed
+--------------------------------------------
+#01 - Saria Dehmov - 0.35b
+#02 - Vothor - 0.28b
+#03 - Ransom Odunen - 0.08b

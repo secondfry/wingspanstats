@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 78 ships
+#02 - Valtyr Farshield - 68 ships
+#03 - Saria Dehmov - 60 ships
+#04 - Revan Wake - 57 ships
+#05 - Banshee Legend - 53 ships
+#06 - Wee Lad - 52 ships
+#07 - Xavier Hex - 50 ships
+#08 - KageAkurei - 42 ships
+#09 - NoGo Rose - 42 ships
+#10 - Orianna Okanata - 40 ships
+#11 - Alt Sokarad - 38 ships
+#12 - Alebrelle Kuatu - 38 ships
+#13 - General Waaargh - 36 ships
+#14 - Xee Yoona-451 - 34 ships
+#15 - Gigi McQuaid - 33 ships
+#16 - Dakodai - 32 ships
+#17 - Saladiin - 32 ships
+#18 - Sister Fisterr - 31 ships
+#19 - Vothor - 31 ships
+#20 - Glade Radner - 30 ships
+#21 - Gillion Wyrddych - 24 ships
+#22 - Sabrez Haklar - 24 ships
+#23 - Chance Ravinne - 24 ships
+#24 - Reed Icculus - 22 ships
+#25 - Albin wood - 16 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 22.92b
+#02 - Valtyr Farshield - 16.22b
+#03 - Orianna Okanata - 13.21b
+#04 - Revan Wake - 10.24b
+#05 - Banshee Legend - 10.22b
+#06 - Xee Yoona-451 - 9.65b
+#07 - Alebrelle Kuatu - 8.97b
+#08 - Wee Lad - 8.67b
+#09 - Sabrez Haklar - 7.95b
+#10 - Dakodai - 7.57b
+#11 - Xavier Hex - 7.17b
+#12 - Sister Fisterr - 6.81b
+#13 - Glade Radner - 6.53b
+#14 - Vothor - 6.23b
+#15 - KageAkurei - 6.14b
+#16 - Gigi McQuaid - 6.02b
+#17 - Xepheer - 5.57b
+#18 - General Waaargh - 5.40b
+#19 - Saria Dehmov - 5.40b
+#20 - Louis Ferreira - 4.21b
+#21 - Miner Goth - 3.35b
+#22 - Alt Sokarad - 3.20b
+#23 - NoGo Rose - 3.06b
+#24 - Albin wood - 2.92b
+#25 - Gillion Wyrddych - 2.77b

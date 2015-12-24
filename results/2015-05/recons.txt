@@ -1,0 +1,31 @@
+Top Recon pilots - ships destroyed
+--------------------------------------------
+#01 - Saladiin - 39 ships
+#02 - NoGo Rose - 23 ships
+#03 - Vothor - 15 ships
+#04 - Aaril - 8 ships
+#05 - KageAkurei - 7 ships
+#06 - Nyrram - 3 ships
+#07 - Dakodai - 3 ships
+#08 - Cormorant Fell - 3 ships
+#09 - Cap'n Rick Clusterbomb - 2 ships
+#10 - Mars Antilles - 2 ships
+#11 - Orianna Okanata - 2 ships
+#12 - Wako Stargrazer - 1 ships
+#13 - Trip Erata - 1 ships
+
+Top Recon pilots - ISK destroyed
+--------------------------------------------
+#01 - Saladiin - 2.66b
+#02 - KageAkurei - 2.18b
+#03 - NoGo Rose - 1.42b
+#04 - Vothor - 1.34b
+#05 - Aaril - 1.17b
+#06 - Orianna Okanata - 0.92b
+#07 - Dakodai - 0.89b
+#08 - Cormorant Fell - 0.40b
+#09 - Cap'n Rick Clusterbomb - 0.33b
+#10 - Nyrram - 0.30b
+#11 - Wako Stargrazer - 0.06b
+#12 - Trip Erata - 0.03b
+#13 - Mars Antilles - 0.00b

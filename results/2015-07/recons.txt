@@ -1,0 +1,37 @@
+Top Recon pilots - ships destroyed
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 15 ships
+#02 - Lainis Pootis - 9 ships
+#03 - Orianna Okanata - 8 ships
+#04 - Artik Fawkes - 7 ships
+#05 - Vothor - 6 ships
+#06 - NoGo Rose - 6 ships
+#07 - Sasuke Solette - 3 ships
+#08 - Sabrez Haklar - 3 ships
+#09 - Lanin Suruni - 3 ships
+#10 - Bustrr Bluth - 3 ships
+#11 - Jedi VanDiemen - 3 ships
+#12 - Robert Mudd - 3 ships
+#13 - Paddy McDaddy - 2 ships
+#14 - Romanholiday - 1 ships
+#15 - Xeromos - 1 ships
+#16 - Rob Tsukaya - 1 ships
+
+Top Recon pilots - ISK destroyed
+--------------------------------------------
+#01 - Lainis Pootis - 3.79b
+#02 - Artik Fawkes - 2.92b
+#03 - Orianna Okanata - 2.20b
+#04 - Cap'n Rick Clusterbomb - 1.42b
+#05 - Vothor - 1.09b
+#06 - Lanin Suruni - 0.84b
+#07 - Sabrez Haklar - 0.82b
+#08 - Sasuke Solette - 0.58b
+#09 - Rob Tsukaya - 0.44b
+#10 - Paddy McDaddy - 0.35b
+#11 - Xeromos - 0.27b
+#12 - NoGo Rose - 0.18b
+#13 - Romanholiday - 0.08b
+#14 - Bustrr Bluth - 0.06b
+#15 - Robert Mudd - 0.03b
+#16 - Jedi VanDiemen - 0.02b

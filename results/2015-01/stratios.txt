@@ -1,0 +1,27 @@
+Top Stratios pilots - ships destroyed
+--------------------------------------------
+#01 - Saria Dehmov - 28 ships
+#02 - Flaya Noong - 20 ships
+#03 - Artik Fawkes - 19 ships
+#04 - Tali Lyrae - 15 ships
+#05 - Chance Ravinne - 11 ships
+#06 - lashana darkmoon - 10 ships
+#07 - Banshee Legend - 8 ships
+#08 - Glade Radner - 6 ships
+#09 - Shaleb Heworo - 5 ships
+#10 - shepard locknear - 2 ships
+#11 - Vince Condor - 1 ships
+
+Top Stratios pilots - ISK destroyed
+--------------------------------------------
+#01 - Tali Lyrae - 5.78b
+#02 - Artik Fawkes - 3.99b
+#03 - Saria Dehmov - 3.09b
+#04 - Flaya Noong - 2.23b
+#05 - Chance Ravinne - 2.00b
+#06 - Banshee Legend - 0.60b
+#07 - lashana darkmoon - 0.56b
+#08 - Glade Radner - 0.31b
+#09 - Shaleb Heworo - 0.25b
+#10 - shepard locknear - 0.07b
+#11 - Vince Condor - 0.02b

@@ -1,0 +1,21 @@
+Top T3 Cruiser pilots - ships destroyed
+--------------------------------------------
+#01 - Aldore Udan - 10 ships
+#02 - NovaMoon Enaka - 7 ships
+#03 - Sasuke Solette - 4 ships
+#04 - Flaya Noong - 3 ships
+#05 - Ransom Odunen - 2 ships
+#06 - Sabrez Haklar - 1 ships
+#07 - Animal Hellbringer - 1 ships
+#08 - AnalogTom Rotineque - 1 ships
+
+Top T3 Cruiser pilots - ISK destroyed
+--------------------------------------------
+#01 - Aldore Udan - 2.95b
+#02 - Ransom Odunen - 1.03b
+#03 - NovaMoon Enaka - 0.79b
+#04 - Sasuke Solette - 0.27b
+#05 - Flaya Noong - 0.12b
+#06 - Animal Hellbringer - 0.02b
+#07 - Sabrez Haklar - 0.00b
+#08 - AnalogTom Rotineque - 0.00b

@@ -1,0 +1,55 @@
+Top Stratios pilots - ships destroyed
+--------------------------------------------
+#01 - Valtyr Farshield - 37 ships
+#02 - Glade Radner - 32 ships
+#03 - Rob Tsukaya - 21 ships
+#04 - Dakodai - 18 ships
+#05 - Chance Ravinne - 11 ships
+#06 - Ransom Odunen - 9 ships
+#07 - Gillion Wyrddych - 8 ships
+#08 - Jake Lanks - 8 ships
+#09 - Mon Palae - 8 ships
+#10 - Captain Steve White - 7 ships
+#11 - Saria Dehmov - 7 ships
+#12 - Miner Goth - 5 ships
+#13 - Reed Icculus - 5 ships
+#14 - Banshee Legend - 5 ships
+#15 - Damien Oxytocin - 5 ships
+#16 - Alebrelle Kuatu - 4 ships
+#17 - Bustrr Bluth - 3 ships
+#18 - Lotus Zal'thur - 3 ships
+#19 - Nyrram - 3 ships
+#20 - Romanholiday - 2 ships
+#21 - Sagwald Tian - 2 ships
+#22 - Artik Fawkes - 1 ships
+#23 - Sabrez Haklar - 1 ships
+#24 - Gibrun McQuaid - 1 ships
+#25 - Allbur Chellak - 1 ships
+
+Top Stratios pilots - ISK destroyed
+--------------------------------------------
+#01 - Glade Radner - 10.43b
+#02 - Rob Tsukaya - 5.43b
+#03 - Valtyr Farshield - 4.62b
+#04 - Gillion Wyrddych - 3.12b
+#05 - Dakodai - 2.33b
+#06 - Miner Goth - 2.22b
+#07 - Banshee Legend - 1.91b
+#08 - Chance Ravinne - 1.37b
+#09 - Bustrr Bluth - 1.26b
+#10 - Nyrram - 0.67b
+#11 - Damien Oxytocin - 0.59b
+#12 - Sabrez Haklar - 0.45b
+#13 - Artik Fawkes - 0.36b
+#14 - Lotus Zal'thur - 0.36b
+#15 - Ransom Odunen - 0.29b
+#16 - Alebrelle Kuatu - 0.24b
+#17 - Saria Dehmov - 0.18b
+#18 - Sagwald Tian - 0.16b
+#19 - Cadno Llewellyn - 0.14b
+#20 - Romanholiday - 0.11b
+#21 - Captain Steve White - 0.07b
+#22 - Mon Palae - 0.06b
+#23 - Gibrun McQuaid - 0.05b
+#24 - Jake Lanks - 0.05b
+#25 - Reed Icculus - 0.02b

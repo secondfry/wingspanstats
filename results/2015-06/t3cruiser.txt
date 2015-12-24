@@ -1,0 +1,29 @@
+Top T3 Cruiser pilots - ships destroyed
+--------------------------------------------
+#01 - Revan Wake - 38 ships
+#02 - Vince Condor - 16 ships
+#03 - Sasuke Solette - 10 ships
+#04 - Ransom Odunen - 5 ships
+#05 - Tali Lyrae - 5 ships
+#06 - Lainis Pootis - 5 ships
+#07 - Flaya Noong - 4 ships
+#08 - khajay v virras - 4 ships
+#09 - Vothor - 2 ships
+#10 - Lanin Suruni - 2 ships
+#11 - Cormorant Fell - 1 ships
+#12 - Norrin Zelkarr - 1 ships
+
+Top T3 Cruiser pilots - ISK destroyed
+--------------------------------------------
+#01 - Revan Wake - 5.95b
+#02 - Sasuke Solette - 3.14b
+#03 - Vince Condor - 1.39b
+#04 - Lainis Pootis - 0.96b
+#05 - Ransom Odunen - 0.71b
+#06 - Tali Lyrae - 0.43b
+#07 - khajay v virras - 0.11b
+#08 - Lanin Suruni - 0.10b
+#09 - Flaya Noong - 0.04b
+#10 - Norrin Zelkarr - 0.02b
+#11 - Cormorant Fell - 0.01b
+#12 - Vothor - 0.00b

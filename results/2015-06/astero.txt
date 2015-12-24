@@ -1,0 +1,35 @@
+Top Astero pilots - ships destroyed
+--------------------------------------------
+#01 - Damien Oxytocin - 24 ships
+#02 - inta Vakaria - 20 ships
+#03 - Gillion Wyrddych - 7 ships
+#04 - Allbur Chellak - 5 ships
+#05 - Chance Ravinne - 4 ships
+#06 - Bierrt - 3 ships
+#07 - Alt Sokarad - 3 ships
+#08 - Try2CatchMe ActEstFabula - 3 ships
+#09 - Vothor - 2 ships
+#10 - Freddey - 1 ships
+#11 - Junako Zelkarr - 1 ships
+#12 - Fubar Umangiar - 1 ships
+#13 - Wako Stargrazer - 1 ships
+#14 - Cap'n Rick Clusterbomb - 1 ships
+#15 - Narcisse Nightmare - 1 ships
+
+Top Astero pilots - ISK destroyed
+--------------------------------------------
+#01 - inta Vakaria - 3.10b
+#02 - Damien Oxytocin - 0.83b
+#03 - Chance Ravinne - 0.16b
+#04 - Gillion Wyrddych - 0.15b
+#05 - Try2CatchMe ActEstFabula - 0.15b
+#06 - Narcisse Nightmare - 0.14b
+#07 - Alt Sokarad - 0.13b
+#08 - Allbur Chellak - 0.12b
+#09 - Bierrt - 0.12b
+#10 - Freddey - 0.06b
+#11 - Junako Zelkarr - 0.02b
+#12 - Wako Stargrazer - 0.02b
+#13 - Vothor - 0.01b
+#14 - Fubar Umangiar - 0.00b
+#15 - Cap'n Rick Clusterbomb - 0.00b

@@ -1,0 +1,5 @@
+General statistics
+--------------------------------------------
+Total kills: 517
+Total value: 46.49b
+Average value/kill: 89.91m

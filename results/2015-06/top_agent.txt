@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - M104 - 147 ships
+#02 - Xavier Hex - 101 ships
+#03 - Vince Condor - 85 ships
+#04 - Alt Sokarad - 79 ships
+#05 - Cap'n Rick Clusterbomb - 74 ships
+#06 - Vothor - 73 ships
+#07 - Sabrez Haklar - 69 ships
+#08 - Revan Wake - 68 ships
+#09 - Narcisse Nightmare - 64 ships
+#10 - Gillion Wyrddych - 63 ships
+#11 - Gigi McQuaid - 61 ships
+#12 - General Waaargh - 57 ships
+#13 - Damien Oxytocin - 57 ships
+#14 - Try2CatchMe ActEstFabula - 56 ships
+#15 - Ransom Odunen - 55 ships
+#16 - Cynthera Noir - 52 ships
+#17 - Valtyr Farshield - 49 ships
+#18 - inta Vakaria - 46 ships
+#19 - NoGo Rose - 39 ships
+#20 - EnShone uzumaki - 34 ships
+#21 - Aurelie Solvay - 31 ships
+#22 - Trip Erata - 30 ships
+#23 - Orianna Okanata - 29 ships
+#24 - Lanin Suruni - 25 ships
+#25 - Dakodai - 24 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Xavier Hex - 10.23b
+#02 - Gigi McQuaid - 9.60b
+#03 - Cap'n Rick Clusterbomb - 9.24b
+#04 - Vince Condor - 9.15b
+#05 - Valtyr Farshield - 8.82b
+#06 - Gillion Wyrddych - 7.28b
+#07 - Revan Wake - 6.86b
+#08 - Try2CatchMe ActEstFabula - 6.51b
+#09 - General Waaargh - 6.43b
+#10 - Narcisse Nightmare - 6.42b
+#11 - M104 - 6.32b
+#12 - Sabrez Haklar - 6.22b
+#13 - Vothor - 6.19b
+#14 - Alt Sokarad - 6.14b
+#15 - Orianna Okanata - 6.12b
+#16 - Ransom Odunen - 5.92b
+#17 - Saria Dehmov - 5.78b
+#18 - Cynthera Noir - 5.65b
+#19 - inta Vakaria - 5.29b
+#20 - NoGo Rose - 5.09b
+#21 - Aurelie Solvay - 4.70b
+#22 - Caleb Arody - 4.46b
+#23 - Hanzl Lang - 4.06b
+#24 - MightBLying - 3.69b
+#25 - EnShone uzumaki - 3.58b

@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 200 ships
+#02 - Valtyr Farshield - 118 ships
+#03 - Caboosette - 113 ships
+#04 - Touretes - 106 ships
+#05 - Narcisse Nightmare - 104 ships
+#06 - Vince Condor - 104 ships
+#07 - Gigi McQuaid - 96 ships
+#08 - Saria Dehmov - 95 ships
+#09 - Peter Lathe - 91 ships
+#10 - Cap'n Rick Clusterbomb - 91 ships
+#11 - togi yuki - 88 ships
+#12 - Sabrez Haklar - 87 ships
+#13 - Aldore Udan - 81 ships
+#14 - Vothor - 78 ships
+#15 - Zeke Airuta - 76 ships
+#16 - Ransom Odunen - 76 ships
+#17 - Dakodai - 65 ships
+#18 - Gillion Wyrddych - 65 ships
+#19 - Chance Ravinne - 65 ships
+#20 - inta Vakaria - 65 ships
+#21 - lashana darkmoon - 59 ships
+#22 - Abaddon Nergal - 52 ships
+#23 - NovaMoon Enaka - 48 ships
+#24 - Trip Erata - 47 ships
+#25 - Sith-Lord MouseClick - 46 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 27.51b
+#02 - Narcisse Nightmare - 24.95b
+#03 - Cap'n Rick Clusterbomb - 21.55b
+#04 - Aldore Udan - 21.50b
+#05 - Valtyr Farshield - 19.02b
+#06 - Vothor - 18.21b
+#07 - Caboosette - 18.05b
+#08 - Saria Dehmov - 16.04b
+#09 - Sabrez Haklar - 15.31b
+#10 - togi yuki - 14.46b
+#11 - Touretes - 14.32b
+#12 - WeirdBall - 13.73b
+#13 - Peter Lathe - 11.25b
+#14 - Zeke Airuta - 11.13b
+#15 - lashana darkmoon - 10.62b
+#16 - NovaMoon Enaka - 9.68b
+#17 - Glade Radner - 9.50b
+#18 - Revan Wake - 8.80b
+#19 - Trip Erata - 8.75b
+#20 - Abaddon Nergal - 8.70b
+#21 - NoGo Rose - 8.41b
+#22 - Gigi McQuaid - 8.25b
+#23 - Rob Tsukaya - 8.08b
+#24 - Vince Condor - 8.00b
+#25 - Gillion Wyrddych - 7.86b

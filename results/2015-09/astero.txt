@@ -1,0 +1,37 @@
+Top Astero pilots - ships destroyed
+--------------------------------------------
+#01 - togi yuki - 6 ships
+#02 - Vargo Shahni - 4 ships
+#03 - Sabrez Haklar - 4 ships
+#04 - Phaezen Orti - 4 ships
+#05 - Xan Dievs - 3 ships
+#06 - Karnisher - 3 ships
+#07 - Vothor - 2 ships
+#08 - Aurelie Solvay - 2 ships
+#09 - Artik Fawkes - 2 ships
+#10 - Cadno Llewellyn - 2 ships
+#11 - Caboosette - 2 ships
+#12 - Kelia Monaiis - 2 ships
+#13 - Merlin Avalon - 2 ships
+#14 - Bustrr Bluth - 1 ships
+#15 - JinBeam Tsasa - 1 ships
+#16 - Zeke Airuta - 1 ships
+
+Top Astero pilots - ISK destroyed
+--------------------------------------------
+#01 - Phaezen Orti - 0.74b
+#02 - Caboosette - 0.29b
+#03 - togi yuki - 0.22b
+#04 - Kelia Monaiis - 0.19b
+#05 - Vargo Shahni - 0.18b
+#06 - JinBeam Tsasa - 0.17b
+#07 - Aurelie Solvay - 0.12b
+#08 - Vothor - 0.11b
+#09 - Xan Dievs - 0.10b
+#10 - Sabrez Haklar - 0.08b
+#11 - Cadno Llewellyn - 0.08b
+#12 - Artik Fawkes - 0.03b
+#13 - Zeke Airuta - 0.02b
+#14 - Karnisher - 0.02b
+#15 - Bustrr Bluth - 0.00b
+#16 - Merlin Avalon - 0.00b

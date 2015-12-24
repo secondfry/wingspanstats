@@ -1,0 +1,17 @@
+Top T3 Cruiser pilots - ships destroyed
+--------------------------------------------
+#01 - Vothor - 9 ships
+#02 - Bustrr Bluth - 4 ships
+#03 - Gillion Wyrddych - 3 ships
+#04 - Ransom Odunen - 3 ships
+#05 - Sasuke Solette - 2 ships
+#06 - Rob Tsukaya - 1 ships
+
+Top T3 Cruiser pilots - ISK destroyed
+--------------------------------------------
+#01 - Sasuke Solette - 1.17b
+#02 - Vothor - 0.95b
+#03 - Gillion Wyrddych - 0.31b
+#04 - Rob Tsukaya - 0.07b
+#05 - Ransom Odunen - 0.07b
+#06 - Bustrr Bluth - 0.01b
