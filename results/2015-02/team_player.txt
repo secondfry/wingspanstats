@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Trip Erata - 39 ships
+#02 - Gillion Wyrddych - 33 ships
+#03 - BATEAU47 - 31 ships
+#04 - Orianna Okanata - 30 ships
+#05 - Vothor - 27 ships
+#06 - inta Vakaria - 26 ships
+#07 - Joe Pascalani - 26 ships
+#08 - Tali Lyrae - 25 ships
+#09 - Louis Ferreira - 24 ships
+#10 - Bleda Katona - 24 ships
+#11 - Saria Dehmov - 23 ships
+#12 - MightBLying - 21 ships
+#13 - Vince Condor - 21 ships
+#14 - Glade Radner - 20 ships
+#15 - NoGo Rose - 19 ships
+#16 - Epoch Veli - 18 ships
+#17 - Chance Ravinne - 18 ships
+#18 - Zeke Airuta - 16 ships
+#19 - Damien Oxytocin - 16 ships
+#20 - Cap'n Rick Clusterbomb - 14 ships
+#21 - Elias Stagg - 14 ships
+#22 - Yuri RedAlert - 14 ships
+#23 - Narcisse Nightmare - 14 ships
+#24 - Ransom Odunen - 13 ships
+#25 - Saladiin - 13 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Trip Erata - 8.70b
+#02 - Vince Condor - 7.57b
+#03 - Glade Radner - 7.39b
+#04 - Alebrelle Kuatu - 5.81b
+#05 - Tali Lyrae - 5.78b
+#06 - inta Vakaria - 5.63b
+#07 - Cap'n Rick Clusterbomb - 5.63b
+#08 - Joe Pascalani - 5.46b
+#09 - Epoch Veli - 4.40b
+#10 - Xee Yoona-451 - 4.25b
+#11 - Ransom Odunen - 4.17b
+#12 - Louis Ferreira - 3.98b
+#13 - Orianna Okanata - 3.95b
+#14 - BATEAU47 - 3.86b
+#15 - Gillion Wyrddych - 3.54b
+#16 - Bleda Katona - 3.34b
+#17 - Albin wood - 3.31b
+#18 - Mars Antilles - 3.04b
+#19 - Elias Stagg - 2.91b
+#20 - MightBLying - 2.90b
+#21 - Authawy - 2.81b
+#22 - Vothor - 2.78b
+#23 - Chance Ravinne - 2.58b
+#24 - shepard locknear - 2.52b
+#25 - Zeke Airuta - 2.49b

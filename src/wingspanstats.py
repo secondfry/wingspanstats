@@ -9,6 +9,7 @@ from rules.generalstats import GeneralStats
 from rules.topagent import TopAgent
 from rules.mostvalueable import MostValueable, MostValueableSolo
 from rules.solohunter import SoloHunter
+from rules.teamplayer import TeamPlayer
 from rules.awox import Awox
 from rules.blops import Blops
 from rules.bombers import Bombers
@@ -20,6 +21,8 @@ from rules.t3cruiser import T3Cruiser
 from rules.capitals import Capitals
 from rules.explorerhunter import ExplorerHunter
 from rules.minerbumper import MinerBumper
+from rules.industrygiant import IndustryGiant
+from rules.bombingrun import BombingRun
 
 
 def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awox_monthly):
@@ -49,6 +52,7 @@ def analyze_data(db_list):
         MostValueable(),
         MostValueableSolo(),
         SoloHunter(),
+        TeamPlayer(),
         Blops(),
         Bombers(),
         Astero(),
@@ -59,6 +63,8 @@ def analyze_data(db_list):
         Capitals(),
         ExplorerHunter(),
         MinerBumper(),
+        IndustryGiant(),
+        BombingRun(),
     ]
     awox_alltime = Awox()
 
@@ -72,6 +78,7 @@ def analyze_data(db_list):
                 MostValueable(),
                 MostValueableSolo(),
                 SoloHunter(),
+                TeamPlayer(),
                 Blops(),
                 Bombers(),
                 Astero(),
@@ -82,6 +89,8 @@ def analyze_data(db_list):
                 Capitals(),
                 ExplorerHunter(),
                 MinerBumper(),
+                IndustryGiant(),
+                BombingRun(),
             ]
             awox_monthly = Awox()
             print "Analyzing", db_dir

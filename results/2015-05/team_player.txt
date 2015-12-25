@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Sabrez Haklar - 69 ships
+#02 - Gillion Wyrddych - 47 ships
+#03 - Orianna Okanata - 45 ships
+#04 - Alt Sokarad - 44 ships
+#05 - Cap'n Rick Clusterbomb - 44 ships
+#06 - Vothor - 42 ships
+#07 - Wee Lad - 42 ships
+#08 - Try2CatchMe ActEstFabula - 41 ships
+#09 - Revan Wake - 39 ships
+#10 - Ransom Odunen - 37 ships
+#11 - Bierrt - 36 ships
+#12 - NoGo Rose - 34 ships
+#13 - Valtyr Farshield - 33 ships
+#14 - Glade Radner - 32 ships
+#15 - Xee Yoona-451 - 27 ships
+#16 - Alebrelle Kuatu - 24 ships
+#17 - Alice Anneto - 23 ships
+#18 - Chance Ravinne - 23 ships
+#19 - Jarirk - 20 ships
+#20 - KageAkurei - 20 ships
+#21 - General Waaargh - 20 ships
+#22 - Saria Dehmov - 19 ships
+#23 - Sister Fisterr - 18 ships
+#24 - Saladiin - 18 ships
+#25 - Rob Tsukaya - 16 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Sabrez Haklar - 11.23b
+#02 - Glade Radner - 10.45b
+#03 - Cap'n Rick Clusterbomb - 9.04b
+#04 - Gillion Wyrddych - 8.71b
+#05 - Orianna Okanata - 8.16b
+#06 - Wee Lad - 6.48b
+#07 - Ransom Odunen - 5.18b
+#08 - Vothor - 5.15b
+#09 - Revan Wake - 4.77b
+#10 - Rob Tsukaya - 4.41b
+#11 - Valtyr Farshield - 4.40b
+#12 - Try2CatchMe ActEstFabula - 4.30b
+#13 - Bierrt - 4.09b
+#14 - Alice Anneto - 4.00b
+#15 - KageAkurei - 3.91b
+#16 - Dakodai - 3.73b
+#17 - Chance Ravinne - 3.69b
+#18 - Alt Sokarad - 3.60b
+#19 - Saladiin - 3.51b
+#20 - Miner Goth - 3.23b
+#21 - Alebrelle Kuatu - 3.15b
+#22 - Xee Yoona-451 - 2.69b
+#23 - NoGo Rose - 2.52b
+#24 - Saria Dehmov - 2.45b
+#25 - Wako Stargrazer - 2.18b

@@ -1,0 +1,55 @@
+Top industrial hunters - ships destroyed
+--------------------------------------------
+#01 - Orianna Okanata - 7 ships
+#02 - Authawy - 5 ships
+#03 - Chance Ravinne - 5 ships
+#04 - Dexter Tripod - 4 ships
+#05 - Gillion Wyrddych - 3 ships
+#06 - Cadno Llewellyn - 3 ships
+#07 - NoGo Rose - 3 ships
+#08 - Saladiin - 3 ships
+#09 - Tali Lyrae - 2 ships
+#10 - Trip Erata - 2 ships
+#11 - Norsel Lothbroke - 2 ships
+#12 - Au'Rel - 2 ships
+#13 - Vothor - 1 ships
+#14 - Xee Yoona-451 - 1 ships
+#15 - Over Zealos - 1 ships
+#16 - MacGuiness - 1 ships
+#17 - Mhenloe - 1 ships
+#18 - Big Broka - 1 ships
+#19 - Ironnight - 1 ships
+#20 - Flaya Noong - 1 ships
+#21 - Gismo Resperio - 1 ships
+#22 - Valkyrie Starslayer - 1 ships
+#23 - Captain Steve White - 1 ships
+#24 - Nyrram - 1 ships
+#25 - Artik Fawkes - 1 ships
+
+Top industrial hunters - ISK destroyed
+--------------------------------------------
+#01 - Orianna Okanata - 1.04b
+#02 - Cadno Llewellyn - 1.02b
+#03 - Norsel Lothbroke - 0.71b
+#04 - NoGo Rose - 0.46b
+#05 - Au'Rel - 0.37b
+#06 - Chance Ravinne - 0.31b
+#07 - MacGuiness - 0.29b
+#08 - Big Broka - 0.29b
+#09 - Trip Erata - 0.17b
+#10 - Ironnight - 0.16b
+#11 - Flaya Noong - 0.16b
+#12 - Nyrram - 0.16b
+#13 - Juliet DiMarco - 0.16b
+#14 - Gillion Wyrddych - 0.14b
+#15 - Artik Fawkes - 0.13b
+#16 - Damien Oxytocin - 0.13b
+#17 - Dexter Tripod - 0.12b
+#18 - Narcisse Nightmare - 0.08b
+#19 - Enki Parker - 0.06b
+#20 - Mhenloe - 0.05b
+#21 - Saladiin - 0.05b
+#22 - Captain Steve White - 0.05b
+#23 - Authawy - 0.03b
+#24 - Tali Lyrae - 0.02b
+#25 - Paddy McDaddy - 0.01b

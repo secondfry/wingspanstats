@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 58 ships
+#02 - Orianna Okanata - 48 ships
+#03 - NovaMoon Enaka - 43 ships
+#04 - Gillion Wyrddych - 39 ships
+#05 - Glade Radner - 37 ships
+#06 - Revan Wake - 36 ships
+#07 - Sabrez Haklar - 32 ships
+#08 - Rob Tsukaya - 30 ships
+#09 - Xeromos - 26 ships
+#10 - Vothor - 25 ships
+#11 - Damien Oxytocin - 24 ships
+#12 - Saria Dehmov - 22 ships
+#13 - Sasuke Solette - 19 ships
+#14 - Dakota Frost - 19 ships
+#15 - Heckler Koh - 18 ships
+#16 - EnShone uzumaki - 18 ships
+#17 - Myra Vixen - 17 ships
+#18 - inta Vakaria - 16 ships
+#19 - Try2CatchMe ActEstFabula - 16 ships
+#20 - Narcisse Nightmare - 16 ships
+#21 - Squizz Caphinator - 16 ships
+#22 - Nathaniel HeiFlieger - 16 ships
+#23 - Vince Condor - 15 ships
+#24 - Lainis Pootis - 15 ships
+#25 - WeirdBall - 15 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Orianna Okanata - 31.57b
+#02 - Valtyr Farshield - 24.34b
+#03 - Cap'n Rick Clusterbomb - 11.08b
+#04 - Gillion Wyrddych - 9.03b
+#05 - Glade Radner - 7.96b
+#06 - NovaMoon Enaka - 7.86b
+#07 - Vothor - 6.56b
+#08 - Rob Tsukaya - 5.40b
+#09 - Saria Dehmov - 4.95b
+#10 - Lainis Pootis - 4.86b
+#11 - Ransom Odunen - 4.79b
+#12 - Sabrez Haklar - 4.58b
+#13 - Gigi McQuaid - 4.20b
+#14 - Cynthera Noir - 4.02b
+#15 - Narcisse Nightmare - 3.89b
+#16 - Heckler Koh - 3.69b
+#17 - Katu Hodor - 3.60b
+#18 - Revan Wake - 3.55b
+#19 - Froza Areogone - 3.50b
+#20 - Xavier Hex - 3.29b
+#21 - Artik Fawkes - 3.26b
+#22 - Nathaniel HeiFlieger - 3.11b
+#23 - inta Vakaria - 3.03b
+#24 - Damien Oxytocin - 2.95b
+#25 - Xeromos - 2.79b

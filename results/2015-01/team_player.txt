@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Gillion Wyrddych - 90 ships
+#02 - Vothor - 68 ships
+#03 - Tali Lyrae - 63 ships
+#04 - Orianna Okanata - 63 ships
+#05 - Damien Oxytocin - 61 ships
+#06 - Saria Dehmov - 60 ships
+#07 - Chance Ravinne - 52 ships
+#08 - Louis Ferreira - 48 ships
+#09 - Cadno Llewellyn - 42 ships
+#10 - Artik Fawkes - 38 ships
+#11 - NoGo Rose - 35 ships
+#12 - Gulfair - 33 ships
+#13 - Nyrram - 31 ships
+#14 - Herbert Uromastyx - 30 ships
+#15 - Paddy McDaddy - 30 ships
+#16 - BATEAU47 - 30 ships
+#17 - lashana darkmoon - 29 ships
+#18 - Slevin Hekard - 26 ships
+#19 - shepard locknear - 26 ships
+#20 - Flaya Noong - 24 ships
+#21 - Allbur Chellak - 24 ships
+#22 - Big Broka - 21 ships
+#23 - Docnagol - 19 ships
+#24 - Xebec o'deth - 19 ships
+#25 - Authawy - 19 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Tali Lyrae - 11.39b
+#02 - Orianna Okanata - 11.22b
+#03 - Saria Dehmov - 11.08b
+#04 - Vothor - 10.53b
+#05 - Gillion Wyrddych - 8.76b
+#06 - Chance Ravinne - 8.40b
+#07 - Artik Fawkes - 6.31b
+#08 - NoGo Rose - 6.00b
+#09 - Louis Ferreira - 5.87b
+#10 - Cadno Llewellyn - 5.75b
+#11 - BATEAU47 - 5.41b
+#12 - Damien Oxytocin - 5.35b
+#13 - Nyrram - 5.06b
+#14 - Big Broka - 4.99b
+#15 - Herbert Uromastyx - 4.69b
+#16 - Captain0541 - 3.80b
+#17 - Gembre - 3.74b
+#18 - lashana darkmoon - 3.53b
+#19 - Au'Rel - 3.44b
+#20 - Gulfair - 3.14b
+#21 - Paddy McDaddy - 2.90b
+#22 - shepard locknear - 2.86b
+#23 - Docnagol - 2.86b
+#24 - ZzyyzzxX - 2.73b
+#25 - Ace D - 2.68b

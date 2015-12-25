@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 526 ships
+#02 - Gillion Wyrddych - 494 ships
+#03 - Vothor - 450 ships
+#04 - Orianna Okanata - 441 ships
+#05 - Sabrez Haklar - 394 ships
+#06 - Valtyr Farshield - 384 ships
+#07 - Gigi McQuaid - 363 ships
+#08 - Saria Dehmov - 337 ships
+#09 - Revan Wake - 307 ships
+#10 - Ransom Odunen - 295 ships
+#11 - Glade Radner - 291 ships
+#12 - Narcisse Nightmare - 289 ships
+#13 - NoGo Rose - 278 ships
+#14 - Chance Ravinne - 268 ships
+#15 - Tasmine Cha-Tien - 259 ships
+#16 - Tali Lyrae - 258 ships
+#17 - inta Vakaria - 232 ships
+#18 - Caboosette - 223 ships
+#19 - Vince Condor - 201 ships
+#20 - Xee Yoona-451 - 198 ships
+#21 - togi yuki - 193 ships
+#22 - Trip Erata - 185 ships
+#23 - Zeke Airuta - 183 ships
+#24 - WeirdBall - 168 ships
+#25 - Abaddon Nergal - 148 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 125.36b
+#02 - Valtyr Farshield - 122.66b
+#03 - Orianna Okanata - 108.45b
+#04 - Glade Radner - 81.50b
+#05 - Vothor - 75.52b
+#06 - Sabrez Haklar - 69.15b
+#07 - Gillion Wyrddych - 66.34b
+#08 - Gigi McQuaid - 63.02b
+#09 - Narcisse Nightmare - 56.64b
+#10 - Saria Dehmov - 53.17b
+#11 - Revan Wake - 48.90b
+#12 - Ransom Odunen - 46.16b
+#13 - Tasmine Cha-Tien - 42.58b
+#14 - NoGo Rose - 42.18b
+#15 - Tali Lyrae - 41.55b
+#16 - Vince Condor - 39.98b
+#17 - WeirdBall - 39.13b
+#18 - Xee Yoona-451 - 38.94b
+#19 - inta Vakaria - 38.59b
+#20 - Caboosette - 37.38b
+#21 - Rob Tsukaya - 36.49b
+#22 - Trip Erata - 33.36b
+#23 - Zeke Airuta - 32.08b
+#24 - Chance Ravinne - 31.21b
+#25 - togi yuki - 30.97b

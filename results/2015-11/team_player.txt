@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Sabrez Haklar - 51 ships
+#02 - Al3x Oaks - 42 ships
+#03 - Alphecca Lazair - 40 ships
+#04 - Narcisse Nightmare - 39 ships
+#05 - Cap'n Rick Clusterbomb - 29 ships
+#06 - Xee Yoona-451 - 27 ships
+#07 - Caboosette - 27 ships
+#08 - Orianna Okanata - 26 ships
+#09 - Vothor - 26 ships
+#10 - choo t - 25 ships
+#11 - Mei Long - 25 ships
+#12 - Phaezen Orti - 24 ships
+#13 - NoGo Rose - 23 ships
+#14 - togi yuki - 21 ships
+#15 - Tasmine Cha-Tien - 20 ships
+#16 - Zakir Abramovich - 19 ships
+#17 - T-B0NE - 18 ships
+#18 - Peter Lathe - 17 ships
+#19 - Kelia Monaiis - 17 ships
+#20 - Glade Radner - 16 ships
+#21 - Ransom Odunen - 15 ships
+#22 - Gillion Wyrddych - 15 ships
+#23 - Gigi McQuaid - 15 ships
+#24 - Valtyr Farshield - 14 ships
+#25 - Reed Icculus - 14 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 8.80b
+#02 - Orianna Okanata - 6.82b
+#03 - Alphecca Lazair - 6.73b
+#04 - Sabrez Haklar - 6.38b
+#05 - Narcisse Nightmare - 5.91b
+#06 - Xee Yoona-451 - 5.18b
+#07 - Al3x Oaks - 5.17b
+#08 - Kelia Monaiis - 5.00b
+#09 - Phaezen Orti - 4.96b
+#10 - Valtyr Farshield - 4.39b
+#11 - Zakir Abramovich - 4.14b
+#12 - Jinx Outamon - 4.10b
+#13 - Tasmine Cha-Tien - 4.04b
+#14 - Vothor - 4.03b
+#15 - Caboosette - 3.85b
+#16 - togi yuki - 3.81b
+#17 - Mei Long - 3.63b
+#18 - Au'Rel - 3.31b
+#19 - NoGo Rose - 3.26b
+#20 - choo t - 2.77b
+#21 - Calypso Ceph - 2.27b
+#22 - T-B0NE - 2.13b
+#23 - Sasuke Solette - 2.13b
+#24 - Peter Lathe - 2.12b
+#25 - Amyr Bane - 2.10b

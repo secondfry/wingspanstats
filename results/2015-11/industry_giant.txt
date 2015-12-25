@@ -1,0 +1,55 @@
+Top industrial hunters - ships destroyed
+--------------------------------------------
+#01 - choo t - 4 ships
+#02 - USS Hauler - 3 ships
+#03 - Astares Van Thanatos - 3 ships
+#04 - Severin Talvan - 3 ships
+#05 - Tasmine Cha-Tien - 3 ships
+#06 - Al3x Oaks - 2 ships
+#07 - Bustrr Bluth - 2 ships
+#08 - Eridanii - 2 ships
+#09 - Vothor - 1 ships
+#10 - Xee Yoona-451 - 1 ships
+#11 - Vargo Shahni - 1 ships
+#12 - Captain Orak - 1 ships
+#13 - Wait A Meowment - 1 ships
+#14 - Galinik Jmob - 1 ships
+#15 - Reaver Decimator - 1 ships
+#16 - Qual'tan Krayn - 1 ships
+#17 - Reed Icculus - 1 ships
+#18 - Orianna Okanata - 1 ships
+#19 - Zakir Abramovich - 1 ships
+#20 - Genpachie Inawa - 1 ships
+#21 - Marticar Shimaya - 1 ships
+#22 - Alphecca Lazair - 1 ships
+#23 - Narcisse Nightmare - 1 ships
+#24 - Sabrez Haklar - 1 ships
+#25 - Ransom Odunen - 1 ships
+
+Top industrial hunters - ISK destroyed
+--------------------------------------------
+#01 - Eridanii - 2.32b
+#02 - USS Hauler - 0.49b
+#03 - Astares Van Thanatos - 0.49b
+#04 - choo t - 0.47b
+#05 - Alphecca Lazair - 0.43b
+#06 - Al3x Oaks - 0.27b
+#07 - Severin Talvan - 0.25b
+#08 - Vothor - 0.19b
+#09 - Reed Icculus - 0.19b
+#10 - Narcisse Nightmare - 0.19b
+#11 - Ransom Odunen - 0.19b
+#12 - Delta Rescue - 0.19b
+#13 - NoGo Rose - 0.19b
+#14 - Tasmine Cha-Tien - 0.11b
+#15 - Sabrez Haklar - 0.11b
+#16 - Captain Orak - 0.08b
+#17 - Breakneck Bjarni - 0.08b
+#18 - Hateful Heart - 0.07b
+#19 - Zakir Abramovich - 0.06b
+#20 - Galinik Jmob - 0.06b
+#21 - Genpachie Inawa - 0.06b
+#22 - Kelia Monaiis - 0.06b
+#23 - Marticar Shimaya - 0.06b
+#24 - Vargo Shahni - 0.03b
+#25 - Reaver Decimator - 0.02b

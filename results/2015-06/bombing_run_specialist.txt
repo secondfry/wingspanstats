@@ -1,0 +1,29 @@
+Top Bombing Run Specialists - ships destroyed
+--------------------------------------------
+#01 - Cynthera Noir - 4 ships
+#02 - Benny Fugate - 3 ships
+#03 - Tarkin Ituin - 3 ships
+#04 - Nek Hyshakt - 2 ships
+#05 - Abaddon Nergal - 2 ships
+#06 - Alt Sokarad - 2 ships
+#07 - Orianna Okanata - 1 ships
+#08 - Sabrez Haklar - 1 ships
+#09 - Gigi McQuaid - 1 ships
+#10 - Banshee Legend - 1 ships
+#11 - Myra Vixen - 1 ships
+#12 - Xavier Hex - 1 ships
+
+Top Bombing Run Specialists - ISK destroyed
+--------------------------------------------
+#01 - Banshee Legend - 0.09b
+#02 - Cynthera Noir - 0.05b
+#03 - Alt Sokarad - 0.03b
+#04 - Gigi McQuaid - 0.03b
+#05 - Benny Fugate - 0.02b
+#06 - Tarkin Ituin - 0.02b
+#07 - Nek Hyshakt - 0.01b
+#08 - Abaddon Nergal - 0.01b
+#09 - Myra Vixen - 0.01b
+#10 - Xavier Hex - 0.01b
+#11 - Orianna Okanata - 0.01b
+#12 - Sabrez Haklar - 0.01b

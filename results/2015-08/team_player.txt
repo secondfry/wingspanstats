@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - WeirdBall - 118 ships
+#02 - Cap'n Rick Clusterbomb - 110 ships
+#03 - Sister Fisterr - 63 ships
+#04 - Gigi McQuaid - 57 ships
+#05 - Valtyr Farshield - 57 ships
+#06 - NovaMoon Enaka - 56 ships
+#07 - Gillion Wyrddych - 48 ships
+#08 - Jenna Lost - 44 ships
+#09 - Revan Wake - 44 ships
+#10 - deklanmarshall7 - 42 ships
+#11 - Glade Radner - 41 ships
+#12 - Yuri RedAlert - 38 ships
+#13 - Abaddon Nergal - 36 ships
+#14 - NoGo Rose - 35 ships
+#15 - Rob Tsukaya - 34 ships
+#16 - Zeke Airuta - 32 ships
+#17 - Caboosette - 29 ships
+#18 - Orianna Okanata - 28 ships
+#19 - Ransom Odunen - 27 ships
+#20 - Cynthera Noir - 26 ships
+#21 - Vothor - 24 ships
+#22 - Narcisse Nightmare - 24 ships
+#23 - Shinzo Shikimira Shinzo - 24 ships
+#24 - EnShone uzumaki - 23 ships
+#25 - Paddy McDaddy - 21 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 32.02b
+#02 - WeirdBall - 26.45b
+#03 - Valtyr Farshield - 24.00b
+#04 - Gigi McQuaid - 13.68b
+#05 - Glade Radner - 13.45b
+#06 - NovaMoon Enaka - 13.15b
+#07 - Sister Fisterr - 10.10b
+#08 - Revan Wake - 9.06b
+#09 - deklanmarshall7 - 8.22b
+#10 - Rob Tsukaya - 7.35b
+#11 - Shinzo Shikimira Shinzo - 7.15b
+#12 - Paddy McDaddy - 6.95b
+#13 - Zeke Airuta - 6.46b
+#14 - Caboosette - 6.18b
+#15 - Jenna Lost - 6.04b
+#16 - Narcisse Nightmare - 6.02b
+#17 - Gillion Wyrddych - 5.76b
+#18 - NoGo Rose - 5.75b
+#19 - Heckler Koh - 5.70b
+#20 - Vince Condor - 5.66b
+#21 - EnShone uzumaki - 5.58b
+#22 - Try2CatchMe ActEstFabula - 5.48b
+#23 - Vothor - 4.75b
+#24 - Trip Erata - 4.58b
+#25 - Sabrez Haklar - 4.05b
