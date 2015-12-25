@@ -3,3 +3,18 @@ General statistics
 Total kills: 637
 Total value: 57.90b
 Average value/kill: 90.90m
+Solo total kills: 385
+Solo total value: 18.26b
+
+
+High-sec total kills: 42 (6.59%)
+High-sec total value: 1.50b (2.59%)
+
+Low-sec total kills: 135 (21.19%)
+Low-sec total value: 4.71b (8.14%)
+
+Null-sec total kills: 60 (9.42%)
+Null-sec total value: 5.09b (8.80%)
+
+W-space total kills: 400 (62.79%)
+W-space total value: 46.59b (80.47%)
