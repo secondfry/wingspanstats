@@ -18,3 +18,12 @@ Null-sec total value: 9.52b (10.71%)
 
 W-space total kills: 542 (71.79%)
 W-space total value: 70.66b (79.49%)
+  [*] C1 - total kills: 105, total isk: 5.83b
+  [*] C2 - total kills: 247, total isk: 28.89b
+  [*] C3 - total kills: 131, total isk: 22.47b
+  [*] C4 - total kills: 39, total isk: 12.72b
+  [*] C5 - total kills: 13, total isk: 0.59b
+  [*] C6 - total kills: 2, total isk: 0.05b
+  [*] C13 - total kills: 1, total isk: 0.01b
+  [*] Thera - total kills: 2, total isk: 0.01b
+  [*] Drifter wormholes - total kills: 2, total isk: 0.10b

@@ -24,9 +24,11 @@ class GeneralStats(Skeleton):
         self.total_kills_wh = 0
         self.total_value_wh = 0
 
+        self.wh_stats = {}
+
         with open('security.csv', mode='r') as infile:
             reader = csv.reader(infile)
-            self.security = {int(rows[0]):int(rows[1]) for rows in reader}
+            self.security = {int(rows[0]):rows[1] for rows in reader}
 
     def __str__(self):
         output = ""
@@ -76,6 +78,28 @@ class GeneralStats(Skeleton):
             float(self.total_value_wh) / 1000000000,
             self.total_value_wh / self.total_value * 100
         )
+
+        if self.wh_stats != {}:
+            for wh_class in ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c13', 'c12']:
+                if wh_class in self.wh_stats.keys():
+                    output += "  [*] {} - total kills: {}, total isk: {:.2f}b\n".format(
+                        wh_class.upper() if wh_class != 'c12' else 'Thera',
+                        self.wh_stats[wh_class][0],
+                        self.wh_stats[wh_class][1] / 1000000000,
+                    )
+
+            drifter_total = 0
+            drifter_isk = 0
+            for wh_class in ['c14', 'c15', 'c16', 'c17', 'c18']:
+                if wh_class in self.wh_stats.keys():
+                    drifter_total += self.wh_stats[wh_class][0]
+                    drifter_isk += self.wh_stats[wh_class][1]
+            if drifter_total != 0:
+                output += "  [*] Drifter wormholes - total kills: {}, total isk: {:.2f}b\n".format(
+                    drifter_total,
+                    drifter_isk / 1000000000,
+                )
+
         return output
 
     def process_km(self, killmail):
@@ -88,15 +112,22 @@ class GeneralStats(Skeleton):
             self.solo_total_value += killmail['zkb']['totalValue']
 
         system_id = killmail['solarSystemID']
-        if self.security[system_id] == 3:  # high-sec
+        if self.security[system_id] == "hs":  # high-sec
             self.total_kills_hs += 1
             self.total_value_hs += killmail['zkb']['totalValue']
-        elif self.security[system_id] == 2:  # low-sec
+        elif self.security[system_id] == "ls":  # low-sec
             self.total_kills_ls += 1
             self.total_value_ls += killmail['zkb']['totalValue']
-        elif self.security[system_id] == 1:  # null-sec
+        elif self.security[system_id] == "ns":  # null-sec
             self.total_kills_ns += 1
             self.total_value_ns += killmail['zkb']['totalValue']
         else:  # w-space
             self.total_kills_wh += 1
             self.total_value_wh += killmail['zkb']['totalValue']
+
+            # stats for each wh class
+            if self.security[system_id] in self.wh_stats.keys():
+                self.wh_stats[self.security[system_id]][0] += 1
+                self.wh_stats[self.security[system_id]][1] += killmail['zkb']['totalValue']
+            else:
+                self.wh_stats[self.security[system_id]] = [1, killmail['zkb']['totalValue']]

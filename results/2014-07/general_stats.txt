@@ -18,3 +18,4 @@ Null-sec total value: 0.39b (69.93%)
 
 W-space total kills: 2 (25.00%)
 W-space total value: 0.08b (14.19%)
+  [*] C1 - total kills: 2, total isk: 0.08b

@@ -18,3 +18,10 @@ Null-sec total value: 0.97b (1.92%)
 
 W-space total kills: 393 (61.41%)
 W-space total value: 41.71b (82.55%)
+  [*] C1 - total kills: 53, total isk: 3.63b
+  [*] C2 - total kills: 160, total isk: 17.84b
+  [*] C3 - total kills: 132, total isk: 13.91b
+  [*] C4 - total kills: 39, total isk: 5.55b
+  [*] C5 - total kills: 4, total isk: 0.23b
+  [*] C6 - total kills: 4, total isk: 0.48b
+  [*] Thera - total kills: 1, total isk: 0.08b
