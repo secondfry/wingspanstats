@@ -1,0 +1,17 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - NoGo Rose - 47 ships
+#02 - Tali Lyrae - 18 ships
+#03 - Orianna Okanata - 5 ships
+#04 - Artik Fawkes - 4 ships
+#05 - Th3Pr0ph3t Drunk - 2 ships
+#06 - Nyrram - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - NoGo Rose - 2.34b
+#02 - Tali Lyrae - 1.06b
+#03 - Nyrram - 0.66b
+#04 - Orianna Okanata - 0.56b
+#05 - Artik Fawkes - 0.55b
+#06 - Th3Pr0ph3t Drunk - 0.55b

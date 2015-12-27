@@ -23,7 +23,31 @@ from rules.explorerhunter import ExplorerHunter
 from rules.minerbumper import MinerBumper
 from rules.industrygiant import IndustryGiant
 from rules.bombingrun import BombingRun
+from rules.interdictorace import InterdictorAce
 
+
+def defined_rules():
+    return [
+        GeneralStats(),
+        TopAgent(),
+        MostValueable(),
+        MostValueableSolo(),
+        SoloHunter(),
+        TeamPlayer(),
+        Blops(),
+        Bombers(),
+        Astero(),
+        Stratios(),
+        Nestor(),
+        Recons(),
+        T3Cruiser(),
+        Capitals(),
+        ExplorerHunter(),
+        MinerBumper(),
+        IndustryGiant(),
+        BombingRun(),
+        InterdictorAce(),
+    ]
 
 def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awox_monthly):
     with open(file_name) as data_file:
@@ -46,52 +70,14 @@ def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awo
                         rule.process_km(killmail)
 
 def analyze_data(db_list):
-    rules_alltime = [
-        GeneralStats(),
-        TopAgent(),
-        MostValueable(),
-        MostValueableSolo(),
-        SoloHunter(),
-        TeamPlayer(),
-        Blops(),
-        Bombers(),
-        Astero(),
-        Stratios(),
-        Nestor(),
-        Recons(),
-        T3Cruiser(),
-        Capitals(),
-        ExplorerHunter(),
-        MinerBumper(),
-        IndustryGiant(),
-        BombingRun(),
-    ]
+    rules_alltime = defined_rules()
     awox_alltime = Awox()
 
     for (year, month) in db_list:
         db_dir = os.path.join(StatsConfig.DATABASE_PATH, "{}-{:02d}".format(year, month))
 
         if os.path.exists(db_dir):
-            rules_monthly = [
-                GeneralStats(),
-                TopAgent(),
-                MostValueable(),
-                MostValueableSolo(),
-                SoloHunter(),
-                TeamPlayer(),
-                Blops(),
-                Bombers(),
-                Astero(),
-                Stratios(),
-                Nestor(),
-                Recons(),
-                T3Cruiser(),
-                Capitals(),
-                ExplorerHunter(),
-                MinerBumper(),
-                IndustryGiant(),
-                BombingRun(),
-            ]
+            rules_monthly = defined_rules()
             awox_monthly = Awox()
             print "Analyzing", db_dir
 

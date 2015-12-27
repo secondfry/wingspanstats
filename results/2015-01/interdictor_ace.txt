@@ -1,0 +1,15 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Orianna Okanata - 25 ships
+#02 - Tali Lyrae - 11 ships
+#03 - NoGo Rose - 9 ships
+#04 - Bleda Katona - 7 ships
+#05 - Louis Ferreira - 4 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Orianna Okanata - 4.53b
+#02 - Tali Lyrae - 3.09b
+#03 - Louis Ferreira - 1.02b
+#04 - NoGo Rose - 0.50b
+#05 - Bleda Katona - 0.46b

@@ -1,0 +1,55 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - NoGo Rose - 187 ships
+#02 - Orianna Okanata - 150 ships
+#03 - Vothor - 121 ships
+#04 - Tali Lyrae - 56 ships
+#05 - Sabrez Haklar - 52 ships
+#06 - Louis Ferreira - 23 ships
+#07 - Cap'n Rick Clusterbomb - 20 ships
+#08 - Bleda Katona - 19 ships
+#09 - Abaddon Nergal - 17 ships
+#10 - Caboosette - 12 ships
+#11 - Gillion Wyrddych - 8 ships
+#12 - Trip Erata - 8 ships
+#13 - Vince Condor - 7 ships
+#14 - Xeromos - 7 ships
+#15 - Saria Dehmov - 7 ships
+#16 - Alice Anneto - 6 ships
+#17 - Cynthera Noir - 6 ships
+#18 - Artik Fawkes - 5 ships
+#19 - Xee Yoona-451 - 3 ships
+#20 - Narcisse Nightmare - 3 ships
+#21 - Mishka Privyet - 3 ships
+#22 - Th3Pr0ph3t Drunk - 2 ships
+#23 - Au'Rel - 2 ships
+#24 - Jenna Lost - 1 ships
+#25 - Nyrram - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Orianna Okanata - 21.54b
+#02 - Vothor - 15.97b
+#03 - NoGo Rose - 14.49b
+#04 - Sabrez Haklar - 11.71b
+#05 - Tali Lyrae - 6.27b
+#06 - Louis Ferreira - 4.45b
+#07 - Abaddon Nergal - 4.36b
+#08 - Caboosette - 2.52b
+#09 - Narcisse Nightmare - 2.26b
+#10 - Cap'n Rick Clusterbomb - 2.06b
+#11 - Bleda Katona - 1.93b
+#12 - Gillion Wyrddych - 1.81b
+#13 - Alice Anneto - 1.31b
+#14 - Trip Erata - 0.94b
+#15 - Artik Fawkes - 0.92b
+#16 - Cynthera Noir - 0.91b
+#17 - Vince Condor - 0.80b
+#18 - Xeromos - 0.75b
+#19 - Nyrram - 0.66b
+#20 - Th3Pr0ph3t Drunk - 0.55b
+#21 - Jenna Lost - 0.47b
+#22 - Au'Rel - 0.31b
+#23 - Mars Antilles - 0.24b
+#24 - Mishka Privyet - 0.24b
+#25 - Xee Yoona-451 - 0.13b

@@ -1,0 +1,17 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Vothor - 29 ships
+#02 - NoGo Rose - 14 ships
+#03 - Orianna Okanata - 6 ships
+#04 - Trip Erata - 4 ships
+#05 - Tali Lyrae - 2 ships
+#06 - Artik Fawkes - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Vothor - 3.10b
+#02 - NoGo Rose - 1.14b
+#03 - Orianna Okanata - 0.78b
+#04 - Artik Fawkes - 0.37b
+#05 - Trip Erata - 0.27b
+#06 - Tali Lyrae - 0.10b

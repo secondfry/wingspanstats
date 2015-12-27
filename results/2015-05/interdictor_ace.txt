@@ -1,0 +1,15 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Vothor - 23 ships
+#02 - NoGo Rose - 12 ships
+#03 - Orianna Okanata - 7 ships
+#04 - Alice Anneto - 6 ships
+#05 - Mars Antilles - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Vothor - 2.64b
+#02 - Alice Anneto - 1.31b
+#03 - Orianna Okanata - 0.96b
+#04 - NoGo Rose - 0.81b
+#05 - Mars Antilles - 0.24b

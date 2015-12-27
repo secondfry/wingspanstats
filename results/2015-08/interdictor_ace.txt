@@ -1,0 +1,21 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - NoGo Rose - 35 ships
+#02 - Orianna Okanata - 20 ships
+#03 - Vothor - 13 ships
+#04 - Cynthera Noir - 6 ships
+#05 - Mishka Privyet - 3 ships
+#06 - Jenna Lost - 1 ships
+#07 - Xee Yoona-451 - 1 ships
+#08 - Trip Erata - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - NoGo Rose - 5.16b
+#02 - Vothor - 2.98b
+#03 - Cynthera Noir - 0.91b
+#04 - Orianna Okanata - 0.57b
+#05 - Jenna Lost - 0.47b
+#06 - Mishka Privyet - 0.24b
+#07 - Trip Erata - 0.08b
+#08 - Xee Yoona-451 - 0.00b

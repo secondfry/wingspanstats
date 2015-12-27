@@ -1,0 +1,29 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Vothor - 28 ships
+#02 - Sabrez Haklar - 22 ships
+#03 - NoGo Rose - 8 ships
+#04 - Abaddon Nergal - 7 ships
+#05 - Saria Dehmov - 6 ships
+#06 - Cap'n Rick Clusterbomb - 5 ships
+#07 - Caboosette - 4 ships
+#08 - Orianna Okanata - 3 ships
+#09 - Gillion Wyrddych - 3 ships
+#10 - Trip Erata - 3 ships
+#11 - Narcisse Nightmare - 3 ships
+#12 - Saiku Itchutomi - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Sabrez Haklar - 4.21b
+#02 - Abaddon Nergal - 3.66b
+#03 - Narcisse Nightmare - 2.26b
+#04 - Caboosette - 2.05b
+#05 - Vothor - 1.10b
+#06 - Orianna Okanata - 1.01b
+#07 - Gillion Wyrddych - 0.74b
+#08 - NoGo Rose - 0.60b
+#09 - Trip Erata - 0.59b
+#10 - Cap'n Rick Clusterbomb - 0.48b
+#11 - Saiku Itchutomi - 0.10b
+#12 - Saria Dehmov - 0.08b

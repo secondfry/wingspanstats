@@ -1,0 +1,17 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Vothor - 15 ships
+#02 - Orianna Okanata - 14 ships
+#03 - Vince Condor - 7 ships
+#04 - Xeromos - 7 ships
+#05 - NoGo Rose - 7 ships
+#06 - Saria Dehmov - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Orianna Okanata - 3.86b
+#02 - Vothor - 1.14b
+#03 - Vince Condor - 0.80b
+#04 - Xeromos - 0.75b
+#05 - NoGo Rose - 0.02b
+#06 - Saria Dehmov - 0.00b
