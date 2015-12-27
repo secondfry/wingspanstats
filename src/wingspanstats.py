@@ -24,6 +24,7 @@ from rules.minerbumper import MinerBumper
 from rules.industrygiant import IndustryGiant
 from rules.bombingrun import BombingRun
 from rules.interdictorace import InterdictorAce
+from rules.podexpress import PodExpress
 
 
 def defined_rules():
@@ -47,6 +48,7 @@ def defined_rules():
         IndustryGiant(),
         BombingRun(),
         InterdictorAce(),
+        PodExpress(),
     ]
 
 def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awox_monthly):
