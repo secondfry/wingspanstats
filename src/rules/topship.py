@@ -50,7 +50,7 @@ class TopShip(Skeleton):
             output += "#{:02d} - {} - {:.2f}b\n".format(
                 place,
                 self.items[w],
-                self.isk_destroyed[w] / 1000000000
+                self.isk_destroyed[w] / 1000000000.0
             )
 
         return output

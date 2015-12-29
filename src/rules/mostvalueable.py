@@ -25,7 +25,7 @@ class MostValueable(Skeleton):
             output += "#{:02d} - https://zkillboard.com/kill/{}/ - {:.2f}b\n".format(
                 place,
                 w,
-                self.most_valueable[w] / 1000000000,
+                self.most_valueable[w] / 1000000000.0,
             )
 
         return output
@@ -57,7 +57,7 @@ class MostValueableSolo(Skeleton):
                 place,
                 w,
                 self.most_valueable_solo[w][0],
-                self.most_valueable_solo[w][1] / 1000000000,
+                self.most_valueable_solo[w][1] / 1000000000.0,
             )
 
         return output

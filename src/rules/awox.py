@@ -26,7 +26,7 @@ class Awox(Skeleton):
                 place,
                 w,
                 self.awox_kills[w][0],
-                self.awox_kills[w][1] / 1000000,
+                self.awox_kills[w][1] / 1000000.0,
             )
         return output
 

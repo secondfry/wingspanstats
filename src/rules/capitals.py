@@ -25,7 +25,7 @@ class Capitals(Skeleton):
             output += "#{:02d} - https://zkillboard.com/kill/{}/ - {:.2f}b\n".format(
                 place,
                 w,
-                self.most_valueable[w] / 1000000000,
+                self.most_valueable[w] / 1000000000.0,
             )
 
         return output

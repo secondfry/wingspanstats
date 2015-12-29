@@ -38,7 +38,7 @@ class Nestor(Skeleton):
                 reverse=True
         )[:StatsConfig.MAX_PLACES]:
             place += 1
-            output += "#{:02d} - {} - {:.2f}b\n".format(place, w, self.agent_isk_destroyed[w] / 1000000000)
+            output += "#{:02d} - {} - {:.2f}b\n".format(place, w, self.agent_isk_destroyed[w] / 1000000000.0)
 
         return output
 
