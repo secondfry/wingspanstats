@@ -7,6 +7,7 @@ import json
 from rules.statsconfig import StatsConfig
 from rules.generalstats import GeneralStats
 from rules.topagent import TopAgent
+from rules.topship import TopShip
 from rules.mostvalueable import MostValueable, MostValueableSolo
 from rules.solohunter import SoloHunter
 from rules.teamplayer import TeamPlayer
@@ -31,6 +32,7 @@ def defined_rules():
     return [
         GeneralStats(),
         TopAgent(),
+        TopShip(),
         MostValueable(),
         MostValueableSolo(),
         SoloHunter(),

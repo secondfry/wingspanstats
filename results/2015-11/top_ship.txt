@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 280 ships
+#02 - Manticore - 278 ships
+#03 - Nemesis - 163 ships
+#04 - Purifier - 121 ships
+#05 - Astero - 57 ships
+#06 - Hound - 50 ships
+#07 - Pilgrim - 33 ships
+#08 - Rapier - 32 ships
+#09 - Scythe Fleet Issue - 26 ships
+#10 - Svipul - 20 ships
+#11 - Hecate - 18 ships
+#12 - Flycatcher - 17 ships
+#13 - Imperial Navy Slicer - 16 ships
+#14 - Tengu - 14 ships
+#15 - Broadsword - 14 ships
+#16 - Confessor - 12 ships
+#17 - Gila - 11 ships
+#18 - Sabre - 11 ships
+#19 - Armageddon - 10 ships
+#20 - Falcon - 10 ships
+#21 - Oracle - 10 ships
+#22 - Rook - 9 ships
+#23 - Proteus - 8 ships
+#24 - Onyx - 7 ships
+#25 - Vigilant - 7 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 47.13b
+#02 - Manticore - 37.93b
+#03 - Nemesis - 18.06b
+#04 - Purifier - 16.17b
+#05 - Rapier - 6.99b
+#06 - Pilgrim - 5.04b
+#07 - Hound - 3.65b
+#08 - Armageddon - 3.60b
+#09 - Astero - 3.49b
+#10 - Scythe Fleet Issue - 2.70b
+#11 - Brutix - 1.76b
+#12 - Oracle - 1.52b
+#13 - Falcon - 1.45b
+#14 - Sabre - 1.34b
+#15 - Tengu - 1.33b
+#16 - Hecate - 1.29b
+#17 - Proteus - 1.24b
+#18 - Vigilant - 1.13b
+#19 - Imicus - 1.11b
+#20 - Eris - 1.07b
+#21 - Flycatcher - 1.05b
+#22 - Scorpion - 0.88b
+#23 - Typhoon - 0.88b
+#24 - Abaddon - 0.88b
+#25 - Harbinger - 0.88b

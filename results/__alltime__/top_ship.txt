@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 4266 ships
+#02 - Stratios - 3600 ships
+#03 - Nemesis - 2542 ships
+#04 - Hound - 1493 ships
+#05 - Purifier - 1306 ships
+#06 - Astero - 882 ships
+#07 - Pilgrim - 369 ships
+#08 - Sabre - 348 ships
+#09 - Falcon - 306 ships
+#10 - Tengu - 230 ships
+#11 - Rapier - 180 ships
+#12 - Armageddon - 141 ships
+#13 - Loki - 135 ships
+#14 - Proteus - 133 ships
+#15 - Tristan - 132 ships
+#16 - Myrmidon - 130 ships
+#17 - Onyx - 123 ships
+#18 - Flycatcher - 114 ships
+#19 - Arazu - 106 ships
+#20 - Ishtar - 106 ships
+#21 - Rook - 105 ships
+#22 - Oracle - 89 ships
+#23 - Drake - 84 ships
+#24 - Hecate - 80 ships
+#25 - Redeemer - 76 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 682.94b
+#02 - Manticore - 615.73b
+#03 - Nemesis - 394.82b
+#04 - Hound - 224.86b
+#05 - Purifier - 192.45b
+#06 - Astero - 99.56b
+#07 - Falcon - 66.40b
+#08 - Pilgrim - 47.00b
+#09 - Sabre - 44.64b
+#10 - Tengu - 42.19b
+#11 - Rapier - 30.96b
+#12 - Armageddon - 27.76b
+#13 - Onyx - 23.52b
+#14 - Phantasm - 22.01b
+#15 - Redeemer - 20.93b
+#16 - Proteus - 16.88b
+#17 - Loki - 15.88b
+#18 - Myrmidon - 15.20b
+#19 - Arazu - 14.05b
+#20 - Curse - 13.34b
+#21 - Flycatcher - 12.15b
+#22 - Ishtar - 11.99b
+#23 - Oracle - 11.75b
+#24 - Widow - 10.43b
+#25 - Bhaalgorn - 9.07b

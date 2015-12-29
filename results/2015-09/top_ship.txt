@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 802 ships
+#02 - Manticore - 550 ships
+#03 - Purifier - 282 ships
+#04 - Nemesis - 234 ships
+#05 - Hound - 137 ships
+#06 - Loki - 57 ships
+#07 - Armageddon - 51 ships
+#08 - Falcon - 51 ships
+#09 - Ishtar - 48 ships
+#10 - Astero - 41 ships
+#11 - Moros - 33 ships
+#12 - Oracle - 30 ships
+#13 - Rapier - 29 ships
+#14 - Tengu - 28 ships
+#15 - Mastodon - 28 ships
+#16 - Widow - 27 ships
+#17 - Typhoon - 25 ships
+#18 - Arazu - 25 ships
+#19 - Augoror - 22 ships
+#20 - Hecate - 22 ships
+#21 - Sabre - 21 ships
+#22 - Archon - 18 ships
+#23 - Sleipnir - 16 ships
+#24 - Onyx - 16 ships
+#25 - Rattlesnake - 13 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 129.95b
+#02 - Manticore - 93.51b
+#03 - Purifier - 44.23b
+#04 - Nemesis - 35.29b
+#05 - Hound - 31.87b
+#06 - Falcon - 11.33b
+#07 - Armageddon - 8.77b
+#08 - Sabre - 7.34b
+#09 - Bhaalgorn - 6.88b
+#10 - Onyx - 6.70b
+#11 - Loki - 6.55b
+#12 - Tengu - 6.24b
+#13 - Ishtar - 5.52b
+#14 - Pilgrim - 4.82b
+#15 - Typhoon - 4.62b
+#16 - Augoror - 4.55b
+#17 - Abaddon - 4.50b
+#18 - Moros - 4.02b
+#19 - Oracle - 3.84b
+#20 - Astero - 2.35b
+#21 - Arazu - 2.31b
+#22 - Imperial Navy Slicer - 2.29b
+#23 - Rapier - 2.20b
+#24 - Raven - 1.75b
+#25 - Hecate - 1.43b

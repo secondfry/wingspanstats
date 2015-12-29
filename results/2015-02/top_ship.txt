@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 228 ships
+#02 - Nemesis - 184 ships
+#03 - Stratios - 119 ships
+#04 - Astero - 97 ships
+#05 - Hound - 87 ships
+#06 - Purifier - 65 ships
+#07 - Sabre - 26 ships
+#08 - Tristan - 25 ships
+#09 - Myrmidon - 17 ships
+#10 - Broadsword - 16 ships
+#11 - Rapier - 15 ships
+#12 - Pilgrim - 13 ships
+#13 - Garmur - 11 ships
+#14 - Onyx - 11 ships
+#15 - Caracal - 10 ships
+#16 - Falcon - 9 ships
+#17 - Arazu - 8 ships
+#18 - Confessor - 8 ships
+#19 - Eris - 7 ships
+#20 - Atron - 5 ships
+#21 - Corax - 5 ships
+#22 - Vexor - 5 ships
+#23 - Merlin - 4 ships
+#24 - Loki - 4 ships
+#25 - Vigilant - 4 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 46.40b
+#02 - Stratios - 26.50b
+#03 - Nemesis - 26.50b
+#04 - Hound - 12.41b
+#05 - Purifier - 11.01b
+#06 - Astero - 8.56b
+#07 - Pilgrim - 3.15b
+#08 - Sabre - 2.82b
+#09 - Merlin - 2.17b
+#10 - Tristan - 2.07b
+#11 - Rapier - 1.78b
+#12 - Onyx - 1.66b
+#13 - Falcon - 1.33b
+#14 - Myrmidon - 1.29b
+#15 - Confessor - 1.24b
+#16 - Caracal - 1.24b
+#17 - Svipul - 1.04b
+#18 - Curse - 0.79b
+#19 - Tengu - 0.68b
+#20 - Eris - 0.67b
+#21 - Vexor - 0.65b
+#22 - Arazu - 0.60b
+#23 - Prospect - 0.54b
+#24 - Loki - 0.47b
+#25 - Ishtar - 0.47b

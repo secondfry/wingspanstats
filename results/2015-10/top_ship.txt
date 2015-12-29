@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Nemesis - 399 ships
+#02 - Manticore - 354 ships
+#03 - Stratios - 348 ships
+#04 - Purifier - 126 ships
+#05 - Hound - 105 ships
+#06 - Tristan - 71 ships
+#07 - Drake - 58 ships
+#08 - Exequror - 56 ships
+#09 - Myrmidon - 52 ships
+#10 - Astero - 52 ships
+#11 - Falcon - 41 ships
+#12 - Prophecy - 38 ships
+#13 - Cyclone - 32 ships
+#14 - Flycatcher - 31 ships
+#15 - Rapier - 29 ships
+#16 - Talos - 29 ships
+#17 - Hecate - 27 ships
+#18 - Catalyst - 27 ships
+#19 - Onyx - 25 ships
+#20 - Brutix - 24 ships
+#21 - Tengu - 23 ships
+#22 - Pilgrim - 21 ships
+#23 - Oracle - 20 ships
+#24 - Rattlesnake - 20 ships
+#25 - Scythe Fleet Issue - 19 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Nemesis - 96.36b
+#02 - Manticore - 73.09b
+#03 - Stratios - 67.31b
+#04 - Purifier - 26.05b
+#05 - Hound - 23.98b
+#06 - Falcon - 7.58b
+#07 - Drake - 7.28b
+#08 - Rapier - 6.91b
+#09 - Astero - 6.53b
+#10 - Myrmidon - 5.57b
+#11 - Tengu - 4.90b
+#12 - Hurricane - 4.54b
+#13 - Oracle - 4.35b
+#14 - Onyx - 4.21b
+#15 - Prophecy - 4.16b
+#16 - Sabre - 3.80b
+#17 - Flycatcher - 3.28b
+#18 - Talos - 2.82b
+#19 - Thorax - 2.79b
+#20 - Devoter - 2.79b
+#21 - Brutix Navy Issue - 2.79b
+#22 - Vexor Navy Issue - 2.69b
+#23 - Cyclone - 2.42b
+#24 - Pilgrim - 2.37b
+#25 - Rattlesnake - 2.07b

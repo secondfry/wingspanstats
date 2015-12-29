@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 605 ships
+#02 - Stratios - 293 ships
+#03 - Hound - 204 ships
+#04 - Nemesis - 201 ships
+#05 - Purifier - 112 ships
+#06 - Astero - 77 ships
+#07 - Tengu - 57 ships
+#08 - Falcon - 56 ships
+#09 - Thrasher - 47 ships
+#10 - Pilgrim - 42 ships
+#11 - Redeemer - 31 ships
+#12 - Proteus - 27 ships
+#13 - Sabre - 27 ships
+#14 - Venture - 27 ships
+#15 - Catalyst - 23 ships
+#16 - Flycatcher - 19 ships
+#17 - Ishkur - 12 ships
+#18 - Oracle - 12 ships
+#19 - Malediction - 10 ships
+#20 - Onyx - 10 ships
+#21 - Loki - 9 ships
+#22 - Arazu - 9 ships
+#23 - Imperial Navy Slicer - 8 ships
+#24 - Rokh - 7 ships
+#25 - Vigil - 7 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 69.14b
+#02 - Stratios - 41.11b
+#03 - Hound - 20.28b
+#04 - Nemesis - 18.01b
+#05 - Purifier - 10.73b
+#06 - Falcon - 9.59b
+#07 - Redeemer - 8.92b
+#08 - Tengu - 7.79b
+#09 - Astero - 5.02b
+#10 - Widow - 4.63b
+#11 - Proteus - 4.55b
+#12 - Pilgrim - 3.79b
+#13 - Sabre - 2.66b
+#14 - Malediction - 2.63b
+#15 - Flycatcher - 2.45b
+#16 - Arazu - 2.15b
+#17 - Ishkur - 1.44b
+#18 - Panther - 1.29b
+#19 - Armageddon - 1.12b
+#20 - Oracle - 1.11b
+#21 - Ishtar - 0.71b
+#22 - Oneiros - 0.65b
+#23 - Gila - 0.65b
+#24 - Onyx - 0.64b
+#25 - Tornado - 0.62b

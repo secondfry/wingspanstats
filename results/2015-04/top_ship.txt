@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 327 ships
+#02 - Stratios - 208 ships
+#03 - Nemesis - 150 ships
+#04 - Purifier - 118 ships
+#05 - Hound - 117 ships
+#06 - Astero - 115 ships
+#07 - Sabre - 39 ships
+#08 - Pilgrim - 36 ships
+#09 - Rook - 29 ships
+#10 - Curse - 28 ships
+#11 - Falcon - 18 ships
+#12 - Tengu - 15 ships
+#13 - Vigilant - 15 ships
+#14 - Armageddon - 14 ships
+#15 - Proteus - 9 ships
+#16 - Condor - 9 ships
+#17 - Loki - 7 ships
+#18 - Garmur - 5 ships
+#19 - Drake - 5 ships
+#20 - Rapier - 4 ships
+#21 - Flycatcher - 4 ships
+#22 - Tristan - 4 ships
+#23 - Caracal - 4 ships
+#24 - Ashimmu - 4 ships
+#25 - Myrmidon - 4 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 60.49b
+#02 - Stratios - 48.45b
+#03 - Purifier - 29.21b
+#04 - Nemesis - 28.98b
+#05 - Hound - 25.74b
+#06 - Astero - 9.63b
+#07 - Sabre - 6.42b
+#08 - Tengu - 4.88b
+#09 - Curse - 4.73b
+#10 - Proteus - 2.79b
+#11 - Pilgrim - 2.58b
+#12 - Falcon - 2.40b
+#13 - Loki - 1.45b
+#14 - Armageddon - 1.15b
+#15 - Rapier - 1.01b
+#16 - Vigilant - 0.79b
+#17 - Rook - 0.78b
+#18 - Drake - 0.71b
+#19 - Ashimmu - 0.71b
+#20 - Arazu - 0.65b
+#21 - Garmur - 0.63b
+#22 - Bhaalgorn - 0.56b
+#23 - Rattlesnake - 0.46b
+#24 - Caracal - 0.42b
+#25 - Kitsune - 0.36b

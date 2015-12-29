@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 573 ships
+#02 - Manticore - 277 ships
+#03 - Nemesis - 173 ships
+#04 - Purifier - 99 ships
+#05 - Pilgrim - 90 ships
+#06 - Hound - 84 ships
+#07 - Astero - 55 ships
+#08 - Sabre - 46 ships
+#09 - Tengu - 42 ships
+#10 - Armageddon - 36 ships
+#11 - Falcon - 36 ships
+#12 - Dominix - 30 ships
+#13 - Rapier - 23 ships
+#14 - Proteus - 16 ships
+#15 - Arazu - 14 ships
+#16 - Flycatcher - 13 ships
+#17 - Onyx - 13 ships
+#18 - Ishtar - 13 ships
+#19 - Imperial Navy Slicer - 11 ships
+#20 - Gila - 11 ships
+#21 - Oracle - 11 ships
+#22 - Worm - 11 ships
+#23 - Bhaalgorn - 10 ships
+#24 - Loki - 10 ships
+#25 - Ishkur - 9 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 140.90b
+#02 - Manticore - 35.87b
+#03 - Nemesis - 30.35b
+#04 - Falcon - 17.62b
+#05 - Hound - 16.26b
+#06 - Pilgrim - 10.27b
+#07 - Tengu - 8.87b
+#08 - Armageddon - 8.62b
+#09 - Astero - 8.60b
+#10 - Purifier - 8.19b
+#11 - Onyx - 6.23b
+#12 - Dominix - 5.35b
+#13 - Proteus - 4.24b
+#14 - Rapier - 4.15b
+#15 - Ishtar - 3.00b
+#16 - Tempest - 2.58b
+#17 - Megathron - 2.24b
+#18 - Sabre - 1.98b
+#19 - Arazu - 1.76b
+#20 - Loki - 1.63b
+#21 - Bhaalgorn - 1.49b
+#22 - Gnosis - 1.08b
+#23 - Heretic - 0.91b
+#24 - Blackbird - 0.87b
+#25 - Flycatcher - 0.83b
