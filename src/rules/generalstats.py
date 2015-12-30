@@ -1,9 +1,12 @@
 # generalstats.py
 # Author: Valtyr Farshield
 
+import os
 from skeleton import Skeleton
 from statsconfig import StatsConfig
 import csv
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 class GeneralStats(Skeleton):
@@ -101,6 +104,47 @@ class GeneralStats(Skeleton):
                 )
 
         return output
+
+    def additional_processing(self, directory):
+        # -------------------------------------------------
+        sizes = np.array([
+            self.total_kills_hs,
+            self.total_kills_ls,
+            self.total_kills_ns,
+            self.total_kills_wh
+        ])
+        percentage = 100.*sizes/sizes.sum()
+        labels = ['High-sec', 'Low-sec', 'Null-sec', 'W-space']
+        labels2 = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(labels, percentage)]
+        colors = ['green', 'yellow', 'red', 'lightskyblue']
+
+        plt.title("Total number of ships killed")
+        patches, texts = plt.pie(sizes, colors=colors, shadow=True, startangle=90)
+        plt.legend(patches, labels2, loc="best")
+        plt.axis('equal')
+
+        plt.plot()
+        plt.savefig(os.path.join(directory, 'piechart_all_ships_destroyed'))
+
+        # -------------------------------------------------
+        sizes = np.array([
+            self.total_value_hs,
+            self.total_value_ls,
+            self.total_value_ns,
+            self.total_value_wh
+        ])
+        percentage = 100.*sizes/sizes.sum()
+        labels = ['High-sec', 'Low-sec', 'Null-sec', 'W-space']
+        labels2 = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(labels, percentage)]
+        colors = ['green', 'yellow', 'red', 'lightskyblue']
+
+        plt.title("Total ISK destroyed")
+        patches, texts = plt.pie(sizes, colors=colors, shadow=True, startangle=90)
+        plt.legend(patches, labels2, loc="best")
+        plt.axis('equal')
+
+        plt.plot()
+        plt.savefig(os.path.join(directory, 'piechart_all_isk_destroyed'))
 
     def process_km(self, killmail):
         self.total_kills += 1
