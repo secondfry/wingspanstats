@@ -3,47 +3,47 @@ Top miner hunters - ships destroyed
 #01 - Saladiin - 40 ships
 #02 - Chance Ravinne - 38 ships
 #03 - Orianna Okanata - 36 ships
-#04 - Bustrr Bluth - 30 ships
-#05 - inta Vakaria - 24 ships
-#06 - togi yuki - 21 ships
-#07 - NoGo Rose - 21 ships
-#08 - Cap'n Rick Clusterbomb - 20 ships
-#09 - Glade Radner - 19 ships
-#10 - Alt Sokarad - 19 ships
-#11 - Tasmine Cha-Tien - 19 ships
-#12 - Vothor - 19 ships
-#13 - Gillion Wyrddych - 17 ships
+#04 - Tasmine Cha-Tien - 31 ships
+#05 - Bustrr Bluth - 31 ships
+#06 - inta Vakaria - 30 ships
+#07 - Cap'n Rick Clusterbomb - 23 ships
+#08 - togi yuki - 21 ships
+#09 - NoGo Rose - 21 ships
+#10 - Glade Radner - 20 ships
+#11 - Gillion Wyrddych - 19 ships
+#12 - Alt Sokarad - 19 ships
+#13 - Vothor - 19 ships
 #14 - Allbur Chellak - 17 ships
-#15 - Saria Dehmov - 16 ships
-#16 - Ransom Odunen - 16 ships
-#17 - Slevin Hekard - 16 ships
-#18 - Revan Wake - 15 ships
-#19 - Sabrez Haklar - 14 ships
-#20 - Narcisse Nightmare - 13 ships
-#21 - WeirdBall - 11 ships
-#22 - Dakodai - 11 ships
-#23 - Jedi VanDiemen - 11 ships
+#15 - Sabrez Haklar - 16 ships
+#16 - Saria Dehmov - 16 ships
+#17 - Ransom Odunen - 16 ships
+#18 - Slevin Hekard - 16 ships
+#19 - Narcisse Nightmare - 15 ships
+#20 - Revan Wake - 15 ships
+#21 - Jedi VanDiemen - 14 ships
+#22 - WeirdBall - 11 ships
+#23 - Dakodai - 11 ships
 #24 - Xavier Hex - 11 ships
 #25 - General Waaargh - 11 ships
 
 Top miner hunters - ISK destroyed
 --------------------------------------------
-#01 - Orianna Okanata - 2.51b
-#02 - Tasmine Cha-Tien - 2.15b
+#01 - Tasmine Cha-Tien - 3.87b
+#02 - Orianna Okanata - 2.51b
 #03 - Chance Ravinne - 1.93b
 #04 - togi yuki - 1.56b
 #05 - WeirdBall - 1.35b
 #06 - Saria Dehmov - 1.26b
-#07 - Malak Saren - 1.18b
-#08 - Abaddon Nergal - 1.13b
-#09 - inta Vakaria - 1.07b
-#10 - Cap'n Rick Clusterbomb - 1.07b
+#07 - Cap'n Rick Clusterbomb - 1.20b
+#08 - Malak Saren - 1.18b
+#09 - inta Vakaria - 1.15b
+#10 - Abaddon Nergal - 1.13b
 #11 - Ransom Odunen - 1.06b
-#12 - Glade Radner - 0.86b
+#12 - Glade Radner - 0.89b
 #13 - Pyro Silf - 0.80b
-#14 - Jerythas - 0.65b
-#15 - Jedi VanDiemen - 0.63b
-#16 - Narcisse Nightmare - 0.61b
+#14 - Jedi VanDiemen - 0.67b
+#15 - Narcisse Nightmare - 0.66b
+#16 - Jerythas - 0.65b
 #17 - Severin Talvan - 0.60b
 #18 - Caboosette - 0.60b
 #19 - Valtyr Farshield - 0.59b
@@ -51,5 +51,5 @@ Top miner hunters - ISK destroyed
 #21 - Ragnar Sorlandschip - 0.59b
 #22 - Jarna - 0.59b
 #23 - Alt Sokarad - 0.58b
-#24 - Sabrez Haklar - 0.56b
+#24 - Sabrez Haklar - 0.57b
 #25 - Bustrr Bluth - 0.52b

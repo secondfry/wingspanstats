@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Mei Long - 128 ships
+#02 - Narcisse Nightmare - 87 ships
+#03 - Jenna Lost - 86 ships
+#04 - Albin wood - 77 ships
+#05 - Abaddon Nergal - 72 ships
+#06 - Caboosette - 68 ships
+#07 - Bonz Andrard - 68 ships
+#08 - Alphecca Lazair - 64 ships
+#09 - deklanmarshall7 - 58 ships
+#10 - Delta Rescue - 58 ships
+#11 - Iwata s - 57 ships
+#12 - Rhinel - 56 ships
+#13 - Silentt Knightt - 53 ships
+#14 - Geroni Vynneve - 50 ships
+#15 - Banshee Legend - 47 ships
+#16 - T-B0NE - 42 ships
+#17 - Au'Rel - 42 ships
+#18 - choo t - 42 ships
+#19 - Sabrez Haklar - 39 ships
+#20 - Cap'n Rick Clusterbomb - 36 ships
+#21 - Al3x Oaks - 33 ships
+#22 - NoGo Rose - 33 ships
+#23 - Sveti Trgovacki - 27 ships
+#24 - Gillion Wyrddych - 26 ships
+#25 - Massive Black - 26 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Mei Long - 15.88b
+#02 - Silentt Knightt - 14.74b
+#03 - Cap'n Rick Clusterbomb - 14.27b
+#04 - T-B0NE - 13.97b
+#05 - forsakenZen - 13.17b
+#06 - Massive Black - 11.68b
+#07 - Narcisse Nightmare - 11.34b
+#08 - Abaddon Nergal - 10.72b
+#09 - Gillion Wyrddych - 9.90b
+#10 - Glade Radner - 9.61b
+#11 - Al3x Oaks - 9.59b
+#12 - Au'Rel - 9.07b
+#13 - choo t - 8.58b
+#14 - Sabrez Haklar - 8.37b
+#15 - Rob Tsukaya - 7.81b
+#16 - Gareth Adoudel - 7.44b
+#17 - Nicholas Chance Kile - 7.09b
+#18 - NoGo Rose - 6.26b
+#19 - Jerythas - 6.24b
+#20 - Jenna Lost - 6.12b
+#21 - Mister McQueen - 6.10b
+#22 - Sveti Trgovacki - 6.03b
+#23 - inta Vakaria - 5.87b
+#24 - Alphecca Lazair - 5.83b
+#25 - Ransom Odunen - 5.82b

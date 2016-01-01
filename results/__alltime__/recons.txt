@@ -1,55 +1,55 @@
 Top Recon pilots - ships destroyed
 --------------------------------------------
-#01 - NoGo Rose - 143 ships
-#02 - Cap'n Rick Clusterbomb - 124 ships
+#01 - NoGo Rose - 147 ships
+#02 - Cap'n Rick Clusterbomb - 130 ships
 #03 - Saladiin - 99 ships
 #04 - Vothor - 59 ships
 #05 - Dakodai - 50 ships
 #06 - deklanmarshall7 - 40 ships
-#07 - Abaddon Nergal - 39 ships
-#08 - Zeke Airuta - 36 ships
-#09 - Trip Erata - 36 ships
-#10 - Orianna Okanata - 34 ships
-#11 - KageAkurei - 33 ships
-#12 - Artik Fawkes - 26 ships
-#13 - Aldore Udan - 25 ships
-#14 - Cynthera Noir - 24 ships
-#15 - Lainis Pootis - 23 ships
-#16 - Xee Yoona-451 - 22 ships
-#17 - Chance Ravinne - 18 ships
-#18 - Sabrez Haklar - 17 ships
-#19 - June Pyron - 16 ships
-#20 - Ransom Odunen - 14 ships
-#21 - Eridanii - 14 ships
-#22 - Bleda Katona - 14 ships
-#23 - Bustrr Bluth - 13 ships
-#24 - Docnagol - 13 ships
-#25 - Tali Lyrae - 10 ships
+#07 - Xee Yoona-451 - 39 ships
+#08 - Abaddon Nergal - 39 ships
+#09 - Zeke Airuta - 36 ships
+#10 - Trip Erata - 36 ships
+#11 - Orianna Okanata - 34 ships
+#12 - KageAkurei - 33 ships
+#13 - Artik Fawkes - 32 ships
+#14 - Eridanii - 32 ships
+#15 - brainwhacker - 30 ships
+#16 - Aldore Udan - 25 ships
+#17 - Cynthera Noir - 24 ships
+#18 - Sabrez Haklar - 24 ships
+#19 - Lainis Pootis - 23 ships
+#20 - Bustrr Bluth - 19 ships
+#21 - Ransom Odunen - 18 ships
+#22 - Chance Ravinne - 18 ships
+#23 - June Pyron - 16 ships
+#24 - Bleda Katona - 14 ships
+#25 - Norrin Zelkarr - 13 ships
 
 Top Recon pilots - ISK destroyed
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 27.26b
-#02 - NoGo Rose - 14.54b
+#01 - Cap'n Rick Clusterbomb - 30.80b
+#02 - NoGo Rose - 18.13b
 #03 - Abaddon Nergal - 10.76b
 #04 - Dakodai - 10.37b
 #05 - Trip Erata - 10.07b
 #06 - Orianna Okanata - 8.38b
 #07 - Vothor - 8.18b
-#08 - Sabrez Haklar - 6.30b
-#09 - deklanmarshall7 - 5.83b
-#10 - Saladiin - 5.64b
-#11 - Lainis Pootis - 5.50b
-#12 - KageAkurei - 5.20b
-#13 - Aldore Udan - 4.95b
-#14 - Artik Fawkes - 4.90b
-#15 - Zeke Airuta - 4.73b
-#16 - Xee Yoona-451 - 4.19b
-#17 - Eridanii - 3.02b
-#18 - Tali Lyrae - 2.39b
-#19 - Ransom Odunen - 2.25b
-#20 - Norrin Zelkarr - 2.15b
-#21 - Cynthera Noir - 2.02b
-#22 - Chance Ravinne - 1.90b
-#23 - Epoch Veli - 1.84b
-#24 - Docnagol - 1.68b
-#25 - Nyrram - 1.67b
+#08 - Sabrez Haklar - 6.77b
+#09 - Xee Yoona-451 - 6.71b
+#10 - deklanmarshall7 - 5.83b
+#11 - Saladiin - 5.64b
+#12 - Lainis Pootis - 5.50b
+#13 - KageAkurei - 5.20b
+#14 - Eridanii - 5.11b
+#15 - Artik Fawkes - 5.03b
+#16 - Aldore Udan - 4.95b
+#17 - Zeke Airuta - 4.73b
+#18 - Gillion Wyrddych - 2.87b
+#19 - Rebbeca Neresh - 2.76b
+#20 - Tali Lyrae - 2.39b
+#21 - Ransom Odunen - 2.36b
+#22 - Norrin Zelkarr - 2.22b
+#23 - Cynthera Noir - 2.02b
+#24 - Chance Ravinne - 1.90b
+#25 - T-B0NE - 1.89b

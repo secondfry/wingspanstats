@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 562 ships
+#02 - Nemesis - 488 ships
+#03 - Manticore - 402 ships
+#04 - Purifier - 240 ships
+#05 - Oracle - 124 ships
+#06 - Astero - 102 ships
+#07 - Pilgrim - 82 ships
+#08 - Hecate - 58 ships
+#09 - Dominix - 53 ships
+#10 - Hound - 50 ships
+#11 - Orthrus - 49 ships
+#12 - Proteus - 47 ships
+#13 - Loki - 43 ships
+#14 - Rapier - 34 ships
+#15 - Scythe Fleet Issue - 33 ships
+#16 - Sabre - 28 ships
+#17 - Phobos - 28 ships
+#18 - Ashimmu - 26 ships
+#19 - Svipul - 22 ships
+#20 - Magus - 20 ships
+#21 - Arazu - 14 ships
+#22 - Bifrost - 14 ships
+#23 - Eris - 14 ships
+#24 - Curse - 12 ships
+#25 - Flycatcher - 12 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 124.28b
+#02 - Nemesis - 71.28b
+#03 - Manticore - 67.90b
+#04 - Purifier - 41.44b
+#05 - Proteus - 18.01b
+#06 - Hound - 17.38b
+#07 - Pilgrim - 13.85b
+#08 - Guardian - 10.87b
+#09 - Orthrus - 8.09b
+#10 - Loki - 7.28b
+#11 - Astero - 6.21b
+#12 - Falcon - 5.44b
+#13 - Scythe Fleet Issue - 5.20b
+#14 - Magus - 4.71b
+#15 - Sabre - 4.05b
+#16 - Hecate - 3.74b
+#17 - Rapier - 3.29b
+#18 - Stork - 2.82b
+#19 - Oracle - 2.60b
+#20 - Thalia - 2.31b
+#21 - Phobos - 1.78b
+#22 - Flycatcher - 1.67b
+#23 - Curse - 1.48b
+#24 - Exequror Navy Issue - 1.30b
+#25 - Bifrost - 1.07b

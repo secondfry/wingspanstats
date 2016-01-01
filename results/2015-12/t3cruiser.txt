@@ -1,0 +1,29 @@
+Top T3 Cruiser pilots - ships destroyed
+--------------------------------------------
+#01 - Eridanii - 42 ships
+#02 - Massive Black - 21 ships
+#03 - Rob Tsukaya - 9 ships
+#04 - Sabrez Haklar - 7 ships
+#05 - Glade Radner - 6 ships
+#06 - Waaaaaagggh - 3 ships
+#07 - Gillion Wyrddych - 1 ships
+#08 - Wee Lad - 1 ships
+#09 - Bustrr Bluth - 1 ships
+#10 - Banshee Legend - 1 ships
+#11 - Flaya Noong - 1 ships
+#12 - Narcisse Nightmare - 1 ships
+
+Top T3 Cruiser pilots - ISK destroyed
+--------------------------------------------
+#01 - Massive Black - 7.69b
+#02 - Sabrez Haklar - 5.80b
+#03 - Rob Tsukaya - 4.26b
+#04 - Glade Radner - 3.30b
+#05 - Eridanii - 2.19b
+#06 - Waaaaaagggh - 1.72b
+#07 - Wee Lad - 0.35b
+#08 - Gillion Wyrddych - 0.33b
+#09 - Narcisse Nightmare - 0.33b
+#10 - Banshee Legend - 0.23b
+#11 - Flaya Noong - 0.13b
+#12 - Bustrr Bluth - 0.01b

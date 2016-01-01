@@ -1,55 +1,55 @@
 Top Stratios pilots - ships destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 325 ships
-#02 - Glade Radner - 249 ships
-#03 - Cap'n Rick Clusterbomb - 166 ships
-#04 - Dakodai - 156 ships
-#05 - WeirdBall - 150 ships
-#06 - Gillion Wyrddych - 147 ships
-#07 - Rob Tsukaya - 143 ships
-#08 - Saria Dehmov - 137 ships
-#09 - NovaMoon Enaka - 125 ships
-#10 - Tali Lyrae - 105 ships
-#11 - togi yuki - 96 ships
-#12 - Caboosette - 94 ships
-#13 - Ransom Odunen - 90 ships
-#14 - Touretes - 88 ships
-#15 - inta Vakaria - 76 ships
-#16 - Amaru Skye - 75 ships
-#17 - Chance Ravinne - 72 ships
-#18 - Banshee Legend - 72 ships
-#19 - Lainis Pootis - 57 ships
-#20 - Dakota Frost - 53 ships
-#21 - Sabrez Haklar - 50 ships
-#22 - Vince Condor - 48 ships
-#23 - lashana darkmoon - 47 ships
-#24 - M104 - 46 ships
-#25 - Narcisse Nightmare - 41 ships
+#01 - Valtyr Farshield - 336 ships
+#02 - Glade Radner - 270 ships
+#03 - Cap'n Rick Clusterbomb - 185 ships
+#04 - Gillion Wyrddych - 163 ships
+#05 - Rob Tsukaya - 161 ships
+#06 - Dakodai - 157 ships
+#07 - Caboosette - 153 ships
+#08 - WeirdBall - 150 ships
+#09 - Saria Dehmov - 138 ships
+#10 - NovaMoon Enaka - 125 ships
+#11 - Alphecca Lazair - 117 ships
+#12 - Touretes - 117 ships
+#13 - Tali Lyrae - 105 ships
+#14 - Banshee Legend - 98 ships
+#15 - Ransom Odunen - 96 ships
+#16 - togi yuki - 96 ships
+#17 - inta Vakaria - 81 ships
+#18 - Amaru Skye - 75 ships
+#19 - Chance Ravinne - 72 ships
+#20 - Narcisse Nightmare - 61 ships
+#21 - Lainis Pootis - 59 ships
+#22 - Dakota Frost - 53 ships
+#23 - Sabrez Haklar - 52 ships
+#24 - Vince Condor - 48 ships
+#25 - lashana darkmoon - 47 ships
 
 Top Stratios pilots - ISK destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 89.74b
-#02 - Glade Radner - 64.86b
-#03 - Cap'n Rick Clusterbomb - 44.95b
-#04 - WeirdBall - 32.30b
-#05 - Rob Tsukaya - 30.41b
-#06 - Tali Lyrae - 23.10b
-#07 - NovaMoon Enaka - 22.41b
-#08 - Gillion Wyrddych - 21.09b
-#09 - Caboosette - 20.61b
-#10 - Dakodai - 18.81b
-#11 - Banshee Legend - 18.59b
-#12 - Saria Dehmov - 16.45b
-#13 - Amaru Skye - 16.11b
-#14 - togi yuki - 14.90b
-#15 - Vince Condor - 13.73b
-#16 - Ransom Odunen - 13.04b
-#17 - Orianna Okanata - 12.40b
-#18 - Touretes - 11.61b
-#19 - lashana darkmoon - 8.21b
-#20 - Chance Ravinne - 8.12b
-#21 - Dakota Frost - 7.94b
-#22 - inta Vakaria - 7.67b
-#23 - Lainis Pootis - 7.13b
-#24 - Paddy McDaddy - 6.95b
-#25 - NoGo Rose - 6.60b
+#01 - Valtyr Farshield - 91.66b
+#02 - Glade Radner - 71.51b
+#03 - Cap'n Rick Clusterbomb - 50.87b
+#04 - Rob Tsukaya - 33.01b
+#05 - WeirdBall - 32.30b
+#06 - Gillion Wyrddych - 27.51b
+#07 - Tali Lyrae - 23.10b
+#08 - NovaMoon Enaka - 22.41b
+#09 - Dakodai - 20.92b
+#10 - Caboosette - 20.80b
+#11 - Banshee Legend - 19.39b
+#12 - Ransom Odunen - 18.71b
+#13 - Saria Dehmov - 17.69b
+#14 - Amaru Skye - 16.11b
+#15 - togi yuki - 14.90b
+#16 - Touretes - 14.76b
+#17 - Vince Condor - 13.73b
+#18 - Orianna Okanata - 12.40b
+#19 - Mei Long - 11.90b
+#20 - Alphecca Lazair - 10.95b
+#21 - inta Vakaria - 10.33b
+#22 - Narcisse Nightmare - 9.96b
+#23 - Abaddon Nergal - 8.94b
+#24 - lashana darkmoon - 8.21b
+#25 - Chance Ravinne - 8.12b
