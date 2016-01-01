@@ -3,6 +3,7 @@
 
 import os
 import json
+import argparse
 
 from rules.statsconfig import StatsConfig
 from rules.generalstats import GeneralStats
@@ -73,7 +74,7 @@ def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awo
                     for rule in rules_monthly:
                         rule.process_km(killmail)
 
-def analyze_data(db_list):
+def analyze_data(db_list, output):
     rules_alltime = defined_rules()
     awox_alltime = Awox()
 
@@ -96,15 +97,19 @@ def analyze_data(db_list):
                     break
 
             for rule in rules_monthly:
-                rule.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}".format(year, month)))
-            awox_monthly.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}".format(year, month)))
+                rule.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}".format(year, month)), output)
+            awox_monthly.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}".format(year, month)), output)
 
     for rule in rules_alltime:
-        rule.output_results(os.path.join(StatsConfig.RESULTS_PATH, '__alltime__'))
-    awox_alltime.output_results(os.path.join(StatsConfig.RESULTS_PATH, '__alltime__'))
+        rule.output_results(os.path.join(StatsConfig.RESULTS_PATH, '__alltime__'), output)
+    awox_alltime.output_results(os.path.join(StatsConfig.RESULTS_PATH, '__alltime__'), output)
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Generates statistics for Wingspan alliance.')
+    parser.add_argument('--output', choices=['html', 'text'], help='choose between html or text output', default='txt')
+    args = parser.parse_args()
+
     analyze_data([
         (2014, 7),
         (2014, 8),
@@ -124,7 +129,7 @@ def main():
         (2015, 10),
         (2015, 11),
         (2015, 12),
-    ])
+    ], args.output)
 
 if __name__ == "__main__":
     main()
