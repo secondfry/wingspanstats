@@ -44,9 +44,8 @@ class Astero(Skeleton):
 
     def html(self):
         # Preprocess
-        import operator
-        self.agent_ships_destroyed = sorted(self.agent_ships_destroyed.items(), key=operator.itemgetter(1), reverse=True)
-        self.agent_isk_destroyed   = sorted(self.agent_isk_destroyed.items(),   key=operator.itemgetter(1), reverse=True)
+        self.agent_ships_destroyed = sorted(self.agent_ships_destroyed.items(), key=lambda k: k[1], reverse=True)
+        self.agent_isk_destroyed   = sorted(self.agent_isk_destroyed.items(),   key=lambda k: k[1], reverse=True)
 
         # Output
         output = "<div class=\"container\">"
@@ -63,7 +62,7 @@ class Astero(Skeleton):
 
         # Next places as list
         output += "<div class=\"row\"><div class=\"col-xs-12\"><ol start=\"4\">"
-        for idx,w in enumerate(self.agent_ships_destroyed[3:], start=4):
+        for idx,w in enumerate(self.agent_ships_destroyed[3:StatsConfig.MAX_PLACES], start=4):
             output += "<li><a href=\"https://zkillboard.com/character/" + str(self.agent_name_id[w[0]]) + "/\">" + w[0] + "</a> - " + str(w[1]) + " ships</li>"
         output += "</ol>"
 
@@ -79,7 +78,7 @@ class Astero(Skeleton):
 
         # Next places as list
         output += "<div class=\"row\"><div class=\"col-xs-12\"><ol start=\"4\">"
-        for idx,w in enumerate(self.agent_isk_destroyed[3:], start=4):
+        for idx,w in enumerate(self.agent_isk_destroyed[3:StatsConfig.MAX_PLACES], start=4):
             output += "<li><a href=\"https://zkillboard.com/character/" + str(self.agent_name_id[w[0]]) + "/\">" + w[0] + "</a> - " + "{:.2f}b".format(w[1] / 1000000000.0) + " ISK</li>"
         output += "</ol>"
 

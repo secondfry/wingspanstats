@@ -1,27 +1,27 @@
-Most valueable kills
+Most valuable kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/42179508/ - 2.28b
-#02 - https://zkillboard.com/kill/42179438/ - 1.39b
-#03 - https://zkillboard.com/kill/42179519/ - 1.36b
-#04 - https://zkillboard.com/kill/42179459/ - 0.65b
-#05 - https://zkillboard.com/kill/42179478/ - 0.60b
-#06 - https://zkillboard.com/kill/42382742/ - 0.34b
-#07 - https://zkillboard.com/kill/42451659/ - 0.32b
-#08 - https://zkillboard.com/kill/42275592/ - 0.31b
-#09 - https://zkillboard.com/kill/42410266/ - 0.29b
-#10 - https://zkillboard.com/kill/42638828/ - 0.22b
-#11 - https://zkillboard.com/kill/42661576/ - 0.20b
-#12 - https://zkillboard.com/kill/42667413/ - 0.19b
-#13 - https://zkillboard.com/kill/42132001/ - 0.14b
-#14 - https://zkillboard.com/kill/42389364/ - 0.13b
-#15 - https://zkillboard.com/kill/42275586/ - 0.13b
-#16 - https://zkillboard.com/kill/42449218/ - 0.13b
-#17 - https://zkillboard.com/kill/42179554/ - 0.12b
-#18 - https://zkillboard.com/kill/42296758/ - 0.12b
-#19 - https://zkillboard.com/kill/42546854/ - 0.12b
-#20 - https://zkillboard.com/kill/42408150/ - 0.11b
-#21 - https://zkillboard.com/kill/42522289/ - 0.10b
-#22 - https://zkillboard.com/kill/42293311/ - 0.10b
-#23 - https://zkillboard.com/kill/42763660/ - 0.09b
-#24 - https://zkillboard.com/kill/42301141/ - 0.09b
-#25 - https://zkillboard.com/kill/42407344/ - 0.09b
+#01 - https://zkillboard.com/kill/42179508/ - Ship Maintenance Array - 2.28b ISK
+#02 - https://zkillboard.com/kill/42179438/ - Ship Maintenance Array - 1.39b ISK
+#03 - https://zkillboard.com/kill/42179519/ - Ship Maintenance Array - 1.36b ISK
+#04 - https://zkillboard.com/kill/42179459/ - Ship Maintenance Array - 0.65b ISK
+#05 - https://zkillboard.com/kill/42179478/ - Ship Maintenance Array - 0.60b ISK
+#06 - https://zkillboard.com/kill/42382742/ - Astero - 0.34b ISK
+#07 - https://zkillboard.com/kill/42451659/ - Noctis - 0.32b ISK
+#08 - https://zkillboard.com/kill/42275592/ - Capsule - 0.31b ISK
+#09 - https://zkillboard.com/kill/42410266/ - Nighthawk - 0.29b ISK
+#10 - https://zkillboard.com/kill/42638828/ - Capsule - 0.22b ISK
+#11 - https://zkillboard.com/kill/42661576/ - Cerberus - 0.20b ISK
+#12 - https://zkillboard.com/kill/42667413/ - Tempest - 0.19b ISK
+#13 - https://zkillboard.com/kill/42132001/ - Noctis - 0.14b ISK
+#14 - https://zkillboard.com/kill/42389364/ - Epithal - 0.13b ISK
+#15 - https://zkillboard.com/kill/42275586/ - Astero - 0.13b ISK
+#16 - https://zkillboard.com/kill/42449218/ - Viator - 0.13b ISK
+#17 - https://zkillboard.com/kill/42179554/ - Capital Ship Assembly Array - 0.12b ISK
+#18 - https://zkillboard.com/kill/42296758/ - Astero - 0.12b ISK
+#19 - https://zkillboard.com/kill/42546854/ - Harbinger - 0.12b ISK
+#20 - https://zkillboard.com/kill/42408150/ - Garmur - 0.11b ISK
+#21 - https://zkillboard.com/kill/42522289/ - Capsule - 0.10b ISK
+#22 - https://zkillboard.com/kill/42293311/ - Capsule - 0.10b ISK
+#23 - https://zkillboard.com/kill/42763660/ - Oracle - 0.09b ISK
+#24 - https://zkillboard.com/kill/42301141/ - Sukuuvestaa Heron - 0.09b ISK
+#25 - https://zkillboard.com/kill/42407344/ - Noctis - 0.09b ISK

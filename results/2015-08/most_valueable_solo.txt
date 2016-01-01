@@ -1,27 +1,27 @@
-Most valueable solo kills
+Most valuable solo kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/48675320/ - Valtyr Farshield - 4.86b
-#02 - https://zkillboard.com/kill/48402752/ - NovaMoon Enaka - 3.47b
-#03 - https://zkillboard.com/kill/48402727/ - NovaMoon Enaka - 1.89b
-#04 - https://zkillboard.com/kill/48299257/ - Orianna Okanata - 1.14b
-#05 - https://zkillboard.com/kill/48272379/ - Dakodai - 1.03b
-#06 - https://zkillboard.com/kill/48225731/ - Damien Oxytocin - 0.85b
-#07 - https://zkillboard.com/kill/48792535/ - Merlin Avalon - 0.84b
-#08 - https://zkillboard.com/kill/48230412/ - Valtyr Farshield - 0.79b
-#09 - https://zkillboard.com/kill/48599329/ - Valtyr Farshield - 0.73b
-#10 - https://zkillboard.com/kill/48206981/ - Nathaniel HeiFlieger - 0.62b
-#11 - https://zkillboard.com/kill/48312756/ - Cap'n Rick Clusterbomb - 0.51b
-#12 - https://zkillboard.com/kill/48610097/ - Orianna Okanata - 0.50b
-#13 - https://zkillboard.com/kill/48440281/ - Mister McQueen - 0.50b
-#14 - https://zkillboard.com/kill/48220951/ - Damien Oxytocin - 0.33b
-#15 - https://zkillboard.com/kill/48247788/ - Damien Oxytocin - 0.33b
-#16 - https://zkillboard.com/kill/48609222/ - Saria Dehmov - 0.29b
-#17 - https://zkillboard.com/kill/48481349/ - Jenna Lost - 0.28b
-#18 - https://zkillboard.com/kill/48299507/ - Orianna Okanata - 0.27b
-#19 - https://zkillboard.com/kill/48680301/ - WeirdBall - 0.26b
-#20 - https://zkillboard.com/kill/48204426/ - Nathaniel HeiFlieger - 0.25b
-#21 - https://zkillboard.com/kill/48732359/ - WeirdBall - 0.23b
-#22 - https://zkillboard.com/kill/48229661/ - Damien Oxytocin - 0.23b
-#23 - https://zkillboard.com/kill/48266531/ - Saria Dehmov - 0.22b
-#24 - https://zkillboard.com/kill/48775721/ - Hateful Heart - 0.22b
-#25 - https://zkillboard.com/kill/48357246/ - Saria Dehmov - 0.22b
+#01 - https://zkillboard.com/kill/48675320/ - Legion - Valtyr Farshield - 4.86b ISK
+#02 - https://zkillboard.com/kill/48402752/ - Ship Maintenance Array - NovaMoon Enaka - 3.47b ISK
+#03 - https://zkillboard.com/kill/48402727/ - Ship Maintenance Array - NovaMoon Enaka - 1.89b ISK
+#04 - https://zkillboard.com/kill/48299257/ - Ishtar - Orianna Okanata - 1.14b ISK
+#05 - https://zkillboard.com/kill/48272379/ - Legion - Dakodai - 1.03b ISK
+#06 - https://zkillboard.com/kill/48225731/ - Ishtar - Damien Oxytocin - 0.85b ISK
+#07 - https://zkillboard.com/kill/48792535/ - Capsule - Merlin Avalon - 0.84b ISK
+#08 - https://zkillboard.com/kill/48230412/ - Tengu - Valtyr Farshield - 0.79b ISK
+#09 - https://zkillboard.com/kill/48599329/ - Orca - Valtyr Farshield - 0.73b ISK
+#10 - https://zkillboard.com/kill/48206981/ - Apocalypse Navy Issue - Nathaniel HeiFlieger - 0.62b ISK
+#11 - https://zkillboard.com/kill/48312756/ - Gila - Cap'n Rick Clusterbomb - 0.51b ISK
+#12 - https://zkillboard.com/kill/48610097/ - Capsule - Orianna Okanata - 0.50b ISK
+#13 - https://zkillboard.com/kill/48440281/ - Capsule - Mister McQueen - 0.50b ISK
+#14 - https://zkillboard.com/kill/48220951/ - Ishtar - Damien Oxytocin - 0.33b ISK
+#15 - https://zkillboard.com/kill/48247788/ - Ishtar - Damien Oxytocin - 0.33b ISK
+#16 - https://zkillboard.com/kill/48609222/ - Gila - Saria Dehmov - 0.29b ISK
+#17 - https://zkillboard.com/kill/48481349/ - Stratios - Jenna Lost - 0.28b ISK
+#18 - https://zkillboard.com/kill/48299507/ - Mobile Tractor Unit - Orianna Okanata - 0.27b ISK
+#19 - https://zkillboard.com/kill/48680301/ - Drake Navy Issue - WeirdBall - 0.26b ISK
+#20 - https://zkillboard.com/kill/48204426/ - Hulk - Nathaniel HeiFlieger - 0.25b ISK
+#21 - https://zkillboard.com/kill/48732359/ - Svipul - WeirdBall - 0.23b ISK
+#22 - https://zkillboard.com/kill/48229661/ - Ishtar - Damien Oxytocin - 0.23b ISK
+#23 - https://zkillboard.com/kill/48266531/ - Ishtar - Saria Dehmov - 0.22b ISK
+#24 - https://zkillboard.com/kill/48775721/ - Algos - Hateful Heart - 0.22b ISK
+#25 - https://zkillboard.com/kill/48357246/ - Mackinaw - Saria Dehmov - 0.22b ISK

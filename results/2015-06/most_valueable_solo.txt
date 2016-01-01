@@ -1,27 +1,27 @@
-Most valueable solo kills
+Most valuable solo kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/47069570/ - Alt Sokarad - 0.76b
-#02 - https://zkillboard.com/kill/47378371/ - Valtyr Farshield - 0.40b
-#03 - https://zkillboard.com/kill/47400027/ - Zappity - 0.32b
-#04 - https://zkillboard.com/kill/47226160/ - Jedi VanDiemen - 0.29b
-#05 - https://zkillboard.com/kill/47146956/ - Bierrt - 0.27b
-#06 - https://zkillboard.com/kill/47377921/ - Valtyr Farshield - 0.27b
-#07 - https://zkillboard.com/kill/47480363/ - Dakodai - 0.25b
-#08 - https://zkillboard.com/kill/47192858/ - Jake Lanks - 0.23b
-#09 - https://zkillboard.com/kill/47203987/ - Cynthera Noir - 0.23b
-#10 - https://zkillboard.com/kill/47488236/ - M104 - 0.23b
-#11 - https://zkillboard.com/kill/47484482/ - M104 - 0.21b
-#12 - https://zkillboard.com/kill/47399652/ - Zappity - 0.19b
-#13 - https://zkillboard.com/kill/47023592/ - Miner Goth - 0.19b
-#14 - https://zkillboard.com/kill/47004662/ - Valtyr Farshield - 0.18b
-#15 - https://zkillboard.com/kill/47261994/ - Try2CatchMe ActEstFabula - 0.17b
-#16 - https://zkillboard.com/kill/47150426/ - Dakodai - 0.17b
-#17 - https://zkillboard.com/kill/47294928/ - Damien Oxytocin - 0.16b
-#18 - https://zkillboard.com/kill/47023454/ - Narcisse Nightmare - 0.14b
-#19 - https://zkillboard.com/kill/47069564/ - Alt Sokarad - 0.13b
-#20 - https://zkillboard.com/kill/47146915/ - Bierrt - 0.13b
-#21 - https://zkillboard.com/kill/47428246/ - Revan Wake - 0.13b
-#22 - https://zkillboard.com/kill/47099229/ - Valtyr Farshield - 0.12b
-#23 - https://zkillboard.com/kill/47357123/ - Valtyr Farshield - 0.12b
-#24 - https://zkillboard.com/kill/47356636/ - Valtyr Farshield - 0.11b
-#25 - https://zkillboard.com/kill/47223124/ - Damien Oxytocin - 0.11b
+#01 - https://zkillboard.com/kill/47069570/ - Capsule - Alt Sokarad - 0.76b ISK
+#02 - https://zkillboard.com/kill/47378371/ - Iteron Mark V - Valtyr Farshield - 0.40b ISK
+#03 - https://zkillboard.com/kill/47400027/ - Gila - Zappity - 0.32b ISK
+#04 - https://zkillboard.com/kill/47226160/ - Mackinaw - Jedi VanDiemen - 0.29b ISK
+#05 - https://zkillboard.com/kill/47146956/ - Stratios - Bierrt - 0.27b ISK
+#06 - https://zkillboard.com/kill/47377921/ - Iteron Mark V - Valtyr Farshield - 0.27b ISK
+#07 - https://zkillboard.com/kill/47480363/ - Hyperion - Dakodai - 0.25b ISK
+#08 - https://zkillboard.com/kill/47192858/ - Impairor - Jake Lanks - 0.23b ISK
+#09 - https://zkillboard.com/kill/47203987/ - Capsule - Cynthera Noir - 0.23b ISK
+#10 - https://zkillboard.com/kill/47488236/ - Raven - M104 - 0.23b ISK
+#11 - https://zkillboard.com/kill/47484482/ - Raven - M104 - 0.21b ISK
+#12 - https://zkillboard.com/kill/47399652/ - Ishtar - Zappity - 0.19b ISK
+#13 - https://zkillboard.com/kill/47023592/ - Ishtar - Miner Goth - 0.19b ISK
+#14 - https://zkillboard.com/kill/47004662/ - Skiff - Valtyr Farshield - 0.18b ISK
+#15 - https://zkillboard.com/kill/47261994/ - Astero - Try2CatchMe ActEstFabula - 0.17b ISK
+#16 - https://zkillboard.com/kill/47150426/ - Mastodon - Dakodai - 0.17b ISK
+#17 - https://zkillboard.com/kill/47294928/ - Astero - Damien Oxytocin - 0.16b ISK
+#18 - https://zkillboard.com/kill/47023454/ - Astero - Narcisse Nightmare - 0.14b ISK
+#19 - https://zkillboard.com/kill/47069564/ - Noctis - Alt Sokarad - 0.13b ISK
+#20 - https://zkillboard.com/kill/47146915/ - Capsule - Bierrt - 0.13b ISK
+#21 - https://zkillboard.com/kill/47428246/ - Astero - Revan Wake - 0.13b ISK
+#22 - https://zkillboard.com/kill/47099229/ - Prowler - Valtyr Farshield - 0.12b ISK
+#23 - https://zkillboard.com/kill/47357123/ - Iteron Mark V - Valtyr Farshield - 0.12b ISK
+#24 - https://zkillboard.com/kill/47356636/ - Iteron Mark V - Valtyr Farshield - 0.11b ISK
+#25 - https://zkillboard.com/kill/47223124/ - Astero - Damien Oxytocin - 0.11b ISK

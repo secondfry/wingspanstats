@@ -1,27 +1,27 @@
-Most valueable kills
+Most valuable kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/47657630/ - 15.50b
-#02 - https://zkillboard.com/kill/47657609/ - 3.15b
-#03 - https://zkillboard.com/kill/47831287/ - 2.71b
-#04 - https://zkillboard.com/kill/47657653/ - 2.42b
-#05 - https://zkillboard.com/kill/48072694/ - 1.87b
-#06 - https://zkillboard.com/kill/48086840/ - 1.54b
-#07 - https://zkillboard.com/kill/47630866/ - 1.49b
-#08 - https://zkillboard.com/kill/48185718/ - 1.44b
-#09 - https://zkillboard.com/kill/47809454/ - 1.32b
-#10 - https://zkillboard.com/kill/47779961/ - 1.27b
-#11 - https://zkillboard.com/kill/47872445/ - 1.21b
-#12 - https://zkillboard.com/kill/47779972/ - 0.97b
-#13 - https://zkillboard.com/kill/47916902/ - 0.94b
-#14 - https://zkillboard.com/kill/47772429/ - 0.82b
-#15 - https://zkillboard.com/kill/47851108/ - 0.76b
-#16 - https://zkillboard.com/kill/48185723/ - 0.76b
-#17 - https://zkillboard.com/kill/47984509/ - 0.75b
-#18 - https://zkillboard.com/kill/48004741/ - 0.74b
-#19 - https://zkillboard.com/kill/47630840/ - 0.71b
-#20 - https://zkillboard.com/kill/47811478/ - 0.71b
-#21 - https://zkillboard.com/kill/48163775/ - 0.68b
-#22 - https://zkillboard.com/kill/47624219/ - 0.63b
-#23 - https://zkillboard.com/kill/48163789/ - 0.62b
-#24 - https://zkillboard.com/kill/48122686/ - 0.60b
-#25 - https://zkillboard.com/kill/47900418/ - 0.59b
+#01 - https://zkillboard.com/kill/47657630/ - Ship Maintenance Array - 15.50b ISK
+#02 - https://zkillboard.com/kill/47657609/ - Ship Maintenance Array - 3.15b ISK
+#03 - https://zkillboard.com/kill/47831287/ - Fenrir - 2.71b ISK
+#04 - https://zkillboard.com/kill/47657653/ - Ship Maintenance Array - 2.42b ISK
+#05 - https://zkillboard.com/kill/48072694/ - Rattlesnake - 1.87b ISK
+#06 - https://zkillboard.com/kill/48086840/ - Tengu - 1.54b ISK
+#07 - https://zkillboard.com/kill/47630866/ - Sleipnir - 1.49b ISK
+#08 - https://zkillboard.com/kill/48185718/ - Paladin - 1.44b ISK
+#09 - https://zkillboard.com/kill/47809454/ - Paladin - 1.32b ISK
+#10 - https://zkillboard.com/kill/47779961/ - Tengu - 1.27b ISK
+#11 - https://zkillboard.com/kill/47872445/ - Legion - 1.21b ISK
+#12 - https://zkillboard.com/kill/47779972/ - Scorpion Navy Issue - 0.97b ISK
+#13 - https://zkillboard.com/kill/47916902/ - Tengu - 0.94b ISK
+#14 - https://zkillboard.com/kill/47772429/ - Ship Maintenance Array - 0.82b ISK
+#15 - https://zkillboard.com/kill/47851108/ - Stratios - 0.76b ISK
+#16 - https://zkillboard.com/kill/48185723/ - Capsule - 0.76b ISK
+#17 - https://zkillboard.com/kill/47984509/ - Ishtar - 0.75b ISK
+#18 - https://zkillboard.com/kill/48004741/ - Stratios - 0.74b ISK
+#19 - https://zkillboard.com/kill/47630840/ - Loki - 0.71b ISK
+#20 - https://zkillboard.com/kill/47811478/ - Typhoon Fleet Issue - 0.71b ISK
+#21 - https://zkillboard.com/kill/48163775/ - Legion - 0.68b ISK
+#22 - https://zkillboard.com/kill/47624219/ - Capsule - 0.63b ISK
+#23 - https://zkillboard.com/kill/48163789/ - Loki - 0.62b ISK
+#24 - https://zkillboard.com/kill/48122686/ - Maelstrom - 0.60b ISK
+#25 - https://zkillboard.com/kill/47900418/ - Stratios - 0.59b ISK

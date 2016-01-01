@@ -1,27 +1,27 @@
-Most valueable kills
+Most valuable kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/45955236/ - 5.21b
-#02 - https://zkillboard.com/kill/46330219/ - 2.91b
-#03 - https://zkillboard.com/kill/46217747/ - 1.86b
-#04 - https://zkillboard.com/kill/45654566/ - 1.59b
-#05 - https://zkillboard.com/kill/46147903/ - 1.36b
-#06 - https://zkillboard.com/kill/45986444/ - 1.04b
-#07 - https://zkillboard.com/kill/45935978/ - 1.03b
-#08 - https://zkillboard.com/kill/46119164/ - 0.96b
-#09 - https://zkillboard.com/kill/46287217/ - 0.94b
-#10 - https://zkillboard.com/kill/46051393/ - 0.89b
-#11 - https://zkillboard.com/kill/45955268/ - 0.88b
-#12 - https://zkillboard.com/kill/45689438/ - 0.78b
-#13 - https://zkillboard.com/kill/45656071/ - 0.75b
-#14 - https://zkillboard.com/kill/46231616/ - 0.72b
-#15 - https://zkillboard.com/kill/46181696/ - 0.72b
-#16 - https://zkillboard.com/kill/46210281/ - 0.69b
-#17 - https://zkillboard.com/kill/46217832/ - 0.61b
-#18 - https://zkillboard.com/kill/45655591/ - 0.60b
-#19 - https://zkillboard.com/kill/45819924/ - 0.59b
-#20 - https://zkillboard.com/kill/45816164/ - 0.56b
-#21 - https://zkillboard.com/kill/46076884/ - 0.56b
-#22 - https://zkillboard.com/kill/46066630/ - 0.52b
-#23 - https://zkillboard.com/kill/46171310/ - 0.50b
-#24 - https://zkillboard.com/kill/45654755/ - 0.50b
-#25 - https://zkillboard.com/kill/45955163/ - 0.49b
+#01 - https://zkillboard.com/kill/45955236/ - Ship Maintenance Array - 5.21b ISK
+#02 - https://zkillboard.com/kill/46330219/ - Kronos - 2.91b ISK
+#03 - https://zkillboard.com/kill/46217747/ - Nestor - 1.86b ISK
+#04 - https://zkillboard.com/kill/45654566/ - Nestor - 1.59b ISK
+#05 - https://zkillboard.com/kill/46147903/ - Orca - 1.36b ISK
+#06 - https://zkillboard.com/kill/45986444/ - Rattlesnake - 1.04b ISK
+#07 - https://zkillboard.com/kill/45935978/ - Gila - 1.03b ISK
+#08 - https://zkillboard.com/kill/46119164/ - Capsule - Genolution 'Auroral' 197-variant - 0.96b ISK
+#09 - https://zkillboard.com/kill/46287217/ - Capsule - 0.94b ISK
+#10 - https://zkillboard.com/kill/46051393/ - Tengu - 0.89b ISK
+#11 - https://zkillboard.com/kill/45955268/ - Ship Maintenance Array - 0.88b ISK
+#12 - https://zkillboard.com/kill/45689438/ - Stratios - 0.78b ISK
+#13 - https://zkillboard.com/kill/45656071/ - Rattlesnake - 0.75b ISK
+#14 - https://zkillboard.com/kill/46231616/ - Federation Navy Comet - 0.72b ISK
+#15 - https://zkillboard.com/kill/46181696/ - Proteus - 0.72b ISK
+#16 - https://zkillboard.com/kill/46210281/ - Legion - 0.69b ISK
+#17 - https://zkillboard.com/kill/46217832/ - Mobile Tractor Unit - 0.61b ISK
+#18 - https://zkillboard.com/kill/45655591/ - Scorpion Navy Issue - 0.60b ISK
+#19 - https://zkillboard.com/kill/45819924/ - Tengu - 0.59b ISK
+#20 - https://zkillboard.com/kill/45816164/ - Impel - 0.56b ISK
+#21 - https://zkillboard.com/kill/46076884/ - Loki - 0.56b ISK
+#22 - https://zkillboard.com/kill/46066630/ - Rattlesnake - 0.52b ISK
+#23 - https://zkillboard.com/kill/46171310/ - Stratios - 0.50b ISK
+#24 - https://zkillboard.com/kill/45654755/ - Stratios - 0.50b ISK
+#25 - https://zkillboard.com/kill/45955163/ - Occator - 0.49b ISK

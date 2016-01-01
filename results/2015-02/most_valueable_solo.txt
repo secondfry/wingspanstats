@@ -1,27 +1,27 @@
-Most valueable solo kills
+Most valuable solo kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/44552022/ - Rogue Seven - 0.43b
-#02 - https://zkillboard.com/kill/44393583/ - FreeBird87 - 0.42b
-#03 - https://zkillboard.com/kill/44374427/ - inta Vakaria - 0.38b
-#04 - https://zkillboard.com/kill/44763412/ - Damien Oxytocin - 0.32b
-#05 - https://zkillboard.com/kill/44777802/ - Dakodai - 0.23b
-#06 - https://zkillboard.com/kill/44703478/ - Gigi McQuaid - 0.22b
-#07 - https://zkillboard.com/kill/44455704/ - Saria Dehmov - 0.19b
-#08 - https://zkillboard.com/kill/44349376/ - Tali Lyrae - 0.17b
-#09 - https://zkillboard.com/kill/44508645/ - Damien Oxytocin - 0.16b
-#10 - https://zkillboard.com/kill/44617416/ - Allbur Chellak - 0.15b
-#11 - https://zkillboard.com/kill/44555023/ - Vargo Shahni - 0.15b
-#12 - https://zkillboard.com/kill/44382642/ - FreeBird87 - 0.12b
-#13 - https://zkillboard.com/kill/44624353/ - SNivle Madeveda - 0.11b
-#14 - https://zkillboard.com/kill/44733288/ - Dakodai - 0.11b
-#15 - https://zkillboard.com/kill/44406983/ - Damien Oxytocin - 0.11b
-#16 - https://zkillboard.com/kill/44486849/ - Verak Padecain - 0.10b
-#17 - https://zkillboard.com/kill/44309811/ - technomage Adoulin - 0.10b
-#18 - https://zkillboard.com/kill/44896633/ - Alice Anneto - 0.09b
-#19 - https://zkillboard.com/kill/44574118/ - Banshee Legend - 0.09b
-#20 - https://zkillboard.com/kill/44326622/ - Docnagol - 0.09b
-#21 - https://zkillboard.com/kill/44329904/ - Vargo Shahni - 0.09b
-#22 - https://zkillboard.com/kill/44494555/ - Damien Oxytocin - 0.09b
-#23 - https://zkillboard.com/kill/44598742/ - Vargo Shahni - 0.08b
-#24 - https://zkillboard.com/kill/44364124/ - Allbur Chellak - 0.08b
-#25 - https://zkillboard.com/kill/44898891/ - Valtyr Farshield - 0.08b
+#01 - https://zkillboard.com/kill/44552022/ - Stratios - Rogue Seven - 0.43b ISK
+#02 - https://zkillboard.com/kill/44393583/ - Stratios - FreeBird87 - 0.42b ISK
+#03 - https://zkillboard.com/kill/44374427/ - Tayra - inta Vakaria - 0.38b ISK
+#04 - https://zkillboard.com/kill/44763412/ - Astero - Damien Oxytocin - 0.32b ISK
+#05 - https://zkillboard.com/kill/44777802/ - Abaddon - Dakodai - 0.23b ISK
+#06 - https://zkillboard.com/kill/44703478/ - Iteron Mark V - Gigi McQuaid - 0.22b ISK
+#07 - https://zkillboard.com/kill/44455704/ - Caldari Shuttle - Saria Dehmov - 0.19b ISK
+#08 - https://zkillboard.com/kill/44349376/ - Capsule - Tali Lyrae - 0.17b ISK
+#09 - https://zkillboard.com/kill/44508645/ - Astero - Damien Oxytocin - 0.16b ISK
+#10 - https://zkillboard.com/kill/44617416/ - Astero - Allbur Chellak - 0.15b ISK
+#11 - https://zkillboard.com/kill/44555023/ - Stiletto - Vargo Shahni - 0.15b ISK
+#12 - https://zkillboard.com/kill/44382642/ - Astero - FreeBird87 - 0.12b ISK
+#13 - https://zkillboard.com/kill/44624353/ - Buzzard - SNivle Madeveda - 0.11b ISK
+#14 - https://zkillboard.com/kill/44733288/ - Astero - Dakodai - 0.11b ISK
+#15 - https://zkillboard.com/kill/44406983/ - Astero - Damien Oxytocin - 0.11b ISK
+#16 - https://zkillboard.com/kill/44486849/ - Oracle - Verak Padecain - 0.10b ISK
+#17 - https://zkillboard.com/kill/44309811/ - Nemesis - technomage Adoulin - 0.10b ISK
+#18 - https://zkillboard.com/kill/44896633/ - Noctis - Alice Anneto - 0.09b ISK
+#19 - https://zkillboard.com/kill/44574118/ - Buzzard - Banshee Legend - 0.09b ISK
+#20 - https://zkillboard.com/kill/44326622/ - Anathema - Docnagol - 0.09b ISK
+#21 - https://zkillboard.com/kill/44329904/ - Astero - Vargo Shahni - 0.09b ISK
+#22 - https://zkillboard.com/kill/44494555/ - Helios - Damien Oxytocin - 0.09b ISK
+#23 - https://zkillboard.com/kill/44598742/ - Buzzard - Vargo Shahni - 0.08b ISK
+#24 - https://zkillboard.com/kill/44364124/ - Cheetah - Allbur Chellak - 0.08b ISK
+#25 - https://zkillboard.com/kill/44898891/ - Cheetah - Valtyr Farshield - 0.08b ISK

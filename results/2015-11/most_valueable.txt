@@ -1,27 +1,27 @@
-Most valueable kills
+Most valuable kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/50321747/ - 2.65b
-#02 - https://zkillboard.com/kill/50059165/ - 2.19b
-#03 - https://zkillboard.com/kill/50322082/ - 1.64b
-#04 - https://zkillboard.com/kill/50287998/ - 1.53b
-#05 - https://zkillboard.com/kill/50056129/ - 1.11b
-#06 - https://zkillboard.com/kill/50378866/ - 0.75b
-#07 - https://zkillboard.com/kill/50178250/ - 0.71b
-#08 - https://zkillboard.com/kill/50274478/ - 0.69b
-#09 - https://zkillboard.com/kill/50134658/ - 0.69b
-#10 - https://zkillboard.com/kill/50126666/ - 0.58b
-#11 - https://zkillboard.com/kill/50074163/ - 0.58b
-#12 - https://zkillboard.com/kill/49973664/ - 0.55b
-#13 - https://zkillboard.com/kill/50269861/ - 0.55b
-#14 - https://zkillboard.com/kill/50314947/ - 0.52b
-#15 - https://zkillboard.com/kill/50019130/ - 0.50b
-#16 - https://zkillboard.com/kill/50346609/ - 0.49b
-#17 - https://zkillboard.com/kill/50053097/ - 0.49b
-#18 - https://zkillboard.com/kill/50019113/ - 0.48b
-#19 - https://zkillboard.com/kill/50272995/ - 0.47b
-#20 - https://zkillboard.com/kill/50151950/ - 0.46b
-#21 - https://zkillboard.com/kill/50346663/ - 0.44b
-#22 - https://zkillboard.com/kill/50442569/ - 0.44b
-#23 - https://zkillboard.com/kill/50202337/ - 0.43b
-#24 - https://zkillboard.com/kill/50202227/ - 0.43b
-#25 - https://zkillboard.com/kill/50341558/ - 0.42b
+#01 - https://zkillboard.com/kill/50321747/ - Ship Maintenance Array - 2.65b ISK
+#02 - https://zkillboard.com/kill/50059165/ - Prorator - 2.19b ISK
+#03 - https://zkillboard.com/kill/50322082/ - Archon - 1.64b ISK
+#04 - https://zkillboard.com/kill/50287998/ - Proteus - 1.53b ISK
+#05 - https://zkillboard.com/kill/50056129/ - Proteus - 1.11b ISK
+#06 - https://zkillboard.com/kill/50378866/ - Tengu - 0.75b ISK
+#07 - https://zkillboard.com/kill/50178250/ - Capsule - 0.71b ISK
+#08 - https://zkillboard.com/kill/50274478/ - Stratios - 0.69b ISK
+#09 - https://zkillboard.com/kill/50134658/ - Tengu - 0.69b ISK
+#10 - https://zkillboard.com/kill/50126666/ - Stratios - 0.58b ISK
+#11 - https://zkillboard.com/kill/50074163/ - Rattlesnake - 0.58b ISK
+#12 - https://zkillboard.com/kill/49973664/ - Stratios - 0.55b ISK
+#13 - https://zkillboard.com/kill/50269861/ - Mackinaw - 0.55b ISK
+#14 - https://zkillboard.com/kill/50314947/ - Tengu - 0.52b ISK
+#15 - https://zkillboard.com/kill/50019130/ - Stratios - 0.50b ISK
+#16 - https://zkillboard.com/kill/50346609/ - Stratios - 0.49b ISK
+#17 - https://zkillboard.com/kill/50053097/ - Tengu - 0.49b ISK
+#18 - https://zkillboard.com/kill/50019113/ - Stratios - 0.48b ISK
+#19 - https://zkillboard.com/kill/50272995/ - Stratios - 0.47b ISK
+#20 - https://zkillboard.com/kill/50151950/ - Stratios - 0.46b ISK
+#21 - https://zkillboard.com/kill/50346663/ - Capsule - 0.44b ISK
+#22 - https://zkillboard.com/kill/50442569/ - Anathema - 0.44b ISK
+#23 - https://zkillboard.com/kill/50202337/ - Epithal - 0.43b ISK
+#24 - https://zkillboard.com/kill/50202227/ - Epithal - 0.43b ISK
+#25 - https://zkillboard.com/kill/50341558/ - Rattlesnake - 0.42b ISK

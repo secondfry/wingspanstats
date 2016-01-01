@@ -55,6 +55,48 @@ class TopShip(Skeleton):
 
         return output
 
+    def html(self):
+        # Preprocess
+        self.ships_destroyed = sorted(self.ships_destroyed.items(), key=lambda k: k[1], reverse=True)
+        self.isk_destroyed   = sorted(self.isk_destroyed.items(),   key=lambda k: k[1], reverse=True)
+
+        # Output
+        output = "<div class=\"container\">"
+
+        ## Ships
+        # Title
+        output += "<div class=\"row\"><div class=\"col-xs-12\"><h2>Ships destroyed by a specific hull</h2><p>Links lead to zkillboard page with only that hull involved kills (disclaimer: may not work in the future).</p></div></div>"
+
+        # First places as cards
+        output += "<div class=\"row\">"
+        for idx,w in enumerate(self.ships_destroyed[:3], start=1):
+            output += "<div class=\"col-xs-12 col-md-4\"><a href=\"https://zkillboard.com/alliance/99005770/ship/" + str(w[0]) + "/\"><div class=\"card text-center\"><img class=\"card-img-top img-fluid p-a-1\" src=\"https://image.eveonline.com/Render/" + str(w[0]) + "_512.png\" alt=\"" + self.items[w[0]] + "\"><div class=\"card-block\"><p class=\"card-text\">" + str(idx) + ". " + self.items[w[0]] + " - " + str(w[1]) + " ships</p></div></div></a></div>"
+        output += "</div>"
+
+        # Next places as list
+        output += "<div class=\"row\"><div class=\"col-xs-12\"><ol start=\"4\">"
+        for idx,w in enumerate(self.ships_destroyed[3:StatsConfig.MAX_PLACES], start=4):
+            output += "<li><a href=\"https://zkillboard.com/alliance/99005770/ship/" + str(w[0]) + "/\">" + self.items[w[0]] + "</a> - " + str(w[1]) + " ships</li>"
+        output += "</ol>"
+
+        ## ISK
+        # Title
+        output += "<div class=\"row\"><div class=\"col-xs-12\"><h2>Ships destroyed by a specific hull</h2><p>Links lead to zkillboard page with only that hull involved kills (disclaimer: may not work in the future).</p></div></div>"
+
+        # First places as cards
+        output += "<div class=\"row\">"
+        for idx,w in enumerate(self.isk_destroyed[:3], start=1):
+            output += "<div class=\"col-xs-12 col-md-4\"><a href=\"https://zkillboard.com/alliance/99005770/ship/" + str(w[0]) + "/\"><div class=\"card text-center\"><img class=\"card-img-top img-fluid p-a-1\" src=\"https://image.eveonline.com/Render/" + str(w[0]) + "_512.png\" alt=\"" + self.items[w[0]] + "\"><div class=\"card-block\"><p class=\"card-text\">" + str(idx) + ". " + self.items[w[0]] + " - " + str(w[1]) + " ships</p></div></div></a></div>"
+        output += "</div>"
+
+        # Next places as list
+        output += "<div class=\"row\"><div class=\"col-xs-12\"><ol start=\"4\">"
+        for idx,w in enumerate(self.isk_destroyed[3:StatsConfig.MAX_PLACES], start=4):
+            output += "<li><a href=\"https://zkillboard.com/alliance/99005770/ship/" + str(w[0]) + "/\">" + self.items[w[0]] + "</a> - " + str(w[1]) + " ships</li>"
+        output += "</ol>"
+
+        return output
+
     def process_km(self, killmail):
         isk_destroyed = killmail['zkb']['totalValue']
 

@@ -1,27 +1,27 @@
-Most valueable kills
+Most valuable kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/49103376/ - 4.24b
-#02 - https://zkillboard.com/kill/49210279/ - 4.14b
-#03 - https://zkillboard.com/kill/49172492/ - 4.10b
-#04 - https://zkillboard.com/kill/49046088/ - 2.74b
-#05 - https://zkillboard.com/kill/49337611/ - 1.99b
-#06 - https://zkillboard.com/kill/49337612/ - 1.71b
-#07 - https://zkillboard.com/kill/49269072/ - 1.52b
-#08 - https://zkillboard.com/kill/48810183/ - 1.51b
-#09 - https://zkillboard.com/kill/49352413/ - 1.33b
-#10 - https://zkillboard.com/kill/49013998/ - 1.19b
-#11 - https://zkillboard.com/kill/49175708/ - 1.13b
-#12 - https://zkillboard.com/kill/49013999/ - 1.09b
-#13 - https://zkillboard.com/kill/49337622/ - 1.04b
-#14 - https://zkillboard.com/kill/49212637/ - 0.94b
-#15 - https://zkillboard.com/kill/48954688/ - 0.86b
-#16 - https://zkillboard.com/kill/48810187/ - 0.79b
-#17 - https://zkillboard.com/kill/49190758/ - 0.71b
-#18 - https://zkillboard.com/kill/48898640/ - 0.70b
-#19 - https://zkillboard.com/kill/48831551/ - 0.69b
-#20 - https://zkillboard.com/kill/48915158/ - 0.68b
-#21 - https://zkillboard.com/kill/49145843/ - 0.67b
-#22 - https://zkillboard.com/kill/48855787/ - 0.66b
-#23 - https://zkillboard.com/kill/49348765/ - 0.65b
-#24 - https://zkillboard.com/kill/49353003/ - 0.65b
-#25 - https://zkillboard.com/kill/48900673/ - 0.65b
+#01 - https://zkillboard.com/kill/49103376/ - Orca - 4.24b ISK
+#02 - https://zkillboard.com/kill/49210279/ - Ship Maintenance Array - 4.14b ISK
+#03 - https://zkillboard.com/kill/49172492/ - Chimera - 4.10b ISK
+#04 - https://zkillboard.com/kill/49046088/ - Chimera - 2.74b ISK
+#05 - https://zkillboard.com/kill/49337611/ - Nestor - 1.99b ISK
+#06 - https://zkillboard.com/kill/49337612/ - Tengu - 1.71b ISK
+#07 - https://zkillboard.com/kill/49269072/ - Loki - 1.52b ISK
+#08 - https://zkillboard.com/kill/48810183/ - Miasmos - 1.51b ISK
+#09 - https://zkillboard.com/kill/49352413/ - Ishtar - 1.33b ISK
+#10 - https://zkillboard.com/kill/49013998/ - Rattlesnake - 1.19b ISK
+#11 - https://zkillboard.com/kill/49175708/ - Paladin - 1.13b ISK
+#12 - https://zkillboard.com/kill/49013999/ - Capsule - 1.09b ISK
+#13 - https://zkillboard.com/kill/49337622/ - Mobile Tractor Unit - 1.04b ISK
+#14 - https://zkillboard.com/kill/49212637/ - X-Large Ship Maintenance Array - 0.94b ISK
+#15 - https://zkillboard.com/kill/48954688/ - Ship Maintenance Array - 0.86b ISK
+#16 - https://zkillboard.com/kill/48810187/ - Retriever - 0.79b ISK
+#17 - https://zkillboard.com/kill/49190758/ - Ares - 0.71b ISK
+#18 - https://zkillboard.com/kill/48898640/ - Orca - 0.70b ISK
+#19 - https://zkillboard.com/kill/48831551/ - Proteus - 0.69b ISK
+#20 - https://zkillboard.com/kill/48915158/ - Stratios - 0.68b ISK
+#21 - https://zkillboard.com/kill/49145843/ - Rattlesnake - 0.67b ISK
+#22 - https://zkillboard.com/kill/48855787/ - Capsule - 0.66b ISK
+#23 - https://zkillboard.com/kill/49348765/ - Stratios - 0.65b ISK
+#24 - https://zkillboard.com/kill/49353003/ - Rattlesnake - 0.65b ISK
+#25 - https://zkillboard.com/kill/48900673/ - Tengu - 0.65b ISK

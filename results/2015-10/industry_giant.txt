@@ -40,11 +40,11 @@ Top industrial hunters - ISK destroyed
 #10 - Sabrez Haklar - 1.31b
 #11 - Glade Radner - 1.31b
 #12 - Malak Saren - 1.31b
-#13 - Jedi VanDiemen - 1.31b
-#14 - Zakir Abramovich - 1.31b
-#15 - forsakenZen - 1.31b
-#16 - T-B0NE - 1.31b
-#17 - June Pyron - 1.31b
+#13 - Zakir Abramovich - 1.31b
+#14 - forsakenZen - 1.31b
+#15 - T-B0NE - 1.31b
+#16 - June Pyron - 1.31b
+#17 - Jedi VanDiemen - 1.31b
 #18 - Valtyr Farshield - 1.29b
 #19 - Cap'n Rick Clusterbomb - 1.26b
 #20 - Jerythas - 1.26b

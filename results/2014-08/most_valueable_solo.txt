@@ -1,27 +1,27 @@
-Most valueable solo kills
+Most valuable solo kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/40884049/ - Chance Ravinne - 0.30b
-#02 - https://zkillboard.com/kill/40448757/ - Gra Siorai - 0.11b
-#03 - https://zkillboard.com/kill/40472331/ - Gra Siorai - 0.09b
-#04 - https://zkillboard.com/kill/40585980/ - Chance Ravinne - 0.09b
-#05 - https://zkillboard.com/kill/40982804/ - Saladiin - 0.08b
-#06 - https://zkillboard.com/kill/40900258/ - Saladiin - 0.06b
-#07 - https://zkillboard.com/kill/40902745/ - Saladiin - 0.06b
-#08 - https://zkillboard.com/kill/40744193/ - Jeb BuschLite - 0.05b
-#09 - https://zkillboard.com/kill/40708801/ - Saladiin - 0.05b
-#10 - https://zkillboard.com/kill/40955490/ - Saladiin - 0.04b
-#11 - https://zkillboard.com/kill/40583856/ - Costa Reaves - 0.03b
-#12 - https://zkillboard.com/kill/40573717/ - Chance Ravinne - 0.03b
-#13 - https://zkillboard.com/kill/40664069/ - Witchdoctor24 - 0.03b
-#14 - https://zkillboard.com/kill/40587211/ - Witchdoctor24 - 0.03b
-#15 - https://zkillboard.com/kill/40569636/ - Costa Reaves - 0.02b
-#16 - https://zkillboard.com/kill/40777028/ - Saladiin - 0.02b
-#17 - https://zkillboard.com/kill/40754056/ - Jeb BuschLite - 0.02b
-#18 - https://zkillboard.com/kill/40777002/ - Saladiin - 0.02b
-#19 - https://zkillboard.com/kill/40776980/ - Saladiin - 0.02b
-#20 - https://zkillboard.com/kill/40789939/ - Saladiin - 0.02b
-#21 - https://zkillboard.com/kill/40576567/ - Witchdoctor24 - 0.01b
-#22 - https://zkillboard.com/kill/40900552/ - Chance Ravinne - 0.01b
-#23 - https://zkillboard.com/kill/40467592/ - Costa Reaves - 0.01b
-#24 - https://zkillboard.com/kill/40466070/ - Costa Reaves - 0.01b
-#25 - https://zkillboard.com/kill/40477779/ - Costa Reaves - 0.01b
+#01 - https://zkillboard.com/kill/40884049/ - Hulk - Chance Ravinne - 0.30b ISK
+#02 - https://zkillboard.com/kill/40448757/ - Astero - Gra Siorai - 0.11b ISK
+#03 - https://zkillboard.com/kill/40472331/ - Astero - Gra Siorai - 0.09b ISK
+#04 - https://zkillboard.com/kill/40585980/ - Noctis - Chance Ravinne - 0.09b ISK
+#05 - https://zkillboard.com/kill/40982804/ - Cheetah - Saladiin - 0.08b ISK
+#06 - https://zkillboard.com/kill/40900258/ - Helios - Saladiin - 0.06b ISK
+#07 - https://zkillboard.com/kill/40902745/ - Buzzard - Saladiin - 0.06b ISK
+#08 - https://zkillboard.com/kill/40744193/ - Epithal - Jeb BuschLite - 0.05b ISK
+#09 - https://zkillboard.com/kill/40708801/ - Heron - Saladiin - 0.05b ISK
+#10 - https://zkillboard.com/kill/40955490/ - Capsule - Saladiin - 0.04b ISK
+#11 - https://zkillboard.com/kill/40583856/ - Enyo - Costa Reaves - 0.03b ISK
+#12 - https://zkillboard.com/kill/40573717/ - Retriever - Chance Ravinne - 0.03b ISK
+#13 - https://zkillboard.com/kill/40664069/ - Caracal - Witchdoctor24 - 0.03b ISK
+#14 - https://zkillboard.com/kill/40587211/ - Caracal - Witchdoctor24 - 0.03b ISK
+#15 - https://zkillboard.com/kill/40569636/ - Imicus - Costa Reaves - 0.02b ISK
+#16 - https://zkillboard.com/kill/40777028/ - Moon Harvesting Array - Saladiin - 0.02b ISK
+#17 - https://zkillboard.com/kill/40754056/ - Capsule - Jeb BuschLite - 0.02b ISK
+#18 - https://zkillboard.com/kill/40777002/ - Ship Maintenance Array - Saladiin - 0.02b ISK
+#19 - https://zkillboard.com/kill/40776980/ - Personal Hangar Array - Saladiin - 0.02b ISK
+#20 - https://zkillboard.com/kill/40789939/ - Heron - Saladiin - 0.02b ISK
+#21 - https://zkillboard.com/kill/40576567/ - Rifter - Witchdoctor24 - 0.01b ISK
+#22 - https://zkillboard.com/kill/40900552/ - Mobile Tractor Unit - Chance Ravinne - 0.01b ISK
+#23 - https://zkillboard.com/kill/40467592/ - Tristan - Costa Reaves - 0.01b ISK
+#24 - https://zkillboard.com/kill/40466070/ - Crucifier - Costa Reaves - 0.01b ISK
+#25 - https://zkillboard.com/kill/40477779/ - Tristan - Costa Reaves - 0.01b ISK

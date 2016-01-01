@@ -1,27 +1,27 @@
-Most valueable kills
+Most valuable kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/44935269/ - 3.03b
-#02 - https://zkillboard.com/kill/44575622/ - 1.48b
-#03 - https://zkillboard.com/kill/44862160/ - 1.22b
-#04 - https://zkillboard.com/kill/44754852/ - 1.03b
-#05 - https://zkillboard.com/kill/44551984/ - 1.01b
-#06 - https://zkillboard.com/kill/44462920/ - 0.94b
-#07 - https://zkillboard.com/kill/44640542/ - 0.91b
-#08 - https://zkillboard.com/kill/44432735/ - 0.81b
-#09 - https://zkillboard.com/kill/44478707/ - 0.67b
-#10 - https://zkillboard.com/kill/44551999/ - 0.64b
-#11 - https://zkillboard.com/kill/44887753/ - 0.63b
-#12 - https://zkillboard.com/kill/44575632/ - 0.62b
-#13 - https://zkillboard.com/kill/44767124/ - 0.57b
-#14 - https://zkillboard.com/kill/44323093/ - 0.56b
-#15 - https://zkillboard.com/kill/44693135/ - 0.55b
-#16 - https://zkillboard.com/kill/44552424/ - 0.54b
-#17 - https://zkillboard.com/kill/44906102/ - 0.54b
-#18 - https://zkillboard.com/kill/44899456/ - 0.54b
-#19 - https://zkillboard.com/kill/44553042/ - 0.53b
-#20 - https://zkillboard.com/kill/44451870/ - 0.53b
-#21 - https://zkillboard.com/kill/44899491/ - 0.53b
-#22 - https://zkillboard.com/kill/44610784/ - 0.53b
-#23 - https://zkillboard.com/kill/44908473/ - 0.52b
-#24 - https://zkillboard.com/kill/44862190/ - 0.49b
-#25 - https://zkillboard.com/kill/44384873/ - 0.48b
+#01 - https://zkillboard.com/kill/44935269/ - Orca - 3.03b ISK
+#02 - https://zkillboard.com/kill/44575622/ - Proteus - 1.48b ISK
+#03 - https://zkillboard.com/kill/44862160/ - Tengu - 1.22b ISK
+#04 - https://zkillboard.com/kill/44754852/ - Proteus - 1.03b ISK
+#05 - https://zkillboard.com/kill/44551984/ - Legion - 1.01b ISK
+#06 - https://zkillboard.com/kill/44462920/ - Rattlesnake - 0.94b ISK
+#07 - https://zkillboard.com/kill/44640542/ - Loki - 0.91b ISK
+#08 - https://zkillboard.com/kill/44432735/ - Capsule - 0.81b ISK
+#09 - https://zkillboard.com/kill/44478707/ - Tengu - 0.67b ISK
+#10 - https://zkillboard.com/kill/44551999/ - Proteus - 0.64b ISK
+#11 - https://zkillboard.com/kill/44887753/ - Tengu - 0.63b ISK
+#12 - https://zkillboard.com/kill/44575632/ - Mobile Tractor Unit - 0.62b ISK
+#13 - https://zkillboard.com/kill/44767124/ - Proteus - 0.57b ISK
+#14 - https://zkillboard.com/kill/44323093/ - Loki - 0.56b ISK
+#15 - https://zkillboard.com/kill/44693135/ - Tengu - 0.55b ISK
+#16 - https://zkillboard.com/kill/44552424/ - Mobile Tractor Unit - 0.54b ISK
+#17 - https://zkillboard.com/kill/44906102/ - Tengu - 0.54b ISK
+#18 - https://zkillboard.com/kill/44899456/ - Stratios - 0.54b ISK
+#19 - https://zkillboard.com/kill/44553042/ - Nighthawk - 0.53b ISK
+#20 - https://zkillboard.com/kill/44451870/ - Orthrus - 0.53b ISK
+#21 - https://zkillboard.com/kill/44899491/ - Tengu - 0.53b ISK
+#22 - https://zkillboard.com/kill/44610784/ - Loki - 0.53b ISK
+#23 - https://zkillboard.com/kill/44908473/ - Tengu - 0.52b ISK
+#24 - https://zkillboard.com/kill/44862190/ - Mobile Tractor Unit - 0.49b ISK
+#25 - https://zkillboard.com/kill/44384873/ - Gila - 0.48b ISK

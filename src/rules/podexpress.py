@@ -30,6 +30,26 @@ class PodExpress(Skeleton):
 
         return output
 
+    def html(self):
+        output = ""
+        output += "Most valueable pod kills\n"
+        output += "--------------------------------------------\n"
+        place = 0
+        for w in sorted(
+                self.most_valueable,
+                key=self.most_valueable.get,
+                reverse=True
+        )[:StatsConfig.MAX_PLACES]:
+            place += 1
+            output += "#{:02d} - <a href=\"https://zkillboard.com/kill/{}/\">https://zkillboard.com/kill/{}/</a> - {:.2f}m\n".format(
+                    place,
+                    w,
+                    w,
+                    self.most_valueable[w] / 1000000.0,
+            )
+
+        return output
+
     def process_km(self, killmail):
         if killmail['victim']['shipTypeID'] in [670, 33328]:
             kill_id = killmail['killID']

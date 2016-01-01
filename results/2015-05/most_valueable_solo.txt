@@ -1,27 +1,27 @@
-Most valueable solo kills
+Most valuable solo kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/46845263/ - Sagwald Tian - 2.79b
-#02 - https://zkillboard.com/kill/46538971/ - Rob Tsukaya - 0.71b
-#03 - https://zkillboard.com/kill/46817612/ - Damien Oxytocin - 0.54b
-#04 - https://zkillboard.com/kill/46882293/ - Sabrez Haklar - 0.40b
-#05 - https://zkillboard.com/kill/46970663/ - Damien Oxytocin - 0.39b
-#06 - https://zkillboard.com/kill/46848853/ - Alt Sokarad - 0.35b
-#07 - https://zkillboard.com/kill/46877403/ - Orianna Okanata - 0.26b
-#08 - https://zkillboard.com/kill/46579094/ - Revan Wake - 0.25b
-#09 - https://zkillboard.com/kill/46337766/ - Lotus Zal'thur - 0.23b
-#10 - https://zkillboard.com/kill/46491548/ - inta Vakaria - 0.23b
-#11 - https://zkillboard.com/kill/46821378/ - Damien Oxytocin - 0.22b
-#12 - https://zkillboard.com/kill/46430798/ - Severin Talvan - 0.21b
-#13 - https://zkillboard.com/kill/46761849/ - Vargo Shahni - 0.21b
-#14 - https://zkillboard.com/kill/46902687/ - Squizz Caphinator - 0.21b
-#15 - https://zkillboard.com/kill/46790574/ - Saria Dehmov - 0.18b
-#16 - https://zkillboard.com/kill/46865318/ - Captain Steve White - 0.17b
-#17 - https://zkillboard.com/kill/46768773/ - Glade Radner - 0.15b
-#18 - https://zkillboard.com/kill/46433077/ - Rob Tsukaya - 0.15b
-#19 - https://zkillboard.com/kill/46354584/ - Dakodai - 0.14b
-#20 - https://zkillboard.com/kill/46976857/ - Valtyr Farshield - 0.13b
-#21 - https://zkillboard.com/kill/46700252/ - Damien Oxytocin - 0.13b
-#22 - https://zkillboard.com/kill/46776147/ - NoGo Rose - 0.12b
-#23 - https://zkillboard.com/kill/46971316/ - Damien Oxytocin - 0.12b
-#24 - https://zkillboard.com/kill/46761760/ - Glade Radner - 0.12b
-#25 - https://zkillboard.com/kill/46938776/ - inta Vakaria - 0.12b
+#01 - https://zkillboard.com/kill/46845263/ - Ship Maintenance Array - Sagwald Tian - 2.79b ISK
+#02 - https://zkillboard.com/kill/46538971/ - Orca - Rob Tsukaya - 0.71b ISK
+#03 - https://zkillboard.com/kill/46817612/ - Capsule - Damien Oxytocin - 0.54b ISK
+#04 - https://zkillboard.com/kill/46882293/ - Noctis - Sabrez Haklar - 0.40b ISK
+#05 - https://zkillboard.com/kill/46970663/ - Stratios - Damien Oxytocin - 0.39b ISK
+#06 - https://zkillboard.com/kill/46848853/ - Stratios - Alt Sokarad - 0.35b ISK
+#07 - https://zkillboard.com/kill/46877403/ - Iteron Mark V - Orianna Okanata - 0.26b ISK
+#08 - https://zkillboard.com/kill/46579094/ - Dominix - Revan Wake - 0.25b ISK
+#09 - https://zkillboard.com/kill/46337766/ - Megathron - Lotus Zal'thur - 0.23b ISK
+#10 - https://zkillboard.com/kill/46491548/ - Megathron - inta Vakaria - 0.23b ISK
+#11 - https://zkillboard.com/kill/46821378/ - Astero - Damien Oxytocin - 0.22b ISK
+#12 - https://zkillboard.com/kill/46430798/ - Capsule - Severin Talvan - 0.21b ISK
+#13 - https://zkillboard.com/kill/46761849/ - Mackinaw - Vargo Shahni - 0.21b ISK
+#14 - https://zkillboard.com/kill/46902687/ - Capsule - Squizz Caphinator - 0.21b ISK
+#15 - https://zkillboard.com/kill/46790574/ - Pilgrim - Saria Dehmov - 0.18b ISK
+#16 - https://zkillboard.com/kill/46865318/ - Capsule - Captain Steve White - 0.17b ISK
+#17 - https://zkillboard.com/kill/46768773/ - Capsule - Glade Radner - 0.15b ISK
+#18 - https://zkillboard.com/kill/46433077/ - Astero - Rob Tsukaya - 0.15b ISK
+#19 - https://zkillboard.com/kill/46354584/ - Heron - Dakodai - 0.14b ISK
+#20 - https://zkillboard.com/kill/46976857/ - Astero - Valtyr Farshield - 0.13b ISK
+#21 - https://zkillboard.com/kill/46700252/ - Astero - Damien Oxytocin - 0.13b ISK
+#22 - https://zkillboard.com/kill/46776147/ - Astero - NoGo Rose - 0.12b ISK
+#23 - https://zkillboard.com/kill/46971316/ - Capsule - Damien Oxytocin - 0.12b ISK
+#24 - https://zkillboard.com/kill/46761760/ - Noctis - Glade Radner - 0.12b ISK
+#25 - https://zkillboard.com/kill/46938776/ - Astero - inta Vakaria - 0.12b ISK

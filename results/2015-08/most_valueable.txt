@@ -1,27 +1,27 @@
-Most valueable kills
+Most valuable kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/48675320/ - 4.86b
-#02 - https://zkillboard.com/kill/48402752/ - 3.47b
-#03 - https://zkillboard.com/kill/48600093/ - 2.91b
-#04 - https://zkillboard.com/kill/48685154/ - 2.55b
-#05 - https://zkillboard.com/kill/48212152/ - 2.42b
-#06 - https://zkillboard.com/kill/48402727/ - 1.89b
-#07 - https://zkillboard.com/kill/48535848/ - 1.67b
-#08 - https://zkillboard.com/kill/48596524/ - 1.49b
-#09 - https://zkillboard.com/kill/48647599/ - 1.39b
-#10 - https://zkillboard.com/kill/48434005/ - 1.33b
-#11 - https://zkillboard.com/kill/48751488/ - 1.30b
-#12 - https://zkillboard.com/kill/48642917/ - 1.28b
-#13 - https://zkillboard.com/kill/48333622/ - 1.19b
-#14 - https://zkillboard.com/kill/48299257/ - 1.14b
-#15 - https://zkillboard.com/kill/48333594/ - 1.14b
-#16 - https://zkillboard.com/kill/48384826/ - 1.12b
-#17 - https://zkillboard.com/kill/48642925/ - 1.10b
-#18 - https://zkillboard.com/kill/48272379/ - 1.03b
-#19 - https://zkillboard.com/kill/48434010/ - 1.02b
-#20 - https://zkillboard.com/kill/48417246/ - 0.89b
-#21 - https://zkillboard.com/kill/48225731/ - 0.85b
-#22 - https://zkillboard.com/kill/48792535/ - 0.84b
-#23 - https://zkillboard.com/kill/48586786/ - 0.82b
-#24 - https://zkillboard.com/kill/48230412/ - 0.79b
-#25 - https://zkillboard.com/kill/48802031/ - 0.78b
+#01 - https://zkillboard.com/kill/48675320/ - Legion - 4.86b ISK
+#02 - https://zkillboard.com/kill/48402752/ - Ship Maintenance Array - 3.47b ISK
+#03 - https://zkillboard.com/kill/48600093/ - Tengu - 2.91b ISK
+#04 - https://zkillboard.com/kill/48685154/ - Rattlesnake - 2.55b ISK
+#05 - https://zkillboard.com/kill/48212152/ - Ship Maintenance Array - 2.42b ISK
+#06 - https://zkillboard.com/kill/48402727/ - Ship Maintenance Array - 1.89b ISK
+#07 - https://zkillboard.com/kill/48535848/ - Tengu - 1.67b ISK
+#08 - https://zkillboard.com/kill/48596524/ - Tengu - 1.49b ISK
+#09 - https://zkillboard.com/kill/48647599/ - Impel - 1.39b ISK
+#10 - https://zkillboard.com/kill/48434005/ - Vargur - 1.33b ISK
+#11 - https://zkillboard.com/kill/48751488/ - Tengu - 1.30b ISK
+#12 - https://zkillboard.com/kill/48642917/ - Paladin - 1.28b ISK
+#13 - https://zkillboard.com/kill/48333622/ - Nestor - 1.19b ISK
+#14 - https://zkillboard.com/kill/48299257/ - Ishtar - 1.14b ISK
+#15 - https://zkillboard.com/kill/48333594/ - Nestor - 1.14b ISK
+#16 - https://zkillboard.com/kill/48384826/ - Gila - 1.12b ISK
+#17 - https://zkillboard.com/kill/48642925/ - Rattlesnake - 1.10b ISK
+#18 - https://zkillboard.com/kill/48272379/ - Legion - 1.03b ISK
+#19 - https://zkillboard.com/kill/48434010/ - Capsule - Genolution 'Auroral' 197-variant - 1.02b ISK
+#20 - https://zkillboard.com/kill/48417246/ - Megathron Navy Issue - 0.89b ISK
+#21 - https://zkillboard.com/kill/48225731/ - Ishtar - 0.85b ISK
+#22 - https://zkillboard.com/kill/48792535/ - Capsule - 0.84b ISK
+#23 - https://zkillboard.com/kill/48586786/ - Ship Maintenance Array - 0.82b ISK
+#24 - https://zkillboard.com/kill/48230412/ - Tengu - 0.79b ISK
+#25 - https://zkillboard.com/kill/48802031/ - Legion - 0.78b ISK
