@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 class GeneralStats(Skeleton):
 
     def __init__(self):
-        self.file_name = "general_stats.txt"
+        self.file_name = "general_stats"
         self.total_kills = 0
         self.total_value = 0
         self.solo_total_kills = 0

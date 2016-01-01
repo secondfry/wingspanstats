@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Astero(Skeleton):
 
     def __init__(self):
-        self.file_name = "astero.txt"
+        self.file_name = "astero"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 

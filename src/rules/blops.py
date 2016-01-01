@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Blops(Skeleton):
 
     def __init__(self):
-        self.file_name = "blops.txt"
+        self.file_name = "blops"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 

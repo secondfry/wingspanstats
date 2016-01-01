@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class SoloHunter(Skeleton):
 
     def __init__(self):
-        self.file_name = "solo_hunter.txt"
+        self.file_name = "solo_hunter"
         self.agent_solo_ships_destroyed = {}
         self.agent_solo_isk_destroyed = {}
 

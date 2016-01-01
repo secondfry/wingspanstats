@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Recons(Skeleton):
 
     def __init__(self):
-        self.file_name = "recons.txt"
+        self.file_name = "recons"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 

@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class MostValueable(Skeleton):
 
     def __init__(self):
-        self.file_name = "most_valueable.txt"
+        self.file_name = "most_valueable"
         self.most_valueable = {}
 
     def __str__(self):

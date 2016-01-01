@@ -9,7 +9,7 @@ from statsconfig import StatsConfig
 class TopShip(Skeleton):
 
     def __init__(self):
-        self.file_name = "top_ship.txt"
+        self.file_name = "top_ship"
         self.ships_destroyed = {}
         self.isk_destroyed = {}
 

@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Bombers(Skeleton):
 
     def __init__(self):
-        self.file_name = "bombers.txt"
+        self.file_name = "bombers"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 

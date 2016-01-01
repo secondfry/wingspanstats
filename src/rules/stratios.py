@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Stratios(Skeleton):
 
     def __init__(self):
-        self.file_name = "stratios.txt"
+        self.file_name = "stratios"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 

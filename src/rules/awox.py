@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Awox(Skeleton):
 
     def __init__(self):
-        self.file_name = "top_awox.txt"
+        self.file_name = "top_awox"
         self.awox_kills = {}
 
     def __str__(self):

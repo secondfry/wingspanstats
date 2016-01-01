@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Nestor(Skeleton):
 
     def __init__(self):
-        self.file_name = "nestor.txt"
+        self.file_name = "nestor"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 

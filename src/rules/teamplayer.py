@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class TeamPlayer(Skeleton):
 
     def __init__(self):
-        self.file_name = "team_player.txt"
+        self.file_name = "team_player"
         self.agent_fleet_ships_destroyed = {}
         self.agent_fleet_isk_destroyed = {}
 

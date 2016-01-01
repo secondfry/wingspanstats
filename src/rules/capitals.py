@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class Capitals(Skeleton):
 
     def __init__(self):
-        self.file_name = "capital_kills.txt"
+        self.file_name = "capital_kills"
         self.most_valueable = {}
 
     def __str__(self):

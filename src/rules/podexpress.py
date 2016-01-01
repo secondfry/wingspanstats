@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class PodExpress(Skeleton):
 
     def __init__(self):
-        self.file_name = "pod_express.txt"
+        self.file_name = "pod_express"
         self.most_valueable = {}
 
     def __str__(self):

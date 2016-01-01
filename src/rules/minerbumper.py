@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class MinerBumper(Skeleton):
 
     def __init__(self):
-        self.file_name = "miner_bumper.txt"
+        self.file_name = "miner_bumper"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 

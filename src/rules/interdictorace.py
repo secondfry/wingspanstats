@@ -8,7 +8,7 @@ from statsconfig import StatsConfig
 class InterdictorAce(Skeleton):
 
     def __init__(self):
-        self.file_name = "interdictor_ace.txt"
+        self.file_name = "interdictor_ace"
         self.agent_ships_destroyed = {}
         self.agent_isk_destroyed = {}
 
