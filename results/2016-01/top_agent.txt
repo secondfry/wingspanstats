@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - Silentt Knightt - 246 ships
+#02 - Mei Long - 234 ships
+#03 - More11o - 230 ships
+#04 - brainwhacker - 174 ships
+#05 - Touretes - 171 ships
+#06 - T-B0NE - 165 ships
+#07 - Albin wood - 165 ships
+#08 - Buster Atmosk - 163 ships
+#09 - Narcisse Nightmare - 162 ships
+#10 - Colesef - 162 ships
+#11 - Valtyr Farshield - 161 ships
+#12 - gui Zanjoahir - 153 ships
+#13 - Cissnei Kusoni - 152 ships
+#14 - Nicholas Chance Kile - 151 ships
+#15 - Hirashima Nagasaki-san - 148 ships
+#16 - Pi Show - 148 ships
+#17 - Reed Icculus - 147 ships
+#18 - JinBeam Tsasa - 145 ships
+#19 - Raens Aldebar - 139 ships
+#20 - Kogeki Dravnos - 137 ships
+#21 - Captain Ace Rico - 136 ships
+#22 - Boexl - 129 ships
+#23 - Sudo Khaleesi - 129 ships
+#24 - Drakoniv Jakuard - 128 ships
+#25 - Animal Hellbringer - 126 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Mei Long - 35.42b
+#02 - Narcisse Nightmare - 31.65b
+#03 - Silentt Knightt - 29.95b
+#04 - More11o - 29.08b
+#05 - Caboosette - 26.96b
+#06 - inta Vakaria - 17.75b
+#07 - Touretes - 17.62b
+#08 - brainwhacker - 17.56b
+#09 - Boexl - 17.40b
+#10 - Saria Dehmov - 16.99b
+#11 - Delta Rescue - 16.75b
+#12 - Yuri RedAlert - 16.73b
+#13 - Nicholas Chance Kile - 16.13b
+#14 - Valtyr Farshield - 16.11b
+#15 - Dakodai - 15.62b
+#16 - Talyn Soone - 15.41b
+#17 - Gareth Adoudel - 15.39b
+#18 - Buster Atmosk - 14.94b
+#19 - Trip Erata - 14.18b
+#20 - Captain York Name - 14.08b
+#21 - Cap'n Rick Clusterbomb - 14.02b
+#22 - Try2CatchMe ActEstFabula - 14.00b
+#23 - AD Elsbeth - 13.88b
+#24 - Phoenix Thynome - 13.82b
+#25 - T-B0NE - 13.61b

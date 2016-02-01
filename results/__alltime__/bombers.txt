@@ -1,55 +1,55 @@
 Top bomber pilots - ships destroyed
 --------------------------------------------
-#01 - Gigi McQuaid - 336 ships
-#02 - Tasmine Cha-Tien - 308 ships
-#03 - Narcisse Nightmare - 279 ships
-#04 - Gillion Wyrddych - 265 ships
-#05 - Chance Ravinne - 265 ships
-#06 - Orianna Okanata - 253 ships
-#07 - Cap'n Rick Clusterbomb - 222 ships
-#08 - Alt Sokarad - 213 ships
-#09 - choo t - 170 ships
-#10 - Xavier Hex - 153 ships
-#11 - Mei Long - 147 ships
-#12 - Saladiin - 147 ships
-#13 - Vothor - 139 ships
-#14 - Wee Lad - 137 ships
-#15 - Bonz Andrard - 136 ships
-#16 - Trip Erata - 133 ships
-#17 - Albin wood - 129 ships
-#18 - Sabrez Haklar - 128 ships
-#19 - General Waaargh - 128 ships
-#20 - Revan Wake - 120 ships
-#21 - Jenna Lost - 118 ships
-#22 - Ransom Odunen - 106 ships
-#23 - Xee Yoona-451 - 105 ships
-#24 - Try2CatchMe ActEstFabula - 102 ships
-#25 - Peter Lathe - 101 ships
+#01 - Gigi McQuaid - 341 ships
+#02 - Tasmine Cha-Tien - 334 ships
+#03 - Narcisse Nightmare - 334 ships
+#04 - Albin wood - 287 ships
+#05 - Chance Ravinne - 267 ships
+#06 - Gillion Wyrddych - 265 ships
+#07 - Orianna Okanata - 253 ships
+#08 - Cap'n Rick Clusterbomb - 239 ships
+#09 - Silentt Knightt - 225 ships
+#10 - Reed Icculus - 222 ships
+#11 - choo t - 218 ships
+#12 - Mei Long - 218 ships
+#13 - Alt Sokarad - 213 ships
+#14 - Buster Atmosk - 179 ships
+#15 - More11o - 178 ships
+#16 - Trip Erata - 170 ships
+#17 - Vothor - 160 ships
+#18 - gui Zanjoahir - 154 ships
+#19 - Xavier Hex - 153 ships
+#20 - Cissnei Kusoni - 152 ships
+#21 - Pi Show - 147 ships
+#22 - Saladiin - 147 ships
+#23 - JinBeam Tsasa - 146 ships
+#24 - Wee Lad - 146 ships
+#25 - Hirashima Nagasaki-san - 146 ships
 
 Top bomber pilots - ISK destroyed
 --------------------------------------------
-#01 - Gigi McQuaid - 57.68b
-#02 - Narcisse Nightmare - 55.59b
-#03 - Cap'n Rick Clusterbomb - 47.88b
-#04 - Tasmine Cha-Tien - 43.25b
+#01 - Narcisse Nightmare - 75.63b
+#02 - Gigi McQuaid - 58.20b
+#03 - Tasmine Cha-Tien - 50.21b
+#04 - Cap'n Rick Clusterbomb - 49.33b
 #05 - Orianna Okanata - 42.36b
-#06 - Gillion Wyrddych - 31.08b
-#07 - Chance Ravinne - 23.90b
-#08 - Alebrelle Kuatu - 23.84b
-#09 - Wee Lad - 23.10b
-#10 - Trip Erata - 22.06b
-#11 - Xavier Hex - 21.85b
-#12 - Sabrez Haklar - 21.34b
-#13 - Xee Yoona-451 - 21.11b
-#14 - choo t - 20.04b
-#15 - Malak Saren - 18.32b
-#16 - Revan Wake - 18.21b
-#17 - Sister Fisterr - 17.50b
-#18 - Vothor - 17.50b
-#19 - Bonz Andrard - 16.90b
-#20 - General Waaargh - 15.10b
-#21 - Glade Radner - 14.45b
-#22 - Ransom Odunen - 14.42b
-#23 - inta Vakaria - 14.10b
-#24 - Albin wood - 13.99b
-#25 - Aurelie Solvay - 13.90b
+#06 - Silentt Knightt - 36.13b
+#07 - Caboosette - 33.08b
+#08 - Trip Erata - 31.51b
+#09 - Gillion Wyrddych - 31.08b
+#10 - Xee Yoona-451 - 29.90b
+#11 - Mei Long - 28.96b
+#12 - choo t - 28.78b
+#13 - Vothor - 27.44b
+#14 - togi yuki - 26.17b
+#15 - More11o - 24.26b
+#16 - Chance Ravinne - 23.91b
+#17 - Alebrelle Kuatu - 23.84b
+#18 - Albin wood - 23.64b
+#19 - Wee Lad - 23.64b
+#20 - Yuri RedAlert - 23.14b
+#21 - Valtyr Farshield - 22.52b
+#22 - Xavier Hex - 21.85b
+#23 - Try2CatchMe ActEstFabula - 21.43b
+#24 - Sabrez Haklar - 21.34b
+#25 - Glade Radner - 21.31b

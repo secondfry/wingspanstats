@@ -1,55 +1,55 @@
 Ships destroyed by a specific hull
 --------------------------------------------
-#01 - Manticore - 4668 ships
-#02 - Stratios - 4162 ships
-#03 - Nemesis - 3030 ships
-#04 - Purifier - 1546 ships
-#05 - Hound - 1543 ships
-#06 - Astero - 984 ships
-#07 - Pilgrim - 451 ships
-#08 - Sabre - 376 ships
-#09 - Falcon - 315 ships
-#10 - Tengu - 233 ships
-#11 - Rapier - 214 ships
-#12 - Oracle - 213 ships
-#13 - Proteus - 180 ships
-#14 - Loki - 178 ships
-#15 - Armageddon - 142 ships
-#16 - Hecate - 138 ships
-#17 - Tristan - 136 ships
-#18 - Myrmidon - 130 ships
-#19 - Flycatcher - 126 ships
-#20 - Onyx - 124 ships
-#21 - Arazu - 120 ships
-#22 - Ishtar - 111 ships
-#23 - Dominix - 106 ships
-#24 - Rook - 105 ships
-#25 - Orthrus - 92 ships
+#01 - Stratios - 6791 ships
+#02 - Manticore - 6395 ships
+#03 - Nemesis - 4774 ships
+#04 - Purifier - 2552 ships
+#05 - Hound - 2263 ships
+#06 - Astero - 1073 ships
+#07 - Pilgrim - 527 ships
+#08 - Sabre - 418 ships
+#09 - Falcon - 397 ships
+#10 - Rapier - 369 ships
+#11 - Tengu - 289 ships
+#12 - Loki - 272 ships
+#13 - Proteus - 235 ships
+#14 - Oracle - 218 ships
+#15 - Tristan - 166 ships
+#16 - Hecate - 165 ships
+#17 - Flycatcher - 143 ships
+#18 - Armageddon - 142 ships
+#19 - Svipul - 137 ships
+#20 - Arazu - 136 ships
+#21 - Myrmidon - 131 ships
+#22 - Onyx - 131 ships
+#23 - Ishtar - 112 ships
+#24 - Orthrus - 109 ships
+#25 - Dominix - 106 ships
 
 ISK destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 807.22b
-#02 - Manticore - 683.63b
-#03 - Nemesis - 466.10b
-#04 - Hound - 242.24b
-#05 - Purifier - 233.88b
-#06 - Astero - 105.77b
-#07 - Falcon - 71.84b
-#08 - Pilgrim - 60.85b
-#09 - Sabre - 48.70b
-#10 - Tengu - 43.01b
-#11 - Proteus - 34.89b
-#12 - Rapier - 34.25b
+#01 - Stratios - 1048.99b
+#02 - Manticore - 936.11b
+#03 - Nemesis - 767.12b
+#04 - Purifier - 431.35b
+#05 - Hound - 352.30b
+#06 - Astero - 118.06b
+#07 - Falcon - 86.11b
+#08 - Pilgrim - 70.26b
+#09 - Sabre - 63.41b
+#10 - Tengu - 50.42b
+#11 - Rapier - 45.63b
+#12 - Proteus - 42.74b
 #13 - Armageddon - 27.79b
-#14 - Onyx - 23.97b
-#15 - Loki - 23.16b
-#16 - Phantasm - 22.01b
-#17 - Redeemer - 20.93b
-#18 - Myrmidon - 15.20b
-#19 - Arazu - 14.88b
-#20 - Curse - 14.82b
-#21 - Oracle - 14.34b
-#22 - Flycatcher - 13.81b
-#23 - Ishtar - 12.45b
-#24 - Orthrus - 11.56b
-#25 - Guardian - 10.87b
+#14 - Onyx - 26.08b
+#15 - Loki - 25.91b
+#16 - Redeemer - 23.13b
+#17 - Phantasm - 22.01b
+#18 - Flycatcher - 20.70b
+#19 - Arazu - 18.16b
+#20 - Curse - 17.09b
+#21 - Myrmidon - 15.21b
+#22 - Oracle - 15.12b
+#23 - Guardian - 13.75b
+#24 - Crow - 12.85b
+#25 - Orthrus - 12.49b
