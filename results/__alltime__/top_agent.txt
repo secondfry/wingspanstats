@@ -9,7 +9,7 @@ Ships destroyed
 #07 - Vothor - 550 ships
 #08 - Sabrez Haklar - 549 ships
 #09 - Tasmine Cha-Tien - 533 ships
-#10 - inta Vakaria - 512 ships
+#10 - inta Vakaria - 514 ships
 #11 - NoGo Rose - 471 ships
 #12 - Mei Long - 434 ships
 #13 - Glade Radner - 423 ships

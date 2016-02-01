@@ -1,27 +1,27 @@
-Most valueable solo kills
+Most valuable solo kills
 --------------------------------------------
-#01 - https://zkillboard.com/kill/51358160/ - Dakodai - 1.49b
-#02 - https://zkillboard.com/kill/51672388/ - Estebanzo Rufius - 1.39b
-#03 - https://zkillboard.com/kill/51149884/ - Hateful Heart - 0.97b
-#04 - https://zkillboard.com/kill/51689464/ - Al3x Oaks - 0.88b
-#05 - https://zkillboard.com/kill/51482792/ - Onimuru - 0.66b
-#06 - https://zkillboard.com/kill/51150289/ - Hateful Heart - 0.66b
-#07 - https://zkillboard.com/kill/51599230/ - Estebanzo Rufius - 0.58b
-#08 - https://zkillboard.com/kill/51072881/ - Saria Dehmov - 0.52b
-#09 - https://zkillboard.com/kill/51156900/ - Dakodai - 0.44b
-#10 - https://zkillboard.com/kill/51544086/ - Myra Vixen - 0.44b
-#11 - https://zkillboard.com/kill/51684481/ - Greattorian - 0.43b
-#12 - https://zkillboard.com/kill/51560795/ - Tasmine Cha-Tien - 0.35b
-#13 - https://zkillboard.com/kill/51463759/ - Touretes - 0.29b
-#14 - https://zkillboard.com/kill/51088372/ - Al3x Oaks - 0.28b
-#15 - https://zkillboard.com/kill/51505689/ - Galinik Jmob - 0.28b
-#16 - https://zkillboard.com/kill/51091119/ - Merlin Avalon - 0.26b
-#17 - https://zkillboard.com/kill/51173053/ - Vargo Shahni - 0.25b
-#18 - https://zkillboard.com/kill/51223263/ - Dakodai - 0.24b
-#19 - https://zkillboard.com/kill/51394243/ - Zen Dad - 0.24b
-#20 - https://zkillboard.com/kill/51072999/ - Junako Zelkarr - 0.24b
-#21 - https://zkillboard.com/kill/51415288/ - Tasmine Cha-Tien - 0.23b
-#22 - https://zkillboard.com/kill/51250590/ - Dakodai - 0.22b
-#23 - https://zkillboard.com/kill/51323170/ - Bustrr Bluth - 0.22b
-#24 - https://zkillboard.com/kill/51628572/ - Dentric Crendraven - 0.21b
-#25 - https://zkillboard.com/kill/51697504/ - Al3x Oaks - 0.21b
+#01 - https://zkillboard.com/kill/51358160/ - Tengu - Dakodai - 1.49b ISK
+#02 - https://zkillboard.com/kill/51672388/ - Tengu - Estebanzo Rufius - 1.39b ISK
+#03 - https://zkillboard.com/kill/51149884/ - Mobile Tractor Unit - Hateful Heart - 0.97b ISK
+#04 - https://zkillboard.com/kill/51689464/ - Astero - Al3x Oaks - 0.88b ISK
+#05 - https://zkillboard.com/kill/51482792/ - Tengu - Onimuru - 0.66b ISK
+#06 - https://zkillboard.com/kill/51150289/ - Mobile Tractor Unit - Hateful Heart - 0.66b ISK
+#07 - https://zkillboard.com/kill/51599230/ - Stratios - Estebanzo Rufius - 0.58b ISK
+#08 - https://zkillboard.com/kill/51072881/ - Capsule - Saria Dehmov - 0.52b ISK
+#09 - https://zkillboard.com/kill/51156900/ - Stratios - Dakodai - 0.44b ISK
+#10 - https://zkillboard.com/kill/51544086/ - Capsule - Myra Vixen - 0.44b ISK
+#11 - https://zkillboard.com/kill/51684481/ - Stratios - Greattorian - 0.43b ISK
+#12 - https://zkillboard.com/kill/51560795/ - Ishtar - Tasmine Cha-Tien - 0.35b ISK
+#13 - https://zkillboard.com/kill/51463759/ - Ship Maintenance Array - Touretes - 0.29b ISK
+#14 - https://zkillboard.com/kill/51088372/ - Capsule - Al3x Oaks - 0.28b ISK
+#15 - https://zkillboard.com/kill/51505689/ - Epithal - Galinik Jmob - 0.28b ISK
+#16 - https://zkillboard.com/kill/51091119/ - Hulk - Merlin Avalon - 0.26b ISK
+#17 - https://zkillboard.com/kill/51173053/ - Gila - Vargo Shahni - 0.25b ISK
+#18 - https://zkillboard.com/kill/51223263/ - Astero - Dakodai - 0.24b ISK
+#19 - https://zkillboard.com/kill/51394243/ - Sacrilege - Zen Dad - 0.24b ISK
+#20 - https://zkillboard.com/kill/51072999/ - Brutix Navy Issue - Junako Zelkarr - 0.24b ISK
+#21 - https://zkillboard.com/kill/51415288/ - Ishtar - Tasmine Cha-Tien - 0.23b ISK
+#22 - https://zkillboard.com/kill/51250590/ - Astero - Dakodai - 0.22b ISK
+#23 - https://zkillboard.com/kill/51323170/ - Dominix - Bustrr Bluth - 0.22b ISK
+#24 - https://zkillboard.com/kill/51628572/ - Iteron Mark V - Dentric Crendraven - 0.21b ISK
+#25 - https://zkillboard.com/kill/51697504/ - Capsule - Al3x Oaks - 0.21b ISK

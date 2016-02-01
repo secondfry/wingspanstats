@@ -23,8 +23,8 @@ Ships destroyed by a specific hull
 #21 - Arazu - 14 ships
 #22 - Bifrost - 14 ships
 #23 - Eris - 14 ships
-#24 - Curse - 12 ships
-#25 - Flycatcher - 12 ships
+#24 - Imperial Navy Slicer - 13 ships
+#25 - Curse - 12 ships
 
 ISK destroyed by a specific hull
 --------------------------------------------

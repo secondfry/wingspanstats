@@ -23,8 +23,8 @@ Ships destroyed
 #21 - Banshee Legend - 50 ships
 #22 - T-B0NE - 50 ships
 #23 - NoGo Rose - 50 ships
-#24 - Sabrez Haklar - 47 ships
-#25 - inta Vakaria - 46 ships
+#24 - inta Vakaria - 48 ships
+#25 - Sabrez Haklar - 47 ships
 
 ISK destroyed
 --------------------------------------------
