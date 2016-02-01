@@ -89,6 +89,7 @@ def main():
     extract_data(2015, 10)
     extract_data(2015, 11)
     extract_data(2015, 12)
+    extract_data(2016, 1)
 
 if __name__ == "__main__":
     main()

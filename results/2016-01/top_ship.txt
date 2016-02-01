@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 2629 ships
+#02 - Nemesis - 1744 ships
+#03 - Manticore - 1727 ships
+#04 - Purifier - 1006 ships
+#05 - Hound - 720 ships
+#06 - Rapier - 155 ships
+#07 - Loki - 94 ships
+#08 - Astero - 89 ships
+#09 - Falcon - 82 ships
+#10 - Pilgrim - 76 ships
+#11 - Svipul - 64 ships
+#12 - Crow - 61 ships
+#13 - Tengu - 56 ships
+#14 - Proteus - 55 ships
+#15 - Sabre - 42 ships
+#16 - Legion - 40 ships
+#17 - Guardian - 34 ships
+#18 - Taranis - 32 ships
+#19 - Tristan - 30 ships
+#20 - Hecate - 27 ships
+#21 - Kestrel - 24 ships
+#22 - Phobos - 19 ships
+#23 - Flycatcher - 17 ships
+#24 - Republic Fleet Firetail - 17 ships
+#25 - Orthrus - 17 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Nemesis - 301.02b
+#02 - Manticore - 252.49b
+#03 - Stratios - 241.77b
+#04 - Purifier - 197.47b
+#05 - Hound - 110.06b
+#06 - Sabre - 14.71b
+#07 - Falcon - 14.28b
+#08 - Astero - 12.29b
+#09 - Rapier - 11.38b
+#10 - Crow - 10.80b
+#11 - Pilgrim - 9.41b
+#12 - Proteus - 7.84b
+#13 - Tengu - 7.41b
+#14 - Flycatcher - 6.89b
+#15 - Sin - 6.69b
+#16 - Legion - 4.44b
+#17 - Arazu - 3.28b
+#18 - Guardian - 2.88b
+#19 - Loki - 2.75b
+#20 - Curse - 2.27b
+#21 - Redeemer - 2.20b
+#22 - Onyx - 2.11b
+#23 - Hecate - 1.94b
+#24 - Taranis - 1.65b
+#25 - Svipul - 1.55b

@@ -1,0 +1,55 @@
+Top Stratios pilots - ships destroyed
+--------------------------------------------
+#01 - Mei Long - 154 ships
+#02 - Valtyr Farshield - 138 ships
+#03 - Captain Ace Rico - 130 ships
+#04 - T-B0NE - 130 ships
+#05 - Sudo Khaleesi - 124 ships
+#06 - brainwhacker - 117 ships
+#07 - Raens Aldebar - 112 ships
+#08 - Touretes - 108 ships
+#09 - Pyro Silf - 96 ships
+#10 - Nicholas Chance Kile - 96 ships
+#11 - Silentt Knightt - 94 ships
+#12 - Xio Zheng - 89 ships
+#13 - Saria Dehmov - 79 ships
+#14 - Boexl - 74 ships
+#15 - Delta Rescue - 63 ships
+#16 - Narcisse Nightmare - 55 ships
+#17 - Kotoko Hoshina - 55 ships
+#18 - Vantick Iscod - 46 ships
+#19 - inta Vakaria - 45 ships
+#20 - Wee Lad - 44 ships
+#21 - Bustrr Bluth - 44 ships
+#22 - Trip Erata - 43 ships
+#23 - Sabrez Haklar - 42 ships
+#24 - Bails Naskingar - 42 ships
+#25 - Massive Black - 41 ships
+
+Top Stratios pilots - ISK destroyed
+--------------------------------------------
+#01 - Mei Long - 14.63b
+#02 - Saria Dehmov - 13.13b
+#03 - Massive Black - 10.60b
+#04 - inta Vakaria - 9.78b
+#05 - Captain Ace Rico - 8.24b
+#06 - brainwhacker - 7.79b
+#07 - Narcisse Nightmare - 7.57b
+#08 - Delta Rescue - 7.51b
+#09 - Valtyr Farshield - 7.35b
+#10 - Talyn Soone - 6.96b
+#11 - Kotoko Hoshina - 6.44b
+#12 - Boexl - 5.71b
+#13 - T-B0NE - 5.58b
+#14 - Glade Radner - 5.50b
+#15 - Nicholas Chance Kile - 5.40b
+#16 - Touretes - 5.23b
+#17 - Dakodai - 5.20b
+#18 - Sabrez Haklar - 5.16b
+#19 - Sudo Khaleesi - 4.93b
+#20 - Wee Lad - 4.69b
+#21 - Bails Naskingar - 4.52b
+#22 - Vantick Iscod - 4.35b
+#23 - Trip Erata - 4.31b
+#24 - Pyro Silf - 4.21b
+#25 - Tora SenPie - 4.17b
