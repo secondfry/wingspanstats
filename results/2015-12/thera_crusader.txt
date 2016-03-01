@@ -1,0 +1,21 @@
+Ships destroyed in Thera
+--------------------------------------------
+#01 - Xee Yoona-451 - 1 ships
+#02 - Mei Long - 1 ships
+#03 - Bonz Andrard - 1 ships
+#04 - T-B0NE - 1 ships
+#05 - Saiku Itchutomi - 1 ships
+#06 - bigwolf fish - 1 ships
+#07 - NoGo Rose - 1 ships
+#08 - Yuri RedAlert - 1 ships
+
+ISK destroyed in Thera
+--------------------------------------------
+#01 - Xee Yoona-451 - 0.45b
+#02 - Mei Long - 0.45b
+#03 - Bonz Andrard - 0.45b
+#04 - T-B0NE - 0.45b
+#05 - Saiku Itchutomi - 0.45b
+#06 - bigwolf fish - 0.45b
+#07 - NoGo Rose - 0.45b
+#08 - Yuri RedAlert - 0.45b

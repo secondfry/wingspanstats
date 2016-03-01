@@ -1,37 +1,45 @@
 Top BLOPS pilots - ships destroyed
 --------------------------------------------
-#01 - Saria Dehmov - 74 ships
+#01 - Saria Dehmov - 75 ships
 #02 - Chance Ravinne - 31 ships
-#03 - Cynthera Noir - 12 ships
-#04 - Abaddon Nergal - 11 ships
-#05 - Junako Zelkarr - 10 ships
-#06 - Xeromos - 10 ships
-#07 - Ransom Odunen - 8 ships
-#08 - Vince Condor - 8 ships
-#09 - Erika Tsurpalen - 6 ships
-#10 - Cyran Reinhard - 4 ships
-#11 - More11o - 4 ships
-#12 - Vothor - 3 ships
-#13 - Bleda Katona - 3 ships
-#14 - togi yuki - 2 ships
-#15 - Dermia - 1 ships
-#16 - Black Aivo - 1 ships
+#03 - togi yuki - 14 ships
+#04 - Ransom Odunen - 13 ships
+#05 - More11o - 12 ships
+#06 - Cynthera Noir - 12 ships
+#07 - Abaddon Nergal - 11 ships
+#08 - Junako Zelkarr - 10 ships
+#09 - Xeromos - 10 ships
+#10 - Vince Condor - 8 ships
+#11 - Erika Tsurpalen - 6 ships
+#12 - Tali Lyrae - 5 ships
+#13 - Glade Radner - 5 ships
+#14 - Cyran Reinhard - 4 ships
+#15 - Vothor - 3 ships
+#16 - Newbus - 3 ships
+#17 - Bleda Katona - 3 ships
+#18 - Dermia - 1 ships
+#19 - June Pyron - 1 ships
+#20 - Black Aivo - 1 ships
 
 Top BLOPS pilots - ISK destroyed
 --------------------------------------------
-#01 - Saria Dehmov - 19.51b
-#02 - Abaddon Nergal - 5.02b
-#03 - Ransom Odunen - 4.68b
-#04 - Junako Zelkarr - 3.53b
-#05 - Cynthera Noir - 3.33b
-#06 - Xeromos - 2.63b
-#07 - Erika Tsurpalen - 1.76b
-#08 - Vince Condor - 1.13b
-#09 - Chance Ravinne - 1.06b
-#10 - Dermia - 0.45b
-#11 - Cyran Reinhard - 0.37b
-#12 - togi yuki - 0.33b
-#13 - Vothor - 0.28b
-#14 - More11o - 0.20b
-#15 - Bleda Katona - 0.16b
-#16 - Black Aivo - 0.10b
+#01 - Saria Dehmov - 21.69b
+#02 - togi yuki - 7.18b
+#03 - Ransom Odunen - 5.93b
+#04 - Abaddon Nergal - 5.02b
+#05 - More11o - 3.97b
+#06 - Junako Zelkarr - 3.53b
+#07 - Cynthera Noir - 3.33b
+#08 - Xeromos - 2.63b
+#09 - Tali Lyrae - 2.52b
+#10 - Newbus - 1.95b
+#11 - Glade Radner - 1.88b
+#12 - Erika Tsurpalen - 1.76b
+#13 - Vince Condor - 1.13b
+#14 - Chance Ravinne - 1.06b
+#15 - Dermia - 0.45b
+#16 - Cyran Reinhard - 0.37b
+#17 - Vothor - 0.28b
+#18 - June Pyron - 0.19b
+#19 - Bleda Katona - 0.16b
+#20 - Black Aivo - 0.10b

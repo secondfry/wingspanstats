@@ -1,55 +1,55 @@
 Top industrial hunters - ships destroyed
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 54 ships
-#02 - Orianna Okanata - 53 ships
+#01 - Orianna Okanata - 56 ships
+#02 - Cap'n Rick Clusterbomb - 54 ships
 #03 - Valtyr Farshield - 35 ships
 #04 - Chance Ravinne - 30 ships
 #05 - Eridanii - 29 ships
 #06 - Gigi McQuaid - 24 ships
-#07 - Gillion Wyrddych - 20 ships
-#08 - Glade Radner - 19 ships
-#09 - choo t - 19 ships
-#10 - Narcisse Nightmare - 17 ships
-#11 - Sabrez Haklar - 17 ships
-#12 - Tasmine Cha-Tien - 16 ships
-#13 - Revan Wake - 16 ships
-#14 - NoGo Rose - 16 ships
-#15 - Hateful Heart - 15 ships
-#16 - Saladiin - 14 ships
-#17 - inta Vakaria - 14 ships
-#18 - Alt Sokarad - 14 ships
-#19 - Wee Lad - 14 ships
-#20 - brainwhacker - 14 ships
-#21 - Saria Dehmov - 14 ships
-#22 - Jenna Lost - 12 ships
-#23 - Al3x Oaks - 12 ships
-#24 - NovaMoon Enaka - 12 ships
-#25 - Dakodai - 11 ships
+#07 - Glade Radner - 21 ships
+#08 - Gillion Wyrddych - 21 ships
+#09 - brainwhacker - 19 ships
+#10 - choo t - 19 ships
+#11 - Narcisse Nightmare - 17 ships
+#12 - Sabrez Haklar - 17 ships
+#13 - Tasmine Cha-Tien - 17 ships
+#14 - Hateful Heart - 17 ships
+#15 - Saria Dehmov - 16 ships
+#16 - Revan Wake - 16 ships
+#17 - NoGo Rose - 16 ships
+#18 - inta Vakaria - 15 ships
+#19 - Wee Lad - 15 ships
+#20 - Saladiin - 14 ships
+#21 - Alt Sokarad - 14 ships
+#22 - Al3x Oaks - 13 ships
+#23 - Valkyrie Starslayer - 13 ships
+#24 - Jenna Lost - 12 ships
+#25 - NovaMoon Enaka - 12 ships
 
 Top industrial hunters - ISK destroyed
 --------------------------------------------
 #01 - Cap'n Rick Clusterbomb - 15.92b
 #02 - Valtyr Farshield - 10.32b
-#03 - Abaddon Nergal - 6.46b
-#04 - Gigi McQuaid - 6.24b
-#05 - Orianna Okanata - 5.84b
-#06 - Aldore Udan - 5.74b
-#07 - Glade Radner - 5.65b
+#03 - Orianna Okanata - 6.68b
+#04 - Abaddon Nergal - 6.46b
+#05 - Gigi McQuaid - 6.24b
+#06 - Aldore Udan - 5.80b
+#07 - Glade Radner - 5.70b
 #08 - Rob Tsukaya - 5.15b
-#09 - Banshee Legend - 4.69b
-#10 - Saria Dehmov - 4.67b
+#09 - Banshee Legend - 4.90b
+#10 - Saria Dehmov - 4.77b
 #11 - Vince Condor - 4.67b
 #12 - Peter Lathe - 4.64b
 #13 - NoGo Rose - 4.41b
 #14 - Amaru Skye - 3.97b
 #15 - Dakodai - 3.78b
 #16 - Chance Ravinne - 3.78b
-#17 - Ransom Odunen - 3.53b
-#18 - Jenna Lost - 3.53b
-#19 - Bustrr Bluth - 3.43b
-#20 - inta Vakaria - 3.39b
-#21 - Al3x Oaks - 3.33b
-#22 - Caboosette - 3.18b
-#23 - Sabrez Haklar - 3.14b
-#24 - Eridanii - 3.13b
-#25 - Alebrelle Kuatu - 3.10b
+#17 - Ransom Odunen - 3.59b
+#18 - inta Vakaria - 3.54b
+#19 - Jenna Lost - 3.53b
+#20 - togi yuki - 3.49b
+#21 - Bustrr Bluth - 3.43b
+#22 - Al3x Oaks - 3.36b
+#23 - Caboosette - 3.27b
+#24 - Sabrez Haklar - 3.14b
+#25 - Eridanii - 3.13b

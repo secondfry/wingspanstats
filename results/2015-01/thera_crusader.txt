@@ -1,0 +1,55 @@
+Ships destroyed in Thera
+--------------------------------------------
+#01 - Tali Lyrae - 6 ships
+#02 - Docnagol - 5 ships
+#03 - Chance Ravinne - 5 ships
+#04 - Gembre - 4 ships
+#05 - Ironnight - 3 ships
+#06 - Thalia Thellere - 3 ships
+#07 - Captain0541 - 3 ships
+#08 - Cadno Llewellyn - 3 ships
+#09 - Saria Dehmov - 3 ships
+#10 - shepard locknear - 3 ships
+#11 - Arkaos Darkstarr - 2 ships
+#12 - Louis Ferreira - 2 ships
+#13 - Big Broka - 2 ships
+#14 - Gulfair - 2 ships
+#15 - Severin Talvan - 2 ships
+#16 - Blast HardCheeze - 2 ships
+#17 - NoGo Rose - 2 ships
+#18 - Vothor - 1 ships
+#19 - Sparkles Audier - 1 ships
+#20 - Gillion Wyrddych - 1 ships
+#21 - Gijs Koster - 1 ships
+#22 - Slevin Hekard - 1 ships
+#23 - Herbert Uromastyx - 1 ships
+#24 - Budaq Sayr - 1 ships
+#25 - Trip Erata - 1 ships
+
+ISK destroyed in Thera
+--------------------------------------------
+#01 - Tali Lyrae - 2.75b
+#02 - Chance Ravinne - 2.66b
+#03 - Gembre - 2.65b
+#04 - Captain0541 - 2.59b
+#05 - Docnagol - 0.25b
+#06 - Thalia Thellere - 0.17b
+#07 - Big Broka - 0.17b
+#08 - Severin Talvan - 0.17b
+#09 - Blast HardCheeze - 0.17b
+#10 - Ironnight - 0.14b
+#11 - shepard locknear - 0.14b
+#12 - NoGo Rose - 0.13b
+#13 - Saria Dehmov - 0.12b
+#14 - Cadno Llewellyn - 0.12b
+#15 - Trip Erata - 0.11b
+#16 - Vothor - 0.10b
+#17 - Gillion Wyrddych - 0.07b
+#18 - Herbert Uromastyx - 0.07b
+#19 - Arkaos Darkstarr - 0.05b
+#20 - Louis Ferreira - 0.05b
+#21 - Gulfair - 0.05b
+#22 - Gijs Koster - 0.03b
+#23 - Slevin Hekard - 0.03b
+#24 - Budaq Sayr - 0.03b
+#25 - Sparkles Audier - 0.02b

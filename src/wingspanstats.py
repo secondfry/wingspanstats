@@ -26,6 +26,7 @@ from rules.industrygiant import IndustryGiant
 from rules.bombingrun import BombingRun
 from rules.interdictorace import InterdictorAce
 from rules.podexpress import PodExpress
+from rules.theracrusader import TheraCrusader
 
 
 def defined_rules():
@@ -51,7 +52,9 @@ def defined_rules():
         BombingRun(),
         InterdictorAce(),
         PodExpress(),
+        TheraCrusader(),
     ]
+
 
 def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awox_monthly):
     with open(file_name) as data_file:
@@ -72,6 +75,7 @@ def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awo
                         rule.process_km(killmail)
                     for rule in rules_monthly:
                         rule.process_km(killmail)
+
 
 def analyze_data(db_list):
     rules_alltime = defined_rules()
@@ -125,6 +129,7 @@ def main():
         (2015, 11),
         (2015, 12),
         (2016, 1),
+        (2016, 2),
     ])
 
 if __name__ == "__main__":

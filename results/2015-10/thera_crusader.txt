@@ -1,0 +1,37 @@
+Ships destroyed in Thera
+--------------------------------------------
+#01 - Myra Vixen - 5 ships
+#02 - Tali Lyrae - 4 ships
+#03 - Abaddon Nergal - 4 ships
+#04 - June Pyron - 3 ships
+#05 - Dierdri Maru - 3 ships
+#06 - T-B0NE - 3 ships
+#07 - togi yuki - 3 ships
+#08 - Baine Mangeiri - 3 ships
+#09 - Caboosette - 3 ships
+#10 - NotRob - 3 ships
+#11 - Orianna Okanata - 3 ships
+#12 - Jerythas - 3 ships
+#13 - Saria Dehmov - 3 ships
+#14 - Sharps - 2 ships
+#15 - Vothor - 2 ships
+#16 - Ross Walton - 2 ships
+
+ISK destroyed in Thera
+--------------------------------------------
+#01 - Myra Vixen - 0.20b
+#02 - Tali Lyrae - 0.20b
+#03 - June Pyron - 0.20b
+#04 - Dierdri Maru - 0.20b
+#05 - T-B0NE - 0.20b
+#06 - togi yuki - 0.20b
+#07 - Baine Mangeiri - 0.20b
+#08 - Caboosette - 0.20b
+#09 - NotRob - 0.20b
+#10 - Orianna Okanata - 0.20b
+#11 - Jerythas - 0.20b
+#12 - Saria Dehmov - 0.20b
+#13 - Ross Walton - 0.16b
+#14 - Abaddon Nergal - 0.13b
+#15 - Sharps - 0.13b
+#16 - Vothor - 0.11b

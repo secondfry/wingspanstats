@@ -1,0 +1,47 @@
+Top T3 Cruiser pilots - ships destroyed
+--------------------------------------------
+#01 - Vek Chiasson - 72 ships
+#02 - Richter Trench - 55 ships
+#03 - Gareth Adoudel - 11 ships
+#04 - Hateful Heart - 10 ships
+#05 - Nicholas Chance Kile - 9 ships
+#06 - Waaaaaagggh - 9 ships
+#07 - Greattorian - 8 ships
+#08 - Desiree Delene - 8 ships
+#09 - Kotoko Hoshina - 8 ships
+#10 - Aldore Udan - 6 ships
+#11 - Estebanzo Rufius - 6 ships
+#12 - ewiven legolas - 4 ships
+#13 - Sasuke Solette - 3 ships
+#14 - Tali Lyrae - 2 ships
+#15 - Xio Zheng - 2 ships
+#16 - Entreri Airuta - 2 ships
+#17 - Vothor - 1 ships
+#18 - Glade Radner - 1 ships
+#19 - Fandoragon Lunarsy - 1 ships
+#20 - Bustrr Bluth - 1 ships
+#21 - inta Vakaria - 1 ships
+
+Top T3 Cruiser pilots - ISK destroyed
+--------------------------------------------
+#01 - Vek Chiasson - 12.92b
+#02 - Richter Trench - 8.01b
+#03 - Waaaaaagggh - 4.60b
+#04 - Kotoko Hoshina - 4.28b
+#05 - Entreri Airuta - 3.69b
+#06 - inta Vakaria - 3.28b
+#07 - Gareth Adoudel - 2.24b
+#08 - Hateful Heart - 1.78b
+#09 - Nicholas Chance Kile - 1.07b
+#10 - Estebanzo Rufius - 1.00b
+#11 - Sasuke Solette - 0.76b
+#12 - Desiree Delene - 0.68b
+#13 - ewiven legolas - 0.62b
+#14 - Aldore Udan - 0.54b
+#15 - Greattorian - 0.31b
+#16 - Xio Zheng - 0.22b
+#17 - Fandoragon Lunarsy - 0.10b
+#18 - Bustrr Bluth - 0.04b
+#19 - Vothor - 0.02b
+#20 - Glade Radner - 0.01b
+#21 - Tali Lyrae - 0.00b

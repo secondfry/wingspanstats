@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 126 ships
+#02 - Mei Long - 124 ships
+#03 - Quintus Va'Lari - 115 ships
+#04 - Silentt Knightt - 111 ships
+#05 - T-B0NE - 90 ships
+#06 - Cap'n Rick Clusterbomb - 82 ships
+#07 - More11o - 81 ships
+#08 - Sharps - 80 ships
+#09 - Vek Chiasson - 80 ships
+#10 - Gillion Wyrddych - 74 ships
+#11 - Albin wood - 73 ships
+#12 - Douw Holwer - 69 ships
+#13 - Corridor Paratus - 68 ships
+#14 - SoftCore - 68 ships
+#15 - choo t - 68 ships
+#16 - Maere Mearcstapa - 66 ships
+#17 - inta Vakaria - 66 ships
+#18 - Liamm Dallocort - 65 ships
+#19 - Saria Dehmov - 65 ships
+#20 - Sudo Khaleesi - 65 ships
+#21 - Chance Ravinne - 64 ships
+#22 - Kobra LivesMatter - 63 ships
+#23 - Al3x Oaks - 63 ships
+#24 - Akairo Ishikela - 61 ships
+#25 - TOPSTER - 60 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 23.55b
+#02 - T-B0NE - 18.56b
+#03 - Silentt Knightt - 18.18b
+#04 - Cap'n Rick Clusterbomb - 17.79b
+#05 - Saria Dehmov - 17.03b
+#06 - Mei Long - 16.04b
+#07 - Vek Chiasson - 15.96b
+#08 - More11o - 14.95b
+#09 - togi yuki - 14.66b
+#10 - inta Vakaria - 12.83b
+#11 - Quintus Va'Lari - 12.80b
+#12 - SoftCore - 11.30b
+#13 - Albin wood - 11.15b
+#14 - Glade Radner - 11.06b
+#15 - Newbus - 10.84b
+#16 - choo t - 10.49b
+#17 - Toit - 10.22b
+#18 - Maere Mearcstapa - 9.90b
+#19 - Banshee Legend - 9.86b
+#20 - scopehone - 9.83b
+#21 - Ransom Odunen - 9.73b
+#22 - Gillion Wyrddych - 9.70b
+#23 - Sudo Khaleesi - 9.68b
+#24 - Gareth Adoudel - 9.68b
+#25 - Symerizer Ahashion - 9.62b

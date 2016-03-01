@@ -1,0 +1,17 @@
+Ships destroyed in Thera
+--------------------------------------------
+#01 - Damien Oxytocin - 5 ships
+#02 - Gillion Wyrddych - 2 ships
+#03 - Froza Areogone - 2 ships
+#04 - Sabrez Haklar - 2 ships
+#05 - NovaMoon Enaka - 1 ships
+#06 - Xeromos - 1 ships
+
+ISK destroyed in Thera
+--------------------------------------------
+#01 - Damien Oxytocin - 0.22b
+#02 - Sabrez Haklar - 0.17b
+#03 - Gillion Wyrddych - 0.14b
+#04 - Froza Areogone - 0.14b
+#05 - NovaMoon Enaka - 0.14b
+#06 - Xeromos - 0.14b

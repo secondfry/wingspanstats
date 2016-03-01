@@ -11,7 +11,7 @@ from rules.statsconfig import StatsConfig
 
 def zkill_fetch(year, month, page_nr):
     headers = {
-        "User-Agent" : "Wingspan Stats, Mail: valtyr.farshield@gmail.com",
+        "User-Agent": "Wingspan Stats, Mail: valtyr.farshield@gmail.com",
         "Accept-encoding": "gzip"
     }
 
@@ -40,6 +40,7 @@ def zkill_fetch(year, month, page_nr):
 
     return data
 
+
 def extract_data(year, month):
     print "Trying to extract killmails from {}-{}".format(year, month)
 
@@ -49,7 +50,7 @@ def extract_data(year, month):
 
     page_nr = 1
     while True:
-        data =  zkill_fetch(year, month, page_nr)
+        data = zkill_fetch(year, month, page_nr)
 
         # try to parse JSON received from server
         try:
@@ -90,6 +91,7 @@ def main():
     extract_data(2015, 11)
     extract_data(2015, 12)
     extract_data(2016, 1)
+    extract_data(2016, 2)
 
 if __name__ == "__main__":
     main()

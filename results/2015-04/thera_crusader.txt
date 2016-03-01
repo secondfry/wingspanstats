@@ -1,0 +1,11 @@
+Ships destroyed in Thera
+--------------------------------------------
+#01 - Wee Lad - 3 ships
+#02 - General Waaargh - 1 ships
+#03 - Lainis Pootis - 1 ships
+
+ISK destroyed in Thera
+--------------------------------------------
+#01 - General Waaargh - 0.03b
+#02 - Wee Lad - 0.01b
+#03 - Lainis Pootis - 0.00b

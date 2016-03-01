@@ -1,0 +1,27 @@
+General statistics
+--------------------------------------------
+Total kills: 1172
+Total value: 113.08b
+Average value/kill: 96.49m
+Solo total kills: 697
+Solo total value: 35.20b
+
+
+High-sec total kills: 45 (3.84%)
+High-sec total value: 3.55b (3.14%)
+
+Low-sec total kills: 142 (12.12%)
+Low-sec total value: 7.69b (6.80%)
+
+Null-sec total kills: 176 (15.02%)
+Null-sec total value: 27.18b (24.04%)
+
+W-space total kills: 809 (69.03%)
+W-space total value: 74.66b (66.02%)
+  [*] C1 - total kills: 171, total isk: 14.43b
+  [*] C2 - total kills: 253, total isk: 23.05b
+  [*] C3 - total kills: 149, total isk: 14.88b
+  [*] C4 - total kills: 43, total isk: 7.90b
+  [*] C5 - total kills: 10, total isk: 0.40b
+  [*] C13 - total kills: 5, total isk: 0.20b
+  [*] Thera - total kills: 178, total isk: 13.81b

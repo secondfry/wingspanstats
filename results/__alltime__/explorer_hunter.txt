@@ -1,55 +1,55 @@
 Top explorer hunters - ships destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 82 ships
+#01 - Valtyr Farshield - 85 ships
 #02 - NoGo Rose - 73 ships
-#03 - Dakodai - 65 ships
-#04 - choo t - 63 ships
-#05 - Saladiin - 51 ships
-#06 - Alphecca Lazair - 45 ships
-#07 - Damien Oxytocin - 44 ships
+#03 - choo t - 68 ships
+#04 - Dakodai - 65 ships
+#05 - Silentt Knightt - 65 ships
+#06 - Alphecca Lazair - 53 ships
+#07 - Saladiin - 51 ships
 #08 - Narcisse Nightmare - 44 ships
-#09 - Alt Sokarad - 41 ships
-#10 - Sabrez Haklar - 39 ships
-#11 - Cap'n Rick Clusterbomb - 33 ships
-#12 - Reed Icculus - 32 ships
-#13 - Glade Radner - 31 ships
-#14 - Vothor - 31 ships
-#15 - Allbur Chellak - 30 ships
-#16 - Try2CatchMe ActEstFabula - 29 ships
-#17 - Silentt Knightt - 27 ships
-#18 - Rob Tsukaya - 27 ships
-#19 - Eridanii - 25 ships
-#20 - Vargo Shahni - 24 ships
-#21 - Myra Vixen - 23 ships
-#22 - WeirdBall - 23 ships
-#23 - inta Vakaria - 23 ships
-#24 - Zen Dad - 23 ships
-#25 - Gillion Wyrddych - 22 ships
+#09 - Damien Oxytocin - 44 ships
+#10 - Alt Sokarad - 41 ships
+#11 - Sabrez Haklar - 40 ships
+#12 - Cap'n Rick Clusterbomb - 35 ships
+#13 - Try2CatchMe ActEstFabula - 34 ships
+#14 - brainwhacker - 33 ships
+#15 - Reed Icculus - 32 ships
+#16 - Glade Radner - 32 ships
+#17 - Vothor - 31 ships
+#18 - Allbur Chellak - 30 ships
+#19 - Al3x Oaks - 29 ships
+#20 - Banshee Legend - 28 ships
+#21 - Myra Vixen - 27 ships
+#22 - Rob Tsukaya - 27 ships
+#23 - Vargo Shahni - 25 ships
+#24 - Eridanii - 25 ships
+#25 - Mei Long - 25 ships
 
 Top explorer hunters - ISK destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 6.91b
+#01 - Valtyr Farshield - 7.40b
 #02 - Dakodai - 5.35b
-#03 - Glade Radner - 4.86b
+#03 - Glade Radner - 5.27b
 #04 - Damien Oxytocin - 4.68b
 #05 - Vince Condor - 4.67b
-#06 - Narcisse Nightmare - 4.58b
-#07 - inta Vakaria - 4.40b
-#08 - Banshee Legend - 3.96b
-#09 - Cap'n Rick Clusterbomb - 3.86b
-#10 - Wee Lad - 3.32b
-#11 - Trip Erata - 3.29b
-#12 - choo t - 3.03b
-#13 - Try2CatchMe ActEstFabula - 2.95b
-#14 - Zeke Airuta - 2.82b
-#15 - Authawy - 2.81b
-#16 - Alphecca Lazair - 2.80b
-#17 - Alt Sokarad - 2.72b
-#18 - NoGo Rose - 2.69b
-#19 - Sabrez Haklar - 2.40b
-#20 - Xee Yoona-451 - 2.37b
-#21 - Ransom Odunen - 2.31b
-#22 - Rob Tsukaya - 2.29b
-#23 - Mei Long - 2.01b
-#24 - Vargo Shahni - 1.99b
-#25 - Tali Lyrae - 1.94b
+#06 - inta Vakaria - 4.63b
+#07 - Narcisse Nightmare - 4.58b
+#08 - Wee Lad - 4.25b
+#09 - Banshee Legend - 4.25b
+#10 - Cap'n Rick Clusterbomb - 4.15b
+#11 - Alphecca Lazair - 3.83b
+#12 - Silentt Knightt - 3.30b
+#13 - choo t - 3.30b
+#14 - Trip Erata - 3.29b
+#15 - Try2CatchMe ActEstFabula - 3.16b
+#16 - Sabrez Haklar - 2.91b
+#17 - Zeke Airuta - 2.82b
+#18 - Authawy - 2.81b
+#19 - Alt Sokarad - 2.72b
+#20 - NoGo Rose - 2.69b
+#21 - brainwhacker - 2.46b
+#22 - Xee Yoona-451 - 2.37b
+#23 - Ransom Odunen - 2.31b
+#24 - Rob Tsukaya - 2.29b
+#25 - Vargo Shahni - 2.16b

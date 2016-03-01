@@ -1,0 +1,37 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - brainwhacker - 35 ships
+#02 - togi yuki - 10 ships
+#03 - Al3x Oaks - 5 ships
+#04 - Orianna Okanata - 3 ships
+#05 - Desiree Delene - 3 ships
+#06 - Cap'n Rick Clusterbomb - 2 ships
+#07 - Banshee Legend - 2 ships
+#08 - Ransom Odunen - 2 ships
+#09 - Lenai Chelien - 2 ships
+#10 - Abaddon Nergal - 2 ships
+#11 - Dakodai - 2 ships
+#12 - BomberBob - 2 ships
+#13 - SoftCore - 1 ships
+#14 - Maus Pai - 1 ships
+#15 - Saiku Itchutomi - 1 ships
+#16 - Caboosette - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Abaddon Nergal - 3.05b
+#02 - togi yuki - 2.75b
+#03 - brainwhacker - 1.38b
+#04 - Orianna Okanata - 0.68b
+#05 - Dakodai - 0.51b
+#06 - Al3x Oaks - 0.32b
+#07 - Ransom Odunen - 0.25b
+#08 - Caboosette - 0.14b
+#09 - BomberBob - 0.13b
+#10 - Maus Pai - 0.10b
+#11 - Lenai Chelien - 0.06b
+#12 - Saiku Itchutomi - 0.04b
+#13 - Cap'n Rick Clusterbomb - 0.01b
+#14 - Desiree Delene - 0.00b
+#15 - Banshee Legend - 0.00b
+#16 - SoftCore - 0.00b
