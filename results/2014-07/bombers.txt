@@ -1,9 +1,0 @@
-Top bomber pilots - ships destroyed
---------------------------------------------
-#01 - Chance Ravinne - 3 ships
-#02 - John Yatolile - 2 ships
-
-Top bomber pilots - ISK destroyed
---------------------------------------------
-#01 - John Yatolile - 0.39b
-#02 - Chance Ravinne - 0.09b
