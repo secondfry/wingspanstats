@@ -9,11 +9,11 @@ from scripts.db_parse import DbParse
 
 if __name__ == "__main__":
     timestamp_start = datetime.now()
-    log(0, 'Wingspan Statistics script start')
+    log(0, 'Wingspan Statistics script v0.9 start')
 
     DbCreate.factory("zkillboard")
     DbParse()
 
     time = datetime.now() - timestamp_start
-    log(0, 'Wingspan Statistics script end')
+    log(0, 'Wingspan Statistics script v0.9 end')
     log(0, 'Elapsed: ' + str(time) + '\n')
