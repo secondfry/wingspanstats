@@ -58,3 +58,6 @@ target/
 
 # custom
 .idea
+database/
+results/
+wingspanstats.log
