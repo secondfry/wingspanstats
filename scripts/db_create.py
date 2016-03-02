@@ -75,6 +75,8 @@ class DbCreateZkillboard(DbCreate):
         while status != self.STATUS_DONE:
             log(self.LOG_LEVEL, 'Starting fetch ' + timestamp_check.strftime('%Y-%m'))
             status, timestamp_check = self.parse(timestamp_check)
+            if status != self.STATUS_DONE and timestamp_last >= timestamp_check:
+                status = self.STATUS_DONE
         log(self.LOG_LEVEL, 'Done! [zkillboard fetcher]')
 
     def parse(self, timestamp_check):
