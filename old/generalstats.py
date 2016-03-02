@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 
 
 class GeneralStats(Skeleton):
-
     def __init__(self):
         self.file_name = "general_stats"
         self.total_kills = 0
@@ -31,7 +30,7 @@ class GeneralStats(Skeleton):
 
         with open('security.csv', mode='r') as infile:
             reader = csv.reader(infile)
-            self.security = {int(rows[0]):rows[1] for rows in reader}
+            self.security = {int(rows[0]): rows[1] for rows in reader}
 
     def __str__(self):
         output = ""
@@ -41,54 +40,54 @@ class GeneralStats(Skeleton):
         output += "Total value: {:.2f}b\n".format(float(self.total_value) / 1000000000.0)
         if self.total_kills > 0:
             output += "Average value/kill: {:.2f}m\n".format(
-                float(self.total_value) / 1000000 / self.total_kills
+                    float(self.total_value) / 1000000 / self.total_kills
             )
         output += "Solo total kills: {}\n".format(self.solo_total_kills)
         output += "Solo total value: {:.2f}b\n".format(float(self.solo_total_value) / 1000000000.0)
         output += "\n\n"
         output += "High-sec total kills: {} ({:.2f}%)\n".format(
-            self.total_kills_hs,
-            self.total_kills_hs / float(self.total_kills) * 100
+                self.total_kills_hs,
+                self.total_kills_hs / float(self.total_kills) * 100
         )
         output += "High-sec total value: {:.2f}b ({:.2f}%)\n".format(
-            float(self.total_value_hs) / 1000000000.0,
-            self.total_value_hs / self.total_value * 100
+                float(self.total_value_hs) / 1000000000.0,
+                self.total_value_hs / self.total_value * 100
         )
         output += "\n"
         output += "Low-sec total kills: {} ({:.2f}%)\n".format(
-            self.total_kills_ls,
-            self.total_kills_ls / float(self.total_kills) * 100
+                self.total_kills_ls,
+                self.total_kills_ls / float(self.total_kills) * 100
         )
         output += "Low-sec total value: {:.2f}b ({:.2f}%)\n".format(
-            float(self.total_value_ls) / 1000000000.0,
-            self.total_value_ls / self.total_value * 100
+                float(self.total_value_ls) / 1000000000.0,
+                self.total_value_ls / self.total_value * 100
         )
         output += "\n"
         output += "Null-sec total kills: {} ({:.2f}%)\n".format(
-            self.total_kills_ns,
-            self.total_kills_ns / float(self.total_kills) * 100
+                self.total_kills_ns,
+                self.total_kills_ns / float(self.total_kills) * 100
         )
         output += "Null-sec total value: {:.2f}b ({:.2f}%)\n".format(
-            float(self.total_value_ns) / 1000000000.0,
-            self.total_value_ns / self.total_value * 100
+                float(self.total_value_ns) / 1000000000.0,
+                self.total_value_ns / self.total_value * 100
         )
         output += "\n"
         output += "W-space total kills: {} ({:.2f}%)\n".format(
-            self.total_kills_wh,
-            self.total_kills_wh / float(self.total_kills) * 100
+                self.total_kills_wh,
+                self.total_kills_wh / float(self.total_kills) * 100
         )
         output += "W-space total value: {:.2f}b ({:.2f}%)\n".format(
-            float(self.total_value_wh) / 1000000000.0,
-            self.total_value_wh / self.total_value * 100
+                float(self.total_value_wh) / 1000000000.0,
+                self.total_value_wh / self.total_value * 100
         )
 
         if self.wh_stats != {}:
             for wh_class in ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c13', 'c12']:
                 if wh_class in self.wh_stats.keys():
                     output += "  [*] {} - total kills: {}, total isk: {:.2f}b\n".format(
-                        wh_class.upper() if wh_class != 'c12' else 'Thera',
-                        self.wh_stats[wh_class][0],
-                        self.wh_stats[wh_class][1] / 1000000000.0,
+                            wh_class.upper() if wh_class != 'c12' else 'Thera',
+                            self.wh_stats[wh_class][0],
+                            self.wh_stats[wh_class][1] / 1000000000.0,
                     )
 
             drifter_total = 0
@@ -99,8 +98,8 @@ class GeneralStats(Skeleton):
                     drifter_isk += self.wh_stats[wh_class][1]
             if drifter_total != 0:
                 output += "  [*] Drifter wormholes - total kills: {}, total isk: {:.2f}b\n".format(
-                    drifter_total,
-                    drifter_isk / 1000000000.0,
+                        drifter_total,
+                        drifter_isk / 1000000000.0,
                 )
 
         return output
@@ -113,9 +112,9 @@ class GeneralStats(Skeleton):
             self.total_kills_ns,
             self.total_kills_wh
         ])
-        percentage = 100.*sizes/sizes.sum()
+        percentage = 100. * sizes / sizes.sum()
         labels = ['High-sec', 'Low-sec', 'Null-sec', 'W-space']
-        labels2 = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(labels, percentage)]
+        labels2 = ['{0} - {1:1.2f} %'.format(i, j) for i, j in zip(labels, percentage)]
         colors = ['green', 'yellow', 'red', 'lightskyblue']
 
         plt.title("Total number of ships killed")
@@ -133,9 +132,9 @@ class GeneralStats(Skeleton):
             self.total_value_ns,
             self.total_value_wh
         ])
-        percentage = 100.*sizes/sizes.sum()
+        percentage = 100. * sizes / sizes.sum()
         labels = ['High-sec', 'Low-sec', 'Null-sec', 'W-space']
-        labels2 = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(labels, percentage)]
+        labels2 = ['{0} - {1:1.2f} %'.format(i, j) for i, j in zip(labels, percentage)]
         colors = ['green', 'yellow', 'red', 'lightskyblue']
 
         plt.title("Total ISK destroyed")

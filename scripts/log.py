@@ -4,6 +4,7 @@
 
 from datetime import datetime
 import logging
+
 logging.basicConfig(filename='wingspanstats.log', level=logging.DEBUG)
 
 

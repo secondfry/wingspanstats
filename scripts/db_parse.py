@@ -23,7 +23,7 @@ class DbParse(object):
 
         with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), mode='r') as infile:
             reader = csv.reader(infile)
-            self.security = {int(rows[0]):rows[1] for rows in reader}
+            self.security = {int(rows[0]): rows[1] for rows in reader}
 
         self.data = {}
         self.persons = {}
@@ -239,24 +239,24 @@ class DbParse(object):
                          lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][3][1])
         self.leaderboard('kills_space_c123', self.persons[timestamp_check.strftime('%Y-%m')],
                          lambda persona:
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][4][0] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][5][0] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][6][0])
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][4][0] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][5][0] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][6][0])
         self.leaderboard('value_space_c123', self.persons[timestamp_check.strftime('%Y-%m')],
                          lambda persona:
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][4][1] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][5][1] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][6][1])
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][4][1] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][5][1] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][6][1])
         self.leaderboard('kills_space_c456', self.persons[timestamp_check.strftime('%Y-%m')],
                          lambda persona:
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][7][0] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][8][0] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][9][0])
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][7][0] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][8][0] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][9][0])
         self.leaderboard('value_space_c456', self.persons[timestamp_check.strftime('%Y-%m')],
                          lambda persona:
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][7][1] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][8][1] +
-                            self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][9][1])
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][7][1] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][8][1] +
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][9][1])
         self.leaderboard('kills_space_c12', self.persons[timestamp_check.strftime('%Y-%m')],
                          lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][10][0])
         self.leaderboard('value_space_c12', self.persons[timestamp_check.strftime('%Y-%m')],
@@ -270,109 +270,163 @@ class DbParse(object):
         self.leaderboard('value_space_unknown', self.persons[timestamp_check.strftime('%Y-%m')],
                          lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][12][1])
         self.leaderboard('astero_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['astero'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['astero'][0])
         self.leaderboard('astero_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['astero'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['astero'][1])
         self.leaderboard('astero_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['astero'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['astero'][0])
         self.leaderboard('astero_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['astero'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['astero'][1])
         self.leaderboard('stratios_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['stratios'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['stratios'][0])
         self.leaderboard('stratios_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['stratios'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['stratios'][1])
         self.leaderboard('stratios_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['stratios'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['stratios'][0])
         self.leaderboard('stratios_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['stratios'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['stratios'][1])
         self.leaderboard('nestor_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['nestor'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['nestor'][0])
         self.leaderboard('nestor_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['nestor'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['nestor'][1])
         self.leaderboard('nestor_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['nestor'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['nestor'][0])
         self.leaderboard('nestor_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['nestor'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['nestor'][1])
         self.leaderboard('blops_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['blops'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['blops'][0])
         self.leaderboard('blops_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['blops'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['blops'][1])
         self.leaderboard('blops_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['blops'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['blops'][0])
         self.leaderboard('blops_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['blops'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['blops'][1])
         self.leaderboard('bomber_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['bomber'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['bomber'][0])
         self.leaderboard('bomber_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['bomber'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['bomber'][1])
         self.leaderboard('bomber_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['bomber'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['bomber'][0])
         self.leaderboard('bomber_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['bomber'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['bomber'][1])
         self.leaderboard('dictor_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['dictor'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['dictor'][0])
         self.leaderboard('dictor_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['dictor'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['dictor'][1])
         self.leaderboard('dictor_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['dictor'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['dictor'][0])
         self.leaderboard('dictor_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['dictor'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['dictor'][1])
         self.leaderboard('recon_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['recon'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['recon'][0])
         self.leaderboard('recon_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['recon'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['recon'][1])
         self.leaderboard('recon_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['recon'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['recon'][0])
         self.leaderboard('recon_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['recon'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['recon'][1])
         self.leaderboard('t3c_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3c'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3c'][0])
         self.leaderboard('t3c_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3c'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3c'][1])
         self.leaderboard('t3c_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3c'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3c'][0])
         self.leaderboard('t3c_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3c'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3c'][1])
         self.leaderboard('t3d_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3d'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3d'][0])
         self.leaderboard('t3d_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3d'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3d'][1])
         self.leaderboard('t3d_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3d'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3d'][0])
         self.leaderboard('t3d_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3d'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3d'][1])
         self.leaderboard('capital_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['capital'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['capital'][0])
         self.leaderboard('capital_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['capital'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['capital'][1])
         self.leaderboard('capital_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['capital'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['capital'][0])
         self.leaderboard('capital_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['capital'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['capital'][1])
         self.leaderboard('industrial_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['industrial'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['industrial'][0])
         self.leaderboard('industrial_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['industrial'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['industrial'][1])
         self.leaderboard('industrial_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['industrial'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['industrial'][
+                             0])
         self.leaderboard('industrial_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['industrial'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['industrial'][
+                             1])
         self.leaderboard('miner_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['miner'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['miner'][0])
         self.leaderboard('miner_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['miner'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['miner'][1])
         self.leaderboard('miner_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['miner'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['miner'][0])
         self.leaderboard('miner_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['miner'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['miner'][1])
         self.leaderboard('pod_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['pod'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['pod'][0])
         self.leaderboard('pod_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['pod'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['pod'][1])
         self.leaderboard('pod_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['pod'][0])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['pod'][0])
         self.leaderboard('pod_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['pod'][1])
+                         lambda persona:
+                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['pod'][1])
 
         file_name = os.path.join(res_dir_date, timestamp_check.strftime('%Y-%m') + '_result.json')
         with open(file_name, 'w') as f_out:
@@ -499,7 +553,8 @@ class DbParse(object):
         ):
             persona_id = persona
             persona = array[persona]
-            self.result[name][idx] = {'charID': persona_id, 'charName': persona['name'], 'kills': persona['kills'], 'value': persona['value']}
+            self.result[name][idx] = {'charID': persona_id, 'charName': persona['name'], 'kills': persona['kills'],
+                                      'value': persona['value']}
 
 
 def security_value(security):

@@ -124,10 +124,10 @@ class DbCreateZkillboard(DbCreate):
         log(self.LOG_LEVEL, 'Fetching page #' + str(page))
 
         url = "https://zkillboard.com/api/kills/corporationID/{}/year/{}/month/{}/page/{}/".format(
-            self.corporation_ids,
-            timestamp.year,
-            timestamp.month,
-            page,
+                self.corporation_ids,
+                timestamp.year,
+                timestamp.month,
+                page,
         )
 
         try:
