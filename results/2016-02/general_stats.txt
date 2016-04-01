@@ -1,25 +1,28 @@
 General statistics
 --------------------------------------------
-Total kills: 1172
-Total value: 113.08b
-Average value/kill: 96.49m
-Solo total kills: 697
-Solo total value: 35.20b
+Total kills: 1175
+Total value: 113.11b
+Average value/kill: 96.26m
+-- Total number of active pilots: 220/580 (37.93%)
+Kills per active member: 5.34
+ISK destroyed per active member: 514.13m
+Solo total kills: 698
+Solo total value: 35.21b
 
 
-High-sec total kills: 45 (3.84%)
+High-sec total kills: 45 (3.83%)
 High-sec total value: 3.55b (3.14%)
 
-Low-sec total kills: 142 (12.12%)
+Low-sec total kills: 142 (12.09%)
 Low-sec total value: 7.69b (6.80%)
 
-Null-sec total kills: 176 (15.02%)
-Null-sec total value: 27.18b (24.04%)
+Null-sec total kills: 176 (14.98%)
+Null-sec total value: 27.18b (24.03%)
 
-W-space total kills: 809 (69.03%)
-W-space total value: 74.66b (66.02%)
-  [*] C1 - total kills: 171, total isk: 14.43b
-  [*] C2 - total kills: 253, total isk: 23.05b
+W-space total kills: 812 (69.11%)
+W-space total value: 74.68b (66.03%)
+  [*] C1 - total kills: 172, total isk: 14.43b
+  [*] C2 - total kills: 255, total isk: 23.07b
   [*] C3 - total kills: 149, total isk: 14.88b
   [*] C4 - total kills: 43, total isk: 7.90b
   [*] C5 - total kills: 10, total isk: 0.40b

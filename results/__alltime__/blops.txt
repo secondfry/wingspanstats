@@ -1,45 +1,49 @@
 Top BLOPS pilots - ships destroyed
 --------------------------------------------
-#01 - Saria Dehmov - 75 ships
+#01 - Saria Dehmov - 81 ships
 #02 - Chance Ravinne - 31 ships
-#03 - togi yuki - 14 ships
-#04 - Ransom Odunen - 13 ships
-#05 - More11o - 12 ships
-#06 - Cynthera Noir - 12 ships
-#07 - Abaddon Nergal - 11 ships
-#08 - Junako Zelkarr - 10 ships
-#09 - Xeromos - 10 ships
+#03 - Ransom Odunen - 21 ships
+#04 - togi yuki - 19 ships
+#05 - More11o - 15 ships
+#06 - Xeromos - 12 ships
+#07 - Cynthera Noir - 12 ships
+#08 - Abaddon Nergal - 11 ships
+#09 - Junako Zelkarr - 10 ships
 #10 - Vince Condor - 8 ships
-#11 - Erika Tsurpalen - 6 ships
-#12 - Tali Lyrae - 5 ships
-#13 - Glade Radner - 5 ships
-#14 - Cyran Reinhard - 4 ships
-#15 - Vothor - 3 ships
-#16 - Newbus - 3 ships
-#17 - Bleda Katona - 3 ships
-#18 - Dermia - 1 ships
-#19 - June Pyron - 1 ships
-#20 - Black Aivo - 1 ships
+#11 - Gillion Wyrddych - 7 ships
+#12 - Erika Tsurpalen - 6 ships
+#13 - Tali Lyrae - 5 ships
+#14 - Glade Radner - 5 ships
+#15 - Sabrez Haklar - 5 ships
+#16 - Cyran Reinhard - 4 ships
+#17 - Vothor - 3 ships
+#18 - Bleda Katona - 3 ships
+#19 - Newbus - 3 ships
+#20 - Dermia - 1 ships
+#21 - Black Aivo - 1 ships
+#22 - June Pyron - 1 ships
 
 Top BLOPS pilots - ISK destroyed
 --------------------------------------------
-#01 - Saria Dehmov - 21.69b
-#02 - togi yuki - 7.18b
-#03 - Ransom Odunen - 5.93b
-#04 - Abaddon Nergal - 5.02b
-#05 - More11o - 3.97b
+#01 - Saria Dehmov - 24.76b
+#02 - Ransom Odunen - 8.66b
+#03 - togi yuki - 7.83b
+#04 - More11o - 5.88b
+#05 - Abaddon Nergal - 5.02b
 #06 - Junako Zelkarr - 3.53b
 #07 - Cynthera Noir - 3.33b
-#08 - Xeromos - 2.63b
+#08 - Xeromos - 2.79b
 #09 - Tali Lyrae - 2.52b
 #10 - Newbus - 1.95b
 #11 - Glade Radner - 1.88b
 #12 - Erika Tsurpalen - 1.76b
-#13 - Vince Condor - 1.13b
-#14 - Chance Ravinne - 1.06b
-#15 - Dermia - 0.45b
-#16 - Cyran Reinhard - 0.37b
-#17 - Vothor - 0.28b
-#18 - June Pyron - 0.19b
-#19 - Bleda Katona - 0.16b
-#20 - Black Aivo - 0.10b
+#13 - Gillion Wyrddych - 1.33b
+#14 - Vince Condor - 1.13b
+#15 - Chance Ravinne - 1.06b
+#16 - Sabrez Haklar - 0.60b
+#17 - Dermia - 0.45b
+#18 - Cyran Reinhard - 0.37b
+#19 - Vothor - 0.28b
+#20 - June Pyron - 0.19b
+#21 - Bleda Katona - 0.16b
+#22 - Black Aivo - 0.10b

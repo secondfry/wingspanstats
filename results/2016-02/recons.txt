@@ -1,6 +1,6 @@
 Top Recon pilots - ships destroyed
 --------------------------------------------
-#01 - Chance Ravinne - 64 ships
+#01 - Chance Ravinne - 65 ships
 #02 - Sharps - 20 ships
 #03 - Aldore Udan - 15 ships
 #04 - Xee Yoona-451 - 13 ships

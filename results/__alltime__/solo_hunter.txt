@@ -1,55 +1,55 @@
 Solo ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 287 ships
-#02 - Saladiin - 205 ships
+#01 - Tasmine Cha-Tien - 452 ships
+#02 - Saladiin - 208 ships
 #03 - Eridanii - 176 ships
-#04 - Valtyr Farshield - 169 ships
+#04 - Valtyr Farshield - 171 ships
 #05 - inta Vakaria - 167 ships
 #06 - Orianna Okanata - 163 ships
 #07 - NoGo Rose - 154 ships
-#08 - Dakodai - 148 ships
-#09 - Chance Ravinne - 144 ships
-#10 - Saria Dehmov - 131 ships
-#11 - Al3x Oaks - 118 ships
-#12 - Bustrr Bluth - 114 ships
-#13 - Damien Oxytocin - 114 ships
-#14 - Alt Sokarad - 110 ships
-#15 - Cap'n Rick Clusterbomb - 108 ships
-#16 - Lenai Chelien - 107 ships
-#17 - choo t - 96 ships
-#18 - Silentt Knightt - 95 ships
-#19 - Reed Icculus - 94 ships
-#20 - Banshee Legend - 94 ships
-#21 - Myra Vixen - 83 ships
-#22 - Vince Condor - 81 ships
-#23 - Valkyrie Starslayer - 79 ships
-#24 - Tali Lyrae - 79 ships
-#25 - Narcisse Nightmare - 77 ships
+#08 - Dakodai - 150 ships
+#09 - Al3x Oaks - 147 ships
+#10 - Chance Ravinne - 144 ships
+#11 - Saria Dehmov - 134 ships
+#12 - Valkyrie Starslayer - 130 ships
+#13 - Silentt Knightt - 119 ships
+#14 - Lenai Chelien - 118 ships
+#15 - Bustrr Bluth - 115 ships
+#16 - Cap'n Rick Clusterbomb - 115 ships
+#17 - Damien Oxytocin - 114 ships
+#18 - Alt Sokarad - 110 ships
+#19 - SabersKunk Dallocort - 109 ships
+#20 - choo t - 101 ships
+#21 - Banshee Legend - 97 ships
+#22 - Reed Icculus - 96 ships
+#23 - brainwhacker - 90 ships
+#24 - Narcisse Nightmare - 86 ships
+#25 - Myra Vixen - 84 ships
 
 Solo ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 28.00b
-#02 - Valtyr Farshield - 15.30b
-#03 - Cap'n Rick Clusterbomb - 12.46b
+#01 - Tasmine Cha-Tien - 48.16b
+#02 - Valtyr Farshield - 15.35b
+#03 - Cap'n Rick Clusterbomb - 13.69b
 #04 - Aravorn Nighthawk - 10.32b
-#05 - Dakodai - 10.16b
-#06 - Orianna Okanata - 8.75b
-#07 - Eridanii - 7.40b
-#08 - Saria Dehmov - 7.27b
-#09 - Damien Oxytocin - 6.82b
-#10 - NovaMoon Enaka - 6.48b
-#11 - Lainis Pootis - 5.64b
-#12 - inta Vakaria - 5.57b
-#13 - Estebanzo Rufius - 4.76b
-#14 - Al3x Oaks - 4.69b
-#15 - NoGo Rose - 4.55b
-#16 - Narcisse Nightmare - 4.37b
-#17 - WeirdBall - 4.21b
-#18 - Chance Ravinne - 4.12b
-#19 - choo t - 3.94b
-#20 - Enki Parker - 3.94b
-#21 - Rob Tsukaya - 3.65b
-#22 - Sagwald Tian - 3.39b
-#23 - Vargo Shahni - 3.17b
-#24 - Tali Lyrae - 3.06b
-#25 - Hateful Heart - 2.99b
+#05 - Dakodai - 10.17b
+#06 - Al3x Oaks - 8.97b
+#07 - Orianna Okanata - 8.75b
+#08 - Eridanii - 7.40b
+#09 - Saria Dehmov - 7.28b
+#10 - Damien Oxytocin - 6.82b
+#11 - Severin Talvan - 6.63b
+#12 - NovaMoon Enaka - 6.58b
+#13 - Lainis Pootis - 5.64b
+#14 - inta Vakaria - 5.57b
+#15 - Narcisse Nightmare - 5.15b
+#16 - Estebanzo Rufius - 4.76b
+#17 - NoGo Rose - 4.55b
+#18 - Valkyrie Starslayer - 4.47b
+#19 - WeirdBall - 4.21b
+#20 - Chance Ravinne - 4.12b
+#21 - choo t - 4.09b
+#22 - Wee Lad - 4.00b
+#23 - Enki Parker - 3.94b
+#24 - Silentt Knightt - 3.93b
+#25 - Rob Tsukaya - 3.68b

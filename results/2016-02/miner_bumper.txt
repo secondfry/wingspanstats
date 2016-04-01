@@ -20,11 +20,11 @@ Top miner hunters - ships destroyed
 #18 - Marco Jacks - 2 ships
 #19 - Caboosette - 2 ships
 #20 - Glade Radner - 2 ships
-#21 - Hermeticas - 2 ships
-#22 - Kelia Monaiis - 2 ships
-#23 - Raddic Darkworth - 1 ships
-#24 - Massive Black - 1 ships
-#25 - William Schattauer - 1 ships
+#21 - Haruko Kitsune - 2 ships
+#22 - Hermeticas - 2 ships
+#23 - Kelia Monaiis - 2 ships
+#24 - Raddic Darkworth - 1 ships
+#25 - Massive Black - 1 ships
 
 Top miner hunters - ISK destroyed
 --------------------------------------------
@@ -51,5 +51,5 @@ Top miner hunters - ISK destroyed
 #21 - Banshee Legend - 0.06b
 #22 - Silentt Knightt - 0.05b
 #23 - Kelia Monaiis - 0.05b
-#24 - Aldore Udan - 0.04b
-#25 - Cross Ghasha - 0.04b
+#24 - Haruko Kitsune - 0.05b
+#25 - Aldore Udan - 0.04b

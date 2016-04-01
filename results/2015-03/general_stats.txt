@@ -3,6 +3,9 @@ General statistics
 Total kills: 614
 Total value: 44.17b
 Average value/kill: 71.93m
+-- Total number of active pilots: 90/223 (40.36%)
+Kills per active member: 6.82
+ISK destroyed per active member: 490.73m
 Solo total kills: 422
 Solo total value: 12.52b
 

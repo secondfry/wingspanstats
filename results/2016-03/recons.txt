@@ -1,0 +1,55 @@
+Top Recon pilots - ships destroyed
+--------------------------------------------
+#01 - Eris Kallisti - 56 ships
+#02 - Sharps - 23 ships
+#03 - Boon Hawkes - 22 ships
+#04 - Narcisse Nightmare - 16 ships
+#05 - Caine Vacuumborn - 15 ships
+#06 - Mei Long - 13 ships
+#07 - Raddic Darkworth - 11 ships
+#08 - Severin Talvan - 7 ships
+#09 - Tali Lyrae - 5 ships
+#10 - Ravic - 5 ships
+#11 - Cap'n Rick Clusterbomb - 5 ships
+#12 - Tasmine Cha-Tien - 5 ships
+#13 - Grimacus - 3 ships
+#14 - Ransom Odunen - 2 ships
+#15 - Pyro Bison - 2 ships
+#16 - Nicholas Chance Kile - 2 ships
+#17 - T-B0NE - 2 ships
+#18 - Phoenix Thynome - 2 ships
+#19 - Trip Erata - 2 ships
+#20 - Saria Dehmov - 2 ships
+#21 - Chance Ravinne - 2 ships
+#22 - Kelia Monaiis - 2 ships
+#23 - Gillion Wyrddych - 1 ships
+#24 - Centhi Naari - 1 ships
+#25 - Orianna Okanata - 1 ships
+
+Top Recon pilots - ISK destroyed
+--------------------------------------------
+#01 - Chance Ravinne - 3.85b
+#02 - Sharps - 2.94b
+#03 - Raddic Darkworth - 2.61b
+#04 - Severin Talvan - 2.31b
+#05 - Pyro Bison - 1.95b
+#06 - Phoenix Thynome - 1.95b
+#07 - Narcisse Nightmare - 1.82b
+#08 - Eris Kallisti - 1.09b
+#09 - Grimacus - 0.90b
+#10 - Mei Long - 0.88b
+#11 - Caboosette - 0.71b
+#12 - Tasmine Cha-Tien - 0.68b
+#13 - Cap'n Rick Clusterbomb - 0.38b
+#14 - Boon Hawkes - 0.37b
+#15 - Ravic - 0.31b
+#16 - T-B0NE - 0.24b
+#17 - Saria Dehmov - 0.16b
+#18 - Nicholas Chance Kile - 0.11b
+#19 - Trip Erata - 0.11b
+#20 - Kelia Monaiis - 0.10b
+#21 - Centhi Naari - 0.08b
+#22 - Ransom Odunen - 0.07b
+#23 - Orianna Okanata - 0.06b
+#24 - Gillion Wyrddych - 0.05b
+#25 - Saladiin - 0.03b

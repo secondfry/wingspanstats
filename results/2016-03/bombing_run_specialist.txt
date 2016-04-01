@@ -1,0 +1,49 @@
+Top Bombing Run Specialists - ships destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 8 ships
+#02 - Eris Kallisti - 7 ships
+#03 - Wee Lad - 5 ships
+#04 - Soplaescroto - 3 ships
+#05 - Quintus Va'Lari - 3 ships
+#06 - Narcisse Nightmare - 2 ships
+#07 - Kotoko Hoshina - 2 ships
+#08 - Boon Hawkes - 2 ships
+#09 - Gorki Irvam - 2 ships
+#10 - Gavrilo Princep - 1 ships
+#11 - Lorth Drak'rov - 1 ships
+#12 - Malak Saren - 1 ships
+#13 - Zakir Abramovich - 1 ships
+#14 - Maere Mearcstapa - 1 ships
+#15 - Ejit Uiloq - 1 ships
+#16 - Mars Antilles - 1 ships
+#17 - William Schattauer - 1 ships
+#18 - Analius Glover - 1 ships
+#19 - SKUNKWORKS-117 - 1 ships
+#20 - Bails Naskingar - 1 ships
+#21 - Mei Long - 1 ships
+#22 - Spooky SpaceRanger - 1 ships
+
+Top Bombing Run Specialists - ISK destroyed
+--------------------------------------------
+#01 - Soplaescroto - 0.35b
+#02 - Maere Mearcstapa - 0.27b
+#03 - Ejit Uiloq - 0.27b
+#04 - William Schattauer - 0.27b
+#05 - SKUNKWORKS-117 - 0.27b
+#06 - Bails Naskingar - 0.27b
+#07 - Eris Kallisti - 0.22b
+#08 - Zakir Abramovich - 0.08b
+#09 - Quintus Va'Lari - 0.08b
+#10 - Kotoko Hoshina - 0.08b
+#11 - Gorki Irvam - 0.08b
+#12 - Tasmine Cha-Tien - 0.06b
+#13 - Boon Hawkes - 0.05b
+#14 - Mars Antilles - 0.05b
+#15 - Narcisse Nightmare - 0.04b
+#16 - Wee Lad - 0.04b
+#17 - Gavrilo Princep - 0.03b
+#18 - Malak Saren - 0.03b
+#19 - Mei Long - 0.00b
+#20 - Spooky SpaceRanger - 0.00b
+#21 - Lorth Drak'rov - 0.00b
+#22 - Analius Glover - 0.00b

@@ -1,13 +1,13 @@
 Ships destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 2629 ships
+#01 - Stratios - 2630 ships
 #02 - Nemesis - 1744 ships
 #03 - Manticore - 1727 ships
-#04 - Purifier - 1006 ships
+#04 - Purifier - 1007 ships
 #05 - Hound - 720 ships
 #06 - Rapier - 155 ships
 #07 - Loki - 94 ships
-#08 - Astero - 89 ships
+#08 - Astero - 90 ships
 #09 - Falcon - 82 ships
 #10 - Pilgrim - 76 ships
 #11 - Svipul - 64 ships
@@ -30,12 +30,12 @@ ISK destroyed by a specific hull
 --------------------------------------------
 #01 - Nemesis - 301.02b
 #02 - Manticore - 252.49b
-#03 - Stratios - 241.77b
-#04 - Purifier - 197.47b
+#03 - Stratios - 241.84b
+#04 - Purifier - 197.54b
 #05 - Hound - 110.06b
 #06 - Sabre - 14.71b
 #07 - Falcon - 14.28b
-#08 - Astero - 12.29b
+#08 - Astero - 12.36b
 #09 - Rapier - 11.38b
 #10 - Crow - 10.80b
 #11 - Pilgrim - 9.41b

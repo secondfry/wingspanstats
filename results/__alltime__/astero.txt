@@ -3,9 +3,9 @@ Top Astero pilots - ships destroyed
 #01 - Valtyr Farshield - 117 ships
 #02 - Damien Oxytocin - 93 ships
 #03 - inta Vakaria - 78 ships
-#04 - Geroni Vynneve - 51 ships
-#05 - Vargo Shahni - 49 ships
-#06 - Flaya Noong - 40 ships
+#04 - Vargo Shahni - 54 ships
+#05 - Geroni Vynneve - 51 ships
+#06 - Flaya Noong - 42 ships
 #07 - Allbur Chellak - 31 ships
 #08 - Cap'n Rick Clusterbomb - 29 ships
 #09 - Revan Wake - 28 ships
@@ -19,37 +19,37 @@ Top Astero pilots - ships destroyed
 #17 - Aurelie Solvay - 15 ships
 #18 - Try2CatchMe ActEstFabula - 14 ships
 #19 - Elias Stagg - 14 ships
-#20 - Bustrr Bluth - 13 ships
-#21 - Orianna Okanata - 11 ships
-#22 - Miles Bothari - 11 ships
-#23 - khajay v virras - 10 ships
-#24 - Sister Fisterr - 10 ships
-#25 - Dj Turner - 10 ships
+#20 - June Pyron - 14 ships
+#21 - Bustrr Bluth - 13 ships
+#22 - Miles Bothari - 12 ships
+#23 - Kelia Monaiis - 12 ships
+#24 - Orianna Okanata - 11 ships
+#25 - khajay v virras - 10 ships
 
 Top Astero pilots - ISK destroyed
 --------------------------------------------
 #01 - Valtyr Farshield - 34.82b
 #02 - inta Vakaria - 11.89b
-#03 - Flaya Noong - 9.14b
+#03 - Flaya Noong - 9.16b
 #04 - Damien Oxytocin - 4.52b
 #05 - Phaezen Orti - 4.25b
-#06 - Vargo Shahni - 3.22b
+#06 - Vargo Shahni - 3.63b
 #07 - Elias Stagg - 2.88b
 #08 - Scipio Zeul - 2.85b
 #09 - Zeke Airuta - 2.85b
 #10 - Tekkera - 2.79b
-#11 - Gillion Wyrddych - 1.96b
-#12 - Cap'n Rick Clusterbomb - 1.93b
-#13 - Hirashima Nagasaki-san - 1.93b
-#14 - June Pyron - 1.92b
-#15 - Aurelie Solvay - 1.70b
-#16 - Gloria White - 1.59b
-#17 - Mei Long - 1.54b
-#18 - Alphecca Lazair - 1.35b
-#19 - Zen Dad - 1.26b
-#20 - Revan Wake - 1.24b
-#21 - Baine Mangeiri - 1.21b
-#22 - shepard locknear - 1.10b
-#23 - Tyto Noud - 1.03b
-#24 - T-B0NE - 1.02b
-#25 - Katu Hodor - 0.97b
+#11 - Ana Niamh - 2.68b
+#12 - June Pyron - 2.26b
+#13 - Gillion Wyrddych - 1.96b
+#14 - Cap'n Rick Clusterbomb - 1.93b
+#15 - Hirashima Nagasaki-san - 1.93b
+#16 - Aurelie Solvay - 1.70b
+#17 - Gloria White - 1.59b
+#18 - Mei Long - 1.54b
+#19 - Alphecca Lazair - 1.35b
+#20 - Zen Dad - 1.26b
+#21 - Revan Wake - 1.24b
+#22 - Baine Mangeiri - 1.21b
+#23 - shepard locknear - 1.10b
+#24 - Tyto Noud - 1.03b
+#25 - T-B0NE - 1.02b

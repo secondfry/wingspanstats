@@ -24,7 +24,7 @@ Top Astero pilots - ships destroyed
 #22 - Raens Aldebar - 1 ships
 #23 - Kain Shadowstar - 1 ships
 #24 - forsakenZen - 1 ships
-#25 - Boexl - 1 ships
+#25 - Buster Atmosk - 1 ships
 
 Top Astero pilots - ISK destroyed
 --------------------------------------------
@@ -43,13 +43,13 @@ Top Astero pilots - ISK destroyed
 #13 - brainwhacker - 0.11b
 #14 - Phecda Aldent - 0.10b
 #15 - Freddey - 0.09b
-#16 - forsakenZen - 0.07b
-#17 - inta Vakaria - 0.06b
-#18 - Boexl - 0.03b
-#19 - Bustrr Bluth - 0.02b
-#20 - Kain Shadowstar - 0.02b
-#21 - Vargo Shahni - 0.01b
-#22 - Gort getrekt - 0.01b
-#23 - Raens Aldebar - 0.01b
-#24 - Sagwald Tian - 0.00b
-#25 - Colesef - 0.00b
+#16 - Buster Atmosk - 0.07b
+#17 - forsakenZen - 0.07b
+#18 - inta Vakaria - 0.06b
+#19 - Boexl - 0.03b
+#20 - Bustrr Bluth - 0.02b
+#21 - Kain Shadowstar - 0.02b
+#22 - Vargo Shahni - 0.01b
+#23 - Gort getrekt - 0.01b
+#24 - Raens Aldebar - 0.01b
+#25 - Sagwald Tian - 0.00b

@@ -1,55 +1,55 @@
 Top bomber pilots - ships destroyed
 --------------------------------------------
-#01 - Quintus Va'Lari - 112 ships
-#02 - Tasmine Cha-Tien - 76 ships
-#03 - Albin wood - 68 ships
-#04 - choo t - 68 ships
-#05 - Corridor Paratus - 67 ships
-#06 - Sudo Khaleesi - 65 ships
-#07 - T-B0NE - 64 ships
-#08 - Kobra LivesMatter - 63 ships
-#09 - Akairo Ishikela - 61 ships
-#10 - Mei Long - 61 ships
-#11 - Gillion Wyrddych - 60 ships
-#12 - Maere Mearcstapa - 60 ships
-#13 - Cissnei Kusoni - 59 ships
-#14 - Sharps - 58 ships
-#15 - TOPSTER - 58 ships
-#16 - Jiro Arcturus - 57 ships
-#17 - Lan Mo - 55 ships
-#18 - scopehone - 54 ships
-#19 - Alexandrine Marion - 54 ships
-#20 - Lorth Drak'rov - 53 ships
-#21 - Gamdon Aldariflex - 53 ships
-#22 - Cael Reson - 53 ships
-#23 - Charles Vermone - 52 ships
-#24 - Ben D'Eath - 52 ships
-#25 - Mars Antilles - 52 ships
+#01 - Quintus Va'Lari - 113 ships
+#02 - Tasmine Cha-Tien - 77 ships
+#03 - Albin wood - 69 ships
+#04 - choo t - 69 ships
+#05 - Corridor Paratus - 68 ships
+#06 - Sudo Khaleesi - 66 ships
+#07 - T-B0NE - 65 ships
+#08 - Kobra LivesMatter - 64 ships
+#09 - Akairo Ishikela - 62 ships
+#10 - Mei Long - 62 ships
+#11 - Gillion Wyrddych - 61 ships
+#12 - Maere Mearcstapa - 61 ships
+#13 - Cissnei Kusoni - 60 ships
+#14 - TOPSTER - 59 ships
+#15 - Sharps - 58 ships
+#16 - Jiro Arcturus - 58 ships
+#17 - Lan Mo - 56 ships
+#18 - scopehone - 55 ships
+#19 - Alexandrine Marion - 55 ships
+#20 - Lorth Drak'rov - 54 ships
+#21 - Gamdon Aldariflex - 54 ships
+#22 - Cael Reson - 54 ships
+#23 - Charles Vermone - 53 ships
+#24 - Ben D'Eath - 53 ships
+#25 - Mars Antilles - 53 ships
 
 Top bomber pilots - ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 14.90b
+#01 - Tasmine Cha-Tien - 14.91b
 #02 - Quintus Va'Lari - 12.11b
-#03 - SoftCore - 10.72b
-#04 - choo t - 10.49b
-#05 - Sudo Khaleesi - 9.68b
-#06 - T-B0NE - 9.51b
+#03 - SoftCore - 10.73b
+#04 - choo t - 10.50b
+#05 - Sudo Khaleesi - 9.69b
+#06 - T-B0NE - 9.52b
 #07 - Albin wood - 9.46b
-#08 - Kobra LivesMatter - 9.27b
-#09 - Akairo Ishikela - 9.16b
+#08 - Kobra LivesMatter - 9.28b
+#09 - Akairo Ishikela - 9.17b
 #10 - Symerizer Ahashion - 8.85b
-#11 - Cissnei Kusoni - 8.05b
-#12 - NovaMoon Enaka - 7.85b
-#13 - Maere Mearcstapa - 7.82b
-#14 - Jiro Arcturus - 7.30b
+#11 - Cissnei Kusoni - 8.06b
+#12 - NovaMoon Enaka - 7.86b
+#13 - Maere Mearcstapa - 7.83b
+#14 - Jiro Arcturus - 7.31b
 #15 - Gareth Adoudel - 7.28b
 #16 - Mei Long - 7.19b
-#17 - Lucindia Averus - 7.08b
+#17 - Lucindia Averus - 7.09b
 #18 - Sharps - 7.03b
-#19 - Raddic Darkworth - 7.01b
-#20 - Gillion Wyrddych - 6.81b
-#21 - scopehone - 6.54b
-#22 - Cael Reson - 6.54b
-#23 - Lan Mo - 6.50b
-#24 - Lorth Drak'rov - 6.48b
-#25 - Gamdon Aldariflex - 6.48b
+#19 - Raddic Darkworth - 7.02b
+#20 - Gillion Wyrddych - 6.82b
+#21 - scopehone - 6.55b
+#22 - Cael Reson - 6.55b
+#23 - Lan Mo - 6.51b
+#24 - Lorth Drak'rov - 6.49b
+#25 - Gamdon Aldariflex - 6.49b

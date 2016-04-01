@@ -1,48 +1,48 @@
 Top T3 Cruiser pilots - ships destroyed
 --------------------------------------------
 #01 - Eridanii - 126 ships
-#02 - Sabrez Haklar - 94 ships
-#03 - Revan Wake - 94 ships
-#04 - Vek Chiasson - 72 ships
-#05 - Richter Trench - 55 ships
-#06 - Tali Lyrae - 37 ships
-#07 - Yuri RedAlert - 37 ships
-#08 - Sasuke Solette - 37 ships
+#02 - Vek Chiasson - 124 ships
+#03 - Sabrez Haklar - 94 ships
+#04 - Revan Wake - 94 ships
+#05 - Richter Trench - 58 ships
+#06 - Sasuke Solette - 39 ships
+#07 - Tali Lyrae - 37 ships
+#08 - Yuri RedAlert - 37 ships
 #09 - Flaya Noong - 34 ships
 #10 - Massive Black - 30 ships
 #11 - Waaaaaagggh - 30 ships
-#12 - Vothor - 24 ships
+#12 - Vothor - 26 ships
 #13 - Aldore Udan - 23 ships
 #14 - Greattorian - 22 ships
 #15 - Ransom Odunen - 20 ships
 #16 - Vince Condor - 20 ships
 #17 - Gillion Wyrddych - 20 ships
 #18 - Wee Lad - 17 ships
-#19 - Banshee Legend - 16 ships
-#20 - Lainis Pootis - 16 ships
-#21 - Rob Tsukaya - 14 ships
-#22 - Narcisse Nightmare - 12 ships
-#23 - Gareth Adoudel - 11 ships
-#24 - Glade Radner - 11 ships
-#25 - Vincent Dalvani - 10 ships
+#19 - Kotoko Hoshina - 17 ships
+#20 - Banshee Legend - 16 ships
+#21 - Lainis Pootis - 16 ships
+#22 - Gareth Adoudel - 14 ships
+#23 - Rob Tsukaya - 14 ships
+#24 - Hateful Heart - 13 ships
+#25 - Narcisse Nightmare - 12 ships
 
 Top T3 Cruiser pilots - ISK destroyed
 --------------------------------------------
-#01 - Sabrez Haklar - 15.11b
-#02 - Revan Wake - 13.91b
-#03 - Vek Chiasson - 12.92b
+#01 - Vek Chiasson - 27.60b
+#02 - Sabrez Haklar - 15.11b
+#03 - Revan Wake - 13.91b
 #04 - Waaaaaagggh - 10.85b
 #05 - Massive Black - 9.37b
-#06 - Richter Trench - 8.01b
+#06 - Richter Trench - 8.02b
 #07 - Aldore Udan - 7.43b
-#08 - Sasuke Solette - 6.23b
-#09 - Rob Tsukaya - 4.84b
-#10 - Ransom Odunen - 4.66b
-#11 - Yuri RedAlert - 4.43b
-#12 - Tali Lyrae - 4.32b
-#13 - Kotoko Hoshina - 4.28b
+#08 - Sasuke Solette - 6.40b
+#09 - Kotoko Hoshina - 5.73b
+#10 - Rob Tsukaya - 4.84b
+#11 - Ransom Odunen - 4.66b
+#12 - Yuri RedAlert - 4.43b
+#13 - Tali Lyrae - 4.32b
 #14 - Eridanii - 4.10b
-#15 - Vothor - 3.83b
+#15 - Vothor - 3.93b
 #16 - Vince Condor - 3.77b
 #17 - Entreri Airuta - 3.69b
 #18 - Glade Radner - 3.41b
@@ -52,4 +52,4 @@ Top T3 Cruiser pilots - ISK destroyed
 #22 - Cap'n Rick Clusterbomb - 2.88b
 #23 - Wee Lad - 2.64b
 #24 - Lainis Pootis - 2.58b
-#25 - Narcisse Nightmare - 2.27b
+#25 - Shaianne - 2.40b

@@ -1,14 +1,14 @@
 Top T3 Cruiser pilots - ships destroyed
 --------------------------------------------
-#01 - Vek Chiasson - 72 ships
-#02 - Richter Trench - 55 ships
+#01 - Vek Chiasson - 73 ships
+#02 - Richter Trench - 56 ships
 #03 - Gareth Adoudel - 11 ships
 #04 - Hateful Heart - 10 ships
 #05 - Nicholas Chance Kile - 9 ships
-#06 - Waaaaaagggh - 9 ships
-#07 - Greattorian - 8 ships
-#08 - Desiree Delene - 8 ships
-#09 - Kotoko Hoshina - 8 ships
+#06 - Kotoko Hoshina - 9 ships
+#07 - Waaaaaagggh - 9 ships
+#08 - Greattorian - 8 ships
+#09 - Desiree Delene - 8 ships
 #10 - Aldore Udan - 6 ships
 #11 - Estebanzo Rufius - 6 ships
 #12 - ewiven legolas - 4 ships
@@ -24,10 +24,10 @@ Top T3 Cruiser pilots - ships destroyed
 
 Top T3 Cruiser pilots - ISK destroyed
 --------------------------------------------
-#01 - Vek Chiasson - 12.92b
-#02 - Richter Trench - 8.01b
+#01 - Vek Chiasson - 12.93b
+#02 - Richter Trench - 8.02b
 #03 - Waaaaaagggh - 4.60b
-#04 - Kotoko Hoshina - 4.28b
+#04 - Kotoko Hoshina - 4.29b
 #05 - Entreri Airuta - 3.69b
 #06 - inta Vakaria - 3.28b
 #07 - Gareth Adoudel - 2.24b

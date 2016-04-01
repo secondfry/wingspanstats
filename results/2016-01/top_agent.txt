@@ -2,12 +2,12 @@ Ships destroyed
 --------------------------------------------
 #01 - Silentt Knightt - 246 ships
 #02 - Mei Long - 234 ships
-#03 - More11o - 230 ships
+#03 - More11o - 231 ships
 #04 - brainwhacker - 174 ships
 #05 - Touretes - 171 ships
 #06 - T-B0NE - 165 ships
 #07 - Albin wood - 165 ships
-#08 - Buster Atmosk - 163 ships
+#08 - Buster Atmosk - 164 ships
 #09 - Narcisse Nightmare - 162 ships
 #10 - Colesef - 162 ships
 #11 - Valtyr Farshield - 161 ships
@@ -31,7 +31,7 @@ ISK destroyed
 #01 - Mei Long - 35.42b
 #02 - Narcisse Nightmare - 31.65b
 #03 - Silentt Knightt - 29.95b
-#04 - More11o - 29.08b
+#04 - More11o - 29.15b
 #05 - Caboosette - 26.96b
 #06 - inta Vakaria - 17.75b
 #07 - Touretes - 17.62b
@@ -45,7 +45,7 @@ ISK destroyed
 #15 - Dakodai - 15.62b
 #16 - Talyn Soone - 15.41b
 #17 - Gareth Adoudel - 15.39b
-#18 - Buster Atmosk - 14.94b
+#18 - Buster Atmosk - 15.02b
 #19 - Trip Erata - 14.18b
 #20 - Captain York Name - 14.08b
 #21 - Cap'n Rick Clusterbomb - 14.02b

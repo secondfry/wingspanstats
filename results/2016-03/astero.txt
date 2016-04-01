@@ -1,0 +1,41 @@
+Top Astero pilots - ships destroyed
+--------------------------------------------
+#01 - June Pyron - 10 ships
+#02 - Ana Niamh - 9 ships
+#03 - Haruko Kitsune - 5 ships
+#04 - Vargo Shahni - 5 ships
+#05 - Severin Talvan - 3 ships
+#06 - Silentt Knightt - 3 ships
+#07 - Massive Black - 2 ships
+#08 - Soplaescroto - 2 ships
+#09 - Vignar - 2 ships
+#10 - Flaya Noong - 2 ships
+#11 - Maere Mearcstapa - 2 ships
+#12 - Caine Vacuumborn - 2 ships
+#13 - Kelia Monaiis - 2 ships
+#14 - Xan Dievs - 1 ships
+#15 - Clavaine - 1 ships
+#16 - scopehone - 1 ships
+#17 - Miles Bothari - 1 ships
+#18 - Jen Shi'Ko - 1 ships
+
+Top Astero pilots - ISK destroyed
+--------------------------------------------
+#01 - Ana Niamh - 2.68b
+#02 - Haruko Kitsune - 0.73b
+#03 - scopehone - 0.69b
+#04 - Vargo Shahni - 0.41b
+#05 - June Pyron - 0.34b
+#06 - Severin Talvan - 0.15b
+#07 - Kelia Monaiis - 0.08b
+#08 - Vignar - 0.05b
+#09 - Massive Black - 0.05b
+#10 - Caine Vacuumborn - 0.04b
+#11 - Miles Bothari - 0.03b
+#12 - Silentt Knightt - 0.02b
+#13 - Clavaine - 0.02b
+#14 - Flaya Noong - 0.02b
+#15 - Xan Dievs - 0.01b
+#16 - Maere Mearcstapa - 0.00b
+#17 - Soplaescroto - 0.00b
+#18 - Jen Shi'Ko - 0.00b

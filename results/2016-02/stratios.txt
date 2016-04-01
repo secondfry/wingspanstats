@@ -1,14 +1,14 @@
 Top Stratios pilots - ships destroyed
 --------------------------------------------
-#01 - Silentt Knightt - 111 ships
-#02 - Douw Holwer - 55 ships
-#03 - Fulmen Celer - 55 ships
-#04 - Mei Long - 53 ships
-#05 - Liamm Dallocort - 52 ships
+#01 - Silentt Knightt - 112 ships
+#02 - Douw Holwer - 56 ships
+#03 - Fulmen Celer - 56 ships
+#04 - Liamm Dallocort - 53 ships
+#05 - Mei Long - 53 ships
 #06 - inta Vakaria - 32 ships
 #07 - Glade Radner - 22 ships
 #08 - Bails Naskingar - 18 ships
-#09 - Saria Dehmov - 17 ships
+#09 - Saria Dehmov - 18 ships
 #10 - Massive Black - 15 ships
 #11 - brainwhacker - 15 ships
 #12 - Alphecca Lazair - 14 ships
@@ -30,12 +30,12 @@ Top Stratios pilots - ISK destroyed
 --------------------------------------------
 #01 - Silentt Knightt - 18.18b
 #02 - Glade Radner - 8.85b
-#03 - Fulmen Celer - 7.45b
+#03 - Fulmen Celer - 7.46b
 #04 - Mei Long - 7.28b
 #05 - inta Vakaria - 6.58b
 #06 - Douw Holwer - 6.49b
 #07 - Massive Black - 6.28b
-#08 - Liamm Dallocort - 6.17b
+#08 - Liamm Dallocort - 6.18b
 #09 - Saria Dehmov - 5.28b
 #10 - Sabrez Haklar - 3.53b
 #11 - Lenai Chelien - 3.28b

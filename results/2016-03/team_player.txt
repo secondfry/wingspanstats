@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Quintus Va'Lari - 93 ships
+#02 - Vek Chiasson - 82 ships
+#03 - Tasmine Cha-Tien - 82 ships
+#04 - Mei Long - 81 ships
+#05 - Eris Kallisti - 71 ships
+#06 - Silentt Knightt - 50 ships
+#07 - Narcisse Nightmare - 47 ships
+#08 - Pyronica Annota - 44 ships
+#09 - togi yuki - 44 ships
+#10 - Boon Hawkes - 42 ships
+#11 - Wee Lad - 42 ships
+#12 - Amielia Evangelon - 38 ships
+#13 - Nikolei Darkflier - 37 ships
+#14 - Ben D'Eath - 31 ships
+#15 - Raddic Darkworth - 30 ships
+#16 - Ejit Uiloq - 28 ships
+#17 - Lexa Griffin - 25 ships
+#18 - Bails Naskingar - 23 ships
+#19 - Alphecca Lazair - 23 ships
+#20 - Glade Radner - 21 ships
+#21 - Valtyr Farshield - 20 ships
+#22 - Soplaescroto - 20 ships
+#23 - Dunfniss Mislah - 20 ships
+#24 - Sabrez Haklar - 19 ships
+#25 - Gavrilo Princep - 18 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Vek Chiasson - 26.32b
+#02 - Quintus Va'Lari - 18.66b
+#03 - Silentt Knightt - 15.15b
+#04 - Valtyr Farshield - 13.24b
+#05 - Amielia Evangelon - 12.26b
+#06 - Pyronica Annota - 12.25b
+#07 - Mei Long - 10.80b
+#08 - Cap'n Rick Clusterbomb - 10.73b
+#09 - Lexa Griffin - 10.59b
+#10 - togi yuki - 10.18b
+#11 - Raddic Darkworth - 10.08b
+#12 - Severin Talvan - 9.54b
+#13 - Gorki Irvam - 9.15b
+#14 - Shaianne - 7.71b
+#15 - Tasmine Cha-Tien - 6.97b
+#16 - More11o - 6.74b
+#17 - Al3x Oaks - 6.71b
+#18 - Dunfniss Mislah - 6.58b
+#19 - Caboosette - 6.53b
+#20 - Nami Cadelanne - 6.43b
+#21 - Chance Ravinne - 6.42b
+#22 - Haruko Kitsune - 6.38b
+#23 - Soplaescroto - 6.34b
+#24 - Narcisse Nightmare - 6.29b
+#25 - Phoenix Thynome - 5.95b

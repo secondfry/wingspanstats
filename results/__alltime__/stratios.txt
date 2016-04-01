@@ -1,55 +1,55 @@
 Top Stratios pilots - ships destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 480 ships
-#02 - Glade Radner - 323 ships
-#03 - Mei Long - 248 ships
-#04 - Saria Dehmov - 234 ships
-#05 - Touretes - 228 ships
-#06 - Silentt Knightt - 205 ships
-#07 - Cap'n Rick Clusterbomb - 202 ships
-#08 - Dakodai - 190 ships
-#09 - Rob Tsukaya - 185 ships
-#10 - Caboosette - 178 ships
-#11 - Gillion Wyrddych - 169 ships
+#01 - Valtyr Farshield - 502 ships
+#02 - Glade Radner - 338 ships
+#03 - Mei Long - 305 ships
+#04 - Silentt Knightt - 271 ships
+#05 - Saria Dehmov - 236 ships
+#06 - Touretes - 228 ships
+#07 - Cap'n Rick Clusterbomb - 206 ships
+#08 - Dakodai - 193 ships
+#09 - Caboosette - 189 ships
+#10 - Rob Tsukaya - 189 ships
+#11 - Gillion Wyrddych - 172 ships
 #12 - inta Vakaria - 158 ships
-#13 - WeirdBall - 150 ships
-#14 - T-B0NE - 145 ships
-#15 - Captain Ace Rico - 137 ships
-#16 - brainwhacker - 132 ships
-#17 - Alphecca Lazair - 131 ships
+#13 - Alphecca Lazair - 153 ships
+#14 - WeirdBall - 150 ships
+#15 - T-B0NE - 145 ships
+#16 - Captain Ace Rico - 137 ships
+#17 - brainwhacker - 132 ships
 #18 - NovaMoon Enaka - 128 ships
 #19 - Sudo Khaleesi - 124 ships
-#20 - Narcisse Nightmare - 116 ships
+#20 - Narcisse Nightmare - 121 ships
 #21 - Raens Aldebar - 112 ships
 #22 - Tali Lyrae - 108 ships
 #23 - Sabrez Haklar - 106 ships
-#24 - Banshee Legend - 98 ships
-#25 - Nicholas Chance Kile - 98 ships
+#24 - togi yuki - 103 ships
+#25 - Nicholas Chance Kile - 99 ships
 
 Top Stratios pilots - ISK destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 99.68b
-#02 - Glade Radner - 85.87b
-#03 - Cap'n Rick Clusterbomb - 55.02b
-#04 - Saria Dehmov - 36.10b
-#05 - Rob Tsukaya - 35.84b
-#06 - Mei Long - 33.82b
-#07 - WeirdBall - 32.30b
-#08 - Gillion Wyrddych - 27.85b
-#09 - inta Vakaria - 26.68b
-#10 - Dakodai - 26.12b
-#11 - Caboosette - 24.75b
-#12 - Tali Lyrae - 23.11b
-#13 - NovaMoon Enaka - 22.74b
-#14 - Silentt Knightt - 22.05b
-#15 - Touretes - 20.34b
-#16 - Banshee Legend - 19.39b
-#17 - Ransom Odunen - 19.09b
-#18 - Massive Black - 17.54b
-#19 - Narcisse Nightmare - 17.53b
+#01 - Valtyr Farshield - 112.96b
+#02 - Glade Radner - 87.76b
+#03 - Cap'n Rick Clusterbomb - 56.71b
+#04 - Mei Long - 40.63b
+#05 - Rob Tsukaya - 36.39b
+#06 - Saria Dehmov - 36.33b
+#07 - Silentt Knightt - 35.74b
+#08 - WeirdBall - 32.30b
+#09 - Gillion Wyrddych - 28.10b
+#10 - inta Vakaria - 26.68b
+#11 - Dakodai - 26.40b
+#12 - Caboosette - 26.25b
+#13 - Tali Lyrae - 23.11b
+#14 - NovaMoon Enaka - 22.74b
+#15 - Massive Black - 22.05b
+#16 - Touretes - 20.34b
+#17 - Banshee Legend - 19.39b
+#18 - Ransom Odunen - 19.09b
+#19 - Narcisse Nightmare - 18.30b
 #20 - Amaru Skye - 16.11b
-#21 - togi yuki - 15.24b
+#21 - togi yuki - 15.94b
 #22 - Sabrez Haklar - 15.15b
-#23 - Vince Condor - 13.73b
-#24 - Delta Rescue - 13.01b
-#25 - Alphecca Lazair - 12.87b
+#23 - Alphecca Lazair - 14.59b
+#24 - Delta Rescue - 14.06b
+#25 - Vince Condor - 13.73b

@@ -1,0 +1,27 @@
+Ships destroyed in Thera
+--------------------------------------------
+#01 - Al3x Oaks - 6 ships
+#02 - Blackhawk Bordeaux - 6 ships
+#03 - Toit - 3 ships
+#04 - Sudo Khaleesi - 3 ships
+#05 - William Schattauer - 1 ships
+#06 - Wee Lad - 1 ships
+#07 - Phoenix Thynome - 1 ships
+#08 - Spooky SpaceRanger - 1 ships
+#09 - Alphecca Lazair - 1 ships
+#10 - Sibestus Bererund - 1 ships
+#11 - Khamul Angmar - 1 ships
+
+ISK destroyed in Thera
+--------------------------------------------
+#01 - Toit - 0.65b
+#02 - Al3x Oaks - 0.47b
+#03 - Blackhawk Bordeaux - 0.03b
+#04 - Wee Lad - 0.02b
+#05 - Phoenix Thynome - 0.02b
+#06 - Alphecca Lazair - 0.02b
+#07 - Sudo Khaleesi - 0.01b
+#08 - William Schattauer - 0.01b
+#09 - Spooky SpaceRanger - 0.00b
+#10 - Sibestus Bererund - 0.00b
+#11 - Khamul Angmar - 0.00b

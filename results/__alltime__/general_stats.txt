@@ -1,29 +1,29 @@
 General statistics
 --------------------------------------------
-Total kills: 11780
-Total value: 1053.72b
-Average value/kill: 89.45m
-Solo total kills: 6565
-Solo total value: 294.30b
+Total kills: 13004
+Total value: 1172.32b
+Average value/kill: 90.15m
+Solo total kills: 7307
+Solo total value: 344.76b
 
 
-High-sec total kills: 764 (6.49%)
-High-sec total value: 35.50b (3.37%)
+High-sec total kills: 892 (6.86%)
+High-sec total value: 38.40b (3.28%)
 
-Low-sec total kills: 2114 (17.95%)
-Low-sec total value: 78.68b (7.47%)
+Low-sec total kills: 2216 (17.04%)
+Low-sec total value: 85.15b (7.26%)
 
-Null-sec total kills: 1207 (10.25%)
-Null-sec total value: 129.61b (12.30%)
+Null-sec total kills: 1624 (12.49%)
+Null-sec total value: 161.00b (13.73%)
 
-W-space total kills: 7695 (65.32%)
-W-space total value: 809.93b (76.86%)
-  [*] C1 - total kills: 1369, total isk: 114.40b
-  [*] C2 - total kills: 3218, total isk: 316.42b
-  [*] C3 - total kills: 1678, total isk: 206.26b
-  [*] C4 - total kills: 666, total isk: 102.48b
-  [*] C5 - total kills: 185, total isk: 15.50b
-  [*] C6 - total kills: 277, total isk: 33.40b
+W-space total kills: 8272 (63.61%)
+W-space total value: 887.77b (75.73%)
+  [*] C1 - total kills: 1472, total isk: 126.51b
+  [*] C2 - total kills: 3463, total isk: 340.81b
+  [*] C3 - total kills: 1813, total isk: 220.29b
+  [*] C4 - total kills: 723, total isk: 120.10b
+  [*] C5 - total kills: 200, total isk: 23.98b
+  [*] C6 - total kills: 278, total isk: 33.43b
   [*] C13 - total kills: 43, total isk: 1.58b
-  [*] Thera - total kills: 248, total isk: 19.57b
+  [*] Thera - total kills: 269, total isk: 20.75b
   [*] Drifter wormholes - total kills: 11, total isk: 0.32b

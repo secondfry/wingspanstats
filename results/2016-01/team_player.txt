@@ -1,7 +1,7 @@
 Ships destroyed in a fleet
 --------------------------------------------
 #01 - Silentt Knightt - 238 ships
-#02 - More11o - 226 ships
+#02 - More11o - 227 ships
 #03 - Mei Long - 225 ships
 #04 - T-B0NE - 165 ships
 #05 - Buster Atmosk - 163 ships
@@ -31,7 +31,7 @@ ISK destroyed in a fleet
 #01 - Mei Long - 35.32b
 #02 - Narcisse Nightmare - 31.24b
 #03 - Silentt Knightt - 29.93b
-#04 - More11o - 28.82b
+#04 - More11o - 28.89b
 #05 - Caboosette - 26.95b
 #06 - inta Vakaria - 17.27b
 #07 - Touretes - 17.26b
