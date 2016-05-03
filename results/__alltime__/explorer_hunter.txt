@@ -1,55 +1,55 @@
 Top explorer hunters - ships destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 88 ships
-#02 - Silentt Knightt - 74 ships
+#01 - Valtyr Farshield - 96 ships
+#02 - Silentt Knightt - 75 ships
 #03 - NoGo Rose - 73 ships
 #04 - choo t - 71 ships
 #05 - Dakodai - 65 ships
-#06 - Alphecca Lazair - 60 ships
-#07 - Saladiin - 52 ships
-#08 - Narcisse Nightmare - 46 ships
+#06 - Alphecca Lazair - 63 ships
+#07 - Saladiin - 53 ships
+#08 - Narcisse Nightmare - 50 ships
 #09 - Damien Oxytocin - 44 ships
-#10 - Sabrez Haklar - 41 ships
-#11 - Alt Sokarad - 41 ships
-#12 - Cap'n Rick Clusterbomb - 40 ships
-#13 - Al3x Oaks - 36 ships
-#14 - Mei Long - 34 ships
-#15 - Try2CatchMe ActEstFabula - 34 ships
-#16 - brainwhacker - 34 ships
-#17 - Glade Radner - 33 ships
-#18 - Reed Icculus - 32 ships
-#19 - Vothor - 32 ships
-#20 - Allbur Chellak - 30 ships
-#21 - Banshee Legend - 28 ships
-#22 - Vargo Shahni - 28 ships
-#23 - Myra Vixen - 27 ships
-#24 - Rob Tsukaya - 27 ships
-#25 - Massive Black - 26 ships
+#10 - Cap'n Rick Clusterbomb - 42 ships
+#11 - Al3x Oaks - 41 ships
+#12 - Sabrez Haklar - 41 ships
+#13 - Alt Sokarad - 41 ships
+#14 - brainwhacker - 39 ships
+#15 - Mei Long - 36 ships
+#16 - Glade Radner - 36 ships
+#17 - Nami Cadelanne - 35 ships
+#18 - Reed Icculus - 34 ships
+#19 - Try2CatchMe ActEstFabula - 34 ships
+#20 - Vothor - 32 ships
+#21 - Myra Vixen - 30 ships
+#22 - Allbur Chellak - 30 ships
+#23 - Massive Black - 30 ships
+#24 - Vargo Shahni - 29 ships
+#25 - Banshee Legend - 28 ships
 
 Top explorer hunters - ISK destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 8.58b
-#02 - Cap'n Rick Clusterbomb - 5.45b
+#01 - Valtyr Farshield - 9.24b
+#02 - Cap'n Rick Clusterbomb - 5.65b
 #03 - Dakodai - 5.35b
-#04 - Glade Radner - 5.28b
-#05 - Narcisse Nightmare - 4.79b
+#04 - Glade Radner - 5.29b
+#05 - Narcisse Nightmare - 5.07b
 #06 - Damien Oxytocin - 4.68b
 #07 - Vince Condor - 4.67b
 #08 - inta Vakaria - 4.63b
-#09 - Wee Lad - 4.25b
-#10 - Banshee Legend - 4.25b
-#11 - Alphecca Lazair - 4.20b
-#12 - Silentt Knightt - 3.71b
+#09 - Alphecca Lazair - 4.33b
+#10 - Wee Lad - 4.25b
+#11 - Banshee Legend - 4.25b
+#12 - Silentt Knightt - 3.72b
 #13 - choo t - 3.51b
 #14 - Trip Erata - 3.29b
 #15 - Sabrez Haklar - 3.24b
 #16 - Try2CatchMe ActEstFabula - 3.16b
-#17 - Zeke Airuta - 2.82b
+#17 - Zeke Airuta - 2.86b
 #18 - Authawy - 2.81b
 #19 - Alt Sokarad - 2.72b
 #20 - NoGo Rose - 2.69b
-#21 - brainwhacker - 2.52b
-#22 - Mei Long - 2.51b
-#23 - Al3x Oaks - 2.45b
-#24 - Vargo Shahni - 2.41b
-#25 - Xee Yoona-451 - 2.37b
+#21 - Mei Long - 2.65b
+#22 - brainwhacker - 2.65b
+#23 - Al3x Oaks - 2.57b
+#24 - Vargo Shahni - 2.52b
+#25 - Xavier Hex - 2.51b

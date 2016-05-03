@@ -1,6 +1,6 @@
 Solo ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 165 ships
+#01 - Tasmine Cha-Tien - 166 ships
 #02 - SabersKunk Dallocort - 83 ships
 #03 - Valkyrie Starslayer - 51 ships
 #04 - Al3x Oaks - 29 ships
@@ -28,7 +28,7 @@ Solo ships destroyed
 
 Solo ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 20.16b
+#01 - Tasmine Cha-Tien - 20.18b
 #02 - Severin Talvan - 5.58b
 #03 - Al3x Oaks - 4.28b
 #04 - Valkyrie Starslayer - 1.86b

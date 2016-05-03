@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 960 ships
+#02 - Hound - 448 ships
+#03 - Manticore - 328 ships
+#04 - Purifier - 319 ships
+#05 - Nemesis - 314 ships
+#06 - Astero - 272 ships
+#07 - Rapier - 79 ships
+#08 - Tengu - 51 ships
+#09 - Osprey Navy Issue - 48 ships
+#10 - Sabre - 42 ships
+#11 - Svipul - 35 ships
+#12 - Proteus - 27 ships
+#13 - Gila - 23 ships
+#14 - Confessor - 20 ships
+#15 - Arazu - 19 ships
+#16 - Rook - 15 ships
+#17 - Pilgrim - 15 ships
+#18 - Hecate - 14 ships
+#19 - Caracal - 14 ships
+#20 - Bhaalgorn - 13 ships
+#21 - Onyx - 13 ships
+#22 - Nestor - 12 ships
+#23 - Vigilant - 12 ships
+#24 - Panther - 10 ships
+#25 - Falcon - 10 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 253.32b
+#02 - Nemesis - 79.16b
+#03 - Purifier - 65.72b
+#04 - Manticore - 51.66b
+#05 - Hound - 46.62b
+#06 - Proteus - 21.78b
+#07 - Bhaalgorn - 15.95b
+#08 - Astero - 14.24b
+#09 - Tengu - 8.50b
+#10 - Sabre - 8.02b
+#11 - Loki - 7.12b
+#12 - Osprey Navy Issue - 7.06b
+#13 - Rapier - 6.65b
+#14 - Onyx - 5.66b
+#15 - Pilgrim - 5.18b
+#16 - Arazu - 5.08b
+#17 - Panther - 4.61b
+#18 - Nestor - 4.53b
+#19 - Gila - 4.45b
+#20 - Guardian - 4.00b
+#21 - Falcon - 3.35b
+#22 - Sin - 3.25b
+#23 - Confessor - 3.05b
+#24 - Scythe Fleet Issue - 2.79b
+#25 - Curse - 1.62b

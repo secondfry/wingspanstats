@@ -7,8 +7,8 @@ Ships destroyed in a fleet
 #05 - Eris Kallisti - 71 ships
 #06 - Silentt Knightt - 50 ships
 #07 - Narcisse Nightmare - 47 ships
-#08 - Pyronica Annota - 44 ships
-#09 - togi yuki - 44 ships
+#08 - togi yuki - 45 ships
+#09 - Pyronica Annota - 44 ships
 #10 - Boon Hawkes - 42 ships
 #11 - Wee Lad - 42 ships
 #12 - Amielia Evangelon - 38 ships
@@ -16,7 +16,7 @@ Ships destroyed in a fleet
 #14 - Ben D'Eath - 31 ships
 #15 - Raddic Darkworth - 30 ships
 #16 - Ejit Uiloq - 28 ships
-#17 - Lexa Griffin - 25 ships
+#17 - Lexa Griffin - 26 ships
 #18 - Bails Naskingar - 23 ships
 #19 - Alphecca Lazair - 23 ships
 #20 - Glade Radner - 21 ships
@@ -36,8 +36,8 @@ ISK destroyed in a fleet
 #06 - Pyronica Annota - 12.25b
 #07 - Mei Long - 10.80b
 #08 - Cap'n Rick Clusterbomb - 10.73b
-#09 - Lexa Griffin - 10.59b
-#10 - togi yuki - 10.18b
+#09 - Lexa Griffin - 10.67b
+#10 - togi yuki - 10.26b
 #11 - Raddic Darkworth - 10.08b
 #12 - Severin Talvan - 9.54b
 #13 - Gorki Irvam - 9.15b

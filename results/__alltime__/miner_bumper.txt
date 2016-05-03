@@ -1,55 +1,55 @@
 Top miner hunters - ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 60 ships
-#02 - Bustrr Bluth - 51 ships
-#03 - Saladiin - 44 ships
-#04 - Chance Ravinne - 38 ships
-#05 - Orianna Okanata - 37 ships
-#06 - inta Vakaria - 37 ships
-#07 - Valkyrie Starslayer - 30 ships
-#08 - Narcisse Nightmare - 28 ships
-#09 - brainwhacker - 26 ships
-#10 - Mei Long - 25 ships
-#11 - Eridanii - 24 ships
-#12 - Glade Radner - 24 ships
+#01 - Tasmine Cha-Tien - 65 ships
+#02 - Bustrr Bluth - 52 ships
+#03 - Saladiin - 48 ships
+#04 - Valkyrie Starslayer - 47 ships
+#05 - Orianna Okanata - 39 ships
+#06 - Chance Ravinne - 38 ships
+#07 - inta Vakaria - 38 ships
+#08 - Narcisse Nightmare - 33 ships
+#09 - Mei Long - 29 ships
+#10 - brainwhacker - 28 ships
+#11 - Glade Radner - 25 ships
+#12 - Eridanii - 24 ships
 #13 - Cap'n Rick Clusterbomb - 24 ships
-#14 - Gillion Wyrddych - 23 ships
-#15 - togi yuki - 23 ships
-#16 - Saria Dehmov - 21 ships
-#17 - Banshee Legend - 21 ships
-#18 - NoGo Rose - 21 ships
-#19 - Sabrez Haklar - 21 ships
-#20 - Alt Sokarad - 19 ships
-#21 - Vothor - 19 ships
-#22 - Slevin Hekard - 18 ships
-#23 - Valtyr Farshield - 17 ships
-#24 - Al3x Oaks - 17 ships
-#25 - Allbur Chellak - 17 ships
+#14 - Slevin Hekard - 23 ships
+#15 - Gillion Wyrddych - 23 ships
+#16 - Sabrez Haklar - 23 ships
+#17 - togi yuki - 23 ships
+#18 - Quintus Va'Lari - 22 ships
+#19 - Saria Dehmov - 21 ships
+#20 - Banshee Legend - 21 ships
+#21 - NoGo Rose - 21 ships
+#22 - Al3x Oaks - 20 ships
+#23 - Alt Sokarad - 19 ships
+#24 - Vothor - 19 ships
+#25 - Valtyr Farshield - 17 ships
 
 Top miner hunters - ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 7.04b
-#02 - Orianna Okanata - 2.51b
-#03 - Narcisse Nightmare - 1.99b
-#04 - Valkyrie Starslayer - 1.95b
-#05 - Chance Ravinne - 1.93b
-#06 - Mei Long - 1.83b
+#01 - Tasmine Cha-Tien - 7.52b
+#02 - Valkyrie Starslayer - 2.96b
+#03 - Orianna Okanata - 2.75b
+#04 - Mei Long - 2.29b
+#05 - Narcisse Nightmare - 2.14b
+#06 - Chance Ravinne - 1.93b
 #07 - Valtyr Farshield - 1.82b
 #08 - Saria Dehmov - 1.81b
 #09 - togi yuki - 1.81b
-#10 - More11o - 1.41b
-#11 - inta Vakaria - 1.39b
+#10 - inta Vakaria - 1.44b
+#11 - More11o - 1.41b
 #12 - WeirdBall - 1.35b
-#13 - Vek Chiasson - 1.28b
-#14 - Ransom Odunen - 1.26b
-#15 - Cap'n Rick Clusterbomb - 1.21b
-#16 - Malak Saren - 1.18b
-#17 - Ana Niamh - 1.17b
-#18 - Abaddon Nergal - 1.13b
-#19 - Glade Radner - 1.02b
-#20 - Centhi Naari - 0.95b
-#21 - Sabrez Haklar - 0.91b
-#22 - brainwhacker - 0.85b
-#23 - Pyro Silf - 0.80b
-#24 - Raddic Darkworth - 0.79b
-#25 - Severin Talvan - 0.78b
+#13 - Vek Chiasson - 1.33b
+#14 - Raddic Darkworth - 1.29b
+#15 - Ransom Odunen - 1.26b
+#16 - Cap'n Rick Clusterbomb - 1.21b
+#17 - Abaddon Nergal - 1.21b
+#18 - Malak Saren - 1.18b
+#19 - Ana Niamh - 1.17b
+#20 - Quintus Va'Lari - 1.14b
+#21 - Glade Radner - 1.03b
+#22 - Sabrez Haklar - 0.97b
+#23 - Centhi Naari - 0.95b
+#24 - brainwhacker - 0.90b
+#25 - Severin Talvan - 0.80b

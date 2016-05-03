@@ -1,0 +1,53 @@
+Top Astero pilots - ships destroyed
+--------------------------------------------
+#01 - Nami Cadelanne - 60 ships
+#02 - Cap'n Rick Clusterbomb - 50 ships
+#03 - Dunfniss Mislah - 36 ships
+#04 - Viktor Hakeem - 30 ships
+#05 - Rolf Blackburne - 21 ships
+#06 - Jennifer Crissman - 18 ships
+#07 - Severin Talvan - 9 ships
+#08 - Amielia Evangelon - 6 ships
+#09 - Narcisse Nightmare - 6 ships
+#10 - Vignar - 6 ships
+#11 - TOPSTER - 6 ships
+#12 - Blackhawk Bordeaux - 6 ships
+#13 - Clavaine - 3 ships
+#14 - Kenneth Egeriis - 3 ships
+#15 - Vargo Shahni - 2 ships
+#16 - RuthlessFord Uitra - 2 ships
+#17 - Planic Khan - 1 ships
+#18 - Andy Lorentz - 1 ships
+#19 - Forrae Deren - 1 ships
+#20 - Reaver Decimator - 1 ships
+#21 - Maere Mearcstapa - 1 ships
+#22 - Ravic - 1 ships
+#23 - Glaedyr - 1 ships
+#24 - Kelia Monaiis - 1 ships
+
+Top Astero pilots - ISK destroyed
+--------------------------------------------
+#01 - Nami Cadelanne - 2.65b
+#02 - Amielia Evangelon - 2.59b
+#03 - Dunfniss Mislah - 1.99b
+#04 - Rolf Blackburne - 1.42b
+#05 - Cap'n Rick Clusterbomb - 1.15b
+#06 - RuthlessFord Uitra - 0.90b
+#07 - Jennifer Crissman - 0.71b
+#08 - Viktor Hakeem - 0.65b
+#09 - Narcisse Nightmare - 0.36b
+#10 - Kenneth Egeriis - 0.32b
+#11 - Severin Talvan - 0.31b
+#12 - Clavaine - 0.28b
+#13 - Planic Khan - 0.24b
+#14 - Vignar - 0.23b
+#15 - Vargo Shahni - 0.13b
+#16 - Reaver Decimator - 0.10b
+#17 - TOPSTER - 0.06b
+#18 - Blackhawk Bordeaux - 0.06b
+#19 - Maere Mearcstapa - 0.05b
+#20 - Kelia Monaiis - 0.04b
+#21 - Ravic - 0.02b
+#22 - Andy Lorentz - 0.00b
+#23 - Forrae Deren - 0.00b
+#24 - Glaedyr - 0.00b

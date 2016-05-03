@@ -2,29 +2,29 @@ Top Astero pilots - ships destroyed
 --------------------------------------------
 #01 - Valtyr Farshield - 117 ships
 #02 - Damien Oxytocin - 93 ships
-#03 - inta Vakaria - 78 ships
-#04 - Vargo Shahni - 54 ships
-#05 - Geroni Vynneve - 51 ships
-#06 - Flaya Noong - 42 ships
-#07 - Allbur Chellak - 31 ships
-#08 - Cap'n Rick Clusterbomb - 29 ships
-#09 - Revan Wake - 28 ships
-#10 - Zeke Airuta - 25 ships
-#11 - Gillion Wyrddych - 22 ships
-#12 - Alebrelle Kuatu - 21 ships
-#13 - Zen Dad - 18 ships
-#14 - Phaezen Orti - 17 ships
-#15 - Scipio Zeul - 16 ships
-#16 - Alphecca Lazair - 16 ships
-#17 - Aurelie Solvay - 15 ships
-#18 - Try2CatchMe ActEstFabula - 14 ships
-#19 - Elias Stagg - 14 ships
-#20 - June Pyron - 14 ships
-#21 - Bustrr Bluth - 13 ships
-#22 - Miles Bothari - 12 ships
-#23 - Kelia Monaiis - 12 ships
-#24 - Orianna Okanata - 11 ships
-#25 - khajay v virras - 10 ships
+#03 - Cap'n Rick Clusterbomb - 79 ships
+#04 - inta Vakaria - 78 ships
+#05 - Nami Cadelanne - 60 ships
+#06 - Vargo Shahni - 56 ships
+#07 - Geroni Vynneve - 51 ships
+#08 - Flaya Noong - 42 ships
+#09 - Dunfniss Mislah - 36 ships
+#10 - Allbur Chellak - 31 ships
+#11 - Viktor Hakeem - 30 ships
+#12 - Revan Wake - 28 ships
+#13 - Zeke Airuta - 25 ships
+#14 - Gillion Wyrddych - 22 ships
+#15 - Alebrelle Kuatu - 21 ships
+#16 - Rolf Blackburne - 21 ships
+#17 - Jennifer Crissman - 18 ships
+#18 - Zen Dad - 18 ships
+#19 - Phaezen Orti - 17 ships
+#20 - Scipio Zeul - 16 ships
+#21 - Alphecca Lazair - 16 ships
+#22 - Severin Talvan - 15 ships
+#23 - Aurelie Solvay - 15 ships
+#24 - Try2CatchMe ActEstFabula - 14 ships
+#25 - Elias Stagg - 14 ships
 
 Top Astero pilots - ISK destroyed
 --------------------------------------------
@@ -33,23 +33,23 @@ Top Astero pilots - ISK destroyed
 #03 - Flaya Noong - 9.16b
 #04 - Damien Oxytocin - 4.52b
 #05 - Phaezen Orti - 4.25b
-#06 - Vargo Shahni - 3.63b
-#07 - Elias Stagg - 2.88b
-#08 - Scipio Zeul - 2.85b
-#09 - Zeke Airuta - 2.85b
-#10 - Tekkera - 2.79b
-#11 - Ana Niamh - 2.68b
-#12 - June Pyron - 2.26b
-#13 - Gillion Wyrddych - 1.96b
-#14 - Cap'n Rick Clusterbomb - 1.93b
-#15 - Hirashima Nagasaki-san - 1.93b
-#16 - Aurelie Solvay - 1.70b
-#17 - Gloria White - 1.59b
-#18 - Mei Long - 1.54b
-#19 - Alphecca Lazair - 1.35b
-#20 - Zen Dad - 1.26b
-#21 - Revan Wake - 1.24b
-#22 - Baine Mangeiri - 1.21b
-#23 - shepard locknear - 1.10b
-#24 - Tyto Noud - 1.03b
-#25 - T-B0NE - 1.02b
+#06 - Vargo Shahni - 3.76b
+#07 - Cap'n Rick Clusterbomb - 3.08b
+#08 - Elias Stagg - 2.88b
+#09 - Scipio Zeul - 2.85b
+#10 - Zeke Airuta - 2.85b
+#11 - Tekkera - 2.79b
+#12 - Ana Niamh - 2.68b
+#13 - Nami Cadelanne - 2.65b
+#14 - Amielia Evangelon - 2.59b
+#15 - June Pyron - 2.26b
+#16 - Dunfniss Mislah - 1.99b
+#17 - Gillion Wyrddych - 1.96b
+#18 - Hirashima Nagasaki-san - 1.93b
+#19 - Aurelie Solvay - 1.70b
+#20 - Gloria White - 1.59b
+#21 - Mei Long - 1.54b
+#22 - Rolf Blackburne - 1.42b
+#23 - Alphecca Lazair - 1.35b
+#24 - Zen Dad - 1.26b
+#25 - Revan Wake - 1.24b

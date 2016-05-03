@@ -1,6 +1,6 @@
 Top Interdictor(+HIC) pilots - ships destroyed
 --------------------------------------------
-#01 - togi yuki - 24 ships
+#01 - togi yuki - 25 ships
 #02 - brainwhacker - 21 ships
 #03 - Narcisse Nightmare - 11 ships
 #04 - Vothor - 6 ships
@@ -16,7 +16,7 @@ Top Interdictor(+HIC) pilots - ships destroyed
 
 Top Interdictor(+HIC) pilots - ISK destroyed
 --------------------------------------------
-#01 - togi yuki - 8.36b
+#01 - togi yuki - 8.43b
 #02 - Michi Hasegawa - 4.70b
 #03 - Narcisse Nightmare - 3.45b
 #04 - brainwhacker - 1.77b

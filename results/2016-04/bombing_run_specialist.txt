@@ -1,0 +1,23 @@
+Top Bombing Run Specialists - ships destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 8 ships
+#02 - Mei Long - 6 ships
+#03 - Quintus Va'Lari - 2 ships
+#04 - Albin wood - 1 ships
+#05 - Gillion Wyrddych - 1 ships
+#06 - Lorth Drak'rov - 1 ships
+#07 - Viktor Hakeem - 1 ships
+#08 - TOPSTER - 1 ships
+#09 - Buster Atmosk - 1 ships
+
+Top Bombing Run Specialists - ISK destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 0.18b
+#02 - Mei Long - 0.14b
+#03 - Lorth Drak'rov - 0.10b
+#04 - Albin wood - 0.07b
+#05 - Viktor Hakeem - 0.07b
+#06 - TOPSTER - 0.07b
+#07 - Buster Atmosk - 0.07b
+#08 - Quintus Va'Lari - 0.05b
+#09 - Gillion Wyrddych - 0.00b

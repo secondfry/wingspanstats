@@ -1,6 +1,6 @@
 Ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 257 ships
+#01 - Tasmine Cha-Tien - 258 ships
 #02 - Quintus Va'Lari - 114 ships
 #03 - Mei Long - 91 ships
 #04 - Vek Chiasson - 90 ships
@@ -10,7 +10,7 @@ Ships destroyed
 #08 - Wee Lad - 62 ships
 #09 - Narcisse Nightmare - 58 ships
 #10 - Valkyrie Starslayer - 54 ships
-#11 - togi yuki - 47 ships
+#11 - togi yuki - 48 ships
 #12 - Al3x Oaks - 45 ships
 #13 - Pyronica Annota - 44 ships
 #14 - Boon Hawkes - 42 ships
@@ -23,12 +23,12 @@ Ships destroyed
 #21 - Ben D'Eath - 32 ships
 #22 - Ejit Uiloq - 29 ships
 #23 - Severin Talvan - 28 ships
-#24 - Bails Naskingar - 27 ships
-#25 - Lexa Griffin - 26 ships
+#24 - Lexa Griffin - 27 ships
+#25 - Bails Naskingar - 27 ships
 
 ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 28.63b
+#01 - Tasmine Cha-Tien - 28.66b
 #02 - Vek Chiasson - 26.51b
 #03 - Quintus Va'Lari - 18.90b
 #04 - Silentt Knightt - 16.59b
@@ -39,8 +39,8 @@ ISK destroyed
 #09 - Cap'n Rick Clusterbomb - 11.96b
 #10 - Al3x Oaks - 10.98b
 #11 - Mei Long - 10.89b
-#12 - Lexa Griffin - 10.59b
-#13 - togi yuki - 10.50b
+#12 - Lexa Griffin - 10.67b
+#13 - togi yuki - 10.58b
 #14 - Raddic Darkworth - 10.41b
 #15 - Gorki Irvam - 9.15b
 #16 - Shaianne - 7.71b

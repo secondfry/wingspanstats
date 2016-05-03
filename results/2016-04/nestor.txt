@@ -1,9 +1,7 @@
 Top Nestor pilots - ships destroyed
 --------------------------------------------
 #01 - inta Vakaria - 12 ships
-#02 - Sabrez Haklar - 3 ships
 
 Top Nestor pilots - ISK destroyed
 --------------------------------------------
 #01 - inta Vakaria - 4.53b
-#02 - Sabrez Haklar - 0.02b

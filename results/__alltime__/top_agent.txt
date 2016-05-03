@@ -1,55 +1,55 @@
 Ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 917 ships
-#02 - Cap'n Rick Clusterbomb - 832 ships
-#03 - Valtyr Farshield - 750 ships
-#04 - Gillion Wyrddych - 688 ships
-#05 - Saria Dehmov - 683 ships
-#06 - Narcisse Nightmare - 667 ships
-#07 - Orianna Okanata - 651 ships
-#08 - Mei Long - 650 ships
-#09 - Sabrez Haklar - 586 ships
-#10 - inta Vakaria - 580 ships
-#11 - Vothor - 567 ships
-#12 - Silentt Knightt - 522 ships
-#13 - Chance Ravinne - 501 ships
-#14 - Glade Radner - 492 ships
-#15 - NoGo Rose - 471 ships
-#16 - Caboosette - 462 ships
-#17 - Gigi McQuaid - 398 ships
-#18 - Albin wood - 386 ships
-#19 - Tali Lyrae - 385 ships
-#20 - Touretes - 370 ships
-#21 - Ransom Odunen - 367 ships
-#22 - Dakodai - 356 ships
-#23 - T-B0NE - 347 ships
-#24 - Al3x Oaks - 347 ships
-#25 - Revan Wake - 337 ships
+#01 - Tasmine Cha-Tien - 1019 ships
+#02 - Cap'n Rick Clusterbomb - 903 ships
+#03 - Valtyr Farshield - 783 ships
+#04 - Narcisse Nightmare - 732 ships
+#05 - Mei Long - 715 ships
+#06 - Gillion Wyrddych - 703 ships
+#07 - Saria Dehmov - 683 ships
+#08 - Orianna Okanata - 673 ships
+#09 - Sabrez Haklar - 605 ships
+#10 - inta Vakaria - 603 ships
+#11 - Silentt Knightt - 578 ships
+#12 - Vothor - 576 ships
+#13 - Chance Ravinne - 515 ships
+#14 - Glade Radner - 512 ships
+#15 - Caboosette - 485 ships
+#16 - NoGo Rose - 471 ships
+#17 - Gigi McQuaid - 402 ships
+#18 - Albin wood - 396 ships
+#19 - Tali Lyrae - 387 ships
+#20 - Ransom Odunen - 381 ships
+#21 - Al3x Oaks - 374 ships
+#22 - Touretes - 370 ships
+#23 - Dakodai - 360 ships
+#24 - T-B0NE - 352 ships
+#25 - Revan Wake - 342 ships
 
 ISK destroyed
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 196.82b
-#02 - Valtyr Farshield - 173.06b
-#03 - Tasmine Cha-Tien - 127.62b
-#04 - Orianna Okanata - 127.20b
-#05 - Glade Radner - 119.25b
-#06 - Narcisse Nightmare - 111.21b
-#07 - Saria Dehmov - 104.10b
-#08 - Vothor - 96.21b
-#09 - Gillion Wyrddych - 96.16b
-#10 - Sabrez Haklar - 94.93b
-#11 - Mei Long - 86.24b
-#12 - Caboosette - 81.01b
-#13 - Silentt Knightt - 80.71b
-#14 - inta Vakaria - 79.47b
-#15 - Ransom Odunen - 73.48b
-#16 - togi yuki - 70.25b
-#17 - Gigi McQuaid - 65.37b
-#18 - Dakodai - 59.11b
-#19 - Tali Lyrae - 58.51b
-#20 - Xee Yoona-451 - 57.59b
-#21 - Abaddon Nergal - 55.33b
-#22 - NoGo Rose - 53.34b
-#23 - Rob Tsukaya - 52.75b
-#24 - T-B0NE - 52.54b
-#25 - More11o - 50.84b
+#01 - Cap'n Rick Clusterbomb - 215.84b
+#02 - Valtyr Farshield - 193.45b
+#03 - Tasmine Cha-Tien - 141.19b
+#04 - Orianna Okanata - 132.86b
+#05 - Narcisse Nightmare - 128.82b
+#06 - Glade Radner - 126.33b
+#07 - Gillion Wyrddych - 104.96b
+#08 - Saria Dehmov - 104.10b
+#09 - Mei Long - 100.71b
+#10 - Sabrez Haklar - 100.56b
+#11 - Vothor - 98.19b
+#12 - Silentt Knightt - 96.81b
+#13 - Caboosette - 85.08b
+#14 - inta Vakaria - 84.25b
+#15 - Ransom Odunen - 76.34b
+#16 - togi yuki - 70.33b
+#17 - Gigi McQuaid - 66.31b
+#18 - Abaddon Nergal - 64.56b
+#19 - Dakodai - 60.71b
+#20 - Tali Lyrae - 59.22b
+#21 - Trip Erata - 58.47b
+#22 - Xee Yoona-451 - 57.59b
+#23 - Chance Ravinne - 57.43b
+#24 - Al3x Oaks - 55.71b
+#25 - More11o - 54.02b

@@ -10,14 +10,14 @@ Top bomber pilots - ships destroyed
 #08 - Ben D'Eath - 31 ships
 #09 - Ejit Uiloq - 27 ships
 #10 - Narcisse Nightmare - 26 ships
-#11 - Lexa Griffin - 25 ships
+#11 - Lexa Griffin - 26 ships
 #12 - Amielia Evangelon - 23 ships
 #13 - Glade Radner - 22 ships
 #14 - Vordec - 22 ships
 #15 - Blackhawk Bordeaux - 21 ships
 #16 - Nami Cadelanne - 20 ships
-#17 - Eris Kallisti - 19 ships
-#18 - Dunfniss Mislah - 19 ships
+#17 - Dunfniss Mislah - 20 ships
+#18 - Eris Kallisti - 19 ships
 #19 - Severin Talvan - 18 ships
 #20 - Gavrilo Princep - 17 ships
 #21 - choo t - 17 ships
@@ -33,7 +33,7 @@ Top bomber pilots - ISK destroyed
 #03 - Vek Chiasson - 11.20b
 #04 - Quintus Va'Lari - 10.49b
 #05 - Gorki Irvam - 9.15b
-#06 - Lexa Griffin - 8.94b
+#06 - Lexa Griffin - 9.02b
 #07 - Dunfniss Mislah - 6.33b
 #08 - choo t - 6.11b
 #09 - Amielia Evangelon - 6.00b

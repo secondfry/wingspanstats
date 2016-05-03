@@ -1,55 +1,55 @@
 Top Interdictor(+HIC) pilots - ships destroyed
 --------------------------------------------
 #01 - NoGo Rose - 215 ships
-#02 - Orianna Okanata - 155 ships
-#03 - Vothor - 127 ships
+#02 - Orianna Okanata - 163 ships
+#03 - Vothor - 129 ships
 #04 - Tali Lyrae - 62 ships
-#05 - Sabrez Haklar - 56 ships
-#06 - brainwhacker - 56 ships
+#05 - brainwhacker - 61 ships
+#06 - Sabrez Haklar - 56 ships
 #07 - Al3x Oaks - 47 ships
 #08 - Cap'n Rick Clusterbomb - 47 ships
-#09 - togi yuki - 34 ships
-#10 - Bleda Katona - 25 ships
-#11 - Louis Ferreira - 23 ships
-#12 - Narcisse Nightmare - 19 ships
-#13 - Abaddon Nergal - 19 ships
+#09 - togi yuki - 35 ships
+#10 - Abaddon Nergal - 31 ships
+#11 - Bleda Katona - 25 ships
+#12 - Louis Ferreira - 23 ships
+#13 - Narcisse Nightmare - 21 ships
 #14 - Caboosette - 18 ships
 #15 - Erika Tsurpalen - 16 ships
-#16 - Bierrt - 11 ships
-#17 - Au'Rel - 11 ships
-#18 - Eridanii - 10 ships
-#19 - Trip Erata - 10 ships
-#20 - Gillion Wyrddych - 8 ships
-#21 - Myra Vixen - 8 ships
-#22 - Newbus - 8 ships
-#23 - Vince Condor - 7 ships
-#24 - Xeromos - 7 ships
-#25 - Saria Dehmov - 7 ships
+#16 - Tyr Carter - 12 ships
+#17 - Bierrt - 11 ships
+#18 - Au'Rel - 11 ships
+#19 - Raddic Darkworth - 10 ships
+#20 - Eridanii - 10 ships
+#21 - Trip Erata - 10 ships
+#22 - Gillion Wyrddych - 8 ships
+#23 - Myra Vixen - 8 ships
+#24 - Newbus - 8 ships
+#25 - Vince Condor - 7 ships
 
 Top Interdictor(+HIC) pilots - ISK destroyed
 --------------------------------------------
-#01 - Orianna Okanata - 22.71b
-#02 - Vothor - 17.60b
+#01 - Orianna Okanata - 24.48b
+#02 - Vothor - 17.85b
 #03 - NoGo Rose - 16.51b
 #04 - Sabrez Haklar - 12.55b
-#05 - togi yuki - 11.11b
-#06 - Cap'n Rick Clusterbomb - 10.73b
-#07 - Abaddon Nergal - 7.41b
+#05 - togi yuki - 11.19b
+#06 - Abaddon Nergal - 11.07b
+#07 - Cap'n Rick Clusterbomb - 10.73b
 #08 - Bierrt - 7.26b
 #09 - Narcisse Nightmare - 7.06b
 #10 - Tali Lyrae - 6.43b
-#11 - Michi Hasegawa - 4.70b
+#11 - Michi Hasegawa - 4.87b
 #12 - Louis Ferreira - 4.45b
-#13 - Erika Tsurpalen - 3.30b
-#14 - brainwhacker - 3.15b
-#15 - Caboosette - 3.11b
-#16 - Bleda Katona - 2.96b
-#17 - Al3x Oaks - 2.61b
-#18 - Myra Vixen - 2.49b
-#19 - Gillion Wyrddych - 1.81b
-#20 - Banshee Legend - 1.34b
-#21 - Alice Anneto - 1.31b
-#22 - Blacklabel21 - 1.08b
-#23 - Trip Erata - 1.00b
-#24 - Artik Fawkes - 0.92b
-#25 - Cynthera Noir - 0.91b
+#13 - Marco Jacks - 3.72b
+#14 - Raddic Darkworth - 3.50b
+#15 - brainwhacker - 3.37b
+#16 - Erika Tsurpalen - 3.30b
+#17 - Caboosette - 3.11b
+#18 - Bleda Katona - 2.96b
+#19 - Al3x Oaks - 2.61b
+#20 - Myra Vixen - 2.49b
+#21 - Gillion Wyrddych - 1.81b
+#22 - Sharps - 1.42b
+#23 - Banshee Legend - 1.34b
+#24 - Alice Anneto - 1.31b
+#25 - Blacklabel21 - 1.08b

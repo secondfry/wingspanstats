@@ -1,0 +1,31 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Abaddon Nergal - 12 ships
+#02 - Tyr Carter - 12 ships
+#03 - Raddic Darkworth - 10 ships
+#04 - Orianna Okanata - 8 ships
+#05 - Marco Jacks - 6 ships
+#06 - Sharps - 5 ships
+#07 - brainwhacker - 5 ships
+#08 - Vothor - 2 ships
+#09 - Symerizer Ahashion - 2 ships
+#10 - Narcisse Nightmare - 2 ships
+#11 - Reed Icculus - 1 ships
+#12 - Michi Hasegawa - 1 ships
+#13 - Saiku Itchutomi - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Marco Jacks - 3.72b
+#02 - Abaddon Nergal - 3.66b
+#03 - Raddic Darkworth - 3.50b
+#04 - Orianna Okanata - 1.77b
+#05 - Sharps - 1.42b
+#06 - Saiku Itchutomi - 0.46b
+#07 - Tyr Carter - 0.34b
+#08 - Vothor - 0.24b
+#09 - brainwhacker - 0.22b
+#10 - Michi Hasegawa - 0.17b
+#11 - Reed Icculus - 0.04b
+#12 - Symerizer Ahashion - 0.01b
+#13 - Narcisse Nightmare - 0.00b
