@@ -57,22 +57,27 @@ class DbParse(object):
             timestamp_last = datetime.strptime('2000', '%Y').date()
         log(self.LOG_LEVEL, 'Last checked: ' + timestamp_last.strftime('%Y-%m-%d'))
 
-        log(self.LOG_LEVEL, 'Should we parse new data?')
+        log(self.LOG_LEVEL, 'Is there old months to parse?')
         if timestamp_last < timestamp_check:
             log(self.LOG_LEVEL + 1, 'Yes')
             status = self.STATUS_START
-
-            while status != self.STATUS_DONE:
-                log(self.LOG_LEVEL, 'Starting parsing ' + timestamp_check.strftime('%Y-%m'))
-                status, timestamp_check = self.parse(timestamp_check)
-                if status != self.STATUS_DONE and timestamp_last >= timestamp_check:
-                    status = self.STATUS_DONE
-
-            log(self.LOG_LEVEL, 'Creating leaderboards')
-            self.make_leaderboards(timestamp_last)
         else:
-            log(self.LOG_LEVEL + 1, 'No')
-            status = self.STATUS_DONE
+            log(self.LOG_LEVEL + 1, 'No, parcing this month partial stats')
+            res_dir_date = os.path.join(StatsConfig.RESULTS_PATH, timestamp_today.strftime('%Y-%m'))
+            if os.path.exists(res_dir_date):
+                shutil.rmtree(res_dir_date)
+            timestamp_check = timestamp_today.replace(day = 1)
+            timestamp_last = timestamp_today.replace(day = 1)
+            status = self.STATUS_START
+
+        while status != self.STATUS_DONE:
+            log(self.LOG_LEVEL, 'Starting parsing ' + timestamp_check.strftime('%Y-%m'))
+            status, timestamp_check = self.parse(timestamp_check)
+            if status != self.STATUS_DONE and timestamp_last >= timestamp_check:
+                status = self.STATUS_DONE
+
+        log(self.LOG_LEVEL, 'Creating leaderboards')
+        self.make_leaderboards(timestamp_last)
 
         log(self.LOG_LEVEL, 'Done! [database parser]')
         self.LOG_LEVEL -= 1
