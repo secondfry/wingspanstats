@@ -3,6 +3,7 @@
 
 import os
 import json
+from datetime import datetime
 
 from rules.statsconfig import StatsConfig
 from rules.generalstats import GeneralStats
@@ -61,20 +62,22 @@ def extract_killmails(file_name, rules_alltime, rules_monthly, awox_alltime, awo
         data = json.load(data_file)
 
     for killmail in data:
-        awox_alltime.process_km(killmail)
-        awox_monthly.process_km(killmail)
-        awox = False
-        if killmail['victim']['corporationID'] in StatsConfig.CORP_IDS:
-            awox = True
+        kill_time = datetime.strptime(killmail['killTime'], '%Y-%m-%d %H:%M:%S')
+        if datetime(2016, 5, 1, 0, 0, 0) <= kill_time <= datetime(2016, 5, 7, 23, 59, 59):
+            awox_alltime.process_km(killmail)
+            awox_monthly.process_km(killmail)
+            awox = False
+            if killmail['victim']['corporationID'] in StatsConfig.CORP_IDS:
+                awox = True
 
-        [total_non_npc_attackers, wingspan_attackers] = StatsConfig.attacker_types(killmail)
-        if total_non_npc_attackers > 0:
-            if not awox or StatsConfig.INCLUDE_AWOX:
-                if float(wingspan_attackers) / float(total_non_npc_attackers) >= StatsConfig.FLEET_COMP:
-                    for rule in rules_alltime:
-                        rule.process_km(killmail)
-                    for rule in rules_monthly:
-                        rule.process_km(killmail)
+            [total_non_npc_attackers, wingspan_attackers] = StatsConfig.attacker_types(killmail)
+            if total_non_npc_attackers > 0:
+                if not awox or StatsConfig.INCLUDE_AWOX:
+                    if float(wingspan_attackers) / float(total_non_npc_attackers) >= StatsConfig.FLEET_COMP:
+                        for rule in rules_alltime:
+                            rule.process_km(killmail)
+                        for rule in rules_monthly:
+                            rule.process_km(killmail)
 
 
 def analyze_data(db_list):
@@ -99,9 +102,10 @@ def analyze_data(db_list):
                 else:
                     break
 
+            suffix = "W1"
             for rule in rules_monthly:
-                rule.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}".format(year, month)))
-            awox_monthly.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}".format(year, month)))
+                rule.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}-{}".format(year, month, suffix)))
+            awox_monthly.output_results(os.path.join(StatsConfig.RESULTS_PATH, "{}-{:02d}-{}".format(year, month, suffix)))
 
     for rule in rules_alltime:
         rule.output_results(os.path.join(StatsConfig.RESULTS_PATH, '__alltime__'))
@@ -110,28 +114,29 @@ def analyze_data(db_list):
 
 def main():
     analyze_data([
-        (2014, 7),
-        (2014, 8),
-        (2014, 9),
-        (2014, 10),
-        (2014, 11),
-        (2014, 12),
-        (2015, 1),
-        (2015, 2),
-        (2015, 3),
-        (2015, 4),
-        (2015, 5),
-        (2015, 6),
-        (2015, 7),
-        (2015, 8),
-        (2015, 9),
-        (2015, 10),
-        (2015, 11),
-        (2015, 12),
-        (2016, 1),
-        (2016, 2),
-        (2016, 3),
-        (2016, 4),
+        # (2014, 7),
+        # (2014, 8),
+        # (2014, 9),
+        # (2014, 10),
+        # (2014, 11),
+        # (2014, 12),
+        # (2015, 1),
+        # (2015, 2),
+        # (2015, 3),
+        # (2015, 4),
+        # (2015, 5),
+        # (2015, 6),
+        # (2015, 7),
+        # (2015, 8),
+        # (2015, 9),
+        # (2015, 10),
+        # (2015, 11),
+        # (2015, 12),
+        # (2016, 1),
+        # (2016, 2),
+        # (2016, 3),
+        # (2016, 4),
+        (2016, 5),
     ])
 
 if __name__ == "__main__":
