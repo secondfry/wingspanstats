@@ -1,12 +1,12 @@
 Ships destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 960 ships
+#01 - Stratios - 961 ships
 #02 - Hound - 448 ships
-#03 - Manticore - 328 ships
-#04 - Purifier - 319 ships
-#05 - Nemesis - 314 ships
+#03 - Manticore - 331 ships
+#04 - Nemesis - 320 ships
+#05 - Purifier - 319 ships
 #06 - Astero - 272 ships
-#07 - Rapier - 79 ships
+#07 - Rapier - 80 ships
 #08 - Tengu - 51 ships
 #09 - Osprey Navy Issue - 48 ships
 #10 - Sabre - 42 ships
@@ -15,23 +15,23 @@ Ships destroyed by a specific hull
 #13 - Gila - 23 ships
 #14 - Confessor - 20 ships
 #15 - Arazu - 19 ships
-#16 - Rook - 15 ships
-#17 - Pilgrim - 15 ships
+#16 - Pilgrim - 17 ships
+#17 - Rook - 15 ships
 #18 - Hecate - 14 ships
 #19 - Caracal - 14 ships
 #20 - Bhaalgorn - 13 ships
 #21 - Onyx - 13 ships
 #22 - Nestor - 12 ships
 #23 - Vigilant - 12 ships
-#24 - Panther - 10 ships
-#25 - Falcon - 10 ships
+#24 - Garmur - 11 ships
+#25 - Panther - 10 ships
 
 ISK destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 253.32b
-#02 - Nemesis - 79.16b
+#01 - Stratios - 254.48b
+#02 - Nemesis - 79.18b
 #03 - Purifier - 65.72b
-#04 - Manticore - 51.66b
+#04 - Manticore - 51.73b
 #05 - Hound - 46.62b
 #06 - Proteus - 21.78b
 #07 - Bhaalgorn - 15.95b
@@ -40,7 +40,7 @@ ISK destroyed by a specific hull
 #10 - Sabre - 8.02b
 #11 - Loki - 7.12b
 #12 - Osprey Navy Issue - 7.06b
-#13 - Rapier - 6.65b
+#13 - Rapier - 6.72b
 #14 - Onyx - 5.66b
 #15 - Pilgrim - 5.18b
 #16 - Arazu - 5.08b

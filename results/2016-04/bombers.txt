@@ -11,7 +11,7 @@ Top bomber pilots - ships destroyed
 #09 - Grant lee Buffalo - 51 ships
 #10 - Tyr Carter - 50 ships
 #11 - Zeke Airuta - 50 ships
-#12 - Tasmine Cha-Tien - 48 ships
+#12 - Tasmine Cha-Tien - 50 ships
 #13 - Sigfriied Udan - 48 ships
 #14 - Lexa Griffin - 44 ships
 #15 - Vordec - 37 ships
@@ -50,6 +50,6 @@ Top bomber pilots - ISK destroyed
 #20 - Chance Ravinne - 4.78b
 #21 - Silentt Knightt - 4.67b
 #22 - Kirill Virpio - 4.53b
-#23 - Tasmine Cha-Tien - 4.13b
+#23 - Tasmine Cha-Tien - 4.20b
 #24 - Gyro DuAquin1 - 4.00b
 #25 - Bails Naskingar - 3.93b

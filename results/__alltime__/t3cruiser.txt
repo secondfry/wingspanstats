@@ -1,55 +1,55 @@
 Top T3 Cruiser pilots - ships destroyed
 --------------------------------------------
-#01 - Vek Chiasson - 153 ships
+#01 - Vek Chiasson - 160 ships
 #02 - Eridanii - 126 ships
-#03 - Sabrez Haklar - 94 ships
-#04 - Revan Wake - 94 ships
+#03 - Sabrez Haklar - 99 ships
+#04 - Revan Wake - 96 ships
 #05 - Richter Trench - 62 ships
 #06 - Sasuke Solette - 39 ships
 #07 - Tali Lyrae - 37 ships
 #08 - Yuri RedAlert - 37 ships
 #09 - Flaya Noong - 34 ships
 #10 - Waaaaaagggh - 34 ships
-#11 - Massive Black - 30 ships
+#11 - Massive Black - 33 ships
 #12 - Vothor - 28 ships
-#13 - Aldore Udan - 23 ships
-#14 - Greattorian - 22 ships
-#15 - Ransom Odunen - 22 ships
-#16 - Vince Condor - 20 ships
-#17 - Gillion Wyrddych - 20 ships
-#18 - Wee Lad - 17 ships
-#19 - Kotoko Hoshina - 17 ships
-#20 - Banshee Legend - 16 ships
-#21 - Lainis Pootis - 16 ships
-#22 - Gareth Adoudel - 14 ships
-#23 - Rob Tsukaya - 14 ships
-#24 - Hateful Heart - 13 ships
-#25 - Narcisse Nightmare - 12 ships
+#13 - Gillion Wyrddych - 24 ships
+#14 - Aldore Udan - 23 ships
+#15 - Ransom Odunen - 23 ships
+#16 - Greattorian - 22 ships
+#17 - Vince Condor - 20 ships
+#18 - Jennifer Crissman - 18 ships
+#19 - Wee Lad - 17 ships
+#20 - Kotoko Hoshina - 17 ships
+#21 - Banshee Legend - 16 ships
+#22 - Lainis Pootis - 16 ships
+#23 - Gareth Adoudel - 14 ships
+#24 - Rob Tsukaya - 14 ships
+#25 - Hateful Heart - 13 ships
 
 Top T3 Cruiser pilots - ISK destroyed
 --------------------------------------------
-#01 - Vek Chiasson - 30.16b
-#02 - Sabrez Haklar - 15.11b
-#03 - Richter Trench - 14.68b
-#04 - Waaaaaagggh - 14.10b
-#05 - Revan Wake - 13.91b
-#06 - Massive Black - 9.37b
-#07 - Jennifer Crissman - 9.14b
-#08 - Aldore Udan - 7.43b
-#09 - Malak Saren - 7.12b
-#10 - Sasuke Solette - 6.40b
-#11 - Kotoko Hoshina - 5.73b
-#12 - Gorki Irvam - 5.49b
-#13 - Ransom Odunen - 4.89b
-#14 - Rob Tsukaya - 4.84b
-#15 - Yuri RedAlert - 4.43b
-#16 - Tali Lyrae - 4.32b
-#17 - Eridanii - 4.10b
-#18 - Vothor - 4.02b
-#19 - Vince Condor - 3.77b
-#20 - Entreri Airuta - 3.69b
-#21 - Glade Radner - 3.41b
-#22 - inta Vakaria - 3.28b
-#23 - Gillion Wyrddych - 3.13b
-#24 - Banshee Legend - 3.09b
-#25 - Cap'n Rick Clusterbomb - 2.88b
+#01 - Vek Chiasson - 31.02b
+#02 - Sabrez Haklar - 23.83b
+#03 - Jennifer Crissman - 15.16b
+#04 - Richter Trench - 14.68b
+#05 - Waaaaaagggh - 14.10b
+#06 - Revan Wake - 13.94b
+#07 - Massive Black - 9.72b
+#08 - Gillion Wyrddych - 8.87b
+#09 - Aldore Udan - 7.43b
+#10 - Malak Saren - 7.12b
+#11 - Sasuke Solette - 6.40b
+#12 - Kotoko Hoshina - 5.73b
+#13 - Gorki Irvam - 5.49b
+#14 - Ransom Odunen - 4.98b
+#15 - Rob Tsukaya - 4.84b
+#16 - Yuri RedAlert - 4.43b
+#17 - Tali Lyrae - 4.32b
+#18 - Eridanii - 4.10b
+#19 - Vothor - 4.02b
+#20 - Valtyr Farshield - 3.90b
+#21 - Vince Condor - 3.77b
+#22 - Analius Glover - 3.74b
+#23 - Entreri Airuta - 3.69b
+#24 - Marco Jacks - 3.68b
+#25 - Glade Radner - 3.41b

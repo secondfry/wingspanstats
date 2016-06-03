@@ -1,6 +1,6 @@
 Top Recon pilots - ships destroyed
 --------------------------------------------
-#01 - Eris Kallisti - 52 ships
+#01 - Eris Kallisti - 53 ships
 #02 - Saladiin - 15 ships
 #03 - Sharps - 12 ships
 #04 - Mei Long - 8 ships
@@ -14,17 +14,17 @@ Top Recon pilots - ships destroyed
 #12 - Dakodai - 3 ships
 #13 - Aldore Udan - 3 ships
 #14 - Avastes Imestama - 3 ships
-#15 - Aafen - 2 ships
-#16 - Blackhawk Bordeaux - 2 ships
+#15 - Rush Barrio - 2 ships
+#16 - Aafen - 2 ships
 #17 - Bails Naskingar - 2 ships
 #18 - Revan Wake - 2 ships
-#19 - Raddic Darkworth - 1 ships
-#20 - Bustrr Bluth - 1 ships
-#21 - Nicholas Chance Kile - 1 ships
-#22 - Narcisse Nightmare - 1 ships
-#23 - Cap'n Rick Clusterbomb - 1 ships
-#24 - Wee Lad - 1 ships
-#25 - Anise Ikkala - 1 ships
+#19 - Blackhawk Bordeaux - 2 ships
+#20 - Raddic Darkworth - 1 ships
+#21 - Bustrr Bluth - 1 ships
+#22 - Nicholas Chance Kile - 1 ships
+#23 - Narcisse Nightmare - 1 ships
+#24 - Cap'n Rick Clusterbomb - 1 ships
+#25 - Wee Lad - 1 ships
 
 Top Recon pilots - ISK destroyed
 --------------------------------------------
@@ -32,7 +32,7 @@ Top Recon pilots - ISK destroyed
 #02 - Saladiin - 2.48b
 #03 - Massive Black - 2.33b
 #04 - Gillion Wyrddych - 2.12b
-#05 - Eris Kallisti - 1.91b
+#05 - Eris Kallisti - 1.97b
 #06 - Dakodai - 1.58b
 #07 - Cap'n Rick Clusterbomb - 1.13b
 #08 - T-B0NE - 1.07b

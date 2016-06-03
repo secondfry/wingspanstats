@@ -94,6 +94,7 @@ def main():
     extract_data(2016, 2)
     extract_data(2016, 3)
     extract_data(2016, 4)
+    extract_data(2016, 5)
 
 if __name__ == "__main__":
     main()

@@ -1,55 +1,55 @@
 Top explorer hunters - ships destroyed
 --------------------------------------------
 #01 - Valtyr Farshield - 96 ships
-#02 - Silentt Knightt - 75 ships
+#02 - Silentt Knightt - 77 ships
 #03 - NoGo Rose - 73 ships
 #04 - choo t - 71 ships
-#05 - Dakodai - 65 ships
-#06 - Alphecca Lazair - 63 ships
-#07 - Saladiin - 53 ships
-#08 - Narcisse Nightmare - 50 ships
-#09 - Damien Oxytocin - 44 ships
-#10 - Cap'n Rick Clusterbomb - 42 ships
-#11 - Al3x Oaks - 41 ships
-#12 - Sabrez Haklar - 41 ships
-#13 - Alt Sokarad - 41 ships
-#14 - brainwhacker - 39 ships
-#15 - Mei Long - 36 ships
-#16 - Glade Radner - 36 ships
-#17 - Nami Cadelanne - 35 ships
-#18 - Reed Icculus - 34 ships
-#19 - Try2CatchMe ActEstFabula - 34 ships
-#20 - Vothor - 32 ships
-#21 - Myra Vixen - 30 ships
-#22 - Allbur Chellak - 30 ships
-#23 - Massive Black - 30 ships
-#24 - Vargo Shahni - 29 ships
-#25 - Banshee Legend - 28 ships
+#05 - Alphecca Lazair - 67 ships
+#06 - Dakodai - 65 ships
+#07 - Saladiin - 54 ships
+#08 - Mei Long - 52 ships
+#09 - Narcisse Nightmare - 51 ships
+#10 - Al3x Oaks - 47 ships
+#11 - Damien Oxytocin - 44 ships
+#12 - Sabrez Haklar - 42 ships
+#13 - Cap'n Rick Clusterbomb - 42 ships
+#14 - brainwhacker - 41 ships
+#15 - Alt Sokarad - 41 ships
+#16 - Reed Icculus - 36 ships
+#17 - Glade Radner - 36 ships
+#18 - Avacado Salad - 36 ships
+#19 - Myra Vixen - 35 ships
+#20 - Nami Cadelanne - 35 ships
+#21 - Try2CatchMe ActEstFabula - 34 ships
+#22 - Massive Black - 34 ships
+#23 - Vothor - 33 ships
+#24 - Vargo Shahni - 31 ships
+#25 - Allbur Chellak - 30 ships
 
 Top explorer hunters - ISK destroyed
 --------------------------------------------
 #01 - Valtyr Farshield - 9.24b
-#02 - Cap'n Rick Clusterbomb - 5.65b
-#03 - Dakodai - 5.35b
-#04 - Glade Radner - 5.29b
-#05 - Narcisse Nightmare - 5.07b
-#06 - Damien Oxytocin - 4.68b
-#07 - Vince Condor - 4.67b
-#08 - inta Vakaria - 4.63b
-#09 - Alphecca Lazair - 4.33b
+#02 - Alphecca Lazair - 6.02b
+#03 - Cap'n Rick Clusterbomb - 5.65b
+#04 - Dakodai - 5.35b
+#05 - Glade Radner - 5.29b
+#06 - Narcisse Nightmare - 5.09b
+#07 - inta Vakaria - 4.71b
+#08 - Damien Oxytocin - 4.68b
+#09 - Vince Condor - 4.67b
 #10 - Wee Lad - 4.25b
 #11 - Banshee Legend - 4.25b
-#12 - Silentt Knightt - 3.72b
+#12 - Silentt Knightt - 3.84b
 #13 - choo t - 3.51b
-#14 - Trip Erata - 3.29b
-#15 - Sabrez Haklar - 3.24b
-#16 - Try2CatchMe ActEstFabula - 3.16b
-#17 - Zeke Airuta - 2.86b
-#18 - Authawy - 2.81b
-#19 - Alt Sokarad - 2.72b
-#20 - NoGo Rose - 2.69b
-#21 - Mei Long - 2.65b
-#22 - brainwhacker - 2.65b
-#23 - Al3x Oaks - 2.57b
-#24 - Vargo Shahni - 2.52b
-#25 - Xavier Hex - 2.51b
+#14 - Avacado Salad - 3.42b
+#15 - Trip Erata - 3.29b
+#16 - Sabrez Haklar - 3.24b
+#17 - Try2CatchMe ActEstFabula - 3.16b
+#18 - Mei Long - 3.04b
+#19 - Zeke Airuta - 2.95b
+#20 - Authawy - 2.81b
+#21 - Al3x Oaks - 2.78b
+#22 - Alt Sokarad - 2.72b
+#23 - NoGo Rose - 2.69b
+#24 - brainwhacker - 2.65b
+#25 - Vargo Shahni - 2.57b

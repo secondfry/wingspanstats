@@ -5,8 +5,8 @@ Top BLOPS pilots - ships destroyed
 #03 - Ransom Odunen - 21 ships
 #04 - togi yuki - 19 ships
 #05 - More11o - 15 ships
-#06 - Xeromos - 12 ships
-#07 - Sabrez Haklar - 12 ships
+#06 - Sabrez Haklar - 13 ships
+#07 - Xeromos - 12 ships
 #08 - Cynthera Noir - 12 ships
 #09 - Gillion Wyrddych - 11 ships
 #10 - Abaddon Nergal - 11 ships
@@ -31,8 +31,8 @@ Top BLOPS pilots - ISK destroyed
 #03 - togi yuki - 7.83b
 #04 - More11o - 5.88b
 #05 - Abaddon Nergal - 5.02b
-#06 - Gillion Wyrddych - 4.58b
-#07 - Sabrez Haklar - 4.53b
+#06 - Sabrez Haklar - 4.61b
+#07 - Gillion Wyrddych - 4.58b
 #08 - Junako Zelkarr - 3.53b
 #09 - Cynthera Noir - 3.33b
 #10 - Xeromos - 2.79b

@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 660 ships
+#02 - Manticore - 547 ships
+#03 - Nemesis - 197 ships
+#04 - Hound - 191 ships
+#05 - Purifier - 156 ships
+#06 - Svipul - 126 ships
+#07 - Caracal - 77 ships
+#08 - Astero - 69 ships
+#09 - Gila - 41 ships
+#10 - Scythe Fleet Issue - 37 ships
+#11 - Federation Navy Comet - 33 ships
+#12 - Rifter - 33 ships
+#13 - Proteus - 30 ships
+#14 - Sabre - 28 ships
+#15 - Arazu - 26 ships
+#16 - Nestor - 24 ships
+#17 - Pilgrim - 22 ships
+#18 - Confessor - 22 ships
+#19 - Tristan - 22 ships
+#20 - Rapier - 21 ships
+#21 - Devoter - 19 ships
+#22 - Tengu - 17 ships
+#23 - Falcon - 17 ships
+#24 - Osprey - 15 ships
+#25 - Loki - 14 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Manticore - 358.86b
+#02 - Stratios - 322.22b
+#03 - Nemesis - 147.30b
+#04 - Hound - 134.31b
+#05 - Purifier - 118.22b
+#06 - Caracal - 55.16b
+#07 - Guardian - 26.53b
+#08 - Gila - 22.66b
+#09 - Proteus - 22.48b
+#10 - Astero - 22.00b
+#11 - Osprey - 14.66b
+#12 - Onyx - 10.85b
+#13 - Falcon - 10.53b
+#14 - Loki - 9.10b
+#15 - Rattlesnake - 7.85b
+#16 - Devoter - 7.70b
+#17 - Sabre - 7.67b
+#18 - Scythe Fleet Issue - 7.27b
+#19 - Scimitar - 7.25b
+#20 - Basilisk - 7.10b
+#21 - Pilgrim - 6.80b
+#22 - Prophecy - 5.68b
+#23 - Svipul - 5.43b
+#24 - Garmur - 5.39b
+#25 - Broadsword - 4.98b

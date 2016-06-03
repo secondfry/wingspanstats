@@ -1,0 +1,55 @@
+Ships destroyed
+--------------------------------------------
+#01 - Mei Long - 107 ships
+#02 - Avacado Salad - 105 ships
+#03 - Czechbox - 93 ships
+#04 - Vordec - 75 ships
+#05 - Shahta Kopatel - 68 ships
+#06 - Lexa Griffin - 65 ships
+#07 - Tasmine Cha-Tien - 58 ships
+#08 - Reed Icculus - 58 ships
+#09 - Vi Rhea - 52 ships
+#10 - Sabrez Haklar - 49 ships
+#11 - inta Vakaria - 48 ships
+#12 - Myra Vixen - 46 ships
+#13 - Quintus Va'Lari - 43 ships
+#14 - Massive Black - 43 ships
+#15 - Jennifer Crissman - 42 ships
+#16 - Analius Glover - 40 ships
+#17 - Narcisse Nightmare - 39 ships
+#18 - Raddic Darkworth - 39 ships
+#19 - Xavier Hex - 36 ships
+#20 - HillAnt - 34 ships
+#21 - Iwata s - 34 ships
+#22 - AusTiger - 33 ships
+#23 - SsjGhost - 32 ships
+#24 - Cap'n Rick Clusterbomb - 32 ships
+#25 - Soplaescroto - 32 ships
+
+ISK destroyed
+--------------------------------------------
+#01 - Analius Glover - 38.25b
+#02 - Mei Long - 37.52b
+#03 - Abaddon Nergal - 34.64b
+#04 - Lexa Griffin - 32.15b
+#05 - Soplaescroto - 29.50b
+#06 - Raddic Darkworth - 27.75b
+#07 - Sabrez Haklar - 26.55b
+#08 - SsjGhost - 26.44b
+#09 - Bonz Andrard - 26.06b
+#10 - Vi Rhea - 25.49b
+#11 - Tasmine Cha-Tien - 25.00b
+#12 - Shahta Kopatel - 24.49b
+#13 - AusTiger - 23.58b
+#14 - Amielia Evangelon - 22.86b
+#15 - Trip Erata - 22.03b
+#16 - Cap'n Rick Clusterbomb - 21.77b
+#17 - Quintus Va'Lari - 21.68b
+#18 - HillAnt - 21.65b
+#19 - Jennifer Crissman - 21.49b
+#20 - Longaz - 21.11b
+#21 - Sith-Lord MouseClick - 19.88b
+#22 - Marco Jacks - 19.71b
+#23 - Nikolei Darkflier - 19.58b
+#24 - Valkyrie Starslayer - 18.62b
+#25 - Avacado Salad - 18.30b

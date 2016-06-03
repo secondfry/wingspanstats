@@ -1,55 +1,55 @@
 Top Recon pilots - ships destroyed
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 171 ships
+#01 - Cap'n Rick Clusterbomb - 176 ships
 #02 - NoGo Rose - 147 ships
-#03 - Saladiin - 122 ships
+#03 - Saladiin - 126 ships
 #04 - Colesef - 119 ships
-#05 - Eris Kallisti - 117 ships
+#05 - Eris Kallisti - 118 ships
 #06 - Chance Ravinne - 85 ships
 #07 - brainwhacker - 67 ships
 #08 - Xee Yoona-451 - 67 ships
 #09 - Dakodai - 62 ships
-#10 - Vothor - 59 ships
-#11 - Sharps - 55 ships
+#10 - Sharps - 60 ships
+#11 - Vothor - 59 ships
 #12 - Aldore Udan - 54 ships
-#13 - Gillion Wyrddych - 46 ships
-#14 - Eridanii - 45 ships
-#15 - trip Bypas - 42 ships
-#16 - Orianna Okanata - 41 ships
-#17 - deklanmarshall7 - 40 ships
-#18 - Abaddon Nergal - 39 ships
-#19 - Trip Erata - 38 ships
-#20 - Zeke Airuta - 36 ships
-#21 - Artik Fawkes - 35 ships
-#22 - KageAkurei - 33 ships
-#23 - Sabrez Haklar - 32 ships
-#24 - T-B0NE - 32 ships
-#25 - Bustrr Bluth - 30 ships
+#13 - Mei Long - 53 ships
+#14 - Gillion Wyrddych - 52 ships
+#15 - Eridanii - 45 ships
+#16 - trip Bypas - 42 ships
+#17 - Orianna Okanata - 41 ships
+#18 - deklanmarshall7 - 40 ships
+#19 - Abaddon Nergal - 39 ships
+#20 - Trip Erata - 38 ships
+#21 - Zeke Airuta - 36 ships
+#22 - T-B0NE - 36 ships
+#23 - Artik Fawkes - 35 ships
+#24 - KageAkurei - 33 ships
+#25 - Sabrez Haklar - 32 ships
 
 Top Recon pilots - ISK destroyed
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 43.96b
+#01 - Cap'n Rick Clusterbomb - 45.90b
 #02 - Dakodai - 19.08b
 #03 - NoGo Rose - 18.13b
 #04 - Chance Ravinne - 13.83b
 #05 - Xee Yoona-451 - 13.39b
 #06 - Orianna Okanata - 12.50b
-#07 - Abaddon Nergal - 10.76b
-#08 - Aldore Udan - 10.60b
-#09 - Trip Erata - 10.18b
-#10 - Gillion Wyrddych - 9.59b
+#07 - Gillion Wyrddych - 11.93b
+#08 - Abaddon Nergal - 10.76b
+#09 - Aldore Udan - 10.60b
+#10 - Trip Erata - 10.18b
 #11 - trip Bypas - 8.46b
-#12 - T-B0NE - 8.23b
-#13 - Saladiin - 8.18b
+#12 - T-B0NE - 8.30b
+#13 - Saladiin - 8.21b
 #14 - Vothor - 8.18b
-#15 - Sabrez Haklar - 7.29b
-#16 - Eris Kallisti - 6.82b
-#17 - deklanmarshall7 - 5.83b
-#18 - Trimmaloth - 5.56b
-#19 - Lainis Pootis - 5.50b
-#20 - Eridanii - 5.44b
-#21 - Artik Fawkes - 5.29b
-#22 - KageAkurei - 5.20b
-#23 - brainwhacker - 4.90b
-#24 - Zeke Airuta - 4.73b
-#25 - Colesef - 4.72b
+#15 - Mei Long - 8.17b
+#16 - Sabrez Haklar - 7.29b
+#17 - Eris Kallisti - 6.88b
+#18 - Massive Black - 6.39b
+#19 - deklanmarshall7 - 5.83b
+#20 - Trimmaloth - 5.56b
+#21 - Lainis Pootis - 5.50b
+#22 - Eridanii - 5.44b
+#23 - Artik Fawkes - 5.29b
+#24 - Anise Ikkala - 5.24b
+#25 - KageAkurei - 5.20b

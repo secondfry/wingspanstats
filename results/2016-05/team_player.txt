@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - Mei Long - 69 ships
+#02 - Vordec - 66 ships
+#03 - Lexa Griffin - 64 ships
+#04 - Czechbox - 59 ships
+#05 - Vi Rhea - 51 ships
+#06 - Sabrez Haklar - 49 ships
+#07 - Jennifer Crissman - 40 ships
+#08 - Analius Glover - 40 ships
+#09 - Narcisse Nightmare - 38 ships
+#10 - Avacado Salad - 38 ships
+#11 - Quintus Va'Lari - 37 ships
+#12 - Reed Icculus - 35 ships
+#13 - Raddic Darkworth - 34 ships
+#14 - Shahta Kopatel - 33 ships
+#15 - SsjGhost - 32 ships
+#16 - Massive Black - 32 ships
+#17 - Soplaescroto - 32 ships
+#18 - firecast77 Tao - 29 ships
+#19 - Abaddon Nergal - 29 ships
+#20 - Valkyrie Starslayer - 29 ships
+#21 - HillAnt - 28 ships
+#22 - inta Vakaria - 27 ships
+#23 - AusTiger - 27 ships
+#24 - Longaz - 27 ships
+#25 - Xavier Hex - 26 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Analius Glover - 38.25b
+#02 - Mei Long - 35.68b
+#03 - Abaddon Nergal - 34.64b
+#04 - Lexa Griffin - 31.69b
+#05 - Soplaescroto - 29.50b
+#06 - Raddic Darkworth - 27.71b
+#07 - Sabrez Haklar - 26.55b
+#08 - SsjGhost - 26.44b
+#09 - Bonz Andrard - 26.06b
+#10 - Vi Rhea - 25.40b
+#11 - AusTiger - 23.38b
+#12 - Amielia Evangelon - 22.52b
+#13 - Trip Erata - 21.79b
+#14 - Cap'n Rick Clusterbomb - 21.74b
+#15 - Quintus Va'Lari - 21.61b
+#16 - Jennifer Crissman - 21.43b
+#17 - HillAnt - 21.37b
+#18 - Longaz - 21.11b
+#19 - Sith-Lord MouseClick - 19.88b
+#20 - Marco Jacks - 19.71b
+#21 - Nikolei Darkflier - 19.58b
+#22 - Shahta Kopatel - 19.06b
+#23 - Tasmine Cha-Tien - 18.89b
+#24 - Valkyrie Starslayer - 18.45b
+#25 - Xavier Hex - 18.08b

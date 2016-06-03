@@ -1,6 +1,6 @@
 Top Bombing Run Specialists - ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 8 ships
+#01 - Tasmine Cha-Tien - 9 ships
 #02 - Mei Long - 6 ships
 #03 - Quintus Va'Lari - 2 ships
 #04 - Albin wood - 1 ships
@@ -12,7 +12,7 @@ Top Bombing Run Specialists - ships destroyed
 
 Top Bombing Run Specialists - ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 0.18b
+#01 - Tasmine Cha-Tien - 0.25b
 #02 - Mei Long - 0.14b
 #03 - Lorth Drak'rov - 0.10b
 #04 - Albin wood - 0.07b

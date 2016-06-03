@@ -1,16 +1,16 @@
 Ships destroyed in a fleet
 --------------------------------------------
-#01 - Lexa Griffin - 117 ships
+#01 - Lexa Griffin - 118 ships
 #02 - Jennifer Crissman - 89 ships
-#03 - Nikolei Darkflier - 77 ships
-#04 - Tobias Hekard - 76 ships
+#03 - Tobias Hekard - 78 ships
+#04 - Nikolei Darkflier - 78 ships
 #05 - Gorki Irvam - 75 ships
 #06 - Xavier Hex - 75 ships
 #07 - Kirill Virpio - 70 ships
 #08 - Cap'n Rick Clusterbomb - 69 ships
 #09 - Ben D'Eath - 67 ships
 #10 - Tyr Carter - 66 ships
-#11 - scopehone - 61 ships
+#11 - scopehone - 63 ships
 #12 - Narcisse Nightmare - 61 ships
 #13 - SsjGhost - 61 ships
 #14 - Viktor Hakeem - 61 ships
@@ -22,34 +22,34 @@ Ships destroyed in a fleet
 #20 - Amielia Evangelon - 50 ships
 #21 - Sigfriied Udan - 48 ships
 #22 - Quintus Va'Lari - 43 ships
-#23 - Raddic Darkworth - 40 ships
-#24 - Silentt Knightt - 40 ships
+#23 - Silentt Knightt - 41 ships
+#24 - Raddic Darkworth - 40 ships
 #25 - Analius Glover - 38 ships
 
 ISK destroyed in a fleet
 --------------------------------------------
-#01 - Lexa Griffin - 23.54b
+#01 - Lexa Griffin - 23.56b
 #02 - Amielia Evangelon - 20.32b
 #03 - Cap'n Rick Clusterbomb - 18.49b
 #04 - Valtyr Farshield - 17.73b
 #05 - Gorki Irvam - 17.62b
 #06 - Narcisse Nightmare - 17.49b
 #07 - Jennifer Crissman - 17.00b
-#08 - Silentt Knightt - 15.94b
+#08 - Silentt Knightt - 15.96b
 #09 - Analius Glover - 15.90b
 #10 - Mei Long - 14.09b
 #11 - Ben D'Eath - 13.08b
 #12 - Longaz - 12.77b
 #13 - Quintus Va'Lari - 11.28b
-#14 - Nikolei Darkflier - 11.24b
+#14 - Nikolei Darkflier - 11.26b
 #15 - Bails Naskingar - 11.17b
 #16 - Raddic Darkworth - 11.08b
 #17 - Xavier Hex - 10.05b
-#18 - Tobias Hekard - 9.73b
+#18 - Tobias Hekard - 9.75b
 #19 - Nami Cadelanne - 9.28b
-#20 - Abaddon Nergal - 9.23b
+#20 - Abaddon Nergal - 9.25b
 #21 - Trip Erata - 9.15b
 #22 - Gillion Wyrddych - 8.80b
 #23 - Corridor Paratus - 8.71b
 #24 - Al3x Oaks - 8.37b
-#25 - firecast77 Tao - 8.28b
+#25 - firecast77 Tao - 8.30b

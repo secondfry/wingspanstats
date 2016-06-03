@@ -7,7 +7,7 @@ Top Stratios pilots - ships destroyed
 #05 - Silentt Knightt - 40 ships
 #06 - Mei Long - 37 ships
 #07 - Amielia Evangelon - 34 ships
-#08 - Valtyr Farshield - 33 ships
+#08 - Valtyr Farshield - 34 ships
 #09 - Raddic Darkworth - 32 ships
 #10 - Quintus Va'Lari - 28 ships
 #11 - Bails Naskingar - 27 ships
@@ -28,7 +28,7 @@ Top Stratios pilots - ships destroyed
 
 Top Stratios pilots - ISK destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 20.39b
+#01 - Valtyr Farshield - 21.55b
 #02 - Lexa Griffin - 13.04b
 #03 - Ben D'Eath - 12.61b
 #04 - Mei Long - 11.46b

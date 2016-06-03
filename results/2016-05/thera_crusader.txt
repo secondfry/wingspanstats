@@ -1,0 +1,11 @@
+Ships destroyed in Thera
+--------------------------------------------
+#01 - Myra Vixen - 2 ships
+#02 - Saridion Sotken - 1 ships
+#03 - Reed Icculus - 1 ships
+
+ISK destroyed in Thera
+--------------------------------------------
+#01 - Saridion Sotken - 0.09b
+#02 - Myra Vixen - 0.00b
+#03 - Reed Icculus - 0.00b

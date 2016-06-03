@@ -1,0 +1,55 @@
+Solo ships destroyed
+--------------------------------------------
+#01 - Avacado Salad - 65 ships
+#02 - Tasmine Cha-Tien - 38 ships
+#03 - Myra Vixen - 34 ships
+#04 - Mei Long - 34 ships
+#05 - Czechbox - 27 ships
+#06 - Shahta Kopatel - 22 ships
+#07 - Reed Icculus - 20 ships
+#08 - Al3x Oaks - 17 ships
+#09 - Nami Cadelanne - 16 ships
+#10 - Tyr Carter - 15 ships
+#11 - brainwhacker - 15 ships
+#12 - inta Vakaria - 14 ships
+#13 - Tawk Ramsey - 13 ships
+#14 - Blackhawk Bordeaux - 13 ships
+#15 - Massive Black - 11 ships
+#16 - Lenai Chelien - 11 ships
+#17 - Antel Optics - 10 ships
+#18 - Xavier Hex - 10 ships
+#19 - Vordec - 9 ships
+#20 - Saladiin - 9 ships
+#21 - Sir Revan SkyStalker - 8 ships
+#22 - Cap'n Rick Clusterbomb - 7 ships
+#23 - Amielia Evangelon - 6 ships
+#24 - Seabrony - 6 ships
+#25 - Quintus Va'Lari - 6 ships
+
+Solo ISK destroyed
+--------------------------------------------
+#01 - Tasmine Cha-Tien - 6.11b
+#02 - Avacado Salad - 4.59b
+#03 - Massive Black - 3.38b
+#04 - Shahta Kopatel - 2.77b
+#05 - Tyr Carter - 1.53b
+#06 - Mei Long - 1.53b
+#07 - Sir Revan SkyStalker - 0.95b
+#08 - Al3x Oaks - 0.76b
+#09 - Lenai Chelien - 0.75b
+#10 - Tawk Ramsey - 0.46b
+#11 - Czechbox - 0.45b
+#12 - inta Vakaria - 0.40b
+#13 - Ben D'Eath - 0.35b
+#14 - Amielia Evangelon - 0.34b
+#15 - Viktor Hakeem - 0.26b
+#16 - Alphecca Lazair - 0.24b
+#17 - Trip Erata - 0.24b
+#18 - Blackhawk Bordeaux - 0.22b
+#19 - Gort getrekt - 0.21b
+#20 - Elena Razreaper - 0.20b
+#21 - HillAnt - 0.20b
+#22 - Vordec - 0.20b
+#23 - AusTiger - 0.20b
+#24 - Banshee Legend - 0.20b
+#25 - Silentt Knightt - 0.19b

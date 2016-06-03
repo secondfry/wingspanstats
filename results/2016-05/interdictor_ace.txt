@@ -1,0 +1,45 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Raddic Darkworth - 14 ships
+#02 - Massive Black - 10 ships
+#03 - Sharps - 9 ships
+#04 - SsjGhost - 7 ships
+#05 - Bails Naskingar - 5 ships
+#06 - Shahta Kopatel - 4 ships
+#07 - Bonz Andrard - 3 ships
+#08 - Anise Ikkala - 3 ships
+#09 - Abaddon Nergal - 3 ships
+#10 - Gillion Wyrddych - 3 ships
+#11 - brainwhacker - 3 ships
+#12 - Cap'n Rick Clusterbomb - 2 ships
+#13 - Reed Icculus - 2 ships
+#14 - Au'Rel - 2 ships
+#15 - Jerythas - 1 ships
+#16 - Vek Chiasson - 1 ships
+#17 - Marco Jacks - 1 ships
+#18 - Viktor Hakeem - 1 ships
+#19 - Avastes Imestama - 1 ships
+#20 - Myra Vixen - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Raddic Darkworth - 9.49b
+#02 - SsjGhost - 3.97b
+#03 - Bonz Andrard - 3.94b
+#04 - Jerythas - 2.96b
+#05 - Massive Black - 2.65b
+#06 - brainwhacker - 2.41b
+#07 - Vek Chiasson - 2.39b
+#08 - Sharps - 1.54b
+#09 - Marco Jacks - 0.84b
+#10 - Avastes Imestama - 0.28b
+#11 - Abaddon Nergal - 0.26b
+#12 - Gillion Wyrddych - 0.19b
+#13 - Cap'n Rick Clusterbomb - 0.09b
+#14 - Shahta Kopatel - 0.07b
+#15 - Anise Ikkala - 0.06b
+#16 - Au'Rel - 0.06b
+#17 - Bails Naskingar - 0.05b
+#18 - Reed Icculus - 0.01b
+#19 - Viktor Hakeem - 0.00b
+#20 - Myra Vixen - 0.00b

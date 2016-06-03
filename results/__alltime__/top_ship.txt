@@ -1,55 +1,55 @@
 Ships destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 8911 ships
-#02 - Manticore - 8302 ships
-#03 - Nemesis - 6303 ships
-#04 - Purifier - 3574 ships
-#05 - Hound - 3328 ships
-#06 - Astero - 1452 ships
-#07 - Rapier - 700 ships
-#08 - Pilgrim - 594 ships
-#09 - Tengu - 507 ships
-#10 - Sabre - 499 ships
-#11 - Falcon - 497 ships
-#12 - Proteus - 366 ships
-#13 - Hecate - 361 ships
-#14 - Oracle - 290 ships
-#15 - Loki - 286 ships
-#16 - Scythe Fleet Issue - 246 ships
-#17 - Svipul - 229 ships
-#18 - Confessor - 227 ships
-#19 - Arazu - 218 ships
-#20 - Tristan - 198 ships
-#21 - Onyx - 183 ships
-#22 - Flycatcher - 158 ships
-#23 - Orthrus - 146 ships
-#24 - Armageddon - 144 ships
-#25 - Myrmidon - 138 ships
+#01 - Stratios - 9572 ships
+#02 - Manticore - 8852 ships
+#03 - Nemesis - 6506 ships
+#04 - Purifier - 3730 ships
+#05 - Hound - 3519 ships
+#06 - Astero - 1521 ships
+#07 - Rapier - 722 ships
+#08 - Pilgrim - 618 ships
+#09 - Sabre - 527 ships
+#10 - Tengu - 524 ships
+#11 - Falcon - 514 ships
+#12 - Proteus - 396 ships
+#13 - Hecate - 364 ships
+#14 - Svipul - 355 ships
+#15 - Loki - 300 ships
+#16 - Oracle - 293 ships
+#17 - Scythe Fleet Issue - 283 ships
+#18 - Confessor - 249 ships
+#19 - Arazu - 244 ships
+#20 - Tristan - 223 ships
+#21 - Onyx - 197 ships
+#22 - Caracal - 171 ships
+#23 - Flycatcher - 161 ships
+#24 - Gila - 155 ships
+#25 - Orthrus - 147 ships
 
 ISK destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 1518.48b
-#02 - Manticore - 1292.22b
-#03 - Nemesis - 1063.79b
-#04 - Purifier - 617.88b
-#05 - Hound - 492.32b
-#06 - Astero - 142.60b
-#07 - Falcon - 110.69b
-#08 - Tengu - 101.60b
-#09 - Pilgrim - 98.24b
-#10 - Rapier - 87.39b
-#11 - Proteus - 81.44b
-#12 - Sabre - 79.98b
-#13 - Onyx - 48.26b
-#14 - Confessor - 37.28b
-#15 - Bhaalgorn - 33.86b
-#16 - Scythe Fleet Issue - 33.68b
-#17 - Loki - 33.27b
-#18 - Arazu - 33.23b
-#19 - Redeemer - 32.16b
-#20 - Sin - 29.70b
-#21 - Armageddon - 28.10b
-#22 - Oracle - 26.90b
-#23 - Gila - 23.84b
-#24 - Flycatcher - 23.15b
-#25 - Curse - 22.27b
+#01 - Stratios - 1841.86b
+#02 - Manticore - 1651.15b
+#03 - Nemesis - 1211.12b
+#04 - Purifier - 736.11b
+#05 - Hound - 626.63b
+#06 - Astero - 164.60b
+#07 - Falcon - 121.22b
+#08 - Pilgrim - 105.04b
+#09 - Proteus - 103.92b
+#10 - Tengu - 103.91b
+#11 - Rapier - 88.78b
+#12 - Sabre - 87.65b
+#13 - Caracal - 68.20b
+#14 - Onyx - 59.11b
+#15 - Gila - 46.50b
+#16 - Guardian - 44.29b
+#17 - Loki - 42.37b
+#18 - Confessor - 42.23b
+#19 - Scythe Fleet Issue - 40.95b
+#20 - Arazu - 38.20b
+#21 - Bhaalgorn - 33.86b
+#22 - Redeemer - 32.16b
+#23 - Sin - 29.70b
+#24 - Oracle - 29.00b
+#25 - Armageddon - 28.10b

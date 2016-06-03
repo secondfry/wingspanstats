@@ -1,9 +1,9 @@
 Top Bombing Run Specialists - ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 33 ships
-#02 - Glade Radner - 7 ships
-#03 - Eris Kallisti - 7 ships
-#04 - Mei Long - 7 ships
+#01 - Tasmine Cha-Tien - 34 ships
+#02 - Mei Long - 11 ships
+#03 - Glade Radner - 7 ships
+#04 - Eris Kallisti - 7 ships
 #05 - Wee Lad - 6 ships
 #06 - Orianna Okanata - 6 ships
 #07 - Gillion Wyrddych - 5 ships
@@ -28,7 +28,7 @@ Top Bombing Run Specialists - ships destroyed
 
 Top Bombing Run Specialists - ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 1.47b
+#01 - Tasmine Cha-Tien - 1.54b
 #02 - Chance Ravinne - 1.20b
 #03 - NovaMoon Enaka - 1.11b
 #04 - Hateful Heart - 1.00b

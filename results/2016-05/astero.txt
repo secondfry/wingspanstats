@@ -1,0 +1,55 @@
+Top Astero pilots - ships destroyed
+--------------------------------------------
+#01 - Vargo Shahni - 6 ships
+#02 - Jennifer Crissman - 6 ships
+#03 - SirFirehawk - 6 ships
+#04 - Zeke Airuta - 5 ships
+#05 - Vanessa Guang - 4 ships
+#06 - Shahta Kopatel - 3 ships
+#07 - Koba Ogeko - 3 ships
+#08 - Gallente Citizen 91698873 - 3 ships
+#09 - brainwhacker - 3 ships
+#10 - Grant lee Buffalo - 2 ships
+#11 - Bustrr Bluth - 2 ships
+#12 - Severin Talvan - 2 ships
+#13 - scopehone - 2 ships
+#14 - Nicpic Picnic - 2 ships
+#15 - Gwhet Twang - 2 ships
+#16 - Otto Penken - 2 ships
+#17 - Kelia Monaiis - 2 ships
+#18 - Vothor - 1 ships
+#19 - Raddic Darkworth - 1 ships
+#20 - Nikolei Darkflier - 1 ships
+#21 - AusTiger - 1 ships
+#22 - Amielia Evangelon - 1 ships
+#23 - Sir Revan SkyStalker - 1 ships
+#24 - Gort getrekt - 1 ships
+#25 - Freddey - 1 ships
+
+Top Astero pilots - ISK destroyed
+--------------------------------------------
+#01 - Zeke Airuta - 6.94b
+#02 - SirFirehawk - 4.88b
+#03 - Gwhet Twang - 3.74b
+#04 - Vargo Shahni - 3.72b
+#05 - scopehone - 0.61b
+#06 - Nikolei Darkflier - 0.60b
+#07 - Vanessa Guang - 0.25b
+#08 - Koba Ogeko - 0.25b
+#09 - AusTiger - 0.14b
+#10 - Grant lee Buffalo - 0.11b
+#11 - Jennifer Crissman - 0.10b
+#12 - Otto Penken - 0.10b
+#13 - Raddic Darkworth - 0.10b
+#14 - Kelia Monaiis - 0.10b
+#15 - Amielia Evangelon - 0.09b
+#16 - Bustrr Bluth - 0.07b
+#17 - Shahta Kopatel - 0.06b
+#18 - Gallente Citizen 91698873 - 0.04b
+#19 - Severin Talvan - 0.03b
+#20 - Freddey - 0.03b
+#21 - Zontor - 0.01b
+#22 - Nicpic Picnic - 0.00b
+#23 - Gort getrekt - 0.00b
+#24 - brainwhacker - 0.00b
+#25 - Antel Optics - 0.00b

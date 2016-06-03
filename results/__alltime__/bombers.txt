@@ -1,55 +1,55 @@
 Top bomber pilots - ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 532 ships
-#02 - Narcisse Nightmare - 366 ships
+#01 - Tasmine Cha-Tien - 552 ships
+#02 - Narcisse Nightmare - 373 ships
 #03 - Albin wood - 363 ships
-#04 - Gigi McQuaid - 346 ships
-#05 - Gillion Wyrddych - 327 ships
-#06 - Mei Long - 315 ships
-#07 - choo t - 307 ships
-#08 - Chance Ravinne - 293 ships
-#09 - Reed Icculus - 276 ships
-#10 - Orianna Okanata - 272 ships
-#11 - Cap'n Rick Clusterbomb - 246 ships
-#12 - Xavier Hex - 245 ships
-#13 - Silentt Knightt - 242 ships
-#14 - Valkyrie Starslayer - 219 ships
-#15 - Quintus Va'Lari - 215 ships
+#04 - Gigi McQuaid - 354 ships
+#05 - Mei Long - 349 ships
+#06 - Gillion Wyrddych - 331 ships
+#07 - choo t - 312 ships
+#08 - Reed Icculus - 305 ships
+#09 - Chance Ravinne - 303 ships
+#10 - Orianna Okanata - 274 ships
+#11 - Xavier Hex - 269 ships
+#12 - Cap'n Rick Clusterbomb - 261 ships
+#13 - Silentt Knightt - 249 ships
+#14 - Quintus Va'Lari - 242 ships
+#15 - Valkyrie Starslayer - 238 ships
 #16 - Alt Sokarad - 213 ships
-#17 - Cissnei Kusoni - 212 ships
+#17 - Cissnei Kusoni - 213 ships
 #18 - More11o - 189 ships
 #19 - Buster Atmosk - 184 ships
 #20 - Wee Lad - 179 ships
-#21 - Trip Erata - 172 ships
-#22 - Sith-Lord MouseClick - 163 ships
-#23 - Vothor - 161 ships
-#24 - scopehone - 159 ships
-#25 - gui Zanjoahir - 155 ships
+#21 - Trip Erata - 176 ships
+#22 - Vothor - 170 ships
+#23 - scopehone - 167 ships
+#24 - Sith-Lord MouseClick - 166 ships
+#25 - T-B0NE - 157 ships
 
 Top bomber pilots - ISK destroyed
 --------------------------------------------
-#01 - Narcisse Nightmare - 80.48b
-#02 - Tasmine Cha-Tien - 72.88b
-#03 - Gigi McQuaid - 59.56b
-#04 - Cap'n Rick Clusterbomb - 50.99b
-#05 - Orianna Okanata - 47.41b
-#06 - choo t - 45.80b
-#07 - Silentt Knightt - 43.59b
-#08 - Caboosette - 40.76b
-#09 - Mei Long - 39.72b
-#10 - Gillion Wyrddych - 37.89b
-#11 - Albin wood - 35.28b
-#12 - Trip Erata - 34.70b
-#13 - Xavier Hex - 34.50b
-#14 - Quintus Va'Lari - 32.76b
-#15 - Chance Ravinne - 31.17b
-#16 - Vothor - 31.16b
-#17 - More11o - 31.12b
-#18 - Xee Yoona-451 - 29.90b
-#19 - togi yuki - 28.35b
-#20 - Al3x Oaks - 28.24b
-#21 - Malak Saren - 26.66b
-#22 - T-B0NE - 25.16b
-#23 - Yuri RedAlert - 23.94b
-#24 - Alebrelle Kuatu - 23.84b
-#25 - Wee Lad - 23.83b
+#01 - Tasmine Cha-Tien - 89.94b
+#02 - Narcisse Nightmare - 80.53b
+#03 - Cap'n Rick Clusterbomb - 66.20b
+#04 - Gigi McQuaid - 63.25b
+#05 - Mei Long - 52.35b
+#06 - Quintus Va'Lari - 50.96b
+#07 - choo t - 50.84b
+#08 - Xavier Hex - 50.68b
+#09 - Silentt Knightt - 49.72b
+#10 - Orianna Okanata - 48.40b
+#11 - Caboosette - 44.77b
+#12 - Trip Erata - 40.14b
+#13 - Gillion Wyrddych - 39.85b
+#14 - Vothor - 39.80b
+#15 - Lexa Griffin - 39.50b
+#16 - Chance Ravinne - 38.03b
+#17 - Albin wood - 35.28b
+#18 - Analius Glover - 35.12b
+#19 - Valtyr Farshield - 34.74b
+#20 - Malak Saren - 31.65b
+#21 - More11o - 31.12b
+#22 - Xee Yoona-451 - 29.90b
+#23 - Sith-Lord MouseClick - 28.84b
+#24 - Shahta Kopatel - 28.51b
+#25 - Sabrez Haklar - 28.40b
