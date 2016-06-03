@@ -28,3 +28,5 @@ class StatsConfig(object):
     INCLUDE_AWOX = False
 
     MAX_PLACES = 10
+
+    EARLIEST = '2014-07'

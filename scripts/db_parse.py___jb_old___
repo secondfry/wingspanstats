@@ -391,7 +391,10 @@ class DbParse(object):
                                         reverse=True)
             fare_enum_last = list(self.fare_enumerate(positions_last, key_list))
 
-        fare_enum = list(self.fare_enumerate(positions, key_list))[0:StatsConfig.MAX_PLACES]
+        fare_enum = [
+            (idx, fare_idx, persona) for idx, fare_idx, persona in self.fare_enumerate(positions, key_list)
+            if not idx > StatsConfig.MAX_PLACES
+        ]
         for idx, fare_idx, persona in fare_enum:
             kills_change = 0
             kills_last = 0
