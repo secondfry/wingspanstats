@@ -67,7 +67,8 @@ class GeneralStats(Skeleton):
 
         output += "Solo total kills: {}\n".format(self.solo_total_kills)
         output += "Solo total value: {:.2f}b\n".format(float(self.solo_total_value) / 1000000000.0)
-        output += "Citadel kills: {}\n".format(self.citadel_kills)
+        if self.citadel_kills > 0:
+            output += "Citadel kills: {}\n".format(self.citadel_kills)
         output += "\n"
         output += "High-sec total kills: {} ({:.2f}%)\n".format(
             self.total_kills_hs,

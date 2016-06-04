@@ -8,7 +8,6 @@ Kills per active member: 4.00
 ISK destroyed per active member: 308.75m
 Solo total kills: 152
 Solo total value: 5.23b
-Citadel kills: 0
 
 High-sec total kills: 21 (7.09%)
 High-sec total value: 0.85b (3.73%)
