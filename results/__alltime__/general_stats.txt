@@ -5,7 +5,7 @@ Total value: 1431.51b
 Average value/kill: 93.67m
 Solo total kills: 8584
 Solo total value: 404.51b
-
+Citadel kills: 10
 
 High-sec total kills: 1030 (6.74%)
 High-sec total value: 40.78b (2.85%)

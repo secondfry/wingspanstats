@@ -12,6 +12,8 @@ from calendar import monthrange
 
 class GeneralStats(Skeleton):
 
+    CITADEL_IDS = [35832, 35833, 35834, 40340]
+
     def __init__(self):
         self.file_name = "general_stats.txt"
         self.pilot_set = set()
@@ -19,6 +21,7 @@ class GeneralStats(Skeleton):
         self.total_value = 0
         self.solo_total_kills = 0
         self.solo_total_value = 0
+        self.citadel_kills = 0
 
         self.total_kills_hs = 0
         self.total_value_hs = 0
@@ -64,7 +67,8 @@ class GeneralStats(Skeleton):
 
         output += "Solo total kills: {}\n".format(self.solo_total_kills)
         output += "Solo total value: {:.2f}b\n".format(float(self.solo_total_value) / 1000000000.0)
-        output += "\n\n"
+        output += "Citadel kills: {}\n".format(self.citadel_kills)
+        output += "\n"
         output += "High-sec total kills: {} ({:.2f}%)\n".format(
             self.total_kills_hs,
             self.total_kills_hs / float(self.total_kills) * 100
@@ -201,6 +205,9 @@ class GeneralStats(Skeleton):
         if total_non_npc_attackers == wingspan_attackers and wingspan_attackers == 1:
             self.solo_total_kills += 1
             self.solo_total_value += killmail['zkb']['totalValue']
+
+        if killmail['victim']['shipTypeID'] in GeneralStats.CITADEL_IDS:
+            self.citadel_kills += 1
 
         system_id = killmail['solarSystemID']
         if self.security[system_id] == "hs":  # high-sec

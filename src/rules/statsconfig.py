@@ -63,7 +63,7 @@ class StatsConfig:
         graph_range = float(match_obj[-1][1])
 
         match_obj = re.findall("chd=e:([a-zA-Z0-9.-]+)", result.text, re.MULTILINE)
-        if len(match_obj) > 1:
+        if len(match_obj) >= 1:
             encoded_data = match_obj[-1]
             encoded_data = encoded_data.encode('ascii', 'ignore')
 
@@ -92,7 +92,7 @@ class StatsConfig:
 
 
 def main():
-    print StatsConfig.member_count("WiNGSPAN Delivery Services".replace(" ", "_"), "2014-07-01", "2014-07-31")
+    print StatsConfig.member_count("WiNGSPAN Delivery Services".replace(" ", "_"), "2015-06-01", "2015-06-31")
 
 if __name__ == "__main__":
     main()

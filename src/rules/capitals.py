@@ -37,6 +37,7 @@ class Capitals(Skeleton):
         if victim_ship in [
             19724, 34339, 19722, 34341, 19726, 34343, 19720, 34345,  # Dreads
             23757, 23915, 24483, 23911,  # Carriers
+            37604, 37605, 37606, 37607,  # Force auxiliaries
             23919, 22852, 3628, 23913, 3514, 23917,  # Supers
             11567, 671, 3764, 23773,  # Titans
         ]:
