@@ -10,8 +10,8 @@ import os
 import urllib2
 import gzip
 import json
-import shutil
 from StringIO import StringIO
+import requests
 
 
 class DbCreate(object):
@@ -38,118 +38,137 @@ class DbCreateZkillboard(DbCreate):
     def __init__(self):
         self.headers = StatsConfig.HEADERS
         self.corporation_ids = ",".join([str(corp) for corp in StatsConfig.CORPORATION_IDS])
+        self.filepath_lh = os.path.join(StatsConfig.DATABASE_PATH, 'answers', 'lastheaders.json')
+        self.session = requests.Session()
         self.create_db()
 
     def create_db(self):
         db_dir = None
 
-        log(self.LOG_LEVEL, 'Checking database directory')
+        log(self.LOG_LEVEL, 'Database directory?')
         if not os.path.isdir(StatsConfig.DATABASE_PATH):
             os.mkdir(StatsConfig.DATABASE_PATH)
+            os.mkdir(os.path.join(StatsConfig.DATABASE_PATH, 'answers'))
+            log(self.LOG_LEVEL + 1, 'Database directory created')
         else:
             db_dir = os.listdir(StatsConfig.DATABASE_PATH)
+            db_dir.remove('answers')
+            log(self.LOG_LEVEL + 1, 'Database directory exists')
 
-        log(self.LOG_LEVEL, 'Finding timestamp to check')
-        timestamp_today = date.today()
-        if timestamp_today.month == 1:
-            timestamp_check = timestamp_today.replace(year=timestamp_today.year - 1, month=12, day=1)
-        else:
-            timestamp_check = timestamp_today.replace(month=timestamp_today.month - 1, day=1)
-        log(self.LOG_LEVEL, 'Will check: ' + timestamp_check.strftime('%Y-%m-%d'))
-
-        log(self.LOG_LEVEL, 'Finding last checked timestamp')
+        log(self.LOG_LEVEL, 'Last checked timestamp?')
         if db_dir:
             year_last, month_last = sorted(db_dir)[-1].split("-")
-            timestamp_last = datetime.strptime(year_last + month_last, '%Y%m').date()
+            timestamp_last = datetime.strptime(year_last + month_last, '%Y%m')
+            log(self.LOG_LEVEL + 1, 'Last checked timestamp: ' + timestamp_last.strftime('%Y-%m-%d'))
         else:
-            timestamp_last = datetime.strptime('2000', '%Y').date()
-        log(self.LOG_LEVEL, 'Last checked: ' + timestamp_last.strftime('%Y-%m-%d'))
+            timestamp_last = self.first()
+            log(self.LOG_LEVEL + 1, 'Just fetched first timestamp: ' + timestamp_last.strftime('%Y-%m-%d'))
 
-        log(self.LOG_LEVEL, 'Is there old months to parse?')
-        if timestamp_last < timestamp_check:
-            log(self.LOG_LEVEL + 1, 'Yes')
-            status = self.STATUS_START
-        else:
-            log(self.LOG_LEVEL + 1, 'No, gettings this month partial stats')
-            db_dir_date = os.path.join(StatsConfig.DATABASE_PATH, timestamp_today.strftime('%Y-%m'))
-            if os.path.exists(db_dir_date):
-                shutil.rmtree(db_dir_date)
-            timestamp_check = timestamp_today.replace(day = 1)
-            status = self.STATUS_START
+        log(self.LOG_LEVEL, 'Parsing new data')
+        timestamp_today = datetime.now()
+        status = self.STATUS_START
 
         while status != self.STATUS_DONE:
-            log(self.LOG_LEVEL, 'Starting fetch ' + timestamp_check.strftime('%Y-%m'))
-            status, timestamp_check = self.parse(timestamp_check)
-            if status != self.STATUS_DONE and timestamp_last >= timestamp_check:
+            status, timestamp_last = self.parse(timestamp_last)
+            if status != self.STATUS_DONE and timestamp_last >= timestamp_today:
                 status = self.STATUS_DONE
         log(self.LOG_LEVEL, 'Done! [zkillboard fetcher]')
 
-    def parse(self, timestamp_check):
+    def parse(self, timestamp):
         self.LOG_LEVEL += 1
+        log(self.LOG_LEVEL, 'Starting fetch: ' + timestamp.strftime('%Y-%m'))
 
-        db_dir_date = os.path.join(StatsConfig.DATABASE_PATH, timestamp_check.strftime('%Y-%m'))
-        if os.path.exists(db_dir_date):
-            log(self.LOG_LEVEL, '[Error] Directory already exists, something went wrong')
-            raise EnvironmentError('Directory already exists, something went wrong')
-        else:
+        db_dir_date = os.path.join(StatsConfig.DATABASE_PATH, timestamp.strftime('%Y-%m'))
+        if not os.path.exists(db_dir_date):
             os.mkdir(db_dir_date)
-
-        page = 1
-        while True:
-            data = self.fetch(timestamp_check, page)
-
+            page = 1
+        else:
             try:
-                parsed_json = json.loads(data)
-            except ValueError as e:
-                log(self.LOG_LEVEL, '[Error] ' + e.message)
-                raise SystemExit(0)
+                file = sorted(os.listdir(db_dir_date))[-1]
+                page = int(file.split('_')[-1].split('.')[0])
+                os.remove(os.path.join(db_dir_date, file))
+            except IndexError:
+                page = 1
 
-            if len(parsed_json) != 0:
-                file_name = os.path.join(db_dir_date, timestamp_check.strftime('%Y-%m') + "_{:02d}.json".format(page))
-                with open(file_name, 'w') as f_out:
-                    f_out.write(data)
+        while True:
+            mtext, mjson = self.fetch(timestamp, page)
+
+            if len(mjson) != 0:
+                filepath = os.path.join(db_dir_date, timestamp.strftime('%Y-%m') + "_{:02d}.json".format(page))
+                with open(filepath, 'w') as file:
+                    file.write(mtext)
                 page += 1
             else:
                 if page == 1:
                     os.rmdir(db_dir_date)
                     self.LOG_LEVEL -= 1
-                    return self.STATUS_DONE, timestamp_check
+                    return self.STATUS_DONE, timestamp
                 else:
                     break
 
         log(self.LOG_LEVEL, 'Fetched ' + str(page) + ' pages')
         self.LOG_LEVEL -= 1
 
-        if timestamp_check.month == 1:
-            timestamp_check = timestamp_check.replace(year=timestamp_check.year - 1, month=12)
+        if timestamp.month == 12:
+            timestamp = timestamp.replace(year=timestamp.year + 1, month=1)
         else:
-            timestamp_check = timestamp_check.replace(month=timestamp_check.month - 1)
-        return self.STATUS_ONGOING, timestamp_check
+            timestamp = timestamp.replace(month=timestamp.month + 1)
+        return self.STATUS_ONGOING, timestamp
 
     def fetch(self, timestamp, page):
         self.LOG_LEVEL += 1
-        log(self.LOG_LEVEL, 'Fetching page #' + str(page))
+        log(self.LOG_LEVEL, 'Fetching {}-{}_{}'.format(timestamp.year, timestamp.month, page))
 
-        url = "https://zkillboard.com/api/kills/corporationID/{}/year/{}/month/{}/page/{}/".format(
+        url = "https://zkillboard.com/api/kills/corporationID/{}/year/{}/month/{}/page/{}/orderDirection/asc/".format(
                 self.corporation_ids,
                 timestamp.year,
                 timestamp.month,
                 page,
         )
 
-        try:
-            request = urllib2.Request(url, None, self.headers)
-            response = urllib2.urlopen(request)
-        except urllib2.URLError as e:
-            log(self.LOG_LEVEL, '[Error] ' + e.reason)
-            raise SystemExit(0)
+        r = self.session.get(url, headers=self.headers)
+        mtext = r.text
+        mjson = r.json()
 
-        if response.info().get("Content-Encoding") == "gzip":
-            buf = StringIO(response.read())
-            f = gzip.GzipFile(fileobj=buf)
-            data = f.read()
-        else:
-            data = response.read()
+        if os.path.exists(self.filepath_lh):
+            os.remove(self.filepath_lh)
+        with open(self.filepath_lh, 'w') as file:
+            file.write(str(r.headers))
 
         self.LOG_LEVEL -= 1
-        return data
+        return mtext, mjson
+
+    def first(self):
+        """
+        Gets first kill recorded on zkb
+
+        :return datetime
+        """
+        self.LOG_LEVEL += 1
+        log(self.LOG_LEVEL, 'Fetching first kill.')
+
+        filepath = os.path.join(StatsConfig.DATABASE_PATH, 'answers', 'firstkill.json')
+        if os.path.exists(filepath):
+            with open(filepath) as file:
+                mjson = json.load(file)
+        else:
+            url = "https://zkillboard.com/api/kills/corporationID/{}/limit/1/orderDirection/asc/".format(
+                    self.corporation_ids,
+            )
+
+            r = self.session.get(url, headers=self.headers)
+            mtext = r.text
+            mjson = r.json()
+
+            if os.path.exists(self.filepath_lh):
+                os.remove(self.filepath_lh)
+            with open(self.filepath_lh, 'w') as file:
+                file.write(str(r.headers))
+
+            if len(mjson) != 0:
+                os.path.join(StatsConfig.DATABASE_PATH, 'answers', 'firstkill.json')
+                with open(filepath, 'w') as file:
+                    file.write(mtext)
+
+        self.LOG_LEVEL -= 1
+        return datetime.strptime(mjson[0]['killTime'], '%Y-%m-%d %H:%M:%S')
