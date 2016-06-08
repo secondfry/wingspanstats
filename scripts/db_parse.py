@@ -353,24 +353,22 @@ class DbParse(object):
             key_list_kills.append(0)
             key_list_value = key_list[:-1]
             key_list_value.append(1)
+            # Sort by ISK value first
+            key_list_secondary = key_list[:-1]
+            key_list_secondary.append(1)
+        else:
+            key_list_secondary = ['value']
 
         data_list = []
         for key, value in data_dictionary.iteritems():
             value['id'] = key
             data_list.append(value)
-        if len(key_list) > 1:
-            key_list_secondary = key_list[:-1]
-            key_list_secondary.append(1) # Sort by ISK value first
-            positions = sorted(data_list,
-                               key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list_secondary, item),
-                               reverse=True)
-            positions = sorted(positions,
-                               key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
-                               reverse=True)
-        else:
-            positions = sorted(data_list,
-                               key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
-                               reverse=True)
+        positions = sorted(data_list,
+                           key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list_secondary, item),
+                           reverse=True)
+        positions = sorted(positions,
+                           key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
+                           reverse=True)
 
         if date_last:
             data_dictionary_last = self.persons[date_last]
@@ -378,17 +376,12 @@ class DbParse(object):
             for key, value in data_dictionary_last.iteritems():
                 value['id'] = key
                 data_list_last.append(value)
-            if len(key_list) > 1:
-                positions_last = sorted(data_list_last,
-                                        key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list_secondary, item),
-                                        reverse=True)
-                positions_last = sorted(positions_last,
-                                        key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
-                                        reverse=True)
-            else:
-                positions_last = sorted(data_list_last,
-                                        key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
-                                        reverse=True)
+            positions_last = sorted(data_list_last,
+                                    key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list_secondary, item),
+                                    reverse=True)
+            positions_last = sorted(positions_last,
+                                    key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
+                                    reverse=True)
             fare_enum_last = list(self.fare_enumerate(positions_last, key_list))
 
         fare_enum = list(self.fare_enumerate(positions, key_list))[0:StatsConfig.MAX_PLACES]
