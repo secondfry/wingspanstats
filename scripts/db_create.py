@@ -7,10 +7,7 @@ from scripts.log import log
 from config.statsconfig import StatsConfig
 from datetime import date, datetime
 import os
-import urllib2
-import gzip
 import json
-from StringIO import StringIO
 import requests
 
 
