@@ -2,27 +2,27 @@ Top Astero pilots - ships destroyed
 --------------------------------------------
 #01 - Valtyr Farshield - 117 ships
 #02 - Damien Oxytocin - 93 ships
-#03 - Cap'n Rick Clusterbomb - 79 ships
-#04 - inta Vakaria - 78 ships
-#05 - Vargo Shahni - 62 ships
+#03 - inta Vakaria - 80 ships
+#04 - Cap'n Rick Clusterbomb - 79 ships
+#05 - Vargo Shahni - 63 ships
 #06 - Nami Cadelanne - 60 ships
 #07 - Geroni Vynneve - 51 ships
 #08 - Flaya Noong - 42 ships
 #09 - Dunfniss Mislah - 36 ships
-#10 - Allbur Chellak - 31 ships
-#11 - Zeke Airuta - 30 ships
+#10 - Zeke Airuta - 31 ships
+#11 - Allbur Chellak - 31 ships
 #12 - Viktor Hakeem - 30 ships
 #13 - Revan Wake - 28 ships
 #14 - Jennifer Crissman - 24 ships
 #15 - Gillion Wyrddych - 22 ships
-#16 - Alebrelle Kuatu - 21 ships
-#17 - Rolf Blackburne - 21 ships
-#18 - Zen Dad - 18 ships
-#19 - Phaezen Orti - 17 ships
-#20 - Severin Talvan - 17 ships
-#21 - Scipio Zeul - 16 ships
-#22 - Alphecca Lazair - 16 ships
-#23 - Kelia Monaiis - 15 ships
+#16 - Alebrelle Kuatu - 22 ships
+#17 - Kelia Monaiis - 21 ships
+#18 - Rolf Blackburne - 21 ships
+#19 - Zen Dad - 18 ships
+#20 - Phaezen Orti - 17 ships
+#21 - Severin Talvan - 17 ships
+#22 - Scipio Zeul - 16 ships
+#23 - Alphecca Lazair - 16 ships
 #24 - Aurelie Solvay - 15 ships
 #25 - Bustrr Bluth - 15 ships
 
@@ -30,9 +30,9 @@ Top Astero pilots - ISK destroyed
 --------------------------------------------
 #01 - Valtyr Farshield - 34.82b
 #02 - inta Vakaria - 11.89b
-#03 - Zeke Airuta - 9.78b
+#03 - Zeke Airuta - 9.82b
 #04 - Flaya Noong - 9.16b
-#05 - Vargo Shahni - 7.48b
+#05 - Vargo Shahni - 7.49b
 #06 - SirFirehawk - 4.88b
 #07 - Damien Oxytocin - 4.52b
 #08 - Phaezen Orti - 4.25b
@@ -45,11 +45,11 @@ Top Astero pilots - ISK destroyed
 #15 - Ana Niamh - 2.68b
 #16 - Nami Cadelanne - 2.65b
 #17 - June Pyron - 2.26b
-#18 - Dunfniss Mislah - 1.99b
-#19 - Gillion Wyrddych - 1.96b
-#20 - Hirashima Nagasaki-san - 1.93b
-#21 - Aurelie Solvay - 1.70b
-#22 - Gloria White - 1.59b
-#23 - Mei Long - 1.54b
-#24 - Rolf Blackburne - 1.42b
-#25 - Alphecca Lazair - 1.35b
+#18 - Alebrelle Kuatu - 2.21b
+#19 - Dunfniss Mislah - 1.99b
+#20 - Gillion Wyrddych - 1.96b
+#21 - Hirashima Nagasaki-san - 1.93b
+#22 - Aurelie Solvay - 1.70b
+#23 - Gloria White - 1.59b
+#24 - Mei Long - 1.54b
+#25 - Rolf Blackburne - 1.42b

@@ -1,19 +1,19 @@
 Top bomber pilots - ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 552 ships
-#02 - Narcisse Nightmare - 373 ships
-#03 - Albin wood - 363 ships
-#04 - Gigi McQuaid - 354 ships
-#05 - Mei Long - 349 ships
+#01 - Tasmine Cha-Tien - 568 ships
+#02 - Narcisse Nightmare - 375 ships
+#03 - Mei Long - 372 ships
+#04 - Albin wood - 363 ships
+#05 - Gigi McQuaid - 354 ships
 #06 - Gillion Wyrddych - 331 ships
-#07 - choo t - 312 ships
+#07 - choo t - 319 ships
 #08 - Reed Icculus - 305 ships
 #09 - Chance Ravinne - 303 ships
 #10 - Orianna Okanata - 274 ships
 #11 - Xavier Hex - 269 ships
-#12 - Cap'n Rick Clusterbomb - 261 ships
-#13 - Silentt Knightt - 249 ships
-#14 - Quintus Va'Lari - 242 ships
+#12 - Cap'n Rick Clusterbomb - 265 ships
+#13 - Silentt Knightt - 257 ships
+#14 - Quintus Va'Lari - 252 ships
 #15 - Valkyrie Starslayer - 238 ships
 #16 - Alt Sokarad - 213 ships
 #17 - Cissnei Kusoni - 213 ships
@@ -21,22 +21,22 @@ Top bomber pilots - ships destroyed
 #19 - Buster Atmosk - 184 ships
 #20 - Wee Lad - 179 ships
 #21 - Trip Erata - 176 ships
-#22 - Vothor - 170 ships
-#23 - scopehone - 167 ships
-#24 - Sith-Lord MouseClick - 166 ships
-#25 - T-B0NE - 157 ships
+#22 - Sith-Lord MouseClick - 175 ships
+#23 - Vothor - 170 ships
+#24 - scopehone - 168 ships
+#25 - Bonz Andrard - 157 ships
 
 Top bomber pilots - ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 89.94b
-#02 - Narcisse Nightmare - 80.53b
-#03 - Cap'n Rick Clusterbomb - 66.20b
+#01 - Tasmine Cha-Tien - 94.44b
+#02 - Narcisse Nightmare - 80.54b
+#03 - Cap'n Rick Clusterbomb - 68.30b
 #04 - Gigi McQuaid - 63.25b
-#05 - Mei Long - 52.35b
-#06 - Quintus Va'Lari - 50.96b
-#07 - choo t - 50.84b
-#08 - Xavier Hex - 50.68b
-#09 - Silentt Knightt - 49.72b
+#05 - Mei Long - 58.92b
+#06 - Quintus Va'Lari - 56.45b
+#07 - Silentt Knightt - 51.48b
+#08 - choo t - 51.31b
+#09 - Xavier Hex - 50.68b
 #10 - Orianna Okanata - 48.40b
 #11 - Caboosette - 44.77b
 #12 - Trip Erata - 40.14b
@@ -44,12 +44,12 @@ Top bomber pilots - ISK destroyed
 #14 - Vothor - 39.80b
 #15 - Lexa Griffin - 39.50b
 #16 - Chance Ravinne - 38.03b
-#17 - Albin wood - 35.28b
-#18 - Analius Glover - 35.12b
+#17 - Analius Glover - 35.35b
+#18 - Albin wood - 35.28b
 #19 - Valtyr Farshield - 34.74b
 #20 - Malak Saren - 31.65b
-#21 - More11o - 31.12b
-#22 - Xee Yoona-451 - 29.90b
-#23 - Sith-Lord MouseClick - 28.84b
-#24 - Shahta Kopatel - 28.51b
-#25 - Sabrez Haklar - 28.40b
+#21 - Sith-Lord MouseClick - 31.20b
+#22 - More11o - 31.12b
+#23 - Xee Yoona-451 - 29.90b
+#24 - Bonz Andrard - 28.66b
+#25 - Shahta Kopatel - 28.51b

@@ -1,0 +1,37 @@
+Top Interdictor(+HIC) pilots - ships destroyed
+--------------------------------------------
+#01 - Sharps - 14 ships
+#02 - Valtyr Farshield - 10 ships
+#03 - Critical Miss - 6 ships
+#04 - Lenai Chelien - 4 ships
+#05 - Zeke Airuta - 4 ships
+#06 - Shadow Ataru - 3 ships
+#07 - SsjGhost - 3 ships
+#08 - Odin Nergal - 2 ships
+#09 - Raddic Darkworth - 2 ships
+#10 - Cap'n Rick Clusterbomb - 2 ships
+#11 - Lleuad Cyfnos - 2 ships
+#12 - Vothor - 1 ships
+#13 - Marco Jacks - 1 ships
+#14 - QuarantineEng - 1 ships
+#15 - inta Vakaria - 1 ships
+#16 - Au'Rel - 1 ships
+
+Top Interdictor(+HIC) pilots - ISK destroyed
+--------------------------------------------
+#01 - Marco Jacks - 3.60b
+#02 - Sharps - 2.38b
+#03 - Valtyr Farshield - 2.30b
+#04 - Critical Miss - 1.72b
+#05 - Lenai Chelien - 1.61b
+#06 - SsjGhost - 1.16b
+#07 - Lleuad Cyfnos - 0.40b
+#08 - Cap'n Rick Clusterbomb - 0.24b
+#09 - QuarantineEng - 0.23b
+#10 - Odin Nergal - 0.15b
+#11 - Shadow Ataru - 0.09b
+#12 - Vothor - 0.08b
+#13 - Raddic Darkworth - 0.05b
+#14 - Zeke Airuta - 0.03b
+#15 - inta Vakaria - 0.02b
+#16 - Au'Rel - 0.02b

@@ -5,7 +5,7 @@ Ships destroyed
 #03 - Czechbox - 93 ships
 #04 - Vordec - 75 ships
 #05 - Shahta Kopatel - 68 ships
-#06 - Lexa Griffin - 65 ships
+#06 - Lexa Griffin - 66 ships
 #07 - Tasmine Cha-Tien - 58 ships
 #08 - Reed Icculus - 58 ships
 #09 - Vi Rhea - 52 ships

@@ -1,55 +1,55 @@
 Top industrial hunters - ships destroyed
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 59 ships
+#01 - Cap'n Rick Clusterbomb - 64 ships
 #02 - Orianna Okanata - 58 ships
 #03 - Valkyrie Starslayer - 49 ships
-#04 - Valtyr Farshield - 40 ships
+#04 - Valtyr Farshield - 41 ships
 #05 - Chance Ravinne - 30 ships
 #06 - Eridanii - 29 ships
-#07 - choo t - 25 ships
-#08 - Gigi McQuaid - 24 ships
-#09 - Tasmine Cha-Tien - 23 ships
-#10 - Glade Radner - 21 ships
-#11 - Gillion Wyrddych - 21 ships
+#07 - choo t - 26 ships
+#08 - Tasmine Cha-Tien - 24 ships
+#09 - Gigi McQuaid - 24 ships
+#10 - Gillion Wyrddych - 23 ships
+#11 - Glade Radner - 21 ships
 #12 - Narcisse Nightmare - 20 ships
 #13 - brainwhacker - 20 ships
-#14 - Xavier Hex - 18 ships
-#15 - Hateful Heart - 17 ships
-#16 - Sabrez Haklar - 17 ships
-#17 - inta Vakaria - 17 ships
-#18 - Revan Wake - 17 ships
-#19 - Saria Dehmov - 16 ships
-#20 - NoGo Rose - 16 ships
-#21 - Saladiin - 16 ships
-#22 - Jenna Lost - 16 ships
-#23 - Al3x Oaks - 15 ships
-#24 - Wee Lad - 15 ships
-#25 - Alt Sokarad - 14 ships
+#14 - inta Vakaria - 20 ships
+#15 - Sabrez Haklar - 19 ships
+#16 - Xavier Hex - 18 ships
+#17 - Jenna Lost - 18 ships
+#18 - Hateful Heart - 17 ships
+#19 - Revan Wake - 17 ships
+#20 - Al3x Oaks - 16 ships
+#21 - Saria Dehmov - 16 ships
+#22 - NoGo Rose - 16 ships
+#23 - Saladiin - 16 ships
+#24 - WeirdBall - 15 ships
+#25 - Mei Long - 15 ships
 
 Top industrial hunters - ISK destroyed
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 22.38b
-#02 - Valtyr Farshield - 16.42b
+#01 - Cap'n Rick Clusterbomb - 24.82b
+#02 - Valtyr Farshield - 16.82b
 #03 - Abaddon Nergal - 8.35b
-#04 - Orianna Okanata - 6.86b
-#05 - Gigi McQuaid - 6.24b
-#06 - Mei Long - 5.99b
+#04 - Mei Long - 7.75b
+#05 - Orianna Okanata - 6.86b
+#06 - Gigi McQuaid - 6.24b
 #07 - Aldore Udan - 5.80b
 #08 - Glade Radner - 5.70b
-#09 - Rob Tsukaya - 5.15b
-#10 - Banshee Legend - 4.90b
-#11 - Saria Dehmov - 4.77b
-#12 - Vince Condor - 4.67b
-#13 - Peter Lathe - 4.64b
-#14 - NoGo Rose - 4.41b
-#15 - Al3x Oaks - 4.06b
-#16 - Amaru Skye - 3.97b
-#17 - Jenna Lost - 3.87b
-#18 - Dakodai - 3.78b
-#19 - Chance Ravinne - 3.78b
-#20 - inta Vakaria - 3.66b
-#21 - togi yuki - 3.64b
-#22 - Caboosette - 3.63b
-#23 - Ransom Odunen - 3.59b
-#24 - Narcisse Nightmare - 3.48b
-#25 - Bustrr Bluth - 3.43b
+#09 - Jenna Lost - 5.59b
+#10 - Banshee Legend - 5.39b
+#11 - Rob Tsukaya - 5.15b
+#12 - WeirdBall - 4.91b
+#13 - Saria Dehmov - 4.77b
+#14 - Vince Condor - 4.67b
+#15 - Peter Lathe - 4.64b
+#16 - Avacado Salad - 4.56b
+#17 - NoGo Rose - 4.41b
+#18 - Al3x Oaks - 4.08b
+#19 - Amaru Skye - 3.97b
+#20 - Dakodai - 3.78b
+#21 - Chance Ravinne - 3.78b
+#22 - inta Vakaria - 3.78b
+#23 - togi yuki - 3.64b
+#24 - Caboosette - 3.63b
+#25 - Ransom Odunen - 3.59b

@@ -2,7 +2,7 @@ Top BLOPS pilots - ships destroyed
 --------------------------------------------
 #01 - Saria Dehmov - 81 ships
 #02 - Chance Ravinne - 31 ships
-#03 - Ransom Odunen - 21 ships
+#03 - Ransom Odunen - 22 ships
 #04 - togi yuki - 19 ships
 #05 - More11o - 15 ships
 #06 - Sabrez Haklar - 13 ships
@@ -27,7 +27,7 @@ Top BLOPS pilots - ships destroyed
 Top BLOPS pilots - ISK destroyed
 --------------------------------------------
 #01 - Saria Dehmov - 24.76b
-#02 - Ransom Odunen - 8.66b
+#02 - Ransom Odunen - 8.75b
 #03 - togi yuki - 7.83b
 #04 - More11o - 5.88b
 #05 - Abaddon Nergal - 5.02b

@@ -18,9 +18,9 @@ Top Stratios pilots - ships destroyed
 #16 - Glade Radner - 20 ships
 #17 - Alphecca Lazair - 19 ships
 #18 - AusTiger - 17 ships
-#19 - Jenna Lost - 15 ships
-#20 - Jennifer Crissman - 14 ships
-#21 - Delta Rescue - 14 ships
+#19 - Delta Rescue - 16 ships
+#20 - Jenna Lost - 15 ships
+#21 - Jennifer Crissman - 14 ships
 #22 - Corridor Paratus - 13 ships
 #23 - Blackhawk Bordeaux - 12 ships
 #24 - Trip Erata - 11 ships
@@ -44,7 +44,7 @@ Top Stratios pilots - ISK destroyed
 #14 - Trip Erata - 5.65b
 #15 - Al3x Oaks - 5.41b
 #16 - Albin wood - 5.23b
-#17 - Delta Rescue - 5.05b
+#17 - Delta Rescue - 5.09b
 #18 - Abaddon Nergal - 4.93b
 #19 - Myra Vixen - 4.46b
 #20 - Xan Dievs - 4.11b

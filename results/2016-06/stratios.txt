@@ -1,0 +1,55 @@
+Top Stratios pilots - ships destroyed
+--------------------------------------------
+#01 - WeirdBall - 61 ships
+#02 - Tyr Carter - 36 ships
+#03 - Avacado Salad - 34 ships
+#04 - Mei Long - 31 ships
+#05 - Shadow Ataru - 25 ships
+#06 - Okaga Utama - 22 ships
+#07 - Lenai Chelien - 19 ships
+#08 - Sir Revan SkyStalker - 16 ships
+#09 - Tota Lazhole - 16 ships
+#10 - Al3x Oaks - 15 ships
+#11 - Zeke Airuta - 15 ships
+#12 - Cap'n Rick Clusterbomb - 15 ships
+#13 - Dokii Dokii - 15 ships
+#14 - Reed Icculus - 12 ships
+#15 - Pyro Silf - 12 ships
+#16 - Cain Patrouette - 11 ships
+#17 - Jenna Lost - 10 ships
+#18 - Valtyr Farshield - 10 ships
+#19 - Ben D'Eath - 9 ships
+#20 - Silentt Knightt - 9 ships
+#21 - Delta Rescue - 8 ships
+#22 - Gillion Wyrddych - 7 ships
+#23 - Moira Shardani - 6 ships
+#24 - HillAnt - 6 ships
+#25 - Grant lee Buffalo - 5 ships
+
+Top Stratios pilots - ISK destroyed
+--------------------------------------------
+#01 - WeirdBall - 12.84b
+#02 - Shadow Ataru - 7.06b
+#03 - Mei Long - 6.74b
+#04 - Tota Lazhole - 6.51b
+#05 - Okaga Utama - 6.40b
+#06 - Avacado Salad - 5.89b
+#07 - HillAnt - 4.88b
+#08 - Tyr Carter - 4.07b
+#09 - Cap'n Rick Clusterbomb - 3.60b
+#10 - Sir Revan SkyStalker - 3.59b
+#11 - Zeke Airuta - 3.54b
+#12 - Valtyr Farshield - 3.39b
+#13 - Cain Patrouette - 3.18b
+#14 - Lenai Chelien - 3.02b
+#15 - Dokii Dokii - 2.98b
+#16 - Pyro Silf - 2.47b
+#17 - Jenna Lost - 2.39b
+#18 - Reed Icculus - 2.36b
+#19 - Silentt Knightt - 2.31b
+#20 - Gillion Wyrddych - 2.06b
+#21 - Ben D'Eath - 1.96b
+#22 - Moira Shardani - 1.61b
+#23 - Delta Rescue - 1.60b
+#24 - Ransom Odunen - 1.58b
+#25 - Otto Penken - 0.97b

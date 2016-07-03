@@ -1,0 +1,41 @@
+Top Recon pilots - ships destroyed
+--------------------------------------------
+#01 - Mei Long - 20 ships
+#02 - Massive Black - 19 ships
+#03 - Cap'n Rick Clusterbomb - 15 ships
+#04 - Nicholas Chance Kile - 12 ships
+#05 - Tasmine Cha-Tien - 11 ships
+#06 - Vi Rhea - 10 ships
+#07 - Killajoules - 8 ships
+#08 - Blackhawk Bordeaux - 8 ships
+#09 - Vothor - 5 ships
+#10 - Lanin Suruni - 4 ships
+#11 - Gillion Wyrddych - 3 ships
+#12 - Au'Rel - 3 ships
+#13 - QuarantineEng - 2 ships
+#14 - Ben D'Eath - 2 ships
+#15 - Abaddon Nergal - 2 ships
+#16 - Zeke Airuta - 2 ships
+#17 - Raddic Darkworth - 1 ships
+#18 - Tyr Carter - 1 ships
+
+Top Recon pilots - ISK destroyed
+--------------------------------------------
+#01 - Cap'n Rick Clusterbomb - 6.32b
+#02 - Nicholas Chance Kile - 2.95b
+#03 - Massive Black - 2.58b
+#04 - Mei Long - 2.30b
+#05 - Killajoules - 2.16b
+#06 - Tasmine Cha-Tien - 2.13b
+#07 - Vothor - 1.69b
+#08 - Lanin Suruni - 1.61b
+#09 - Vi Rhea - 1.41b
+#10 - Au'Rel - 0.74b
+#11 - Abaddon Nergal - 0.71b
+#12 - Zeke Airuta - 0.71b
+#13 - Ben D'Eath - 0.59b
+#14 - Blackhawk Bordeaux - 0.19b
+#15 - Raddic Darkworth - 0.10b
+#16 - Gillion Wyrddych - 0.10b
+#17 - QuarantineEng - 0.08b
+#18 - Tyr Carter - 0.07b

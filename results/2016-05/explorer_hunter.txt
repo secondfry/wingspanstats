@@ -21,10 +21,10 @@ Top explorer hunters - ships destroyed
 #19 - Vanessa Guang - 3 ships
 #20 - Gort getrekt - 3 ships
 #21 - SsjGhost - 3 ships
-#22 - Gallente Citizen 91698873 - 3 ships
-#23 - Bails Naskingar - 3 ships
-#24 - Grant lee Buffalo - 2 ships
-#25 - Vargo Shahni - 2 ships
+#22 - Xan Dievs - 3 ships
+#23 - Gallente Citizen 91698873 - 3 ships
+#24 - Bails Naskingar - 3 ships
+#25 - Grant lee Buffalo - 2 ships
 
 Top explorer hunters - ISK destroyed
 --------------------------------------------
@@ -43,13 +43,13 @@ Top explorer hunters - ISK destroyed
 #13 - Gort getrekt - 0.20b
 #14 - Vanessa Guang - 0.16b
 #15 - scopehone - 0.16b
-#16 - Silentt Knightt - 0.12b
-#17 - Raddic Darkworth - 0.11b
-#18 - Mikado Shiina - 0.11b
-#19 - SsjGhost - 0.11b
-#20 - Grant lee Buffalo - 0.11b
-#21 - Kelia Monaiis - 0.10b
-#22 - Saridion Sotken - 0.09b
-#23 - Amielia Evangelon - 0.09b
-#24 - Koba Ogeko - 0.09b
-#25 - Zeke Airuta - 0.09b
+#16 - Xan Dievs - 0.14b
+#17 - Silentt Knightt - 0.12b
+#18 - Raddic Darkworth - 0.11b
+#19 - Mikado Shiina - 0.11b
+#20 - SsjGhost - 0.11b
+#21 - Grant lee Buffalo - 0.11b
+#22 - Kelia Monaiis - 0.10b
+#23 - Saridion Sotken - 0.09b
+#24 - Amielia Evangelon - 0.09b
+#25 - Koba Ogeko - 0.09b

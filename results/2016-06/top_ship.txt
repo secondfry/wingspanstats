@@ -1,0 +1,55 @@
+Ships destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 502 ships
+#02 - Manticore - 256 ships
+#03 - Purifier - 99 ships
+#04 - Nemesis - 79 ships
+#05 - Falcon - 56 ships
+#06 - Proteus - 55 ships
+#07 - Astero - 48 ships
+#08 - Hound - 31 ships
+#09 - Pilgrim - 31 ships
+#10 - Orthrus - 27 ships
+#11 - Vexor - 26 ships
+#12 - Arazu - 23 ships
+#13 - Phobos - 23 ships
+#14 - Scythe Fleet Issue - 22 ships
+#15 - Confessor - 20 ships
+#16 - Loki - 19 ships
+#17 - Federation Navy Comet - 18 ships
+#18 - Rapier - 15 ships
+#19 - Broadsword - 15 ships
+#20 - Nestor - 12 ships
+#21 - Catalyst - 12 ships
+#22 - Punisher - 11 ships
+#23 - Dominix - 11 ships
+#24 - Svipul - 11 ships
+#25 - Sabre - 11 ships
+
+ISK destroyed by a specific hull
+--------------------------------------------
+#01 - Stratios - 106.14b
+#02 - Manticore - 57.17b
+#03 - Purifier - 15.70b
+#04 - Proteus - 14.08b
+#05 - Falcon - 13.15b
+#06 - Nemesis - 12.83b
+#07 - Legion - 9.09b
+#08 - Pilgrim - 6.02b
+#09 - Hound - 6.00b
+#10 - Phobos - 5.88b
+#11 - Astero - 5.24b
+#12 - Orthrus - 4.57b
+#13 - Naglfar - 4.34b
+#14 - Onyx - 3.84b
+#15 - Bhaalgorn - 3.60b
+#16 - Tempest - 3.60b
+#17 - Apocalypse - 3.60b
+#18 - Rapier - 3.56b
+#19 - Broadsword - 3.52b
+#20 - Arazu - 3.04b
+#21 - Nestor - 2.96b
+#22 - Loki - 2.54b
+#23 - Vexor Navy Issue - 2.27b
+#24 - Dominix - 2.09b
+#25 - Buzzard - 1.88b

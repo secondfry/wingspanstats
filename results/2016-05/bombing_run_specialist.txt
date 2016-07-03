@@ -1,11 +1,13 @@
 Top Bombing Run Specialists - ships destroyed
 --------------------------------------------
 #01 - Mei Long - 4 ships
-#02 - Seabrony - 2 ships
-#03 - Cap'n Rick Clusterbomb - 1 ships
+#02 - Critical Miss - 2 ships
+#03 - Seabrony - 2 ships
+#04 - Cap'n Rick Clusterbomb - 1 ships
 
 Top Bombing Run Specialists - ISK destroyed
 --------------------------------------------
 #01 - Cap'n Rick Clusterbomb - 0.02b
 #02 - Mei Long - 0.01b
 #03 - Seabrony - 0.00b
+#04 - Critical Miss - 0.00b

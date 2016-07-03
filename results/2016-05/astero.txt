@@ -8,15 +8,15 @@ Top Astero pilots - ships destroyed
 #06 - Shahta Kopatel - 3 ships
 #07 - Koba Ogeko - 3 ships
 #08 - Gallente Citizen 91698873 - 3 ships
-#09 - brainwhacker - 3 ships
-#10 - Grant lee Buffalo - 2 ships
-#11 - Bustrr Bluth - 2 ships
-#12 - Severin Talvan - 2 ships
-#13 - scopehone - 2 ships
-#14 - Nicpic Picnic - 2 ships
-#15 - Gwhet Twang - 2 ships
-#16 - Otto Penken - 2 ships
-#17 - Kelia Monaiis - 2 ships
+#09 - Kelia Monaiis - 3 ships
+#10 - brainwhacker - 3 ships
+#11 - Grant lee Buffalo - 2 ships
+#12 - Bustrr Bluth - 2 ships
+#13 - Severin Talvan - 2 ships
+#14 - scopehone - 2 ships
+#15 - Nicpic Picnic - 2 ships
+#16 - Gwhet Twang - 2 ships
+#17 - Otto Penken - 2 ships
 #18 - Vothor - 1 ships
 #19 - Raddic Darkworth - 1 ships
 #20 - Nikolei Darkflier - 1 ships
@@ -37,11 +37,11 @@ Top Astero pilots - ISK destroyed
 #07 - Vanessa Guang - 0.25b
 #08 - Koba Ogeko - 0.25b
 #09 - AusTiger - 0.14b
-#10 - Grant lee Buffalo - 0.11b
-#11 - Jennifer Crissman - 0.10b
-#12 - Otto Penken - 0.10b
-#13 - Raddic Darkworth - 0.10b
-#14 - Kelia Monaiis - 0.10b
+#10 - Kelia Monaiis - 0.12b
+#11 - Grant lee Buffalo - 0.11b
+#12 - Jennifer Crissman - 0.10b
+#13 - Otto Penken - 0.10b
+#14 - Raddic Darkworth - 0.10b
 #15 - Amielia Evangelon - 0.09b
 #16 - Bustrr Bluth - 0.07b
 #17 - Shahta Kopatel - 0.06b

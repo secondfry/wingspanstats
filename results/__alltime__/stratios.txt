@@ -1,19 +1,19 @@
 Top Stratios pilots - ships destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 539 ships
-#02 - Mei Long - 385 ships
+#01 - Valtyr Farshield - 549 ships
+#02 - Mei Long - 416 ships
 #03 - Glade Radner - 360 ships
-#04 - Silentt Knightt - 319 ships
-#05 - Saria Dehmov - 236 ships
-#06 - Touretes - 228 ships
-#07 - Cap'n Rick Clusterbomb - 222 ships
+#04 - Silentt Knightt - 328 ships
+#05 - Cap'n Rick Clusterbomb - 237 ships
+#06 - Saria Dehmov - 236 ships
+#07 - Touretes - 228 ships
 #08 - Caboosette - 220 ships
-#09 - Rob Tsukaya - 198 ships
-#10 - Dakodai - 195 ships
-#11 - Gillion Wyrddych - 180 ships
-#12 - Alphecca Lazair - 180 ships
-#13 - inta Vakaria - 163 ships
-#14 - WeirdBall - 150 ships
+#09 - WeirdBall - 211 ships
+#10 - Rob Tsukaya - 198 ships
+#11 - Dakodai - 195 ships
+#12 - Gillion Wyrddych - 187 ships
+#13 - Alphecca Lazair - 180 ships
+#14 - inta Vakaria - 166 ships
 #15 - Narcisse Nightmare - 150 ships
 #16 - T-B0NE - 145 ships
 #17 - Captain Ace Rico - 141 ships
@@ -21,35 +21,35 @@ Top Stratios pilots - ships destroyed
 #19 - Sabrez Haklar - 135 ships
 #20 - NovaMoon Enaka - 128 ships
 #21 - Sudo Khaleesi - 124 ships
-#22 - Bails Naskingar - 114 ships
-#23 - Raens Aldebar - 112 ships
-#24 - Tali Lyrae - 109 ships
-#25 - Delta Rescue - 108 ships
+#22 - Delta Rescue - 122 ships
+#23 - Bails Naskingar - 114 ships
+#24 - Raens Aldebar - 112 ships
+#25 - Avacado Salad - 110 ships
 
 Top Stratios pilots - ISK destroyed
 --------------------------------------------
-#01 - Valtyr Farshield - 135.09b
+#01 - Valtyr Farshield - 138.49b
 #02 - Glade Radner - 100.31b
-#03 - Mei Long - 67.75b
-#04 - Cap'n Rick Clusterbomb - 60.15b
-#05 - Silentt Knightt - 54.01b
-#06 - Rob Tsukaya - 39.00b
-#07 - Saria Dehmov - 36.33b
-#08 - Narcisse Nightmare - 35.45b
-#09 - Gillion Wyrddych - 32.65b
-#10 - WeirdBall - 32.30b
+#03 - Mei Long - 74.49b
+#04 - Cap'n Rick Clusterbomb - 63.75b
+#05 - Silentt Knightt - 56.32b
+#06 - WeirdBall - 45.14b
+#07 - Rob Tsukaya - 39.00b
+#08 - Saria Dehmov - 36.33b
+#09 - Narcisse Nightmare - 35.45b
+#10 - Gillion Wyrddych - 34.71b
 #11 - Dakodai - 31.55b
 #12 - Caboosette - 31.11b
-#13 - Abaddon Nergal - 30.14b
-#14 - inta Vakaria - 27.31b
+#13 - Abaddon Nergal - 30.32b
+#14 - inta Vakaria - 27.46b
 #15 - Massive Black - 27.07b
 #16 - Sabrez Haklar - 25.37b
-#17 - Tali Lyrae - 23.53b
-#18 - NovaMoon Enaka - 22.74b
-#19 - Analius Glover - 22.47b
-#20 - Ransom Odunen - 22.28b
-#21 - Alphecca Lazair - 21.03b
-#22 - Lexa Griffin - 20.79b
-#23 - Al3x Oaks - 20.76b
-#24 - Touretes - 20.34b
-#25 - Delta Rescue - 20.17b
+#17 - Ransom Odunen - 23.86b
+#18 - Tali Lyrae - 23.53b
+#19 - Avacado Salad - 23.12b
+#20 - NovaMoon Enaka - 22.74b
+#21 - Analius Glover - 22.47b
+#22 - Delta Rescue - 21.97b
+#23 - Al3x Oaks - 21.07b
+#24 - Alphecca Lazair - 21.03b
+#25 - Lexa Griffin - 20.79b

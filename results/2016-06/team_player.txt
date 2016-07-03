@@ -1,0 +1,55 @@
+Ships destroyed in a fleet
+--------------------------------------------
+#01 - WeirdBall - 62 ships
+#02 - Mei Long - 59 ships
+#03 - Swift Isu - 54 ships
+#04 - Valtyr Farshield - 34 ships
+#05 - Cap'n Rick Clusterbomb - 30 ships
+#06 - Shadow Ataru - 28 ships
+#07 - Sabrez Haklar - 25 ships
+#08 - Avacado Salad - 25 ships
+#09 - Tyr Carter - 24 ships
+#10 - Lenai Chelien - 24 ships
+#11 - Cain Patrouette - 23 ships
+#12 - inta Vakaria - 23 ships
+#13 - Zeke Airuta - 23 ships
+#14 - Vi Rhea - 23 ships
+#15 - Winston Bigbrother - 21 ships
+#16 - firecast77 Tao - 21 ships
+#17 - Massive Black - 20 ships
+#18 - Tasmine Cha-Tien - 20 ships
+#19 - Sharps - 19 ships
+#20 - Soplaescroto - 19 ships
+#21 - Dokii Dokii - 18 ships
+#22 - Tota Lazhole - 18 ships
+#23 - Mister McQueen - 18 ships
+#24 - Silentt Knightt - 18 ships
+#25 - Analius Glover - 16 ships
+
+ISK destroyed in a fleet
+--------------------------------------------
+#01 - Mei Long - 15.15b
+#02 - WeirdBall - 14.42b
+#03 - Cap'n Rick Clusterbomb - 11.75b
+#04 - Valtyr Farshield - 11.67b
+#05 - Swift Isu - 9.64b
+#06 - Silentt Knightt - 7.72b
+#07 - Soplaescroto - 7.63b
+#08 - Mister McQueen - 7.46b
+#09 - Tota Lazhole - 7.35b
+#10 - Shadow Ataru - 7.22b
+#11 - Tasmine Cha-Tien - 7.16b
+#12 - Winston Bigbrother - 6.88b
+#13 - Avacado Salad - 6.63b
+#14 - Okaga Utama - 6.30b
+#15 - Dokii Dokii - 5.56b
+#16 - Quintus Va'Lari - 5.47b
+#17 - Abaddon Nergal - 5.34b
+#18 - Vothor - 5.16b
+#19 - HillAnt - 5.15b
+#20 - Stanis Solar - 5.10b
+#21 - Nakran Onyx - 5.01b
+#22 - Jennifer Crissman - 4.82b
+#23 - Lenai Chelien - 4.64b
+#24 - Zeke Airuta - 4.57b
+#25 - Cissnei Kusoni - 4.17b

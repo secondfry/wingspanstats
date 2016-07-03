@@ -1,6 +1,6 @@
 Ships destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 961 ships
+#01 - Stratios - 963 ships
 #02 - Hound - 448 ships
 #03 - Manticore - 331 ships
 #04 - Nemesis - 320 ships
@@ -28,7 +28,7 @@ Ships destroyed by a specific hull
 
 ISK destroyed by a specific hull
 --------------------------------------------
-#01 - Stratios - 254.48b
+#01 - Stratios - 254.51b
 #02 - Nemesis - 79.18b
 #03 - Purifier - 65.72b
 #04 - Manticore - 51.73b

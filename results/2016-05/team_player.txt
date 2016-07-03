@@ -2,7 +2,7 @@ Ships destroyed in a fleet
 --------------------------------------------
 #01 - Mei Long - 69 ships
 #02 - Vordec - 66 ships
-#03 - Lexa Griffin - 64 ships
+#03 - Lexa Griffin - 65 ships
 #04 - Czechbox - 59 ships
 #05 - Vi Rhea - 51 ships
 #06 - Sabrez Haklar - 49 ships

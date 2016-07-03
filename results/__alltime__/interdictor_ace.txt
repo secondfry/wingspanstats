@@ -2,54 +2,54 @@ Top Interdictor(+HIC) pilots - ships destroyed
 --------------------------------------------
 #01 - NoGo Rose - 215 ships
 #02 - Orianna Okanata - 163 ships
-#03 - Vothor - 129 ships
+#03 - Vothor - 130 ships
 #04 - brainwhacker - 64 ships
 #05 - Tali Lyrae - 62 ships
 #06 - Sabrez Haklar - 56 ships
-#07 - Cap'n Rick Clusterbomb - 49 ships
+#07 - Cap'n Rick Clusterbomb - 51 ships
 #08 - Al3x Oaks - 47 ships
 #09 - togi yuki - 35 ships
 #10 - Abaddon Nergal - 34 ships
-#11 - Bleda Katona - 25 ships
-#12 - Raddic Darkworth - 24 ships
-#13 - Louis Ferreira - 23 ships
-#14 - Narcisse Nightmare - 21 ships
-#15 - Caboosette - 18 ships
-#16 - Erika Tsurpalen - 16 ships
-#17 - Sharps - 14 ships
-#18 - Au'Rel - 13 ships
+#11 - Sharps - 28 ships
+#12 - Raddic Darkworth - 26 ships
+#13 - Bleda Katona - 25 ships
+#14 - Louis Ferreira - 23 ships
+#15 - Narcisse Nightmare - 21 ships
+#16 - Caboosette - 18 ships
+#17 - Erika Tsurpalen - 16 ships
+#18 - Au'Rel - 14 ships
 #19 - Tyr Carter - 12 ships
 #20 - Gillion Wyrddych - 11 ships
 #21 - Bierrt - 11 ships
 #22 - Eridanii - 10 ships
-#23 - Massive Black - 10 ships
-#24 - Trip Erata - 10 ships
-#25 - Myra Vixen - 9 ships
+#23 - Valtyr Farshield - 10 ships
+#24 - Massive Black - 10 ships
+#25 - Trip Erata - 10 ships
 
 Top Interdictor(+HIC) pilots - ISK destroyed
 --------------------------------------------
 #01 - Orianna Okanata - 24.48b
-#02 - Vothor - 17.85b
+#02 - Vothor - 17.92b
 #03 - NoGo Rose - 16.51b
-#04 - Raddic Darkworth - 12.99b
+#04 - Raddic Darkworth - 13.04b
 #05 - Sabrez Haklar - 12.55b
 #06 - Abaddon Nergal - 11.32b
 #07 - togi yuki - 11.19b
-#08 - Cap'n Rick Clusterbomb - 10.83b
-#09 - Bierrt - 7.26b
-#10 - Narcisse Nightmare - 7.06b
-#11 - Tali Lyrae - 6.43b
-#12 - brainwhacker - 5.78b
-#13 - Michi Hasegawa - 4.87b
-#14 - Marco Jacks - 4.56b
-#15 - Louis Ferreira - 4.45b
-#16 - SsjGhost - 3.97b
-#17 - Bonz Andrard - 3.94b
-#18 - Erika Tsurpalen - 3.30b
-#19 - Caboosette - 3.11b
-#20 - Jerythas - 2.96b
-#21 - Bleda Katona - 2.96b
-#22 - Sharps - 2.95b
+#08 - Cap'n Rick Clusterbomb - 11.06b
+#09 - Marco Jacks - 8.16b
+#10 - Bierrt - 7.26b
+#11 - Narcisse Nightmare - 7.06b
+#12 - Tali Lyrae - 6.43b
+#13 - brainwhacker - 5.78b
+#14 - Sharps - 5.34b
+#15 - SsjGhost - 5.13b
+#16 - Michi Hasegawa - 4.87b
+#17 - Louis Ferreira - 4.45b
+#18 - Bonz Andrard - 3.94b
+#19 - Erika Tsurpalen - 3.30b
+#20 - Caboosette - 3.11b
+#21 - Jerythas - 2.96b
+#22 - Bleda Katona - 2.96b
 #23 - Massive Black - 2.65b
 #24 - Al3x Oaks - 2.61b
 #25 - Myra Vixen - 2.49b

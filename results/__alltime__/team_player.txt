@@ -1,20 +1,20 @@
 Ships destroyed in a fleet
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 803 ships
-#02 - Mei Long - 729 ships
-#03 - Gillion Wyrddych - 701 ships
-#04 - Narcisse Nightmare - 674 ships
-#05 - Valtyr Farshield - 605 ships
-#06 - Sabrez Haklar - 602 ships
-#07 - Saria Dehmov - 521 ships
-#08 - Vothor - 504 ships
-#09 - Tasmine Cha-Tien - 502 ships
+#01 - Cap'n Rick Clusterbomb - 833 ships
+#02 - Mei Long - 788 ships
+#03 - Gillion Wyrddych - 717 ships
+#04 - Narcisse Nightmare - 675 ships
+#05 - Valtyr Farshield - 639 ships
+#06 - Sabrez Haklar - 627 ships
+#07 - Tasmine Cha-Tien - 522 ships
+#08 - Saria Dehmov - 521 ships
+#09 - Vothor - 520 ships
 #10 - Orianna Okanata - 474 ships
 #11 - Caboosette - 473 ships
-#12 - Silentt Knightt - 451 ships
-#13 - Glade Radner - 420 ships
-#14 - inta Vakaria - 417 ships
-#15 - Ransom Odunen - 391 ships
+#12 - Silentt Knightt - 469 ships
+#13 - inta Vakaria - 440 ships
+#14 - Glade Radner - 420 ships
+#15 - Ransom Odunen - 393 ships
 #16 - Gigi McQuaid - 391 ships
 #17 - Albin wood - 385 ships
 #18 - Chance Ravinne - 379 ships
@@ -22,34 +22,34 @@ Ships destroyed in a fleet
 #20 - More11o - 325 ships
 #21 - Trip Erata - 325 ships
 #22 - Touretes - 316 ships
-#23 - Revan Wake - 314 ships
-#24 - NoGo Rose - 311 ships
-#25 - Abaddon Nergal - 304 ships
+#23 - Abaddon Nergal - 314 ships
+#24 - Revan Wake - 314 ships
+#25 - NoGo Rose - 311 ships
 
 ISK destroyed in a fleet
 --------------------------------------------
-#01 - Cap'n Rick Clusterbomb - 221.73b
-#02 - Valtyr Farshield - 190.68b
-#03 - Narcisse Nightmare - 140.87b
-#04 - Mei Long - 134.98b
+#01 - Cap'n Rick Clusterbomb - 233.47b
+#02 - Valtyr Farshield - 202.34b
+#03 - Mei Long - 150.13b
+#04 - Narcisse Nightmare - 140.88b
 #05 - Glade Radner - 133.40b
-#06 - Sabrez Haklar - 125.41b
-#07 - Orianna Okanata - 121.35b
-#08 - Gillion Wyrddych - 119.34b
-#09 - Silentt Knightt - 106.93b
-#10 - Vothor - 105.90b
-#11 - Tasmine Cha-Tien - 103.57b
-#12 - Abaddon Nergal - 98.85b
+#06 - Sabrez Haklar - 128.40b
+#07 - Gillion Wyrddych - 121.67b
+#08 - Orianna Okanata - 121.35b
+#09 - Silentt Knightt - 114.65b
+#10 - Vothor - 111.06b
+#11 - Tasmine Cha-Tien - 110.73b
+#12 - Abaddon Nergal - 104.18b
 #13 - Saria Dehmov - 89.75b
 #14 - Caboosette - 89.45b
-#15 - Ransom Odunen - 83.99b
-#16 - inta Vakaria - 81.54b
+#15 - Ransom Odunen - 85.66b
+#16 - inta Vakaria - 84.65b
 #17 - Trip Erata - 79.87b
-#18 - Gigi McQuaid - 69.49b
-#19 - togi yuki - 69.30b
-#20 - Lexa Griffin - 65.91b
-#21 - Quintus Va'Lari - 65.12b
-#22 - Analius Glover - 62.89b
+#18 - Quintus Va'Lari - 70.59b
+#19 - Gigi McQuaid - 69.49b
+#20 - togi yuki - 69.30b
+#21 - Lexa Griffin - 65.91b
+#22 - Analius Glover - 63.73b
 #23 - Chance Ravinne - 59.97b
-#24 - Malak Saren - 58.00b
-#25 - Xee Yoona-451 - 56.95b
+#24 - Raddic Darkworth - 58.08b
+#25 - Malak Saren - 58.00b

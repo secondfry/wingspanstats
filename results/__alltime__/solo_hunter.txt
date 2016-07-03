@@ -1,55 +1,55 @@
 Solo ships destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 550 ships
+#01 - Tasmine Cha-Tien - 590 ships
 #02 - Saladiin - 230 ships
-#03 - inta Vakaria - 190 ships
-#04 - Valkyrie Starslayer - 186 ships
-#05 - Al3x Oaks - 184 ships
-#06 - Valtyr Farshield - 177 ships
+#03 - inta Vakaria - 209 ships
+#04 - Al3x Oaks - 201 ships
+#05 - Valkyrie Starslayer - 186 ships
+#06 - Valtyr Farshield - 180 ships
 #07 - Eridanii - 176 ships
 #08 - Orianna Okanata - 168 ships
-#09 - NoGo Rose - 154 ships
-#10 - Dakodai - 150 ships
-#11 - Chance Ravinne - 144 ships
-#12 - Silentt Knightt - 139 ships
-#13 - Saria Dehmov - 134 ships
-#14 - Lenai Chelien - 129 ships
-#15 - Reed Icculus - 126 ships
-#16 - Myra Vixen - 126 ships
-#17 - Cap'n Rick Clusterbomb - 123 ships
-#18 - Bustrr Bluth - 122 ships
-#19 - Damien Oxytocin - 114 ships
-#20 - brainwhacker - 112 ships
-#21 - Alt Sokarad - 110 ships
-#22 - SabersKunk Dallocort - 109 ships
-#23 - choo t - 104 ships
-#24 - Banshee Legend - 103 ships
-#25 - Avacado Salad - 100 ships
+#09 - Lenai Chelien - 155 ships
+#10 - NoGo Rose - 154 ships
+#11 - Dakodai - 150 ships
+#12 - Chance Ravinne - 144 ships
+#13 - Silentt Knightt - 142 ships
+#14 - Saria Dehmov - 134 ships
+#15 - Myra Vixen - 130 ships
+#16 - Cap'n Rick Clusterbomb - 128 ships
+#17 - Bustrr Bluth - 127 ships
+#18 - Avacado Salad - 127 ships
+#19 - Reed Icculus - 126 ships
+#20 - Damien Oxytocin - 114 ships
+#21 - brainwhacker - 112 ships
+#22 - Alt Sokarad - 110 ships
+#23 - SabersKunk Dallocort - 109 ships
+#24 - Banshee Legend - 106 ships
+#25 - choo t - 106 ships
 
 Solo ISK destroyed
 --------------------------------------------
-#01 - Tasmine Cha-Tien - 60.67b
-#02 - Valtyr Farshield - 16.21b
-#03 - Cap'n Rick Clusterbomb - 14.22b
-#04 - Al3x Oaks - 10.44b
+#01 - Tasmine Cha-Tien - 66.24b
+#02 - Valtyr Farshield - 16.23b
+#03 - Cap'n Rick Clusterbomb - 14.52b
+#04 - Al3x Oaks - 10.74b
 #05 - Aravorn Nighthawk - 10.32b
 #06 - Dakodai - 10.17b
-#07 - Orianna Okanata - 9.05b
-#08 - Eridanii - 7.40b
-#09 - Valkyrie Starslayer - 7.36b
-#10 - Saria Dehmov - 7.28b
-#11 - Severin Talvan - 7.00b
-#12 - Avacado Salad - 6.99b
-#13 - Damien Oxytocin - 6.82b
-#14 - NovaMoon Enaka - 6.58b
-#15 - inta Vakaria - 6.15b
-#16 - Massive Black - 5.82b
+#07 - Avacado Salad - 9.16b
+#08 - Orianna Okanata - 9.05b
+#09 - Eridanii - 7.40b
+#10 - Valkyrie Starslayer - 7.36b
+#11 - Saria Dehmov - 7.28b
+#12 - inta Vakaria - 7.12b
+#13 - Severin Talvan - 7.00b
+#14 - Damien Oxytocin - 6.82b
+#15 - NovaMoon Enaka - 6.58b
+#16 - Massive Black - 6.05b
 #17 - Lainis Pootis - 5.64b
 #18 - Narcisse Nightmare - 5.23b
 #19 - brainwhacker - 4.83b
 #20 - Estebanzo Rufius - 4.76b
 #21 - NoGo Rose - 4.55b
-#22 - Silentt Knightt - 4.29b
-#23 - Wee Lad - 4.23b
-#24 - WeirdBall - 4.21b
-#25 - Chance Ravinne - 4.12b
+#22 - Silentt Knightt - 4.41b
+#23 - WeirdBall - 4.39b
+#24 - Wee Lad - 4.23b
+#25 - choo t - 4.15b
