@@ -3,12 +3,17 @@
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
 
-from scripts.log import log
 from config.statsconfig import StatsConfig
 from datetime import date, datetime
-import os
+from scripts.log import log
+from pymongo import MongoClient
+from pymongo.database import Database
+from pymongo.collection import Collection
 import json
+import os
+import pymongo
 import requests
+import time
 
 
 class DbCreate(object):
@@ -23,13 +28,16 @@ class DbCreate(object):
 
         :param type Selects type of DB creator
         """
-        if type == "zkillboard":
-            log(1, 'Creating zkillboard fetcher')
-            return DbCreateZkillboard()
+        if type == "zkillboard-json":
+            log(1, 'Creating zkillboard fetcher with JSON on our side')
+            return DbCreateZkillboardJSON()
+        if type == "zkillboard-mongo":
+            log(1, 'Creating zkillboard fetcher with MongoDB on our side')
+            return DbCreateZkillboardMongo()
         assert 0, "Source '" + type + "' is not defined"
 
 
-class DbCreateZkillboard(DbCreate):
+class DbCreateZkillboardJSON(DbCreate):
     LOG_LEVEL = 2
 
     def __init__(self):
@@ -69,7 +77,7 @@ class DbCreateZkillboard(DbCreate):
             status, timestamp_last = self.parse(timestamp_last)
             if status != self.STATUS_DONE and timestamp_last >= timestamp_today:
                 status = self.STATUS_DONE
-        log(self.LOG_LEVEL, 'Done! [zkillboard fetcher]')
+        log(self.LOG_LEVEL, 'Done! [ZKillboard-to-JSON fetcher]')
 
     def parse(self, timestamp):
         self.LOG_LEVEL += 1
@@ -169,3 +177,147 @@ class DbCreateZkillboard(DbCreate):
 
         self.LOG_LEVEL -= 1
         return datetime.strptime(mjson[0]['killTime'], '%Y-%m-%d %H:%M:%S')
+
+
+class DbCreateZkillboardMongo(DbCreate):
+    """
+    :type database: Database
+    :type killmails: Collection
+    """
+    LOG_LEVEL = 2
+
+    def __init__(self):
+        self.client = MongoClient('localhost', 27017)
+        self.database = self.client.wingspan_statistics
+        self.last = self.database.get_collection('last')
+        self.killmails = self.database.killmails
+        self.headers = StatsConfig.HEADERS
+        self.corporation_ids = ",".join([str(corp) for corp in StatsConfig.CORPORATION_IDS])
+        self.other_corps_ids = ",".join([str(corp) for corp in StatsConfig.OTHER_CORPS_IDS])
+        self.alliance_ids = ",".join([str(corp) for corp in StatsConfig.ALLIANCE_IDS])
+        self.filepath_lh = os.path.join(StatsConfig.DATABASE_PATH, 'answers', 'lastheaders.json')
+        self.session = requests.Session()
+        self.create_db()
+
+    def create_db(self):
+        last_kill = self.last.find_one({'type': 'main'})
+        if last_kill is None:
+            last_kill = self.get_first_main()
+        else:
+            last_kill = self.killmails.find_one({'_id': last_kill['killID']})
+
+        status = self.STATUS_START
+        while status != self.STATUS_DONE:
+            url = self.create_url_main(last_kill)
+            print(url)
+            r = self.session.get(url, headers=self.headers)
+            mjson = self.fix_json(r.json())
+            if len(mjson) != 0:
+                for kill in mjson:
+                    self.killmails.replace_one({'_id': kill['killID']}, kill, upsert=True)
+                    self.last.update_one({'type': 'main'}, {'$set': {'killID': kill['killID']}})
+                res = self.last.find_one({'type': 'main'})
+                last_kill = self.killmails.find_one({'_id': res['killID']})
+                status = self.STATUS_ONGOING
+            else:
+                status = self.STATUS_DONE
+            time.sleep(5)
+
+        last_kill = self.last.find_one({'type': 'others'})
+        if last_kill is None:
+            last_kill = self.get_first_others()
+        else:
+            last_kill = self.killmails.find_one({'_id': last_kill['killID']})
+
+        status = self.STATUS_START
+        while status != self.STATUS_DONE:
+            url = self.create_url_others(last_kill)
+            print(url)
+            r = self.session.get(url, headers=self.headers)
+            mjson = self.fix_json(r.json())
+            if len(mjson) != 0:
+                for kill in mjson:
+                    self.killmails.replace_one({'_id': kill['killID']}, kill, upsert=True)
+                    self.last.update_one({'type': 'others'}, {'$set': {'killID': kill['killID']}})
+                res = self.last.find_one({'type': 'others'})
+                last_kill = self.killmails.find_one({'_id': res['killID']})
+                status = self.STATUS_ONGOING
+            else:
+                status = self.STATUS_DONE
+            time.sleep(5)
+
+        log(self.LOG_LEVEL, 'Done! [ZKillboard-to-MongoDB fetcher]')
+
+    def create_url_main(self, kill):
+        return "https://zkillboard.com/api/kills/corporationID/{}/afterKillID/{}/limit/200/orderDirection/asc/".format(
+            self.corporation_ids,
+            kill['_id']
+        )
+
+    def create_url_others(self, kill):
+        return "https://zkillboard.com/api/kills/corporationID/{}/allianceID/{}/afterKillID/{}/limit/200/orderDirection/asc/".format(
+            self.other_corps_ids,
+            self.alliance_ids,
+            kill['_id']
+        )
+
+    def get_first_main(self):
+        self.LOG_LEVEL += 1
+        log(self.LOG_LEVEL, 'Fetching first kill.')
+
+        url = "https://zkillboard.com/api/kills/corporationID/{}/limit/1/orderDirection/asc/".format(
+            self.corporation_ids,
+        )
+        r = self.perform_query(url)
+        mjson = r.json()
+
+        if len(mjson) != 0:
+            kill = self.fix_json(mjson)[0]
+            self.last.insert_one({'type': 'main', 'killID': kill['killID']})
+            self.killmails.replace_one({'_id': kill['killID']}, kill, upsert=True)
+        else:
+            log(self.LOG_LEVEL, '[Error] ZKillboard says corporation have no kills')
+            raise EnvironmentError('ZKillboard says corporation have no kills')
+
+        self.LOG_LEVEL -= 1
+        return kill
+
+    def get_first_others(self):
+        self.LOG_LEVEL += 1
+        log(self.LOG_LEVEL, 'Fetching first kill.')
+
+        url = "https://zkillboard.com/api/kills/corporationID/{}/allianceID/{}/limit/1/orderDirection/asc/".format(
+            self.other_corps_ids,
+            self.alliance_ids
+        )
+        r = self.perform_query(url)
+        mjson = r.json()
+
+        if len(mjson) != 0:
+            kill = self.fix_json(mjson)[0]
+            self.last.insert_one({'type': 'others', 'killID': kill['killID']})
+            self.killmails.replace_one({'_id': kill['killID']}, kill, upsert=True)
+        else:
+            log(self.LOG_LEVEL, '[Error] ZKillboard says others have no kills')
+            raise EnvironmentError('ZKillboard says others have no kills')
+
+        self.LOG_LEVEL -= 1
+        return kill
+
+    @staticmethod
+    def fix_json(mjson):
+        for kill in mjson:
+            kill['_id'] = kill['killID']
+            kill['killTime'] = datetime.strptime(kill['killTime'], '%Y-%m-%d %H:%M:%S')
+            kill['parsed'] = False
+        return mjson
+
+    def perform_query(self, url):
+        r = self.session.get(url, headers=self.headers)
+
+        if os.path.exists(self.filepath_lh):
+            os.remove(self.filepath_lh)
+        with open(self.filepath_lh, 'w') as mfile:
+            mfile.write(str(r.headers))
+
+        return r

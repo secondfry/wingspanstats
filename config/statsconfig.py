@@ -9,9 +9,18 @@ import os
 class StatsConfig(object):
     ALLIANCE_ID = 99005770
 
+    ALLIANCE_IDS = [
+        99005770,  # The WINGSPAN Logo Alliance <WING>
+        99006319   # WiNGSPAN Delivery Network <WDN>
+    ]
+
     CORPORATION_IDS = [
         98330748,  # WiNGSPAN Delivery Services
-        98415327,  # WiNGSPAN Academy for Enterprising Pilots
+        98415327   # WiNGSPAN Academy for Enterprising Pilots
+    ]
+
+    OTHER_CORPS_IDS = [
+        98463483   # Deep Space Travel Agency # I'm still wondering if they were spies all along
     ]
 
     HEADERS = {
