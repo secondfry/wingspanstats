@@ -11,8 +11,10 @@ if __name__ == "__main__":
     timestamp_start = datetime.now()
     log(0, 'Wingspan Statistics script v0.9 start')
 
-    DbCreate.factory("zkillboard")
-    DbParse()
+    DbCreate.factory('zkillboard-json')
+    DbParse.factory('json')
+    DbCreate.factory('zkillboard-mongo')
+    DbParse.factory('mongo')
 
     time = datetime.now() - timestamp_start
     log(0, 'Wingspan Statistics script v0.9 end')

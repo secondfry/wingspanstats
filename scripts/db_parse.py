@@ -3,16 +3,40 @@
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
 
-from scripts.log import log
 from config.statsconfig import StatsConfig
 from datetime import date, datetime
-import os
-import json
+from scripts.log import log
+from pymongo import MongoClient
+from pymongo.database import Database
+from pymongo.collection import Collection
 import csv
+import json
+import os
 import shutil
 
 
 class DbParse(object):
+    STATUS_DONE = 0
+    STATUS_START = 1
+    STATUS_ONGOING = 2
+
+    @staticmethod
+    def factory(type):
+        """
+        Provides DB creator
+
+        :param type Selects type of DB creator
+        """
+        if type == "json":
+            log(1, 'Creating JSON database parser')
+            return DbParseJSON()
+        if type == "mongo":
+            log(1, 'Creating MongoDB parser')
+            return DbParseMongo()
+        assert 0, "Source '" + type + "' is not defined"
+
+
+class DbParseJSON(DbParse):
     STATUS_DONE = 0
     STATUS_START = 1
     STATUS_ONGOING = 2
@@ -28,6 +52,7 @@ class DbParse(object):
         self.data = {}
         self.persons = {}
         self.result = {}
+        self.isForced = False
 
         self.parse_db()
 
@@ -57,17 +82,29 @@ class DbParse(object):
             timestamp_last = datetime.strptime('2000', '%Y').date()
         log(self.LOG_LEVEL, 'Last checked: ' + timestamp_last.strftime('%Y-%m-%d'))
 
-        log(self.LOG_LEVEL, 'Should we parse new data?')
+        log(self.LOG_LEVEL, 'Is there old months to parse?')
         if timestamp_last < timestamp_check:
             log(self.LOG_LEVEL + 1, 'Yes')
             status = self.STATUS_START
         else:
-            log(self.LOG_LEVEL + 1, 'No')
-            status = self.STATUS_DONE
+            log(self.LOG_LEVEL + 1, 'No, parcing this month partial stats')
+            res_dir_date = os.path.join(StatsConfig.RESULTS_PATH, timestamp_today.strftime('%Y-%m'))
+            if os.path.exists(res_dir_date):
+                shutil.rmtree(res_dir_date)
+            timestamp_check = timestamp_today.replace(day = 1)
+            timestamp_last = timestamp_today.replace(day = 1)
+            status = self.STATUS_START
+            self.isForced = True
 
         while status != self.STATUS_DONE:
             log(self.LOG_LEVEL, 'Starting parsing ' + timestamp_check.strftime('%Y-%m'))
             status, timestamp_check = self.parse(timestamp_check)
+            if status != self.STATUS_DONE and timestamp_last >= timestamp_check:
+                status = self.STATUS_DONE
+
+        log(self.LOG_LEVEL, 'Creating leaderboards')
+        self.make_leaderboards(timestamp_last)
+
         log(self.LOG_LEVEL, 'Done! [database parser]')
         self.LOG_LEVEL -= 1
 
@@ -169,18 +206,18 @@ class DbParse(object):
                         'kills_fw': [1, killmail.value] if killmail.is_fw else [0, 0],
                         'kills_solo': [1, killmail.value] if killmail.is_solo else [0, 0],
                         'space': {
-                            1: [0, 0],
-                            2: [0, 0],
-                            3: [0, 0],
-                            4: [0, 0],
-                            5: [0, 0],
-                            6: [0, 0],
-                            7: [0, 0],
-                            8: [0, 0],
-                            9: [0, 0],
-                            10: [0, 0],
-                            11: [0, 0],
-                            12: [0, 0],
+                            '1': [0, 0],
+                            '2': [0, 0],
+                            '3': [0, 0],
+                            '4': [0, 0],
+                            '5': [0, 0],
+                            '6': [0, 0],
+                            '7': [0, 0],
+                            '8': [0, 0],
+                            '9': [0, 0],
+                            '10': [0, 0],
+                            '11': [0, 0],
+                            '12': [0, 0],
                             killmail.security_value: [1, killmail.value]
                         },
                         'value': killmail.value,
@@ -202,236 +239,6 @@ class DbParse(object):
         with open(file_name, 'w') as f_out:
             f_out.write(json.dumps(self.persons[timestamp_check.strftime('%Y-%m')]))
         log(self.LOG_LEVEL, 'Saved persons to json')
-
-        self.leaderboard('kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills'])
-        self.leaderboard('lasthits', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['lasthits'])
-        self.leaderboard('value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['value'])
-        self.leaderboard('kills_explorer', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_explorer'][0])
-        self.leaderboard('value_explorer', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_explorer'][1])
-        self.leaderboard('kills_fw', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_fw'][0])
-        self.leaderboard('value_fw', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_fw'][1])
-        self.leaderboard('kills_solo', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_solo'][0])
-        self.leaderboard('value_solo', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_solo'][1])
-        self.leaderboard('kills_fleet', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_solo'][0])
-        self.leaderboard('value_fleet', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['kills_solo'][1])
-        self.leaderboard('kills_space_hs', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][1][0])
-        self.leaderboard('value_space_hs', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][1][1])
-        self.leaderboard('kills_space_ls', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][2][0])
-        self.leaderboard('value_space_ls', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][2][1])
-        self.leaderboard('kills_space_ns', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][3][0])
-        self.leaderboard('value_space_ns', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][3][1])
-        self.leaderboard('kills_space_c123', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][4][0] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][5][0] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][6][0])
-        self.leaderboard('value_space_c123', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][4][1] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][5][1] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][6][1])
-        self.leaderboard('kills_space_c456', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][7][0] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][8][0] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][9][0])
-        self.leaderboard('value_space_c456', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][7][1] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][8][1] +
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][9][1])
-        self.leaderboard('kills_space_c12', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][10][0])
-        self.leaderboard('value_space_c12', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][10][1])
-        self.leaderboard('kills_space_c13', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][11][0])
-        self.leaderboard('value_space_c13', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][11][1])
-        self.leaderboard('kills_space_unknown', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][12][0])
-        self.leaderboard('value_space_unknown', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona: self.persons[timestamp_check.strftime('%Y-%m')][persona]['space'][12][1])
-        self.leaderboard('astero_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['astero'][0])
-        self.leaderboard('astero_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['astero'][1])
-        self.leaderboard('astero_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['astero'][0])
-        self.leaderboard('astero_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['astero'][1])
-        self.leaderboard('stratios_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['stratios'][0])
-        self.leaderboard('stratios_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['stratios'][1])
-        self.leaderboard('stratios_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['stratios'][0])
-        self.leaderboard('stratios_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['stratios'][1])
-        self.leaderboard('nestor_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['nestor'][0])
-        self.leaderboard('nestor_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['nestor'][1])
-        self.leaderboard('nestor_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['nestor'][0])
-        self.leaderboard('nestor_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['nestor'][1])
-        self.leaderboard('blops_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['blops'][0])
-        self.leaderboard('blops_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['blops'][1])
-        self.leaderboard('blops_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['blops'][0])
-        self.leaderboard('blops_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['blops'][1])
-        self.leaderboard('bomber_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['bomber'][0])
-        self.leaderboard('bomber_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['bomber'][1])
-        self.leaderboard('bomber_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['bomber'][0])
-        self.leaderboard('bomber_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['bomber'][1])
-        self.leaderboard('dictor_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['dictor'][0])
-        self.leaderboard('dictor_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['dictor'][1])
-        self.leaderboard('dictor_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['dictor'][0])
-        self.leaderboard('dictor_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['dictor'][1])
-        self.leaderboard('recon_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['recon'][0])
-        self.leaderboard('recon_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['recon'][1])
-        self.leaderboard('recon_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['recon'][0])
-        self.leaderboard('recon_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['recon'][1])
-        self.leaderboard('t3c_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3c'][0])
-        self.leaderboard('t3c_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3c'][1])
-        self.leaderboard('t3c_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3c'][0])
-        self.leaderboard('t3c_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3c'][1])
-        self.leaderboard('t3d_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3d'][0])
-        self.leaderboard('t3d_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['t3d'][1])
-        self.leaderboard('t3d_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3d'][0])
-        self.leaderboard('t3d_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['t3d'][1])
-        self.leaderboard('capital_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['capital'][0])
-        self.leaderboard('capital_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['capital'][1])
-        self.leaderboard('capital_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['capital'][0])
-        self.leaderboard('capital_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['capital'][1])
-        self.leaderboard('industrial_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['industrial'][0])
-        self.leaderboard('industrial_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['industrial'][1])
-        self.leaderboard('industrial_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['industrial'][
-                             0])
-        self.leaderboard('industrial_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['industrial'][
-                             1])
-        self.leaderboard('miner_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['miner'][0])
-        self.leaderboard('miner_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['miner'][1])
-        self.leaderboard('miner_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['miner'][0])
-        self.leaderboard('miner_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['miner'][1])
-        self.leaderboard('pod_driver_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['pod'][0])
-        self.leaderboard('pod_driver_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['ships_categories']['pod'][1])
-        self.leaderboard('pod_killer_kills', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['pod'][0])
-        self.leaderboard('pod_killer_value', self.persons[timestamp_check.strftime('%Y-%m')],
-                         lambda persona:
-                         self.persons[timestamp_check.strftime('%Y-%m')][persona]['victims_categories']['pod'][1])
-
-        file_name = os.path.join(res_dir_date, timestamp_check.strftime('%Y-%m') + '_result.json')
-        with open(file_name, 'w') as f_out:
-            f_out.write(json.dumps(self.result))
-        log(self.LOG_LEVEL, 'Saved leaderboard to json')
 
         self.LOG_LEVEL -= 1
         if not self.data[timestamp_check.strftime('%Y-%m')]:
@@ -477,7 +284,7 @@ class DbParse(object):
 
     @staticmethod
     def parse_ships(ships):
-        rules = [
+        rules_ship = [
             'is_astero',
             'is_stratios',
             'is_nestor',
@@ -493,29 +300,28 @@ class DbParse(object):
             'is_pod'
         ]
         ret = {}
-        for rule in rules:
-            rule_name = rule.split('_')[1]
-            ret[rule_name] = [0, 0]
+        for rule in rules_ship:
+            ship_name = rule.split('_')[1]
+            ret[ship_name] = [0, 0]
             for ship in ships.keys():
                 if globals()[rule](ship):
-                    ret[rule_name][0] += ships[ship][0]
-                    ret[rule_name][1] += ships[ship][1]
+                    ret[ship_name][0] += ships[ship][0]
+                    ret[ship_name][1] += ships[ship][1]
         return ret
 
     @staticmethod
     def parse_weapons(weapons):
-        rules = [
+        rules_weapon = [
             'is_bomb',
         ]
         ret = {}
-        for weapon in weapons.keys():
-            for rule in rules:
+        for rule in rules_weapon:
+            weapon_name = rule.split('_')[1]
+            ret[weapon_name] = [0, 0]
+            for weapon in weapons.keys():
                 if globals()[rule](weapon):
-                    if rule.split('_')[1] in ret.keys():
-                        ret[rule.split('_')[1]][0] += weapons[weapon][0]
-                        ret[rule.split('_')[1]][1] += weapons[weapon][1]
-                    else:
-                        ret[rule.split('_')[1]] = weapons[weapon]
+                    ret[weapon_name][0] += weapons[weapon][0]
+                    ret[weapon_name][1] += weapons[weapon][1]
         return ret
 
     @staticmethod
@@ -543,39 +349,235 @@ class DbParse(object):
 
         return attackers_capsuleer, attackers_wingspan, attackers_new
 
-    def leaderboard(self, name, array, key):
-        self.result[name] = {}
-        for idx, persona in enumerate(
-                sorted(
-                        array,
-                        key=key, reverse=True
-                )[0:StatsConfig.MAX_PLACES], start=1
-        ):
-            persona_id = persona
-            persona = array[persona]
-            self.result[name][idx] = {'charID': persona_id, 'charName': persona['name'], 'kills': persona['kills'],
-                                      'value': persona['value']}
+    def mred(self, x, y):
+        if isinstance(x, list):
+            return x[int(y)]
+        else:
+            return x.get(y)
+
+    def fare_enumerate(self, sequence, key_list):
+        n = 1
+        fare = 1
+        attr_compare_last = 0
+        for elem in sequence:
+            yield n, fare, elem
+            attr_compare = reduce(lambda x, y: self.mred(x, y), key_list, elem)
+            if attr_compare_last != attr_compare:
+                fare += 1
+            attr_compare_last = attr_compare
+            n += 1
+
+    def leaderboard(self, name, key_list, datex, date_last):
+        self.result[datex][name] = {}
+        data_dictionary = self.persons[datex]
+
+        if len(key_list) > 1:
+            key_list_kills = key_list[:-1]
+            key_list_kills.append(0)
+            key_list_value = key_list[:-1]
+            key_list_value.append(1)
+            # Sort by ISK value first
+            key_list_secondary = key_list[:-1]
+            key_list_secondary.append(1)
+        else:
+            key_list_secondary = ['value']
+
+        data_list = []
+        for key, value in data_dictionary.iteritems():
+            value['id'] = key
+            data_list.append(value)
+        positions = sorted(data_list,
+                           key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list_secondary, item),
+                           reverse=True)
+        positions = sorted(positions,
+                           key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
+                           reverse=True)
+
+        if date_last:
+            data_dictionary_last = self.persons[date_last]
+            data_list_last = []
+            for key, value in data_dictionary_last.iteritems():
+                value['id'] = key
+                data_list_last.append(value)
+            positions_last = sorted(data_list_last,
+                                    key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list_secondary, item),
+                                    reverse=True)
+            positions_last = sorted(positions_last,
+                                    key=lambda item: reduce(lambda x, y: self.mred(x, y), key_list, item),
+                                    reverse=True)
+            fare_enum_last = list(self.fare_enumerate(positions_last, key_list))
+
+        fare_enum = list(self.fare_enumerate(positions, key_list))[0:StatsConfig.MAX_PLACES]
+        for idx, fare_idx, persona in fare_enum:
+            kills_change = 0
+            kills_last = 0
+            value_change = 0
+            value_last = 0
+            change = 0
+            new = True
+            if date_last:
+                fare_enum_last_filtered = filter(lambda item: int(item[2]['id']) == persona['id'], fare_enum_last)
+                if len(fare_enum_last_filtered):
+                    idx_last, fare_idx_last, persona_last = fare_enum_last_filtered[0]
+                    if reduce(lambda x, y: self.mred(x, y), key_list, persona_last) != 0:
+                        change = idx_last - idx
+                        new = False
+                        if len(key_list) > 1:
+                            kills_last = reduce(lambda x, y: self.mred(x, y), key_list_kills, persona_last)
+                            value_last = reduce(lambda x, y: self.mred(x, y), key_list_value, persona_last)
+                        else:
+                            kills_last = persona_last['kills']
+                            value_last = persona_last['value']
+            if len(key_list) > 1:
+                kills = reduce(lambda x, y: self.mred(x, y), key_list_kills, persona)
+                value = reduce(lambda x, y: self.mred(x, y), key_list_value, persona)
+            else:
+                kills = persona['kills']
+                value = persona['value']
+            if kills == 0 and value == 0:
+                continue
+            if not new:
+                kills_change = kills - kills_last
+                value_change = value - value_last
+            self.result[datex][name][idx] = {
+                'charID': persona['id'],
+                'charName': persona['name'],
+                'kills': kills,
+                'kills_change': kills_change,
+                'value': value,
+                'change_value': value_change,
+                'change': change,
+                'is_new': new,
+                'fare': fare_idx
+            }
+
+    def make_leaderboards(self, timestamp_last):
+        self.LOG_LEVEL += 1
+        date_last = ''
+        res_dir = sorted(os.listdir(StatsConfig.RESULTS_PATH))
+        for datex in res_dir:
+            if datex not in self.persons.keys():
+                filepath = os.path.join(StatsConfig.RESULTS_PATH, datex, datex + "_persons.json")
+                if not os.path.exists(filepath):
+                    log(self.LOG_LEVEL, 'Directory which should contain persons.json doesn\'t exist. How? Date: ' + datex)
+                    raise SystemExit(0)
+                else:
+                    with open(filepath) as data_file:
+                        self.persons[datex] = json.load(data_file)
+
+            if datex < timestamp_last.strftime('%Y-%m'):
+                date_last = datex
+                continue
+
+            self.result[datex] = {}
+            self.leaderboard('kills', ['kills'], datex, date_last)
+            self.leaderboard('lasthits', ['lasthits'], datex, date_last)
+            self.leaderboard('value', ['value'], datex, date_last)
+            self.leaderboard('kills_explorer', ['kills_explorer', '0'], datex, date_last)
+            self.leaderboard('value_explorer', ['kills_explorer', '1'], datex, date_last)
+            self.leaderboard('kills_fw', ['kills_fw', '0'], datex, date_last)
+            self.leaderboard('value_fw', ['kills_fw', '1'], datex, date_last)
+            self.leaderboard('kills_solo', ['kills_solo', '0'], datex, date_last)
+            self.leaderboard('value_solo', ['kills_solo', '1'], datex, date_last)
+            self.leaderboard('kills_fleet', ['kills_fleet', '0'], datex, date_last)
+            self.leaderboard('value_fleet', ['kills_fleet', '1'], datex, date_last)
+            self.leaderboard('kills_space_hs', ['space', '1', '0'], datex, date_last)
+            self.leaderboard('value_space_hs', ['space', '1', '1'], datex, date_last)
+            self.leaderboard('kills_space_ls', ['space', '2', '0'], datex, date_last)
+            self.leaderboard('value_space_ls', ['space', '2', '1'], datex, date_last)
+            self.leaderboard('kills_space_ns', ['space', '3', '0'], datex, date_last)
+            self.leaderboard('value_space_ns', ['space', '3', '1'], datex, date_last)
+            self.leaderboard('kills_space_c123', ['space', '4', '0'], datex, date_last)
+            self.leaderboard('value_space_c123', ['space', '4', '1'], datex, date_last)
+            self.leaderboard('kills_space_c456', ['space', '7', '0'], datex, date_last)
+            self.leaderboard('value_space_c456', ['space', '7', '1'], datex, date_last)
+            self.leaderboard('kills_space_c12', ['space', '10', '0'], datex, date_last)
+            self.leaderboard('value_space_c12', ['space', '10', '1'], datex, date_last)
+            self.leaderboard('kills_space_c13', ['space', '11', '0'], datex, date_last)
+            self.leaderboard('value_space_c13', ['space', '11', '1'], datex, date_last)
+            self.leaderboard('kills_space_unknown', ['space', '12', '0'], datex, date_last)
+            self.leaderboard('value_space_unknown', ['space', '12', '1'], datex, date_last)
+            self.leaderboard('astero_driver_kills', ['ships_categories', 'astero', '0'], datex, date_last)
+            self.leaderboard('astero_driver_value', ['ships_categories', 'astero', '1'], datex, date_last)
+            self.leaderboard('astero_killer_kills', ['victims_categories', 'astero', '0'], datex, date_last)
+            self.leaderboard('astero_killer_value', ['victims_categories', 'astero', '1'], datex, date_last)
+            self.leaderboard('stratios_driver_kills', ['ships_categories', 'stratios', '0'], datex, date_last)
+            self.leaderboard('stratios_driver_value', ['ships_categories', 'stratios', '1'], datex, date_last)
+            self.leaderboard('stratios_killer_kills', ['victims_categories', 'stratios', '0'], datex, date_last)
+            self.leaderboard('stratios_killer_value', ['victims_categories', 'stratios', '1'], datex, date_last)
+            self.leaderboard('nestor_driver_kills', ['ships_categories', 'nestor', '0'], datex, date_last)
+            self.leaderboard('nestor_driver_value', ['ships_categories', 'nestor', '1'], datex, date_last)
+            self.leaderboard('nestor_killer_kills', ['victims_categories', 'nestor', '0'], datex, date_last)
+            self.leaderboard('nestor_killer_value', ['victims_categories', 'nestor', '1'], datex, date_last)
+            self.leaderboard('blops_driver_kills', ['ships_categories', 'blops', '0'], datex, date_last)
+            self.leaderboard('blops_driver_value', ['ships_categories', 'blops', '1'], datex, date_last)
+            self.leaderboard('blops_killer_kills', ['victims_categories', 'blops', '0'], datex, date_last)
+            self.leaderboard('blops_killer_value', ['victims_categories', 'blops', '1'], datex, date_last)
+            self.leaderboard('bomber_driver_kills', ['ships_categories', 'bomber', '0'], datex, date_last)
+            self.leaderboard('bomber_driver_value', ['ships_categories', 'bomber', '1'], datex, date_last)
+            self.leaderboard('bomber_killer_kills', ['victims_categories', 'bomber', '0'], datex, date_last)
+            self.leaderboard('bomber_killer_value', ['victims_categories', 'bomber', '1'], datex, date_last)
+            self.leaderboard('dictor_driver_kills', ['ships_categories', 'dictor', '0'], datex, date_last)
+            self.leaderboard('dictor_driver_value', ['ships_categories', 'dictor', '1'], datex, date_last)
+            self.leaderboard('dictor_killer_kills', ['victims_categories', 'dictor', '0'], datex, date_last)
+            self.leaderboard('dictor_killer_value', ['victims_categories', 'dictor', '1'], datex, date_last)
+            self.leaderboard('recon_driver_kills', ['ships_categories', 'recon', '0'], datex, date_last)
+            self.leaderboard('recon_driver_value', ['ships_categories', 'recon', '1'], datex, date_last)
+            self.leaderboard('recon_killer_kills', ['victims_categories', 'recon', '0'], datex, date_last)
+            self.leaderboard('recon_killer_value', ['victims_categories', 'recon', '1'], datex, date_last)
+            self.leaderboard('t3c_driver_kills', ['ships_categories', 't3c', '0'], datex, date_last)
+            self.leaderboard('t3c_driver_value', ['ships_categories', 't3c', '1'], datex, date_last)
+            self.leaderboard('t3c_killer_kills', ['victims_categories', 't3c', '0'], datex, date_last)
+            self.leaderboard('t3c_killer_value', ['victims_categories', 't3c', '1'], datex, date_last)
+            self.leaderboard('t3d_driver_kills', ['ships_categories', 't3d', '0'], datex, date_last)
+            self.leaderboard('t3d_driver_value', ['ships_categories', 't3d', '1'], datex, date_last)
+            self.leaderboard('t3d_killer_kills', ['victims_categories', 't3d', '0'], datex, date_last)
+            self.leaderboard('t3d_killer_value', ['victims_categories', 't3d', '1'], datex, date_last)
+            self.leaderboard('capital_driver_kills', ['ships_categories', 'capital', '0'], datex, date_last)
+            self.leaderboard('capital_driver_value', ['ships_categories', 'capital', '1'], datex, date_last)
+            self.leaderboard('capital_killer_kills', ['victims_categories', 'capital', '0'], datex, date_last)
+            self.leaderboard('capital_killer_value', ['victims_categories', 'capital', '1'], datex, date_last)
+            self.leaderboard('industrial_driver_kills', ['ships_categories', 'industrial', '0'], datex, date_last)
+            self.leaderboard('industrial_driver_value', ['ships_categories', 'industrial', '1'], datex, date_last)
+            self.leaderboard('industrial_killer_kills', ['victims_categories', 'industrial', '0'], datex, date_last)
+            self.leaderboard('industrial_killer_value', ['victims_categories', 'industrial', '1'], datex, date_last)
+            self.leaderboard('miner_driver_kills', ['ships_categories', 'miner', '0'], datex, date_last)
+            self.leaderboard('miner_driver_value', ['ships_categories', 'miner', '1'], datex, date_last)
+            self.leaderboard('miner_killer_kills', ['victims_categories', 'miner', '0'], datex, date_last)
+            self.leaderboard('miner_killer_value', ['victims_categories', 'miner', '1'], datex, date_last)
+            self.leaderboard('pod_driver_kills', ['ships_categories', 'pod', '0'], datex, date_last)
+            self.leaderboard('pod_driver_value', ['ships_categories', 'pod', '1'], datex, date_last)
+            self.leaderboard('pod_killer_kills', ['victims_categories', 'pod', '0'], datex, date_last)
+            self.leaderboard('pod_killer_value', ['victims_categories', 'pod', '1'], datex, date_last)
+
+            date_last = datex
+
+            file_name = os.path.join(StatsConfig.RESULTS_PATH, datex, datex + '_result.json')
+            with open(file_name, 'w') as f_out:
+                f_out.write(json.dumps(self.result[datex], indent=2, sort_keys=True))
+            log(self.LOG_LEVEL, 'Saved leaderboard to json')
+        self.LOG_LEVEL -= 1
 
 
 def security_value(security):
     return {
-        'hs': 1,
-        'ls': 2,
-        'ns': 3,
-        'c1': 4,
-        'c2': 5,
-        'c3': 6,
-        'c4': 7,
-        'c5': 8,
-        'c6': 9,
-        'c12': 10,
-        'c13': 11,
-        'c14': 12,
-        'c15': 12,
-        'c16': 12,
-        'c17': 12,
-        'c18': 12
-    }.get(security, 12)
+        'hs': '1',
+        'ls': '2',
+        'ns': '3',
+        'c1': '4',
+        'c2': '5',
+        'c3': '6',
+        'c4': '7',
+        'c5': '8',
+        'c6': '9',
+        'c12': '10',
+        'c13': '11',
+        'c14': '12',
+        'c15': '12',
+        'c16': '12',
+        'c17': '12',
+        'c18': '12'
+    }.get(security, '12')
 
 
 def is_fw(factionID):
@@ -691,3 +693,189 @@ class Killmail:
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
+
+class DbParseMongo(DbParse):
+    """
+    :type database: Database
+    :type killmails: Collection
+    :type kills: Collection
+    """
+    STATUS_DONE = 0
+    STATUS_START = 1
+    STATUS_ONGOING = 2
+    LOG_LEVEL = 1
+
+    def __init__(self):
+        log(self.LOG_LEVEL, 'Starting DB parser')
+        self.client = MongoClient('localhost', 27017)
+        self.database = self.client.wingspan_statistics
+        self.killmails = self.database.killmails
+        self.kills = self.database.kills
+
+        with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), mode='r') as infile:
+            reader = csv.reader(infile)
+            self.security = {int(rows[0]): rows[1] for rows in reader}
+
+        self.parse_db()
+
+    def parse_db(self):
+        log(self.LOG_LEVEL, 'Processing killmails')
+        for killmail in self.killmails.find({'parsed': False}):
+            self.process_killmail(killmail)
+
+        log(self.LOG_LEVEL, 'Done! [database parser]')
+        self.LOG_LEVEL -= 1
+
+    def process_killmail(self, killmail):
+        flags = []
+        attackers = KillUtils.parse_attackers(killmail['attackers'])
+
+        if attackers['count']['wingspan'] == attackers['count']['capsuleer'] == 1:
+            flags.append('solo')
+        if attackers['count']['wingspan']:
+            flags.append('fleet')
+        for item in killmail['items']:
+            if is_explorer(item['flag'], item['typeID']):
+                flags.append('explorer')
+                break
+        if is_fw(killmail['victim']['factionID']):
+            flags.append('fw')
+        if KillUtils.is_wingspan(killmail['victim']):
+            flags.append('awox')
+        else:
+            if attackers['count']['capsuleer'] < 1:
+                return
+            if float(attackers['count']['wingspan']) / attackers['count']['capsuleer'] < StatsConfig.FLEET_COMP:
+                return
+            if float(attackers['count']['wingspan']) == attackers['count']['capsuleer']:
+                flags.append('wingspanpure')
+
+        killmail['wingspan'] = []
+        once = True
+        for pilot in attackers['wingspan']:
+            if once:
+                pilot['damageDoneMost'] = 1
+                once = False
+            else:
+                pilot['damageDoneMost'] = 0
+            killmail['wingspan'].append(pilot)
+
+        killmail['others'] = attackers['others']
+        killmail['parsed'] = True
+
+        self.killmails.update_one({'_id': killmail['_id']}, {'$set': {'parsed': True}})
+        self.kills.insert_one(killmail)
+
+    # def kills(self):
+    #     $ret['kills'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'kills' => ['$sum' => 1]
+    #         ]],
+    #         ['$sort' => ['kills' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def value(self):
+    #     $ret['value'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'value' => ['$sum' => '$zkb.totalValue']
+    #         ]],
+    #         ['$sort' => ['value' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def damageDone(self):
+    #     $ret['damageDone'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'damageDone' => ['$sum' => '$wingspan.damageDone']
+    #         ]],
+    #         ['$sort' => ['damageDone' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def solo(self):
+    #     $ret['solo'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['wingspan' => ['$size' => 1], 'killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'kills' => ['$sum' => 1]
+    #         ]],
+    #         ['$sort' => ['kills' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def dedication(self):
+    #     $ret['dedication'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => ['charID' => '$wingspan.characterID', 'shipTypeID' => '$wingspan.shipTypeID', 'weaponTypeID' => '$wingspan.weaponTypeID'],
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'shipTypeID' => ['$first' => '$wingspan.shipTypeID'],
+    #             'weaponTypeID' => ['$first' => '$wingspan.weaponTypeID'],
+    #             'damageDone' => ['$sum' => '$wingspan.damageDone'],
+    #             'kills' => ['$sum' => 1]
+    #         ]],
+    #         ['$sort' => ['kills' => -1]],
+    #         ['$limit' => 1]
+    #     ]) -> toArray();
+
+
+class KillUtils(object):
+    @staticmethod
+    def is_wingspan(pilot):
+        return pilot['corporationID'] in StatsConfig.CORPORATION_IDS or pilot['allianceID'] in StatsConfig.ALLIANCE_IDS
+
+    @staticmethod
+    def parse_attackers(attackers):
+        ret = {'count': {'capsuleer': 0, 'npc': 0, 'wingspan': 0, 'NPSI': 0}, 'wingspan': [], 'others': []}
+
+        for attacker in attackers:
+            if attacker['characterName'] == '':
+                ret['count']['npc'] += 1
+            else:
+                ret['count']['capsuleer'] += 1
+            if KillUtils.is_wingspan(attacker):
+                ret['count']['wingspan'] += 1
+                ret['wingspan'].append(attacker)
+            else:
+                ret['count']['NPSI'] += 1
+                ret['others'].append(attacker)
+
+        return ret
+
+    @staticmethod
+    def get_pilot(attacker):
+        return {
+            'id': attacker['characterID'],
+            'name': attacker['characterName']
+        }
+
+
+class Kill(object):
+    def __init__(self, killID, pilot, pship, weapon, victim, vship, value, damage, flags):
+        self.id = killID
+        self.pilot = pilot
+        self.pship = pship
+        self.weapon = weapon
+        self.victim = victim
+        self.vship = vship
+        self.value = value
+        self.damage = damage
+        self.flags = flags
+        self.parsed = False
