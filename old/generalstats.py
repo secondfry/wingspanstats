@@ -7,15 +7,20 @@ from statsconfig import StatsConfig
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
+from calendar import monthrange
 
 
 class GeneralStats(Skeleton):
+    CITADEL_IDS = [35832, 35833, 35834, 40340]
+
     def __init__(self):
-        self.file_name = "general_stats"
+        self.file_name = "general_stats.txt"
+        self.pilot_set = set()
         self.total_kills = 0
         self.total_value = 0
         self.solo_total_kills = 0
         self.solo_total_value = 0
+        self.citadel_kills = 0
 
         self.total_kills_hs = 0
         self.total_value_hs = 0
@@ -27,6 +32,9 @@ class GeneralStats(Skeleton):
         self.total_value_wh = 0
 
         self.wh_stats = {}
+        self.corp_names = set([])
+        self.date_start = None
+        self.date_end = None
 
         with open('security.csv', mode='r') as infile:
             reader = csv.reader(infile)
@@ -42,9 +50,25 @@ class GeneralStats(Skeleton):
             output += "Average value/kill: {:.2f}m\n".format(
                     float(self.total_value) / 1000000 / self.total_kills
             )
+
+        # activity
+        avg_members = self.compute_avg_members()
+        if avg_members > 0:
+            activity_output = "-- Total number of active pilots: {}/{} ({:.2f}%)".format(
+                len(self.pilot_set), avg_members, len(self.pilot_set) / float(avg_members) * 100
+            )
+            print activity_output
+            output += "{}\n".format(activity_output)
+            output += "Kills per active member: {:.2f}\n".format(float(self.total_kills) / len(self.pilot_set))
+            output += "ISK destroyed per active member: {:.2f}m\n".format(
+                float(self.total_value) / len(self.pilot_set) / 1000000.0
+            )
+
         output += "Solo total kills: {}\n".format(self.solo_total_kills)
         output += "Solo total value: {:.2f}b\n".format(float(self.solo_total_value) / 1000000000.0)
-        output += "\n\n"
+        if self.citadel_kills > 0:
+            output += "Citadel kills: {}\n".format(self.citadel_kills)
+        output += "\n"
         output += "High-sec total kills: {} ({:.2f}%)\n".format(
                 self.total_kills_hs,
                 self.total_kills_hs / float(self.total_kills) * 100
@@ -104,6 +128,24 @@ class GeneralStats(Skeleton):
 
         return output
 
+    def compute_avg_members(self):
+        avg_members = 0
+
+        date_start = (int(self.date_start.split('-')[0]), int(self.date_start.split('-')[1]))
+        date_end = (int(self.date_end.split('-')[0]), int(self.date_end.split('-')[1]))
+
+        if date_start == date_end:
+            # same month
+            (_, end_day) = monthrange(date_start[0], date_start[1])
+            for corp_name in self.corp_names:
+                avg_members += StatsConfig.member_count(
+                    corp_name.replace(" ", "_"),
+                    "{}-{:02d}-01".format(date_start[0], date_start[1]),
+                    "{}-{:02d}-{}".format(date_start[0], date_start[1], end_day),
+                )
+
+        return avg_members
+
     def additional_processing(self, directory):
         # -------------------------------------------------
         sizes = np.array([
@@ -149,10 +191,23 @@ class GeneralStats(Skeleton):
         self.total_kills += 1
         self.total_value += killmail['zkb']['totalValue']
 
+        # activity
+        for attacker in killmail['attackers']:
+            # Wingspan attackers
+            if attacker['corporationID'] in StatsConfig.CORP_IDS:
+                self.pilot_set.add(attacker['characterID'])
+                self.corp_names.add(attacker['corporationName'])
+                if not self.date_start:
+                    self.date_start = killmail['killTime'].split()[0]
+                self.date_end = killmail['killTime'].split()[0]
+
         [total_non_npc_attackers, wingspan_attackers] = StatsConfig.attacker_types(killmail)
         if total_non_npc_attackers == wingspan_attackers and wingspan_attackers == 1:
             self.solo_total_kills += 1
             self.solo_total_value += killmail['zkb']['totalValue']
+
+        if killmail['victim']['shipTypeID'] in GeneralStats.CITADEL_IDS:
+            self.citadel_kills += 1
 
         system_id = killmail['solarSystemID']
         if self.security[system_id] == "hs":  # high-sec

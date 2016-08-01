@@ -24,7 +24,7 @@ class StatsConfig(object):
     ]
 
     HEADERS = {
-        "User-Agent" : "wingspanstats fork, secondfry@gmail.com",
+        "User-Agent" : "wingspanstats fork",  # FIXME add your personal info (email, name, website)
         "Accept-encoding": "gzip"
     }
 
