@@ -748,8 +748,8 @@ class DbParseMongo(DbParse):
                 return
             if float(attackers['count']['wingspan']) / attackers['count']['capsuleer'] < StatsConfig.FLEET_COMP:
                 return
-            if float(attackers['count']['wingspan']) == attackers['count']['capsuleer']:
-                flags.append('wingspanpure')
+        if float(attackers['count']['wingspan']) == attackers['count']['capsuleer']:
+            flags.append('wingspanpure')
 
         killmail['wingspan'] = []
         once = True
@@ -762,6 +762,7 @@ class DbParseMongo(DbParse):
             killmail['wingspan'].append(pilot)
 
         killmail['others'] = attackers['others']
+        killmail['flags'] = flags
         killmail['parsed'] = True
 
         self.killmails.update_one({'_id': killmail['_id']}, {'$set': {'parsed': True}})
