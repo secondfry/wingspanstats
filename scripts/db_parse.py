@@ -3,16 +3,40 @@
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
 
-from scripts.log import log
 from config.statsconfig import StatsConfig
 from datetime import date, datetime
-import os
-import json
+from scripts.log import log
+from pymongo import MongoClient
+from pymongo.database import Database
+from pymongo.collection import Collection
 import csv
+import json
+import os
 import shutil
 
 
 class DbParse(object):
+    STATUS_DONE = 0
+    STATUS_START = 1
+    STATUS_ONGOING = 2
+
+    @staticmethod
+    def factory(type):
+        """
+        Provides DB creator
+
+        :param type Selects type of DB creator
+        """
+        if type == "json":
+            log(1, 'Creating JSON database parser')
+            return DbParseJSON()
+        if type == "mongo":
+            log(1, 'Creating MongoDB parser')
+            return DbParseMongo()
+        assert 0, "Source '" + type + "' is not defined"
+
+
+class DbParseJSON(DbParse):
     STATUS_DONE = 0
     STATUS_START = 1
     STATUS_ONGOING = 2
@@ -260,7 +284,7 @@ class DbParse(object):
 
     @staticmethod
     def parse_ships(ships):
-        rules = [
+        rules_ship = [
             'is_astero',
             'is_stratios',
             'is_nestor',
@@ -276,29 +300,28 @@ class DbParse(object):
             'is_pod'
         ]
         ret = {}
-        for rule in rules:
-            rule_name = rule.split('_')[1]
-            ret[rule_name] = [0, 0]
+        for rule in rules_ship:
+            ship_name = rule.split('_')[1]
+            ret[ship_name] = [0, 0]
             for ship in ships.keys():
                 if globals()[rule](ship):
-                    ret[rule_name][0] += ships[ship][0]
-                    ret[rule_name][1] += ships[ship][1]
+                    ret[ship_name][0] += ships[ship][0]
+                    ret[ship_name][1] += ships[ship][1]
         return ret
 
     @staticmethod
     def parse_weapons(weapons):
-        rules = [
+        rules_weapon = [
             'is_bomb',
         ]
         ret = {}
-        for weapon in weapons.keys():
-            for rule in rules:
+        for rule in rules_weapon:
+            weapon_name = rule.split('_')[1]
+            ret[weapon_name] = [0, 0]
+            for weapon in weapons.keys():
                 if globals()[rule](weapon):
-                    if rule.split('_')[1] in ret.keys():
-                        ret[rule.split('_')[1]][0] += weapons[weapon][0]
-                        ret[rule.split('_')[1]][1] += weapons[weapon][1]
-                    else:
-                        ret[rule.split('_')[1]] = weapons[weapon]
+                    ret[weapon_name][0] += weapons[weapon][0]
+                    ret[weapon_name][1] += weapons[weapon][1]
         return ret
 
     @staticmethod
@@ -670,3 +693,189 @@ class Killmail:
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
+
+class DbParseMongo(DbParse):
+    """
+    :type database: Database
+    :type killmails: Collection
+    :type kills: Collection
+    """
+    STATUS_DONE = 0
+    STATUS_START = 1
+    STATUS_ONGOING = 2
+    LOG_LEVEL = 1
+
+    def __init__(self):
+        log(self.LOG_LEVEL, 'Starting DB parser')
+        self.client = MongoClient('localhost', 27017)
+        self.database = self.client.wingspan_statistics
+        self.killmails = self.database.killmails
+        self.kills = self.database.kills
+
+        with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), mode='r') as infile:
+            reader = csv.reader(infile)
+            self.security = {int(rows[0]): rows[1] for rows in reader}
+
+        self.parse_db()
+
+    def parse_db(self):
+        log(self.LOG_LEVEL, 'Processing killmails')
+        for killmail in self.killmails.find({'parsed': False}):
+            self.process_killmail(killmail)
+
+        log(self.LOG_LEVEL, 'Done! [database parser]')
+        self.LOG_LEVEL -= 1
+
+    def process_killmail(self, killmail):
+        flags = []
+        attackers = KillUtils.parse_attackers(killmail['attackers'])
+
+        if attackers['count']['wingspan'] == attackers['count']['capsuleer'] == 1:
+            flags.append('solo')
+        if attackers['count']['wingspan']:
+            flags.append('fleet')
+        for item in killmail['items']:
+            if is_explorer(item['flag'], item['typeID']):
+                flags.append('explorer')
+                break
+        if is_fw(killmail['victim']['factionID']):
+            flags.append('fw')
+        if KillUtils.is_wingspan(killmail['victim']):
+            flags.append('awox')
+        else:
+            if attackers['count']['capsuleer'] < 1:
+                return
+            if float(attackers['count']['wingspan']) / attackers['count']['capsuleer'] < StatsConfig.FLEET_COMP:
+                return
+            if float(attackers['count']['wingspan']) == attackers['count']['capsuleer']:
+                flags.append('wingspanpure')
+
+        killmail['wingspan'] = []
+        once = True
+        for pilot in attackers['wingspan']:
+            if once:
+                pilot['damageDoneMost'] = 1
+                once = False
+            else:
+                pilot['damageDoneMost'] = 0
+            killmail['wingspan'].append(pilot)
+
+        killmail['others'] = attackers['others']
+        killmail['parsed'] = True
+
+        self.killmails.update_one({'_id': killmail['_id']}, {'$set': {'parsed': True}})
+        self.kills.insert_one(killmail)
+
+    # def kills(self):
+    #     $ret['kills'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'kills' => ['$sum' => 1]
+    #         ]],
+    #         ['$sort' => ['kills' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def value(self):
+    #     $ret['value'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'value' => ['$sum' => '$zkb.totalValue']
+    #         ]],
+    #         ['$sort' => ['value' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def damageDone(self):
+    #     $ret['damageDone'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'damageDone' => ['$sum' => '$wingspan.damageDone']
+    #         ]],
+    #         ['$sort' => ['damageDone' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def solo(self):
+    #     $ret['solo'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['wingspan' => ['$size' => 1], 'killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$group' => [
+    #             '_id' => '$wingspan.characterID',
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'kills' => ['$sum' => 1]
+    #         ]],
+    #         ['$sort' => ['kills' => -1]],
+    #         ['$limit' => 3]
+    #     ]) -> toArray();
+    # def dedication(self):
+    #     $ret['dedication'] = DB::getDB() -> kills -> aggregate([
+    #         ['$match' => ['killTime' => ['$gte' => $month[0], '$lt' => $month[1]]]],
+    #         ['$unwind' => '$wingspan'],
+    #         ['$group' => [
+    #             '_id' => ['charID' => '$wingspan.characterID', 'shipTypeID' => '$wingspan.shipTypeID', 'weaponTypeID' => '$wingspan.weaponTypeID'],
+    #             'charID' => ['$first' => '$wingspan.characterID'],
+    #             'charName' => ['$first' => '$wingspan.characterName'],
+    #             'shipTypeID' => ['$first' => '$wingspan.shipTypeID'],
+    #             'weaponTypeID' => ['$first' => '$wingspan.weaponTypeID'],
+    #             'damageDone' => ['$sum' => '$wingspan.damageDone'],
+    #             'kills' => ['$sum' => 1]
+    #         ]],
+    #         ['$sort' => ['kills' => -1]],
+    #         ['$limit' => 1]
+    #     ]) -> toArray();
+
+
+class KillUtils(object):
+    @staticmethod
+    def is_wingspan(pilot):
+        return pilot['corporationID'] in StatsConfig.CORPORATION_IDS or pilot['allianceID'] in StatsConfig.ALLIANCE_IDS
+
+    @staticmethod
+    def parse_attackers(attackers):
+        ret = {'count': {'capsuleer': 0, 'npc': 0, 'wingspan': 0, 'NPSI': 0}, 'wingspan': [], 'others': []}
+
+        for attacker in attackers:
+            if attacker['characterName'] == '':
+                ret['count']['npc'] += 1
+            else:
+                ret['count']['capsuleer'] += 1
+            if KillUtils.is_wingspan(attacker):
+                ret['count']['wingspan'] += 1
+                ret['wingspan'].append(attacker)
+            else:
+                ret['count']['NPSI'] += 1
+                ret['others'].append(attacker)
+
+        return ret
+
+    @staticmethod
+    def get_pilot(attacker):
+        return {
+            'id': attacker['characterID'],
+            'name': attacker['characterName']
+        }
+
+
+class Kill(object):
+    def __init__(self, killID, pilot, pship, weapon, victim, vship, value, damage, flags):
+        self.id = killID
+        self.pilot = pilot
+        self.pship = pship
+        self.weapon = weapon
+        self.victim = victim
+        self.vship = vship
+        self.value = value
+        self.damage = damage
+        self.flags = flags
+        self.parsed = False
