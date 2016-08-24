@@ -580,6 +580,27 @@ def security_value(security):
     }.get(security, '12')
 
 
+def get_space_type(security):
+    return {
+        'hs': 'highsec',
+        'ls': 'lowsec',
+        'ns': 'nullsec',
+        'c1': 'anoikis',
+        'c2': 'anoikis',
+        'c3': 'anoikis',
+        'c4': 'anoikis',
+        'c5': 'anoikis',
+        'c6': 'anoikis',
+        'c12': 'anoikis',
+        'c13': 'anoikis',
+        'c14': 'unknown',
+        'c15': 'unknown',
+        'c16': 'unknown',
+        'c17': 'unknown',
+        'c18': 'unknown'
+    }.get(security, 'unknown')
+
+
 def is_fw(factionID):
     return {
         500001: True,
@@ -715,7 +736,7 @@ class DbParseMongo(DbParse):
 
         with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), mode='r') as infile:
             reader = csv.reader(infile)
-            self.security = {int(rows[0]): rows[1] for rows in reader}
+            self.space_class = {int(rows[0]): rows[1] for rows in reader}
 
         self.parse_db()
 
@@ -750,6 +771,10 @@ class DbParseMongo(DbParse):
                 return
         if float(attackers['count']['wingspan']) == attackers['count']['capsuleer']:
             flags.append('wingspanpure')
+        space_class = self.space_class[killmail['solarSystemID']]
+        flags.append(get_space_type(space_class))
+        if security_value(space_class) == 10:
+            flags.append('thera')
 
         killmail['wingspan'] = []
         once = True
