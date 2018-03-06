@@ -190,13 +190,17 @@ class DbParserJSON2Mongo(DbParser):
     self.state.save()
 
   def _reset_month(self, timestamp):
-    query = {'_id.date.year': {'$gte': timestamp.year}, '_id.date.month': {'$gte': timestamp.month}}
+    query = {'_id.date.year': {'$eq': timestamp.year}, '_id.date.month': {'$gte': timestamp.month}}
+    self.DB.months.delete_many(query)
+    self.DB.leaderboards.delete_many(query)
+
+    query = {'_id.date.year': {'$gte': timestamp.year + 1}, '_id.date.month': {'$gte': 1}}
     self.DB.months.delete_many(query)
     self.DB.leaderboards.delete_many(query)
 
   def _process_db_month(self, timestamp):
     self._count_flags(timestamp)
-    return self._make_leaderboards(timestamp)
+    self._make_leaderboards(timestamp)
 
   def _count_flags(self, timestamp):
     query = [
