@@ -215,6 +215,7 @@ class DbParserJSON2Mongo(DbParser):
         },
         'count': {'$sum': 1},
         'value': {'$sum': '$zkb.totalValue'},
+        'damage': {'$sum': '$attackers_processed.wingspan.damage_done'}
         # 'killmails': {'$push': '$$ROOT'} # don't need them?
       }
     }
@@ -278,7 +279,9 @@ class DbParserJSON2Mongo(DbParser):
       '_id': {'date': {'year': timestamp.year, 'month': timestamp.month}},
     }
 
-    categories = [flag + '_count' for flag in flags] + [flag + '_value' for flag in flags]
+    categories = ['count', 'value', 'damage']
+    categories += [flag + '_count' for flag in flags]
+    categories += [flag + '_value' for flag in flags]
     for category in categories:
       leaderboard[category] = []
 
