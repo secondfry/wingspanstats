@@ -1,21 +1,22 @@
-# !/usr/bin/python2
+#!/usr/bin/python2
 # Author: Rustam Gubaydullin (@second_fry)
 # License: MIT (https://opensource.org/licenses/MIT)
 
 from datetime import datetime
 from scripts.log import log
-from scripts.db_create import DbCreate
-from scripts.db_parse import DbParse
+from scripts.db_create import DbCreator
+from scripts.db_parse import DbParser
 
 if __name__ == "__main__":
-    timestamp_start = datetime.now()
-    log(0, 'Wingspan Statistics script v0.9 start')
+  timestamp_start = datetime.now()
+  log(0, 'Wingspan Statistics script start')
 
-    DbCreate.factory('zkillboard-json')
-    DbParse.factory('json')
-    DbCreate.factory('zkillboard-mongo')
-    DbParse.factory('mongo')
+  creator = DbCreator.factory('zkillboard-json')
+  creator.run()
 
-    time = datetime.now() - timestamp_start
-    log(0, 'Wingspan Statistics script v0.9 end')
-    log(0, 'Elapsed: ' + str(time) + '\n')
+  parser = DbParser.factory('json-mongo')
+  parser.run()
+
+  time = datetime.now() - timestamp_start
+  log(0, 'Wingspan Statistics script end')
+  log(0, 'Elapsed: ' + str(time) + '\n')

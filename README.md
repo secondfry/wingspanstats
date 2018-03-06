@@ -1,22 +1,21 @@
 # Wingspan Statistics
-Statistics calculation script.
-
 ## Overview
 - Configuration stored in `config/statsconfig.py`.
-- `CORPORATION_IDS` are corporations to check against.
-- `OTHER_CORPS_IDS` are corporations to check against only then they were in `ALLIANCE_IDS`.
-- Please change `HEADERS` to represent yourself.
+- `CORPORATION_IDS` are corporations to check for.
+- `ALLIANCE_IDS` are alliances to check for.
+- Make sure to change:
+  - `ENDPOINT_CORPORATION` for correct corporation lookup endTime (`endTime/201508260400/`).
+  - `EARLIEST` for starting point in time.
+  - `HEADERS` to represent yourself.
 - Currently implemented backends:
     - DB create:
-        - JSON,
-        - MongoDB.
+        - JSON.
     - DB parse:
-        - JSON,
-        - MongoDB.
-- By default, scripts uses both backends. Edit `wingspanstats.py` for different results.
+        - JSON2MongoDB.
 
 ## Usage
 ```bash
+$ nano config/statsconfig.py
 $ python wingspanstats.py
 ```
 
