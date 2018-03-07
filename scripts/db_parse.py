@@ -7,6 +7,7 @@ from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 import csv
 import gzip
 import json
@@ -144,6 +145,7 @@ class DbParserJSON2Mongo(DbParser):
   def run(self):
     self._read_pages()
     self._process_db()
+    self._make_summary()
 
   def _read_pages(self):
     for key, alliance in self.entities.iteritems():
@@ -304,35 +306,112 @@ class DbParserJSON2Mongo(DbParser):
       local.append(sort)
 
       data = self.DB.months.aggregate(local)
+      leaderboard[category] = self._parse_data_for_leaderboard(data, category)
 
-      place = 0
-      rem = 0
-
-      once = True
-      for item in data:
-        if item['value'] != 0:
-          if (item['value'] < rem or rem == 0):
-            place += 1
-            rem = item['value']
-        else:
-          if once:
-            place += 1
-            once = False
-
-        item['place'] = place
-        item['change'] = 0
-
-        if item['character_id'] in self.dori_memory and category in self.dori_memory[item['character_id']]:
-          item['change'] = self.dori_memory[item['character_id']][category] - place
-
-        if not item['character_id'] in self.dori_memory:
-          self.dori_memory[item['character_id']] = {}
-
-        self.dori_memory[item['character_id']][category] = place
-
-        leaderboard[category].append(item)
+    leaderboard['dedication'] = self._make_dedication(timestamp)
+    leaderboard['diversity'] = self._make_diversity(timestamp)
 
     self.DB.leaderboards.insert_one(leaderboard)
+
+  def _parse_data_for_leaderboard(self, data, category):
+    ret = []
+
+    place = 0
+    rem = 0
+
+    once = True
+    for item in data:
+      if item['value'] != 0:
+        if (item['value'] < rem or rem == 0):
+          place += 1
+          rem = item['value']
+      else:
+        if once:
+          place += 1
+          once = False
+
+      item['place'] = place
+      item['change'] = 0
+
+      if item['character_id'] in self.dori_memory and category in self.dori_memory[item['character_id']]:
+        item['change'] = self.dori_memory[item['character_id']][category] - place
+
+      if not item['character_id'] in self.dori_memory:
+        self.dori_memory[item['character_id']] = {}
+
+      self.dori_memory[item['character_id']][category] = place
+
+      ret.append(item)
+
+    return ret
+
+  def _make_dedication(self, timestamp):
+    data = self.DB.killmails.aggregate([
+      {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}},
+      {'$unwind': '$attackers_processed.wingspan'},
+      {'$group': {
+        '_id': {
+            'character_id': '$attackers_processed.wingspan.character_id',
+            'ship_type_id': '$attackers_processed.wingspan.ship_type_id',
+            'weapon_type_id': '$attackers_processed.wingspan.weapon_type_id'
+        },
+        'character_id': {'$first': '$attackers_processed.wingspan.character_id'},
+        'value': {'$sum': 1},
+        'voptional': {'$sum': '$zkb.totalValue'}
+      }},
+      {'$sort': {'value': -1, 'voptional': -1}},
+    ])
+
+    return self._parse_data_for_leaderboard(data, 'dedication')
+
+  def _make_diversity(self, timestamp):
+    data = self.DB.killmails.aggregate([
+      {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}},
+      {'$unwind': '$attackers_processed.wingspan'},
+      {
+        '$group': {
+          '_id'            : '$attackers_processed.wingspan.character_id',
+          'character_id'   : {'$first': '$attackers_processed.wingspan.character_id'},
+          'ship_type_ids'  : {'$addToSet': '$attackers_processed.wingspan.ship_type_id'},
+          'weapon_type_ids': {'$addToSet': '$attackers_processed.wingspan.weapon_type_id'},
+          'voptional'       : {'$sum': 1},
+        }
+      },
+      {
+        '$project': {
+          'character_id'   : 1,
+          'ship_type_ids'  : 1,
+          'weapon_type_ids': 1,
+          'value'          : {'$sum': [{'$size': '$ship_type_ids'}, {'$size': '$weapon_type_ids'}]},
+          'voptional'       : 1,
+        }
+      },
+      {'$sort': {'value': -1, 'voptional': -1}}
+    ])
+
+    return self._parse_data_for_leaderboard(data, 'diversity')
+
+  def _make_summary(self):
+    self.DB.summary.drop()
+
+    data = self.DB.killmails.aggregate([
+      {
+        '$project': {
+          'value'     : '$zkb.totalValue',
+          'damage_done': {'$sum': '$attackers_processed.wingspan.damage_done'}
+        }
+      },
+      {
+        '$group': {
+          '_id'      : ObjectId(),
+          'count'    : {'$sum': 1},
+          'value'    : {'$sum': '$value'},
+          'damage'   : {'$sum': '$damage_done'}
+        }
+      }
+    ])
+
+    self.DB.summary.insert_many(data)
 
 
 class Killmail(object):
