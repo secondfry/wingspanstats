@@ -202,6 +202,7 @@ class DbParserJSON2Mongo(DbParser):
 
   def _process_db_month(self, timestamp):
     self._count_flags(timestamp)
+    self._init_dori_memory(timestamp)
     self._make_leaderboards(timestamp)
 
   def _count_flags(self, timestamp):
@@ -255,6 +256,21 @@ class DbParserJSON2Mongo(DbParser):
     query.append(group)
     data = self.DB.killmails.aggregate(query)
     self.DB.months.insert_many(data)
+
+  def _init_dori_memory(self, timestamp):
+    doristamp = timestamp - relativedelta(months=1)
+    data = self.DB.leaderboards.find_one({'_id.date.year': doristamp.year, '_id.date.month': doristamp.month})
+
+    if data:
+      for category, arr in data.iteritems():
+        if category == '_id':
+          continue
+
+        for pilot in arr:
+          if pilot['character_id'] not in self.dori_memory:
+            self.dori_memory[pilot['character_id']] = {}
+
+          self.dori_memory[pilot['character_id']][category] = pilot['place']
 
   def _make_leaderboards(self, timestamp):
     query = [
