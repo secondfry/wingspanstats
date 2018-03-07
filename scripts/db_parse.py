@@ -319,19 +319,16 @@ class DbParserJSON2Mongo(DbParser):
     place = 0
     rem = 0
 
-    once = True
     for item in data:
-      if item['value'] != 0:
-        if (item['value'] < rem or rem == 0):
-          place += 1
-          rem = item['value']
-      else:
-        if once:
-          place += 1
-          once = False
+      if item['value'] == 0:
+        break
+
+      if (item['value'] < rem or rem == 0):
+        place += 1
+        rem = item['value']
 
       item['place'] = place
-      item['change'] = 0
+      item['change'] = False
 
       if item['character_id'] in self.dori_memory and category in self.dori_memory[item['character_id']]:
         item['change'] = self.dori_memory[item['character_id']][category] - place
