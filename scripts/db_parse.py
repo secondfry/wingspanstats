@@ -12,8 +12,8 @@ import csv
 import gzip
 import json
 import os
+import requests
 import sys
-import shutil
 
 from config.statsconfig import StatsConfig
 from scripts.alliance import Alliance
@@ -146,6 +146,7 @@ class DbParserJSON2Mongo(DbParser):
     self._read_pages()
     self._process_db()
     self._make_summary()
+    self._process_pilots()
 
   def _read_pages(self):
     for key, alliance in self.entities.iteritems():
@@ -366,7 +367,8 @@ class DbParserJSON2Mongo(DbParser):
         '_id': {
             'character_id': '$attackers_processed.wingspan.character_id',
             'ship_type_id': '$attackers_processed.wingspan.ship_type_id',
-            'weapon_type_id': '$attackers_processed.wingspan.weapon_type_id'
+            'weapon_type_id': '$attackers_processed.wingspan.weapon_type_id',
+            'flag': 'dedication',
         },
         'character_id': {'$first': '$attackers_processed.wingspan.character_id'},
         'value': {'$sum': 1},
@@ -383,11 +385,14 @@ class DbParserJSON2Mongo(DbParser):
       {'$unwind': '$attackers_processed.wingspan'},
       {
         '$group': {
-          '_id'            : '$attackers_processed.wingspan.character_id',
+          '_id'            : {
+            'character_id' : '$attackers_processed.wingspan.character_id',
+            'flag'         : 'diversity'
+          },
           'character_id'   : {'$first': '$attackers_processed.wingspan.character_id'},
           'ship_type_ids'  : {'$addToSet': '$attackers_processed.wingspan.ship_type_id'},
           'weapon_type_ids': {'$addToSet': '$attackers_processed.wingspan.weapon_type_id'},
-          'voptional'       : {'$sum': 1},
+          'voptional'      : {'$sum': 1},
         }
       },
       {
@@ -425,6 +430,76 @@ class DbParserJSON2Mongo(DbParser):
     ])
 
     self.DB.summary.insert_many(data)
+
+  def _process_pilots(self):
+    self._populate_pilots()
+    self._fetch_names()
+    self._assign_medals()
+
+  def _populate_pilots(self):
+    pilots = self.DB.killmails.aggregate([
+      {'$unwind': '$attackers_processed.wingspan'},
+      {
+        '$group': {
+          '_id': '$attackers_processed.wingspan.character_id'
+        }
+      }
+    ])
+
+    for pilot in pilots:
+      try:
+        self.DB.pilots.insert_one(pilot)
+      except:
+        pass
+
+  def _fetch_names(self):
+    url = 'https://esi.tech.ccp.is/latest/characters/names/?character_ids={}&datasource=tranquility'
+
+    pilots = self.DB.pilots.find({'name': None})
+    max = pilots.count() / 100
+
+    for i in xrange(0, max + 1):
+      arr = []
+      for k in xrange(0, 100):
+        obj = next(pilots, None)
+        if not obj:
+          if i == 0 and k == 0:
+            return
+          else:
+            break
+
+        arr.append(str(obj['_id']))
+
+      res = requests.get(url.format(','.join(arr)))
+      for pilot in res.json():
+        self.DB.pilots.update_one({'_id': int(pilot['character_id'])}, {'$set': {'name': pilot['character_name']}})
+
+  def _assign_medals(self):
+    months = self.DB.leaderboards.find()
+    medals = {}
+
+    for leaderboards in months:
+      for category, pilots in leaderboards.iteritems():
+        for pilot in pilots:
+          if pilot == 'date':
+            continue
+
+          place = pilot['place']
+          id = pilot['character_id']
+
+          if place > 4:
+            break
+
+          if id not in medals:
+            medals[id] = {}
+
+          if category not in medals[id]:
+            medals[id][category] = {'1': 0, '2': 0, '3': 0, '4': 0}
+
+          medals[id][category][str(place)] += 1
+
+    for id in medals:
+      self.DB.pilots.update_one({'_id': id}, {'$set': {'medals': medals[id]}})
 
 
 class Killmail(object):
