@@ -3,11 +3,12 @@
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
 
+from bson.objectid import ObjectId
+from bson.son import SON
 from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
-from bson.objectid import ObjectId
 import csv
 import gzip
 import json
@@ -37,6 +38,7 @@ SHIP_RULES = [
   'miner',
   'pod'
 ]
+
 SHIPS = {}
 SHIPS['astero'] = [33468]
 SHIPS['stratios'] = [33470]
@@ -74,10 +76,34 @@ SHIPS['miner'] = [
   22544, 22548, 33683, 22546  # exhumers
 ]
 SHIPS['pod'] = [670, 33328]
+
 LOOKUP = {}
 for ship_type, arr in SHIPS.iteritems():
   for ship_id in arr:
     LOOKUP[ship_id] = ship_type
+
+FLAGS_SIMPLE = [
+  'solo',
+  'fleet',
+  'explorer',
+  'fw',
+  'awox',
+  'pure',
+  'thera',
+  'highsec',
+  'lowsec',
+  'nullsec',
+  'anoikis',
+]
+
+FLAGS_ADVANCED = deepcopy(FLAGS_SIMPLE)
+for ship in SHIP_RULES:
+  FLAGS_ADVANCED.append(ship + '_killer')
+  FLAGS_ADVANCED.append(ship + '_driver')
+
+CATEGORIES = ['count', 'value', 'damage']
+CATEGORIES += [flag + '_count' for flag in FLAGS_ADVANCED]
+CATEGORIES += [flag + '_value' for flag in FLAGS_ADVANCED]
 
 
 class DbParser(object):
@@ -99,6 +125,97 @@ class DbParser(object):
 class DbParserJSON2Mongo(DbParser):
   LOG_LEVEL = 2
   DEFAULT_STATE = {}
+  DEDICATION_QUERY = [
+    {'$unwind': '$attackers_processed.wingspan'},
+    {
+      '$group': {
+        '_id': {
+          'character_id': '$attackers_processed.wingspan.character_id',
+          'ship_type_id': '$attackers_processed.wingspan.ship_type_id',
+          'weapon_type_id': '$attackers_processed.wingspan.weapon_type_id',
+        },
+        'value': {'$sum': 1},
+        'voptional': {'$sum': '$zkb.totalValue'}
+      }
+    },
+    {
+      '$project': {
+        'voptional': {
+          '$sum': [
+            '$value',
+            {'$divide': ['$voptional', 1000000000000]}
+          ]
+        },
+        'value': 1,
+      }
+    },
+    {
+      '$group': {
+        '_id': '$_id.character_id',
+        'data': {
+          '$addToSet': {
+            'ship_type_id': '$_id.ship_type_id', 'weapon_type_id': '$_id.weapon_type_id', 'value': '$value',
+            'voptional': '$voptional'
+          }
+        },
+        'voptional': {'$max': '$voptional'}
+      }
+    },
+    {
+      '$project': {
+        'match': {
+          '$filter': {
+            'input': '$data',
+            'as': 'data',
+            'cond': {
+              '$eq': ['$$data.voptional', '$voptional']
+            }
+          }
+        }
+      }
+    },
+    {
+      '$project': {
+        'match': {
+          '$arrayElemAt': ['$match', 0]
+        }
+      }
+    },
+    {'$unwind': '$match'},
+    {
+      '$project': {
+        'character_id': '$_id',
+        'value': '$match.value',
+        'match': 1
+      }
+    },
+    {'$sort': {'match.voptional': -1}},
+  ]
+  DIVERSITY_QUERY = [
+    {'$unwind': '$attackers_processed.wingspan'},
+    {
+      '$group': {
+        '_id': {
+          'character_id': '$attackers_processed.wingspan.character_id',
+          'flag': 'diversity'
+        },
+        'character_id': {'$first': '$attackers_processed.wingspan.character_id'},
+        'ship_type_ids': {'$addToSet': '$attackers_processed.wingspan.ship_type_id'},
+        'weapon_type_ids': {'$addToSet': '$attackers_processed.wingspan.weapon_type_id'},
+        'voptional': {'$sum': 1},
+      }
+    },
+    {
+      '$project': {
+        'character_id': 1,
+        'ship_type_ids': 1,
+        'weapon_type_ids': 1,
+        'value': {'$sum': [{'$size': '$ship_type_ids'}, {'$size': '$weapon_type_ids'}]},
+        'voptional': 1,
+      }
+    },
+    {'$sort': {'value': -1, 'voptional': -1}}
+  ]
 
   def __init__(self):
     DbParserJSON2Mongo.DEFAULT_STATE = {
@@ -144,7 +261,8 @@ class DbParserJSON2Mongo(DbParser):
 
   def run(self):
     self._read_pages()
-    self._process_db()
+    self._process_months()
+    self._make_alltime()
     self._make_summary()
     self._process_pilots()
 
@@ -174,7 +292,7 @@ class DbParserJSON2Mongo(DbParser):
       killmail = Killmail(self, chunk)
       killmail.process()
 
-  def _process_db(self):
+  def _process_months(self):
     timestamp = datetime.strptime(self.state.get('leaderboard'), '%Y-%m')
     limit = datetime.now()
 
@@ -195,16 +313,14 @@ class DbParserJSON2Mongo(DbParser):
   def _reset_month(self, timestamp):
     query = {'_id.date.year': {'$eq': timestamp.year}, '_id.date.month': {'$gte': timestamp.month}}
     self.DB.months.delete_many(query)
-    self.DB.leaderboards.delete_many(query)
 
     query = {'_id.date.year': {'$gte': timestamp.year + 1}, '_id.date.month': {'$gte': 1}}
     self.DB.months.delete_many(query)
-    self.DB.leaderboards.delete_many(query)
 
   def _process_db_month(self, timestamp):
     self._count_flags(timestamp)
     self._init_dori_memory(timestamp)
-    self._make_leaderboards(timestamp)
+    self._make_month_leaderboards(timestamp)
 
   def _count_flags(self, timestamp):
     query = [
@@ -223,21 +339,8 @@ class DbParserJSON2Mongo(DbParser):
         # 'killmails': {'$push': '$$ROOT'} # don't need them?
       }
     }
-    flags = [
-      'solo',
-      'fleet',
-      'explorer',
-      'fw',
-      'awox',
-      'pure',
-      'thera',
-      'highsec',
-      'lowsec',
-      'nullsec',
-      'anoikis',
-    ]
 
-    for flag in flags:
+    for flag in FLAGS_SIMPLE:
       group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$flags.' + flag, 1, 0]}}
       group['$group'][flag + '_value'] = {'$sum': {'$cond': ['$flags.' + flag, '$zkb.totalValue', 0]}}
 
@@ -273,62 +376,44 @@ class DbParserJSON2Mongo(DbParser):
 
           self.dori_memory[pilot['character_id']][category] = pilot['place']
 
-  def _make_leaderboards(self, timestamp):
-    query = [
-      {'$match': {'_id.date.year': timestamp.year, '_id.date.month': timestamp.month}},
-    ]
-    flags = [
-      'solo',
-      'fleet',
-      'explorer',
-      'fw',
-      'awox',
-      'pure',
-      'thera',
-      'highsec',
-      'lowsec',
-      'nullsec',
-      'anoikis',
-    ]
-    for ship in SHIP_RULES:
-      flags.append(ship + '_killer')
-      flags.append(ship + '_driver')
-
-    leaderboard = {
-      '_id': {'date': {'year': timestamp.year, 'month': timestamp.month}},
+  def _make_month_leaderboards(self, timestamp):
+    timestamp_query = {
+      '_id': str(timestamp.year) + '{:0>2}'.format(timestamp.month)
     }
 
-    categories = ['count', 'value', 'damage']
-    categories += [flag + '_count' for flag in flags]
-    categories += [flag + '_value' for flag in flags]
-    for category in categories:
-      leaderboard[category] = []
+    for category in CATEGORIES:
+      data = self._make_month_category(timestamp, category)
 
-      project = {
-        '$project': {
-          '_id'  : {
-            'date': '$_id.date',
-            'flag': {'$literal': category}
-          },
-          'character_id': '$_id.character_id',
-          'value': '$' + category
+      leaderboard = deepcopy(timestamp_query)
+      leaderboard['places'] = self._parse_data_for_leaderboard(data, category)
+      self.DB['leaderboard_' + category].replace_one(timestamp_query, leaderboard, upsert=True)
+
+    leaderboard = deepcopy(timestamp_query)
+    leaderboard['places'] = self._make_month_dedication(timestamp)
+    self.DB.leaderboard_dedication.replace_one(timestamp_query, leaderboard, upsert=True)
+
+    leaderboard = deepcopy(timestamp_query)
+    leaderboard['places'] = self._make_month_diversity(timestamp)
+    self.DB.leaderboard_diversity.replace_one(timestamp_query, leaderboard, upsert=True)
+
+  def _make_month_category(self, timestamp, category):
+    query = [
+      {'$match': {'_id.date.year': timestamp.year, '_id.date.month': timestamp.month}},
+      {'$project': {
+        '_id': {
+          'date': '$_id.date',
+        },
+        'character_id': '$_id.character_id',
+        'value'       : '$' + category
+      }},
+      {
+        '$sort': {
+          'value': -1
         }
       }
-      sort = {'$sort': {
-        'value': -1
-      }}
+    ]
 
-      local = deepcopy(query)
-      local.append(project)
-      local.append(sort)
-
-      data = self.DB.months.aggregate(local)
-      leaderboard[category] = self._parse_data_for_leaderboard(data, category)
-
-    leaderboard['dedication'] = self._make_dedication(timestamp)
-    leaderboard['diversity'] = self._make_diversity(timestamp)
-
-    self.DB.leaderboards.insert_one(leaderboard)
+    return self.DB.months.aggregate(query)
 
   def _parse_data_for_leaderboard(self, data, category):
     ret = []
@@ -359,55 +444,56 @@ class DbParserJSON2Mongo(DbParser):
 
     return ret
 
-  def _make_dedication(self, timestamp):
-    data = self.DB.killmails.aggregate([
-      {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}},
-      {'$unwind': '$attackers_processed.wingspan'},
-      {'$group': {
-        '_id': {
-            'character_id': '$attackers_processed.wingspan.character_id',
-            'ship_type_id': '$attackers_processed.wingspan.ship_type_id',
-            'weapon_type_id': '$attackers_processed.wingspan.weapon_type_id',
-            'flag': 'dedication',
-        },
-        'character_id': {'$first': '$attackers_processed.wingspan.character_id'},
-        'value': {'$sum': 1},
-        'voptional': {'$sum': '$zkb.totalValue'}
-      }},
-      {'$sort': {'value': -1, 'voptional': -1}},
-    ])
+  def _make_month_dedication(self, timestamp):
+    query = deepcopy(self.DEDICATION_QUERY)
+    query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
+    data = self.DB.killmails.aggregate(query)
 
     return self._parse_data_for_leaderboard(data, 'dedication')
 
-  def _make_diversity(self, timestamp):
-    data = self.DB.killmails.aggregate([
-      {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}},
-      {'$unwind': '$attackers_processed.wingspan'},
-      {
-        '$group': {
-          '_id'            : {
-            'character_id' : '$attackers_processed.wingspan.character_id',
-            'flag'         : 'diversity'
-          },
-          'character_id'   : {'$first': '$attackers_processed.wingspan.character_id'},
-          'ship_type_ids'  : {'$addToSet': '$attackers_processed.wingspan.ship_type_id'},
-          'weapon_type_ids': {'$addToSet': '$attackers_processed.wingspan.weapon_type_id'},
-          'voptional'      : {'$sum': 1},
-        }
-      },
-      {
-        '$project': {
-          'character_id'   : 1,
-          'ship_type_ids'  : 1,
-          'weapon_type_ids': 1,
-          'value'          : {'$sum': [{'$size': '$ship_type_ids'}, {'$size': '$weapon_type_ids'}]},
-          'voptional'       : 1,
-        }
-      },
-      {'$sort': {'value': -1, 'voptional': -1}}
-    ])
+  def _make_month_diversity(self, timestamp):
+    query = deepcopy(self.DIVERSITY_QUERY)
+    query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
+    data = self.DB.killmails.aggregate(query)
 
     return self._parse_data_for_leaderboard(data, 'diversity')
+
+  def _make_alltime(self):
+    for category in CATEGORIES:
+      self.DB['alltime_' + category].drop()
+      self._make_category(category)
+
+    self.DB.alltime_dedication.drop()
+    self._make_dedication()
+
+    self.DB.alltime_diversity.drop()
+    self._make_diversity()
+
+  def _make_category(self, category):
+    query = [
+      {'$group': {
+        '_id': '$_id.character_id',
+        'character_id': {'$first': '$_id.character_id'},
+        'value': {'$sum': '$' + category}
+      }},
+      {
+        '$sort': {
+          'value': -1
+        }
+      },
+      {'$out': 'alltime_' + category}
+    ]
+    self.DB.months.aggregate(query)
+
+  def _make_dedication(self):
+    query = deepcopy(self.DEDICATION_QUERY)
+    query.append({'$out': 'alltime_dedication'})
+    self.DB.killmails.aggregate(query)
+
+  def _make_diversity(self):
+    query = deepcopy(self.DIVERSITY_QUERY)
+    query.append({'$out': 'alltime_diversity'})
+    self.DB.killmails.aggregate(query)
 
   def _make_summary(self):
     self.DB.summary.drop()
@@ -448,14 +534,14 @@ class DbParserJSON2Mongo(DbParser):
 
     for pilot in pilots:
       try:
-        self.DB.pilots.insert_one(pilot)
+        self.DB.pilot_names.insert_one(pilot)
       except:
         pass
 
   def _fetch_names(self):
     url = 'https://esi.tech.ccp.is/latest/characters/names/?character_ids={}&datasource=tranquility'
 
-    pilots = self.DB.pilots.find({'name': None})
+    pilots = self.DB.pilot_names.find({'name': None})
     max = pilots.count() / 100
 
     for i in xrange(0, max + 1):
@@ -472,18 +558,22 @@ class DbParserJSON2Mongo(DbParser):
 
       res = requests.get(url.format(','.join(arr)))
       for pilot in res.json():
-        self.DB.pilots.update_one({'_id': int(pilot['character_id'])}, {'$set': {'name': pilot['character_name']}})
+        self.DB.pilot_names.update_one({'_id': int(pilot['character_id'])}, {'$set': {'name': pilot['character_name']}})
 
   def _assign_medals(self):
-    months = self.DB.leaderboards.find()
     medals = {}
 
-    for leaderboards in months:
-      for category, pilots in leaderboards.iteritems():
-        for pilot in pilots:
-          if pilot == 'date':
-            continue
+    categories = deepcopy(CATEGORIES)
+    categories.extend(['dedication', 'diversity'])
 
+    for category in categories:
+      data = self.DB['leaderboard_' + category].find()
+      for month in data:
+        if month['_id'] == 'alltime':
+          # TODO add super SWAG alltime medals
+          continue
+
+        for pilot in month['places']:
           place = pilot['place']
           id = pilot['character_id']
 
@@ -499,7 +589,8 @@ class DbParserJSON2Mongo(DbParser):
           medals[id][category][str(place)] += 1
 
     for id in medals:
-      self.DB.pilots.update_one({'_id': id}, {'$set': {'medals': medals[id]}})
+      if len(medals[id]) > 0:
+        self.DB.pilot_medals.replace_one({'_id': id}, {'medals': medals[id]}, upsert=True)
 
 
 class Killmail(object):
