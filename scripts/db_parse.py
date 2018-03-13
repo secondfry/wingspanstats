@@ -84,6 +84,7 @@ for ship_type, arr in SHIPS.iteritems():
 
 FLAGS_SIMPLE = [
   'solo',
+  'solo_bomber',
   'fleet',
   'explorer',
   'fw',
@@ -652,6 +653,7 @@ class Killmail(object):
 
   def _process_flags(self):
     self._is_solo()
+    self._is_solo_bomber()
     self._is_fleet()
     self._is_explorer()
     self._is_fw()
@@ -666,6 +668,10 @@ class Killmail(object):
   def _is_solo(self):
     if self.data['zkb']['solo']:
       self.flags.append('solo')
+
+  def _is_solo_bomber(self):
+    if self.data['zkb']['solo'] and self.get_ship_flag(pilot['ship_type_id']) == 'bomber':
+      self.flags.append('solo_bomber')
 
   def _is_fleet(self):
     if not self.data['zkb']['solo']:
