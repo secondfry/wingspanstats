@@ -274,6 +274,8 @@ FLAGS_ADVANCED = deepcopy(FLAGS_SIMPLE)
 for ship in SHIP_RULES:
   FLAGS_ADVANCED.append(ship + '_killer')
   FLAGS_ADVANCED.append(ship + '_driver')
+for weapon in WEAPON_RULES:
+  FLAGS_ADVANCED.append(weapon + '_user')
 
 CATEGORIES = ['count', 'value', 'damage']
 CATEGORIES += [flag + '_count' for flag in FLAGS_ADVANCED]
@@ -518,14 +520,16 @@ class DbParserJSON2Mongo(DbParser):
       group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$flags.' + flag, 1, 0]}}
       group['$group'][flag + '_value'] = {'$sum': {'$cond': ['$flags.' + flag, '$zkb.totalValue', 0]}}
 
-    for ship in SHIP_RULES:
-      flag = ship + '_killer'
-      group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, 1, 0]}}
-      group['$group'][flag + '_value'] = {
-        '$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, '$zkb.totalValue', 0]}
-      }
+    for suffix in ['_killer', '_driver']:
+      for ship in SHIP_RULES:
+        flag = ship + suffix
+        group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, 1, 0]}}
+        group['$group'][flag + '_value'] = {
+          '$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, '$zkb.totalValue', 0]}
+        }
 
-      flag = ship + '_driver'
+    for weapon in WEAPON_RULES:
+      flag = weapon + '_user'
       group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, 1, 0]}}
       group['$group'][flag + '_value'] = {
         '$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, '$zkb.totalValue', 0]}
@@ -790,6 +794,8 @@ class Killmail(object):
     self._prepare_attackers()
     self._process_space_class()
     self._process_flags()
+    self._process_advanced_flags()
+    self._prepare_flags_for_db()
     self._process_attackers()
     self._process_time()
 
@@ -826,7 +832,6 @@ class Killmail(object):
 
   def _process_flags(self):
     self._is_solo()
-    self._is_solo_bomber()
     self._is_fleet()
     self._is_explorer()
     self._is_fw()
@@ -835,16 +840,11 @@ class Killmail(object):
     self._set_space_type_flag()
     self._is_thera()
     self._set_ship_flags()
-
-    self.data['flags'] = {flag: True for flag in self.flags}
+    self._set_weapon_flags()
 
   def _is_solo(self):
     if self.data['zkb']['solo']:
       self.flags.append('solo')
-
-  def _is_solo_bomber(self):
-    if self.data['zkb']['solo'] and self.get_ship_flag(pilot['ship_type_id']) == 'bomber':
-      self.flags.append('solo_bomber')
 
   def _is_fleet(self):
     if not self.data['zkb']['solo']:
@@ -930,14 +930,30 @@ class Killmail(object):
   def get_ship_flag(ship):
     return LOOKUP.get(ship, 'unknown')
 
-  def _check_legitimacy(self):
-    if self.attackers['count']['capsuleer'] < 1:
-      self.isLegit = False
+  def _set_weapon_flags(self):
+    for pilot in self.attackers['wingspan']:
+      weapon = self.get_weapon_flag(pilot['weapon_type_id'])
+      pilot['flags'][weapon + '_user'] = True
+
+  @staticmethod
+  def get_weapon_flag(weapon):
+    return LOOKUP.get(weapon, 'unknown')
+
+  def _process_advanced_flags(self):
+    self._is_solo_bomber()
+
+  def _is_solo_bomber(self):
+    if not self.data['zkb']['solo']:
       return
 
-    if float(self.attackers['count']['wingspan']) / self.attackers['count']['capsuleer'] < StatsConfig.FLEET_COMP:
-      self.isLegit = False
+    if self.attackers['count']['wingspan'] < 1:
       return
+
+    if 'bomber_driver' in self.attackers['wingspan'][0]['flags']:
+      self.flags.append('solo_bomber')
+
+  def _prepare_flags_for_db(self):
+    self.data['flags'] = {flag: True for flag in self.flags}
 
   def _process_attackers(self):
     if len(self.attackers['wingspan']):
@@ -948,6 +964,15 @@ class Killmail(object):
   def _process_time(self):
     date = datetime.strptime(self.data['killmail_time'], '%Y-%m-%dT%H:%M:%SZ')
     self.data['date'] = {'year': date.year, 'month': date.month}
+
+  def _check_legitimacy(self):
+    if self.attackers['count']['capsuleer'] < 1:
+      self.isLegit = False
+      return
+
+    if float(self.attackers['count']['wingspan']) / self.attackers['count']['capsuleer'] < StatsConfig.FLEET_COMP:
+      self.isLegit = False
+      return
 
   def _save(self):
     if self.isLegit:
@@ -960,9 +985,6 @@ class Killmail(object):
     except:
       pass
 
-
-def is_bomb(weapon):
-  return True if weapon in [27916, 27920, 27918, 27912] else False
 
 # def kills(self):
 #   $ret['kills'] = DB::getDB() -> kills -> aggregate([
