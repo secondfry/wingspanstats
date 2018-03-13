@@ -541,14 +541,15 @@ class DbParserJSON2Mongo(DbParser):
 
   def _init_dori_memory(self, timestamp):
     doristamp = timestamp - relativedelta(months=1)
-    data = self.DB.leaderboards.find_one({'_id.date.year': doristamp.year, '_id.date.month': doristamp.month})
+    doristamp_query = {
+      '_id': str(doristamp.year) + '{:0>2}'.format(doristamp.month)
+    }
 
-    if data:
-      for category, arr in data.iteritems():
-        if category == '_id':
-          continue
+    for category in CATEGORIES:
+      data = self.DB['leaderboard_' + category].find_one(doristamp_query)
 
-        for pilot in arr:
+      if data:
+        for pilot in data['places']:
           if pilot['character_id'] not in self.dori_memory:
             self.dori_memory[pilot['character_id']] = {}
 
