@@ -869,7 +869,7 @@ class Killmail(object):
     }.get(item_type_id, False) if 19 <= flag <= 26 else False
 
   def _is_fw(self):
-    if 'factionID' is self.data['victim'] and self.is_fw_faction(self.data['victim']['factionID']):
+    if 'faction_id' in self.data['victim'] and self.is_fw_faction(self.data['victim']['faction_id']):
       self.flags.append('fw')
 
   @staticmethod
