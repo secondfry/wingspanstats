@@ -36,51 +36,224 @@ SHIP_RULES = [
   'capital',
   'industrial',
   'miner',
-  'pod'
+  'pod',
+  'concord',
+  'AT'
 ]
 
 SHIPS = {}
 SHIPS['astero'] = [33468]
 SHIPS['stratios'] = [33470]
 SHIPS['nestor'] = [33472]
-SHIPS['blops'] = [22430, 22440, 22428, 22436]
-SHIPS['bomber'] = [11377, 12034, 12032, 12038]
-SHIPS['dictor'] = [
-  22460, 22464, 22452, 22456,  # interdictors
-  12013, 12017, 11995, 12021,  # heavy interdictors
+SHIPS['blops'] = [
+  22428, # Redeemer
+  22430, # Sin
+  22436, # Widow
+  22440, # Panther
+
+  44996, # Marshal, CONCORD, Black Ops
 ]
-SHIPS['recon'] = [11969, 11957, 11965, 11963, 20125, 11961, 11971, 11959]
-SHIPS['t3c'] = [29986, 29990, 29988, 29984]
-SHIPS['t3d'] = [34317, 34562, 34828, 35683]
+SHIPS['bomber'] = [
+  11377, # Nemesis
+  12032, # Manticore
+  12034, # Hound
+  12038, # Purifier
+
+  45530, # Virtuoso, AT XV, Stealth Bomber
+]
+SHIPS['dictor'] = [
+  22452, # Heretic
+  22456, # Sabre
+  22460, # Eris
+  22464, # Flycatcher
+
+  11995, # Onyx
+  12013, # Broadsword
+  12017, # Devoter
+  12021, # Phobos
+
+  35781, # Fiend, AT XIII, HIC
+]
+SHIPS['recon'] = [
+  11957, # Falcon
+  11963, # Rapier
+  11965, # Pilgrim
+  11969, # Arazu
+
+  11961, # Huginn
+  11971, # Lachesis
+  11959, # Rook
+  20125, # Curse
+
+  33395, # Moracha, AT XI, Force Recon
+  33675, # Chameleon, AT XII, Force Recon
+  45531, # Victor, AT XV, Force Recon
+  44995, # Enforcer, CONCORD, Force Recon
+]
+SHIPS['t3c'] = [
+  29984, # Tengu
+  29986, # Legion
+  29988, # Proteus
+  29990, # Loki
+]
+SHIPS['t3d'] = [
+  34317, # Confessor
+  34562, # Svipul
+  34828, # Jackdaw
+  35683, # Hecate
+]
 SHIPS['capital'] = [
-  19724, 34339, 19722, 34341, 19726, 34343, 19720, 34345,  # Dreads
-  23757, 23915, 24483, 23911,  # Carriers
-  23919, 22852, 3628, 23913, 3514, 23917,  # Supers
-  11567, 671, 3764, 23773,  # Titans
+  # Dreads
+  19720, # Revelation
+  19722, # Naglfar
+  19724, # Moros
+  19726, # Phoenix
+  34339, # Moros Interbus Edition
+  34341, # Naglfar Justice Edition
+  34343, # Phoenix Wiyrkomi Edition
+  34345, # Revelation Sarum Edition
+  42124, # Vehement
+  42243, # Chemosh
+  45647, # Caiman
+
+  # Carriers
+  23757, # Archon
+  23915, # Chimera
+  24483, # Nidhoggur
+  23911, # Thanatos
+  42132, # Vanguard
+
+  # Supers
+  3514, # Revenant
+  3628, # Nation, ???
+  23919, # Aeon
+  22852, # Hel
+  23913, # Nyx
+  23917, # Wyvern
+  42125, # Vendetta
+
+  # Titans
+  671, # Erebus
+  3764, # Leviathan
+  11567, # Avatar
+  23773, # Rangarok
+  42126, # Vanquisher
+  42241, # Molok
+  45649, # Komodo
 ]
 SHIPS['industrial'] = [
-  648, 1944, 33695, 655, 651, 33689, 657, 654,  # industrials
-  652, 33693, 656, 32811, 4363, 4388, 650, 2998,  # industrials
-  2863, 19744, 649, 33691, 653,  # industrials
-  12729, 12733, 12735, 12743,  # blockade runners
-  12731, 12753, 12747, 12745,  # deep space transports
-  34328, 20185, 20189, 20187, 20183,  # freighters
-  28848, 28850, 28846, 28844,  # jump freighters
-  28606, 33685, 28352, 33687,  # orca, rorqual
+  # Industrials
+  648, # Badger
+  649, # Tayra
+  650, # Nereus
+  651, # Hoarder
+  652, # Mammoth
+  653, # Wreathe
+  654, # Kryos
+  655, # Epithal
+  656, # Miasmos
+  657, # Iteron Mark V
+  1944, # Bestower
+  2863, # Primae
+  2998, # Noctis
+  4363, # Miasmos Quafe Ultra Edition
+  4388, # Miasmos Quafe Ultramarine Edition
+  19744, # Sigil
+  32811, # Miasmos Amastris Edition
+  33695, # Bestower Tash-Murkon Edition
+  33689, # Iteron Inner Zone Shipping Edition
+  33691, # Tayra Wiyrkomi Edition
+  33693, # Mammoth Nefantar Edition
+
+  # Blockade runners
+  12729, # Crane
+  12733, # Prorator
+  12735, # Prowler
+  12743, # Viator
+
+  # DST
+  12731, # Bustard
+  12745, # Occator
+  12747, # Mastodon
+  12753, # Impel
+
+  # Freighters
+  20183, # Providence
+  20185, # Charon
+  20187, # Obelisk
+  20189, # Fenrir
+  34328, # Bowhead
+
+  # Jump Freighters
+  28844, # Rhea
+  28846, # Nomad
+  28848, # Anshar
+  28850, # Ark
+
+  # Industrial Command
+  28606, # Orca
+  28352, # Rorqual
+  33685, # Orca ORE Development Edition
+  33687, # Rorqual ORE Development Edition
 ]
 SHIPS['miner'] = [
+  # Frigates
   32880, # Venture
+
+  # Expedition Frigates
   33697, # Prospect
   37135, # Endurance
-  17476, 17480, 17478,  # mining barges
-  22544, 22548, 33683, 22546  # exhumers
+
+  # Mining Barges
+  17476, # Covetor
+  17478, # Retriever
+  17480, # Procurer
+
+  # Exhumers
+  22544, # Hulk
+  22546, # Skiff
+  22548, # Mackinaw
+  33683, # Mackinaw ORE Development Edition
 ]
-SHIPS['pod'] = [670, 33328]
+SHIPS['pod'] = [
+  670, # Capsule
+  33328, # Capsule - Genolution 'Auroral' 197-variant
+]
+SHIPS['concord'] = [
+  44993, # Pacifier
+  44995, # Enforcer, CONCORD, Force Recon
+  44996, # Marshal, CONCORD, Black Ops
+]
+SHIPS['AT'] = [
+  33397, # Chremoas, AT XI, Covert Ops
+  33675, # Chameleon, AT XII, Force Recon
+  35781, # Fiend, AT XIII, HIC
+  42246, # Caedes, AT XIV, Covert Ops
+  45530, # Virtuoso, AT XV, Stealth Bomber
+]
+
+WEAPON_RULES = [
+  'bomb',
+]
+
+WEAPONS = {}
+WEAPONS['bomb'] = [
+  27912, # Concussion Bomb
+  27916, # Scorch Bomb
+  27918, # Shrapnel Bomb
+  27920, # Electron Bomb
+  27922, # Lockbreaker Bomb,
+  27924, # Void Bomb,
+  34264, # Focused Void Bomb
+]
 
 LOOKUP = {}
 for ship_type, arr in SHIPS.iteritems():
   for ship_id in arr:
     LOOKUP[ship_id] = ship_type
+for weapon_type, arr in WEAPONS.iteritems():
+  for weapon_id in arr:
+    LOOKUP[weapon_id] = weapon_type
 
 FLAGS_SIMPLE = [
   'solo',
