@@ -4,7 +4,6 @@
 # License: MIT (https://opensource.org/licenses/MIT)
 
 from bson.objectid import ObjectId
-from bson.son import SON
 from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
