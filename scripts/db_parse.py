@@ -996,10 +996,8 @@ class Killmail(object):
     else:
       table = self.parser.DB.fail_killmails
 
-    try:
-      table.insert_one(self.data)
-    except:
-      pass
+    # FIXME should have some intelligent logic to avoid processing same killmails twice
+    table.replace_one({'_id': self.data['_id']}, self.data, upsert=True)
 
 
 # def kills(self):
