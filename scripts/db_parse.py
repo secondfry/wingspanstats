@@ -33,8 +33,9 @@ SHIP_RULES = [
   't3c',
   't3d',
   'capital',
-  'industrial',
+  'transport',
   'miner',
+  'industrial',
   'pod',
   'concord',
   'AT'
@@ -139,8 +140,12 @@ SHIPS['capital'] = [
   42126, # Vanquisher
   42241, # Molok
   45649, # Komodo
+
+  # ORE
+  28352, # Rorqual
+  33687, # Rorqual ORE Development Edition
 ]
-SHIPS['industrial'] = [
+SHIPS['transport'] = [
   # Industrials
   648, # Badger
   649, # Tayra
@@ -919,12 +924,12 @@ class Killmail(object):
       self.flags.append('thera')
 
   def _set_ship_flags(self):
+    victim = self.get_ship_flag(self.data['victim']['ship_type_id'])
+
     for pilot in self.attackers['wingspan']:
       ship = self.get_ship_flag(pilot['ship_type_id'])
       pilot['flags'][ship + '_driver'] = True
-
-      ship = self.get_ship_flag(self.data['victim']['ship_type_id'])
-      pilot['flags'][ship + '_killer'] = True
+      pilot['flags'][victim + '_killer'] = True
 
   @staticmethod
   def get_ship_flag(ship):
@@ -941,6 +946,7 @@ class Killmail(object):
 
   def _process_advanced_flags(self):
     self._is_solo_bomber()
+    self._is_industrial()
 
   def _is_solo_bomber(self):
     if not self.data['zkb']['solo']:
@@ -951,6 +957,16 @@ class Killmail(object):
 
     if 'bomber_driver' in self.attackers['wingspan'][0]['flags']:
       self.flags.append('solo_bomber')
+
+  def _is_industrial(self):
+    victim = self.get_ship_flag(self.data['victim']['ship_type_id'])
+
+    for pilot in self.attackers['wingspan']:
+      ship = self.get_ship_flag(self.data['victim']['ship_type_id'])
+      if ship in ['transport', 'miner']:
+        pilot['flags']['industrial_driver'] = True
+      if victim in ['transport', 'miner']:
+        pilot['flags']['industrial_killer'] = True
 
   def _prepare_flags_for_db(self):
     self.data['flags'] = {flag: True for flag in self.flags}
