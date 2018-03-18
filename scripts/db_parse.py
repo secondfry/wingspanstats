@@ -897,7 +897,7 @@ class Killmail(object):
       self.flags.append('solo')
 
   def _is_fleet(self):
-    if not self.data['zkb']['solo']:
+    if not self.data['zkb']['solo'] and self.attackers['count']['wingspan'] > 1:
       self.flags.append('fleet')
 
   def _is_explorer(self):
@@ -934,11 +934,18 @@ class Killmail(object):
   def _is_awox(self):
     if self.data['zkb']['awox']:
       self.flags.append('awox')
+      return
+
+    if\
+      self.is_pilot_wingspan(self.data['victim']) and\
+      self.attackers['count']['wingspan'] >= self.attackers['count']['NPSI']:
+
+      self.flags.append('awox')
+      return
 
   def _is_pure(self):
     if self.attackers['count']['wingspan'] == self.attackers['count']['capsuleer']:
       self.flags.append('pure')
-
 
   def _set_space_type_flag(self):
     self.flags.append(self.get_space_type(self.space_class))
