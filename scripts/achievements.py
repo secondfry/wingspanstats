@@ -6,7 +6,7 @@
 # 30	Titan
 # 31	Shuttle
 # 358	HAC
-# 419	Battlecruiser
+# 419	Combat BC
 # 420	Destroyer
 # 485	Dreadnought
 # 540	Command Ship
@@ -15,13 +15,14 @@
 # 659	Carrier
 # 830	CovOps
 # 832	Logistics
-# 833	Recon
+# 833	Force Recon
 # 834	Bomber
 # 894	HIC
 # 898	BLOPs
 # 900	Maradeur
-# 906	Recon
+# 906	Combat Recon
 # 963	T3C
+# 1201  Attack BC
 # 1305	T3D
 # 1534	Command Destroyer
 # 1538	AUX
@@ -43,7 +44,8 @@ class Achievements(object):
         'victim': {
           'ship_group_id': [
             26,  # Cruiser
-            833,  # Recon
+            833,  # Force Recon
+            906,  # Combat Recon
             358,  # HAC
             894,  # HIC
             832,  # Logistics
@@ -65,7 +67,8 @@ class Achievements(object):
         },
         'victim': {
           'ship_group_id': [
-            419,  # Battlecruiser
+            419,  # Combat BC
+            1201,  # Attack BC
             540,  # Command Ship
             27,  # Battleship
             898,  # BLOPs
