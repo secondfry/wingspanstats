@@ -1,4 +1,5 @@
 #!/usr/bin/python2
+# -*- coding: utf-8 -*-
 # Author: Rustam Gubaydullin (@second_fry)
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
@@ -8,7 +9,7 @@ from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
-import csv
+import unicodecsv as csv
 import gzip
 import json
 import os
@@ -16,6 +17,7 @@ import requests
 import sys
 
 from config.statsconfig import StatsConfig
+from scripts.achievements import Achievements
 from scripts.alliance import Alliance
 from scripts.corporation import Corporation
 from scripts.log import log
@@ -410,6 +412,10 @@ class DbParserJSON2Mongo(DbParser):
       reader = csv.reader(f)
       self.space_class = {int(rows[0]): rows[1] for rows in reader}
 
+    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'typeIDs.csv'), 'r') as f:
+      reader = csv.reader(f, encoding='utf-8')
+      self.items = {int(row[0]): int(row[1]) for row in reader}
+
     self.DBClient = MongoClient('localhost', 27017)
     self.DB = self.DBClient.wingspan_statistics_new
 
@@ -704,6 +710,7 @@ class DbParserJSON2Mongo(DbParser):
     self._populate_pilots()
     self._fetch_names()
     self._assign_medals()
+    self._assign_achievements()
 
   def _populate_pilots(self):
     pilots = self.DB.killmails.aggregate([
@@ -718,6 +725,11 @@ class DbParserJSON2Mongo(DbParser):
     for pilot in pilots:
       try:
         self.DB.pilot_names.insert_one(pilot)
+      except:
+        pass
+
+      try:
+        self.DB.pilot_achievements.insert_one(pilot)
       except:
         pass
 
@@ -775,6 +787,38 @@ class DbParserJSON2Mongo(DbParser):
       if len(medals[id]) > 0:
         self.DB.pilot_medals.replace_one({'_id': id}, {'medals': medals[id]}, upsert=True)
 
+  def _assign_achievements(self):
+    pilots_db = {}
+
+    for achievement in Achievements.ACHIEVEMENTS:
+      killmails = Achievements.check(self.DB, achievement)
+
+      for killmail in killmails:
+        tmp = deepcopy(achievement)
+        tmp.update({'killmail': killmail})
+        for pilot in killmail['attackers_processed']['wingspan']:
+          id = pilot['character_id']
+          if id not in pilots_db:
+            pilots_db[id] = self.DB.pilot_achievements.find_one({'_id': id})
+
+          pilot_db = pilots_db[id]
+          if 'achievement_ids' in pilot_db and achievement['id'] in pilot_db['achievement_ids']:
+            continue
+
+          if 'achievement_ids' not in pilot_db:
+            pilot_db['achievement_ids'] = []
+
+          pilot_db['achievement_ids'].append(achievement['id'])
+          self.DB.pilot_achievements.update(
+            {'_id': pilot_db['_id']},
+            {
+              '$addToSet': {
+                'achievements': tmp,
+                'achievement_ids': achievement['id']
+              }
+            }
+          )
+
 
 class Killmail(object):
   def __init__(self, parser, data):
@@ -802,6 +846,7 @@ class Killmail(object):
     self._process_advanced_flags()
     self._prepare_flags_for_db()
     self._process_attackers()
+    self._process_victim()
     self._process_time()
 
     self._check_legitimacy()
@@ -975,7 +1020,13 @@ class Killmail(object):
     if len(self.attackers['wingspan']):
       self.attackers['wingspan'][0]['flag_damage'] = True
 
+    for pilot in self.attackers['wingspan']:
+      pilot['ship_group_id'] = self.parser.items.get(pilot['ship_type_id'], 0)
+
     self.data['attackers_processed'] = self.attackers
+
+  def _process_victim(self):
+    self.data['victim']['ship_group_id'] = self.parser.items.get(self.data['victim']['ship_type_id'], 0)
 
   def _process_time(self):
     date = datetime.strptime(self.data['killmail_time'], '%Y-%m-%dT%H:%M:%SZ')
