@@ -1,20 +1,23 @@
 #!/usr/bin/python2
+# -*- coding: utf-8 -*-
 # Author: Rustam Gubaydullin (@second_fry)
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
 
+from bson.objectid import ObjectId
 from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
-import csv
+import unicodecsv as csv
 import gzip
 import json
 import os
+import requests
 import sys
-import shutil
 
 from config.statsconfig import StatsConfig
+from scripts.achievements import Achievements
 from scripts.alliance import Alliance
 from scripts.corporation import Corporation
 from scripts.log import log
@@ -32,51 +35,257 @@ SHIP_RULES = [
   't3c',
   't3d',
   'capital',
-  'industrial',
+  'transport',
   'miner',
-  'pod'
+  'industrial',
+  'pod',
+  'concord',
+  'AT'
 ]
+
 SHIPS = {}
 SHIPS['astero'] = [33468]
 SHIPS['stratios'] = [33470]
 SHIPS['nestor'] = [33472]
-SHIPS['blops'] = [22430, 22440, 22428, 22436]
-SHIPS['bomber'] = [11377, 12034, 12032, 12038]
+SHIPS['blops'] = [
+  22428, # Redeemer
+  22430, # Sin
+  22436, # Widow
+  22440, # Panther
+
+  44996, # Marshal, CONCORD, Black Ops
+]
+SHIPS['bomber'] = [
+  11377, # Nemesis
+  12032, # Manticore
+  12034, # Hound
+  12038, # Purifier
+
+  45530, # Virtuoso, AT XV, Stealth Bomber
+]
 SHIPS['dictor'] = [
-  22460, 22464, 22452, 22456,  # interdictors
-  12013, 12017, 11995, 12021,  # heavy interdictors
+  22452, # Heretic
+  22456, # Sabre
+  22460, # Eris
+  22464, # Flycatcher
+
+  11995, # Onyx
+  12013, # Broadsword
+  12017, # Devoter
+  12021, # Phobos
+
+  35781, # Fiend, AT XIII, HIC
 ]
-SHIPS['recon'] = [11969, 11957, 11965, 11963, 20125, 11961, 11971, 11959]
-SHIPS['t3c'] = [29986, 29990, 29988, 29984]
-SHIPS['t3d'] = [34317, 34562, 34828, 35683]
+SHIPS['recon'] = [
+  11957, # Falcon
+  11963, # Rapier
+  11965, # Pilgrim
+  11969, # Arazu
+
+  11961, # Huginn
+  11971, # Lachesis
+  11959, # Rook
+  20125, # Curse
+
+  33395, # Moracha, AT XI, Force Recon
+  33675, # Chameleon, AT XII, Force Recon
+  45531, # Victor, AT XV, Force Recon
+  44995, # Enforcer, CONCORD, Force Recon
+]
+SHIPS['t3c'] = [
+  29984, # Tengu
+  29986, # Legion
+  29988, # Proteus
+  29990, # Loki
+]
+SHIPS['t3d'] = [
+  34317, # Confessor
+  34562, # Svipul
+  34828, # Jackdaw
+  35683, # Hecate
+]
 SHIPS['capital'] = [
-  19724, 34339, 19722, 34341, 19726, 34343, 19720, 34345,  # Dreads
-  23757, 23915, 24483, 23911,  # Carriers
-  23919, 22852, 3628, 23913, 3514, 23917,  # Supers
-  11567, 671, 3764, 23773,  # Titans
+  # Dreads
+  19720, # Revelation
+  19722, # Naglfar
+  19724, # Moros
+  19726, # Phoenix
+  34339, # Moros Interbus Edition
+  34341, # Naglfar Justice Edition
+  34343, # Phoenix Wiyrkomi Edition
+  34345, # Revelation Sarum Edition
+  42124, # Vehement
+  42243, # Chemosh
+  45647, # Caiman
+
+  # Carriers
+  23757, # Archon
+  23915, # Chimera
+  24483, # Nidhoggur
+  23911, # Thanatos
+  42132, # Vanguard
+
+  # Supers
+  3514, # Revenant
+  3628, # Nation, ???
+  23919, # Aeon
+  22852, # Hel
+  23913, # Nyx
+  23917, # Wyvern
+  42125, # Vendetta
+
+  # Titans
+  671, # Erebus
+  3764, # Leviathan
+  11567, # Avatar
+  23773, # Rangarok
+  42126, # Vanquisher
+  42241, # Molok
+  45649, # Komodo
+
+  # ORE
+  28352, # Rorqual
+  33687, # Rorqual ORE Development Edition
 ]
-SHIPS['industrial'] = [
-  648, 1944, 33695, 655, 651, 33689, 657, 654,  # industrials
-  652, 33693, 656, 32811, 4363, 4388, 650, 2998,  # industrials
-  2863, 19744, 649, 33691, 653,  # industrials
-  12729, 12733, 12735, 12743,  # blockade runners
-  12731, 12753, 12747, 12745,  # deep space transports
-  34328, 20185, 20189, 20187, 20183,  # freighters
-  28848, 28850, 28846, 28844,  # jump freighters
-  28606, 33685, 28352, 33687,  # orca, rorqual
+SHIPS['transport'] = [
+  # Industrials
+  648, # Badger
+  649, # Tayra
+  650, # Nereus
+  651, # Hoarder
+  652, # Mammoth
+  653, # Wreathe
+  654, # Kryos
+  655, # Epithal
+  656, # Miasmos
+  657, # Iteron Mark V
+  1944, # Bestower
+  2863, # Primae
+  2998, # Noctis
+  4363, # Miasmos Quafe Ultra Edition
+  4388, # Miasmos Quafe Ultramarine Edition
+  19744, # Sigil
+  32811, # Miasmos Amastris Edition
+  33695, # Bestower Tash-Murkon Edition
+  33689, # Iteron Inner Zone Shipping Edition
+  33691, # Tayra Wiyrkomi Edition
+  33693, # Mammoth Nefantar Edition
+
+  # Blockade runners
+  12729, # Crane
+  12733, # Prorator
+  12735, # Prowler
+  12743, # Viator
+
+  # DST
+  12731, # Bustard
+  12745, # Occator
+  12747, # Mastodon
+  12753, # Impel
+
+  # Freighters
+  20183, # Providence
+  20185, # Charon
+  20187, # Obelisk
+  20189, # Fenrir
+  34328, # Bowhead
+
+  # Jump Freighters
+  28844, # Rhea
+  28846, # Nomad
+  28848, # Anshar
+  28850, # Ark
+
+  # Industrial Command
+  28606, # Orca
+  28352, # Rorqual
+  33685, # Orca ORE Development Edition
+  33687, # Rorqual ORE Development Edition
 ]
 SHIPS['miner'] = [
+  # Frigates
   32880, # Venture
+
+  # Expedition Frigates
   33697, # Prospect
   37135, # Endurance
-  17476, 17480, 17478,  # mining barges
-  22544, 22548, 33683, 22546  # exhumers
+
+  # Mining Barges
+  17476, # Covetor
+  17478, # Retriever
+  17480, # Procurer
+
+  # Exhumers
+  22544, # Hulk
+  22546, # Skiff
+  22548, # Mackinaw
+  33683, # Mackinaw ORE Development Edition
 ]
-SHIPS['pod'] = [670, 33328]
+SHIPS['pod'] = [
+  670, # Capsule
+  33328, # Capsule - Genolution 'Auroral' 197-variant
+]
+SHIPS['concord'] = [
+  44993, # Pacifier
+  44995, # Enforcer, CONCORD, Force Recon
+  44996, # Marshal, CONCORD, Black Ops
+]
+SHIPS['AT'] = [
+  33397, # Chremoas, AT XI, Covert Ops
+  33675, # Chameleon, AT XII, Force Recon
+  35781, # Fiend, AT XIII, HIC
+  42246, # Caedes, AT XIV, Covert Ops
+  45530, # Virtuoso, AT XV, Stealth Bomber
+]
+
+WEAPON_RULES = [
+  'bomb',
+]
+
+WEAPONS = {}
+WEAPONS['bomb'] = [
+  27912, # Concussion Bomb
+  27916, # Scorch Bomb
+  27918, # Shrapnel Bomb
+  27920, # Electron Bomb
+  27922, # Lockbreaker Bomb,
+  27924, # Void Bomb,
+  34264, # Focused Void Bomb
+]
+
 LOOKUP = {}
 for ship_type, arr in SHIPS.iteritems():
   for ship_id in arr:
     LOOKUP[ship_id] = ship_type
+for weapon_type, arr in WEAPONS.iteritems():
+  for weapon_id in arr:
+    LOOKUP[weapon_id] = weapon_type
+
+FLAGS_SIMPLE = [
+  'solo',
+  'solo_bomber',
+  'fleet',
+  'explorer',
+  'fw',
+  'awox',
+  'pure',
+  'thera',
+  'highsec',
+  'lowsec',
+  'nullsec',
+  'anoikis',
+]
+
+FLAGS_ADVANCED = deepcopy(FLAGS_SIMPLE)
+for ship in SHIP_RULES:
+  FLAGS_ADVANCED.append(ship + '_killer')
+  FLAGS_ADVANCED.append(ship + '_driver')
+for weapon in WEAPON_RULES:
+  FLAGS_ADVANCED.append(weapon + '_user')
+
+CATEGORIES = ['count', 'value', 'damage']
+CATEGORIES += [flag + '_count' for flag in FLAGS_ADVANCED]
+CATEGORIES += [flag + '_value' for flag in FLAGS_ADVANCED]
 
 
 class DbParser(object):
@@ -98,6 +307,97 @@ class DbParser(object):
 class DbParserJSON2Mongo(DbParser):
   LOG_LEVEL = 2
   DEFAULT_STATE = {}
+  DEDICATION_QUERY = [
+    {'$unwind': '$attackers_processed.wingspan'},
+    {
+      '$group': {
+        '_id': {
+          'character_id': '$attackers_processed.wingspan.character_id',
+          'ship_type_id': '$attackers_processed.wingspan.ship_type_id',
+          'weapon_type_id': '$attackers_processed.wingspan.weapon_type_id',
+        },
+        'value': {'$sum': 1},
+        'voptional': {'$sum': '$zkb.totalValue'}
+      }
+    },
+    {
+      '$project': {
+        'voptional': {
+          '$sum': [
+            '$value',
+            {'$divide': ['$voptional', 1000000000000]}
+          ]
+        },
+        'value': 1,
+      }
+    },
+    {
+      '$group': {
+        '_id': '$_id.character_id',
+        'data': {
+          '$addToSet': {
+            'ship_type_id': '$_id.ship_type_id', 'weapon_type_id': '$_id.weapon_type_id', 'value': '$value',
+            'voptional': '$voptional'
+          }
+        },
+        'voptional': {'$max': '$voptional'}
+      }
+    },
+    {
+      '$project': {
+        'match': {
+          '$filter': {
+            'input': '$data',
+            'as': 'data',
+            'cond': {
+              '$eq': ['$$data.voptional', '$voptional']
+            }
+          }
+        }
+      }
+    },
+    {
+      '$project': {
+        'match': {
+          '$arrayElemAt': ['$match', 0]
+        }
+      }
+    },
+    {'$unwind': '$match'},
+    {
+      '$project': {
+        'character_id': '$_id',
+        'value': '$match.value',
+        'match': 1
+      }
+    },
+    {'$sort': {'match.voptional': -1}},
+  ]
+  DIVERSITY_QUERY = [
+    {'$unwind': '$attackers_processed.wingspan'},
+    {
+      '$group': {
+        '_id': {
+          'character_id': '$attackers_processed.wingspan.character_id',
+          'flag': 'diversity'
+        },
+        'character_id': {'$first': '$attackers_processed.wingspan.character_id'},
+        'ship_type_ids': {'$addToSet': '$attackers_processed.wingspan.ship_type_id'},
+        'weapon_type_ids': {'$addToSet': '$attackers_processed.wingspan.weapon_type_id'},
+        'voptional': {'$sum': 1},
+      }
+    },
+    {
+      '$project': {
+        'character_id': 1,
+        'ship_type_ids': 1,
+        'weapon_type_ids': 1,
+        'value': {'$sum': [{'$size': '$ship_type_ids'}, {'$size': '$weapon_type_ids'}]},
+        'voptional': 1,
+      }
+    },
+    {'$sort': {'value': -1, 'voptional': -1}}
+  ]
 
   def __init__(self):
     DbParserJSON2Mongo.DEFAULT_STATE = {
@@ -111,6 +411,10 @@ class DbParserJSON2Mongo(DbParser):
     with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), 'r') as f:
       reader = csv.reader(f)
       self.space_class = {int(rows[0]): rows[1] for rows in reader}
+
+    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'typeIDs.csv'), 'r') as f:
+      reader = csv.reader(f, encoding='utf-8')
+      self.items = {int(row[0]): int(row[1]) for row in reader}
 
     self.DBClient = MongoClient('localhost', 27017)
     self.DB = self.DBClient.wingspan_statistics_new
@@ -143,7 +447,10 @@ class DbParserJSON2Mongo(DbParser):
 
   def run(self):
     self._read_pages()
-    self._process_db()
+    self._process_months()
+    self._make_alltime()
+    self._make_summary()
+    self._process_pilots()
 
   def _read_pages(self):
     for key, alliance in self.entities.iteritems():
@@ -171,7 +478,7 @@ class DbParserJSON2Mongo(DbParser):
       killmail = Killmail(self, chunk)
       killmail.process()
 
-  def _process_db(self):
+  def _process_months(self):
     timestamp = datetime.strptime(self.state.get('leaderboard'), '%Y-%m')
     limit = datetime.now()
 
@@ -192,15 +499,14 @@ class DbParserJSON2Mongo(DbParser):
   def _reset_month(self, timestamp):
     query = {'_id.date.year': {'$eq': timestamp.year}, '_id.date.month': {'$gte': timestamp.month}}
     self.DB.months.delete_many(query)
-    self.DB.leaderboards.delete_many(query)
 
     query = {'_id.date.year': {'$gte': timestamp.year + 1}, '_id.date.month': {'$gte': 1}}
     self.DB.months.delete_many(query)
-    self.DB.leaderboards.delete_many(query)
 
   def _process_db_month(self, timestamp):
     self._count_flags(timestamp)
-    self._make_leaderboards(timestamp)
+    self._init_dori_memory(timestamp)
+    self._make_month_leaderboards(timestamp)
 
   def _count_flags(self, timestamp):
     query = [
@@ -215,35 +521,25 @@ class DbParserJSON2Mongo(DbParser):
         },
         'count': {'$sum': 1},
         'value': {'$sum': '$zkb.totalValue'},
+        'damage': {'$sum': '$attackers_processed.wingspan.damage_done'}
         # 'killmails': {'$push': '$$ROOT'} # don't need them?
       }
     }
-    flags = [
-      'solo',
-      'fleet',
-      'explorer',
-      'fw',
-      'awox',
-      'pure',
-      'thera',
-      'highsec',
-      'lowsec',
-      'nullsec',
-      'anoikis',
-    ]
 
-    for flag in flags:
+    for flag in FLAGS_SIMPLE:
       group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$flags.' + flag, 1, 0]}}
       group['$group'][flag + '_value'] = {'$sum': {'$cond': ['$flags.' + flag, '$zkb.totalValue', 0]}}
 
-    for ship in SHIP_RULES:
-      flag = ship + '_killer'
-      group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, 1, 0]}}
-      group['$group'][flag + '_value'] = {
-        '$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, '$zkb.totalValue', 0]}
-      }
+    for suffix in ['_killer', '_driver']:
+      for ship in SHIP_RULES:
+        flag = ship + suffix
+        group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, 1, 0]}}
+        group['$group'][flag + '_value'] = {
+          '$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, '$zkb.totalValue', 0]}
+        }
 
-      flag = ship + '_driver'
+    for weapon in WEAPON_RULES:
+      flag = weapon + '_user'
       group['$group'][flag + '_count'] = {'$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, 1, 0]}}
       group['$group'][flag + '_value'] = {
         '$sum': {'$cond': ['$attackers_processed.wingspan.flags.' + flag, '$zkb.totalValue', 0]}
@@ -253,83 +549,275 @@ class DbParserJSON2Mongo(DbParser):
     data = self.DB.killmails.aggregate(query)
     self.DB.months.insert_many(data)
 
-  def _make_leaderboards(self, timestamp):
-    query = [
-      {'$match': {'_id.date.year': timestamp.year, '_id.date.month': timestamp.month}},
-    ]
-    flags = [
-      'solo',
-      'fleet',
-      'explorer',
-      'fw',
-      'awox',
-      'pure',
-      'thera',
-      'highsec',
-      'lowsec',
-      'nullsec',
-      'anoikis',
-    ]
-    for ship in SHIP_RULES:
-      flags.append(ship + '_killer')
-      flags.append(ship + '_driver')
-
-    leaderboard = {
-      '_id': {'date': {'year': timestamp.year, 'month': timestamp.month}},
+  def _init_dori_memory(self, timestamp):
+    doristamp = timestamp - relativedelta(months=1)
+    doristamp_query = {
+      '_id': str(doristamp.year) + '{:0>2}'.format(doristamp.month)
     }
 
-    categories = [flag + '_count' for flag in flags] + [flag + '_value' for flag in flags]
-    for category in categories:
-      leaderboard[category] = []
+    for category in CATEGORIES:
+      data = self.DB['leaderboard_' + category].find_one(doristamp_query)
 
-      project = {
-        '$project': {
-          '_id'  : {
-            'date': '$_id.date',
-            'flag': {'$literal': category}
-          },
-          'character_id': '$_id.character_id',
-          'value': '$' + category
+      if data:
+        for pilot in data['places']:
+          if pilot['character_id'] not in self.dori_memory:
+            self.dori_memory[pilot['character_id']] = {}
+
+          self.dori_memory[pilot['character_id']][category] = pilot['place']
+
+  def _make_month_leaderboards(self, timestamp):
+    timestamp_query = {
+      '_id': str(timestamp.year) + '{:0>2}'.format(timestamp.month)
+    }
+
+    for category in CATEGORIES:
+      data = self._make_month_category(timestamp, category)
+
+      leaderboard = deepcopy(timestamp_query)
+      leaderboard['places'] = self._parse_data_for_leaderboard(data, category)
+      self.DB['leaderboard_' + category].replace_one(timestamp_query, leaderboard, upsert=True)
+
+    leaderboard = deepcopy(timestamp_query)
+    leaderboard['places'] = self._make_month_dedication(timestamp)
+    self.DB.leaderboard_dedication.replace_one(timestamp_query, leaderboard, upsert=True)
+
+    leaderboard = deepcopy(timestamp_query)
+    leaderboard['places'] = self._make_month_diversity(timestamp)
+    self.DB.leaderboard_diversity.replace_one(timestamp_query, leaderboard, upsert=True)
+
+  def _make_month_category(self, timestamp, category):
+    query = [
+      {'$match': {'_id.date.year': timestamp.year, '_id.date.month': timestamp.month}},
+      {'$project': {
+        '_id': {
+          'date': '$_id.date',
+        },
+        'character_id': '$_id.character_id',
+        'value'       : '$' + category
+      }},
+      {
+        '$sort': {
+          'value': -1
         }
       }
-      sort = {'$sort': {
-        'value': -1
-      }}
+    ]
 
-      local = deepcopy(query)
-      local.append(project)
-      local.append(sort)
+    return self.DB.months.aggregate(query)
 
-      data = self.DB.months.aggregate(local)
+  def _parse_data_for_leaderboard(self, data, category):
+    ret = []
 
-      place = 0
-      rem = 0
+    place = 0
+    rem = 0
 
-      once = True
-      for item in data:
-        if item['value'] != 0:
-          if (item['value'] < rem or rem == 0):
-            place += 1
-            rem = item['value']
-        else:
-          if once:
-            place += 1
-            once = False
+    for item in data:
+      if item['value'] == 0:
+        break
 
-        item['place'] = place
-        item['change'] = 0
+      if (item['value'] < rem or rem == 0):
+        place += 1
+        rem = item['value']
 
-        if item['character_id'] in self.dori_memory and category in self.dori_memory[item['character_id']]:
-          item['change'] = self.dori_memory[item['character_id']][category] - place
+      item['place'] = place
+      item['change'] = False
 
-        if not item['character_id'] in self.dori_memory:
-          self.dori_memory[item['character_id']] = {}
+      if item['character_id'] in self.dori_memory and category in self.dori_memory[item['character_id']]:
+        item['change'] = self.dori_memory[item['character_id']][category] - place
 
-        self.dori_memory[item['character_id']][category] = place
+      if not item['character_id'] in self.dori_memory:
+        self.dori_memory[item['character_id']] = {}
 
-        leaderboard[category].append(item)
+      self.dori_memory[item['character_id']][category] = place
 
-    self.DB.leaderboards.insert_one(leaderboard)
+      ret.append(item)
+
+    return ret
+
+  def _make_month_dedication(self, timestamp):
+    query = deepcopy(self.DEDICATION_QUERY)
+    query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
+    data = self.DB.killmails.aggregate(query)
+
+    return self._parse_data_for_leaderboard(data, 'dedication')
+
+  def _make_month_diversity(self, timestamp):
+    query = deepcopy(self.DIVERSITY_QUERY)
+    query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
+    data = self.DB.killmails.aggregate(query)
+
+    return self._parse_data_for_leaderboard(data, 'diversity')
+
+  def _make_alltime(self):
+    for category in CATEGORIES:
+      self.DB['alltime_' + category].drop()
+      self._make_category(category)
+
+    self.DB.alltime_dedication.drop()
+    self._make_dedication()
+
+    self.DB.alltime_diversity.drop()
+    self._make_diversity()
+
+  def _make_category(self, category):
+    query = [
+      {'$group': {
+        '_id': '$_id.character_id',
+        'character_id': {'$first': '$_id.character_id'},
+        'value': {'$sum': '$' + category}
+      }},
+      {
+        '$sort': {
+          'value': -1
+        }
+      },
+      {'$out': 'alltime_' + category}
+    ]
+    self.DB.months.aggregate(query)
+
+  def _make_dedication(self):
+    query = deepcopy(self.DEDICATION_QUERY)
+    query.append({'$out': 'alltime_dedication'})
+    self.DB.killmails.aggregate(query)
+
+  def _make_diversity(self):
+    query = deepcopy(self.DIVERSITY_QUERY)
+    query.append({'$out': 'alltime_diversity'})
+    self.DB.killmails.aggregate(query)
+
+  def _make_summary(self):
+    self.DB.summary.drop()
+
+    data = self.DB.killmails.aggregate([
+      {
+        '$project': {
+          'value'     : '$zkb.totalValue',
+          'damage_done': {'$sum': '$attackers_processed.wingspan.damage_done'}
+        }
+      },
+      {
+        '$group': {
+          '_id'      : ObjectId(),
+          'count'    : {'$sum': 1},
+          'value'    : {'$sum': '$value'},
+          'damage'   : {'$sum': '$damage_done'}
+        }
+      }
+    ])
+
+    self.DB.summary.insert_many(data)
+
+  def _process_pilots(self):
+    self._populate_pilots()
+    self._fetch_names()
+    self._assign_medals()
+    self._assign_achievements()
+
+  def _populate_pilots(self):
+    pilots = self.DB.killmails.aggregate([
+      {'$unwind': '$attackers_processed.wingspan'},
+      {
+        '$group': {
+          '_id': '$attackers_processed.wingspan.character_id'
+        }
+      }
+    ])
+
+    for pilot in pilots:
+      try:
+        self.DB.pilot_names.insert_one(pilot)
+      except:
+        pass
+
+      try:
+        self.DB.pilot_achievements.insert_one(pilot)
+      except:
+        pass
+
+  def _fetch_names(self):
+    url = 'https://esi.tech.ccp.is/latest/characters/names/?character_ids={}&datasource=tranquility'
+
+    pilots = self.DB.pilot_names.find({'name': None})
+    max = pilots.count() / 100
+
+    for i in xrange(0, max + 1):
+      arr = []
+      for k in xrange(0, 100):
+        obj = next(pilots, None)
+        if not obj:
+          if i == 0 and k == 0:
+            return
+          else:
+            break
+
+        arr.append(str(obj['_id']))
+
+      res = requests.get(url.format(','.join(arr)))
+      for pilot in res.json():
+        self.DB.pilot_names.update_one({'_id': int(pilot['character_id'])}, {'$set': {'name': pilot['character_name']}})
+
+  def _assign_medals(self):
+    medals = {}
+
+    categories = deepcopy(CATEGORIES)
+    categories.extend(['dedication', 'diversity'])
+
+    for category in categories:
+      data = self.DB['leaderboard_' + category].find()
+      for month in data:
+        if month['_id'] == 'alltime':
+          # TODO add super SWAG alltime medals
+          continue
+
+        for pilot in month['places']:
+          place = pilot['place']
+          id = pilot['character_id']
+
+          if place > 4:
+            break
+
+          if id not in medals:
+            medals[id] = {}
+
+          if category not in medals[id]:
+            medals[id][category] = {'1': 0, '2': 0, '3': 0, '4': 0}
+
+          medals[id][category][str(place)] += 1
+
+    for id in medals:
+      if len(medals[id]) > 0:
+        self.DB.pilot_medals.replace_one({'_id': id}, {'medals': medals[id]}, upsert=True)
+
+  def _assign_achievements(self):
+    pilots_db = {}
+
+    for achievement in Achievements.ACHIEVEMENTS:
+      killmails = Achievements.check(self.DB, achievement)
+
+      for killmail in killmails:
+        tmp = deepcopy(achievement)
+        tmp.update({'killmail': killmail})
+        for pilot in killmail['attackers_processed']['wingspan']:
+          id = pilot['character_id']
+          if id not in pilots_db:
+            pilots_db[id] = self.DB.pilot_achievements.find_one({'_id': id})
+
+          pilot_db = pilots_db[id]
+          if 'achievement_ids' in pilot_db and achievement['id'] in pilot_db['achievement_ids']:
+            continue
+
+          if 'achievement_ids' not in pilot_db:
+            pilot_db['achievement_ids'] = []
+
+          pilot_db['achievement_ids'].append(achievement['id'])
+          self.DB.pilot_achievements.update(
+            {'_id': pilot_db['_id']},
+            {
+              '$addToSet': {
+                'achievements': tmp,
+                'achievement_ids': achievement['id']
+              }
+            }
+          )
 
 
 class Killmail(object):
@@ -355,7 +843,10 @@ class Killmail(object):
     self._prepare_attackers()
     self._process_space_class()
     self._process_flags()
+    self._process_advanced_flags()
+    self._prepare_flags_for_db()
     self._process_attackers()
+    self._process_victim()
     self._process_time()
 
     self._check_legitimacy()
@@ -399,15 +890,14 @@ class Killmail(object):
     self._set_space_type_flag()
     self._is_thera()
     self._set_ship_flags()
-
-    self.data['flags'] = {flag: True for flag in self.flags}
+    self._set_weapon_flags()
 
   def _is_solo(self):
     if self.data['zkb']['solo']:
       self.flags.append('solo')
 
   def _is_fleet(self):
-    if not self.data['zkb']['solo']:
+    if not self.data['zkb']['solo'] and self.attackers['count']['wingspan'] > 1:
       self.flags.append('fleet')
 
   def _is_explorer(self):
@@ -429,7 +919,7 @@ class Killmail(object):
     }.get(item_type_id, False) if 19 <= flag <= 26 else False
 
   def _is_fw(self):
-    if 'factionID' is self.data['victim'] and self.is_fw_faction(self.data['victim']['factionID']):
+    if 'faction_id' in self.data['victim'] and self.is_fw_faction(self.data['victim']['faction_id']):
       self.flags.append('fw')
 
   @staticmethod
@@ -444,11 +934,18 @@ class Killmail(object):
   def _is_awox(self):
     if self.data['zkb']['awox']:
       self.flags.append('awox')
+      return
+
+    if\
+      self.is_pilot_wingspan(self.data['victim']) and\
+      self.attackers['count']['wingspan'] >= self.attackers['count']['NPSI']:
+
+      self.flags.append('awox')
+      return
 
   def _is_pure(self):
     if self.attackers['count']['wingspan'] == self.attackers['count']['capsuleer']:
       self.flags.append('pure')
-
 
   def _set_space_type_flag(self):
     self.flags.append(self.get_space_type(self.space_class))
@@ -479,16 +976,68 @@ class Killmail(object):
       self.flags.append('thera')
 
   def _set_ship_flags(self):
+    victim = self.get_ship_flag(self.data['victim']['ship_type_id'])
+
     for pilot in self.attackers['wingspan']:
       ship = self.get_ship_flag(pilot['ship_type_id'])
       pilot['flags'][ship + '_driver'] = True
-
-      ship = self.get_ship_flag(self.data['victim']['ship_type_id'])
-      pilot['flags'][ship + '_killer'] = True
+      pilot['flags'][victim + '_killer'] = True
 
   @staticmethod
   def get_ship_flag(ship):
     return LOOKUP.get(ship, 'unknown')
+
+  def _set_weapon_flags(self):
+    for pilot in self.attackers['wingspan']:
+      weapon = self.get_weapon_flag(pilot['weapon_type_id'])
+      pilot['flags'][weapon + '_user'] = True
+
+  @staticmethod
+  def get_weapon_flag(weapon):
+    return LOOKUP.get(weapon, 'unknown')
+
+  def _process_advanced_flags(self):
+    self._is_solo_bomber()
+    self._is_industrial()
+
+  def _is_solo_bomber(self):
+    if not self.data['zkb']['solo']:
+      return
+
+    if self.attackers['count']['wingspan'] < 1:
+      return
+
+    if 'bomber_driver' in self.attackers['wingspan'][0]['flags']:
+      self.flags.append('solo_bomber')
+
+  def _is_industrial(self):
+    victim = self.get_ship_flag(self.data['victim']['ship_type_id'])
+
+    for pilot in self.attackers['wingspan']:
+      ship = self.get_ship_flag(self.data['victim']['ship_type_id'])
+      if ship in ['transport', 'miner']:
+        pilot['flags']['industrial_driver'] = True
+      if victim in ['transport', 'miner']:
+        pilot['flags']['industrial_killer'] = True
+
+  def _prepare_flags_for_db(self):
+    self.data['flags'] = {flag: True for flag in self.flags}
+
+  def _process_attackers(self):
+    if len(self.attackers['wingspan']):
+      self.attackers['wingspan'][0]['flag_damage'] = True
+
+    for pilot in self.attackers['wingspan']:
+      pilot['ship_group_id'] = self.parser.items.get(pilot['ship_type_id'], 0)
+
+    self.data['attackers_processed'] = self.attackers
+
+  def _process_victim(self):
+    self.data['victim']['ship_group_id'] = self.parser.items.get(self.data['victim']['ship_type_id'], 0)
+
+  def _process_time(self):
+    date = datetime.strptime(self.data['killmail_time'], '%Y-%m-%dT%H:%M:%SZ')
+    self.data['date'] = {'year': date.year, 'month': date.month}
 
   def _check_legitimacy(self):
     if self.attackers['count']['capsuleer'] < 1:
@@ -499,30 +1048,15 @@ class Killmail(object):
       self.isLegit = False
       return
 
-  def _process_attackers(self):
-    if len(self.attackers['wingspan']):
-      self.attackers['wingspan'][0]['flag_damage'] = True
-
-    self.data['attackers_processed'] = self.attackers
-
-  def _process_time(self):
-    date = datetime.strptime(self.data['killmail_time'], '%Y-%m-%dT%H:%M:%SZ')
-    self.data['date'] = {'year': date.year, 'month': date.month}
-
   def _save(self):
     if self.isLegit:
       table = self.parser.DB.killmails
     else:
       table = self.parser.DB.fail_killmails
 
-    try:
-      table.insert_one(self.data)
-    except:
-      pass
+    # FIXME should have some intelligent logic to avoid processing same killmails twice
+    table.replace_one({'_id': self.data['_id']}, self.data, upsert=True)
 
-
-def is_bomb(weapon):
-  return True if weapon in [27916, 27920, 27918, 27912] else False
 
 # def kills(self):
 #   $ret['kills'] = DB::getDB() -> kills -> aggregate([
