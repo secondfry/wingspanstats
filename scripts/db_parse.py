@@ -287,6 +287,14 @@ CATEGORIES = ['count', 'value', 'damage', 'zkb_points']
 CATEGORIES += [flag + '_count' for flag in FLAGS_ADVANCED]
 CATEGORIES += [flag + '_value' for flag in FLAGS_ADVANCED]
 
+PILOTLESS = [
+  365, # Control Tower
+  1003, # TCU
+  1404, # Engineering Complex
+  1406, # Refinery
+  1657, # Citadel
+]
+
 
 class DbParser(object):
   LOG_LEVEL = 1
@@ -444,6 +452,9 @@ class DbParserJSON2Mongo(DbParser):
     if not os.path.isdir(dir):
       os.mkdir(dir)
       log(self.LOG_LEVEL + 1, 'Directory ' + dir + ' created')
+
+  def get_ship_group_id(self, ship_type_id):
+    return self.items[ship_type_id]
 
   def run(self):
     self._read_pages()
@@ -1046,6 +1057,11 @@ class Killmail(object):
       return
 
     if float(self.attackers['count']['wingspan']) / self.attackers['count']['capsuleer'] < StatsConfig.FLEET_COMP:
+      self.isLegit = False
+      return
+
+    victim = self.data['victim']
+    if 'character_id' not in victim and self.parser.get_ship_group_id(victim['ship_type_id']) not in PILOTLESS:
       self.isLegit = False
       return
 

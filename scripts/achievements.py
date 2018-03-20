@@ -6,6 +6,7 @@
 # 30	Titan
 # 31	Shuttle
 # 358	HAC
+# 365	Control Tower
 # 419	Combat BC
 # 420	Destroyer
 # 485	Dreadnought
@@ -22,10 +23,14 @@
 # 900	Maradeur
 # 906	Combat Recon
 # 963	T3C
+# 1003	TCU
 # 1201  Attack BC
 # 1305	T3D
+# 1404	Engineering Complex
+# 1406	Refinery
 # 1534	Command Destroyer
 # 1538	AUX
+# 1657	Citadel
 
 
 class Achievements(object):
