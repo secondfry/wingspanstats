@@ -464,6 +464,8 @@ class DbParserJSON2Mongo(DbParser):
     self._process_pilots()
 
   def _read_pages(self):
+    log(self.LOG_LEVEL, 'Reading pages')
+
     for key, alliance in self.entities.iteritems():
       local = self.state.get(str(key))
       while local['page'] <= alliance.state.get('page'):
@@ -490,6 +492,8 @@ class DbParserJSON2Mongo(DbParser):
       killmail.process()
 
   def _process_months(self):
+    log(self.LOG_LEVEL, 'Processing months')
+
     timestamp = datetime.strptime(self.state.get('leaderboard'), '%Y-%m')
     limit = datetime.now()
 
@@ -660,6 +664,8 @@ class DbParserJSON2Mongo(DbParser):
     return self._parse_data_for_leaderboard(data, 'diversity')
 
   def _make_alltime(self):
+    log(self.LOG_LEVEL, 'Making alltime categories')
+
     for category in CATEGORIES:
       self.DB['alltime_' + category].drop()
       self._make_category(category)
@@ -697,6 +703,8 @@ class DbParserJSON2Mongo(DbParser):
     self.DB.killmails.aggregate(query)
 
   def _make_summary(self):
+    log(self.LOG_LEVEL, 'Making summary')
+
     self.DB.summary.drop()
 
     data = self.DB.killmails.aggregate([
@@ -719,6 +727,8 @@ class DbParserJSON2Mongo(DbParser):
     self.DB.summary.insert_many(data)
 
   def _process_pilots(self):
+    log(self.LOG_LEVEL, 'Processing pilots')
+
     self._populate_pilots()
     self._fetch_names()
     self._assign_medals()
