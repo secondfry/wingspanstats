@@ -6,7 +6,6 @@
 # 30	Titan
 # 31	Shuttle
 # 358	HAC
-# 365	Control Tower
 # 419	Combat BC
 # 420	Destroyer
 # 485	Dreadnought
@@ -23,13 +22,39 @@
 # 900	Maradeur
 # 906	Combat Recon
 # 963	T3C
-# 1003	TCU
 # 1201  Attack BC
 # 1305	T3D
-# 1404	Engineering Complex
-# 1406	Refinery
 # 1534	Command Destroyer
 # 1538	AUX
+
+# 311 Reprocessing Array
+# 363 Ship Maintenance Array
+# 365 Control Tower
+# 397 Assembly Array
+# 404 Silo
+# 413 Laboratory
+# 416 Moon Mining
+# 417 Mobile Missile Sentry
+# 426 Mobile Projectile Sentry
+# 430 Mobile Laser Sentry
+# 439 Electronic Warfare Battery
+# 440 Sensor Dampening Battery
+# 441 Stasis Webification Battery
+# 443 Warp Scrambling Battery
+# 444 Shield Hardening Array
+# 449 Mobile Hybrid Sentry
+# 471 Corporate Hangar Array
+# 707 Jump Portal Array
+# 837 Energy Neutralizing Battery
+# 838 Cynosural Generator Array
+# 839 Cynosural System Jammer
+# 1212  Personal Hangar Array
+# 1405  Laboratory
+
+# 1003	Territorial Claim Unit
+# 1025  Orbital Infrastructure
+# 1404	Engineering Complex
+# 1406	Refinery
 # 1657	Citadel
 
 
