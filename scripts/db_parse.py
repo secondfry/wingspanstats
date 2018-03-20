@@ -283,7 +283,7 @@ for ship in SHIP_RULES:
 for weapon in WEAPON_RULES:
   FLAGS_ADVANCED.append(weapon + '_user')
 
-CATEGORIES = ['count', 'value', 'damage']
+CATEGORIES = ['count', 'value', 'damage', 'zkb_points']
 CATEGORIES += [flag + '_count' for flag in FLAGS_ADVANCED]
 CATEGORIES += [flag + '_value' for flag in FLAGS_ADVANCED]
 
@@ -521,6 +521,7 @@ class DbParserJSON2Mongo(DbParser):
         },
         'count': {'$sum': 1},
         'value': {'$sum': '$zkb.totalValue'},
+        'zkb_points': {'$sum': '$zkb.points'},
         'damage': {'$sum': '$attackers_processed.wingspan.damage_done'}
         # 'killmails': {'$push': '$$ROOT'} # don't need them?
       }
