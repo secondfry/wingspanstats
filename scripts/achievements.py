@@ -5,6 +5,7 @@
 # 29	Capsule
 # 30	Titan
 # 31	Shuttle
+# 237	Corvette
 # 358	HAC
 # 419	Combat BC
 # 420	Destroyer

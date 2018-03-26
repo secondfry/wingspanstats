@@ -1095,7 +1095,28 @@ class Killmail(object):
       return
 
     victim = self.data['victim']
-    if 'character_id' not in victim and self.parser.get_ship_group_id(victim['ship_type_id']) not in PILOTLESS:
+    victim_ship_group_id = self.parser.get_ship_group_id(victim['ship_type_id'])
+    if 'character_id' not in victim and victim_ship_group_id not in PILOTLESS:
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 237 and self.data['zkb']['totalValue'] < 100000: # Corvette kills less than 100k
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 25 and self.data['zkb']['totalValue'] < 1000000: # Frigate kills less than 1M
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 420 and self.data['zkb']['totalValue'] < 1500000: # Destroyer kills less than 1.5M
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 26 and self.data['zkb']['totalValue'] < 10000000: # Cruiser kills less than 10M
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 28 and self.data['zkb']['totalValue'] < 2000000: # Industrial kills less than 2M
       self.isLegit = False
       return
 
