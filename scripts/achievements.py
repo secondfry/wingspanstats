@@ -58,6 +58,9 @@
 # 1406	Refinery
 # 1657	Citadel
 
+# 1246	Mobile Depot
+# 1250	Mobile Tractor Unit
+
 
 class Achievements(object):
   ACHIEVEMENTS = [

@@ -40,7 +40,8 @@ SHIP_RULES = [
   'industrial',
   'pod',
   'concord',
-  'AT'
+  'AT',
+  'trash',
 ]
 
 SHIPS = {}
@@ -237,6 +238,15 @@ SHIPS['AT'] = [
   42246, # Caedes, AT XIV, Covert Ops
   45530, # Virtuoso, AT XV, Stealth Bomber
 ]
+SHIPS['trash'] = [
+  33474, # Mobile Depo
+  33520, # 'Wetu' Mobile Depo,
+  33522, # 'Yurt' Mobile Depo,
+
+  33475, # Mobile Tractor Unit
+  33700, # 'Packrat' Mobile Tractor Unit
+  33702, # 'Magpie' Mobile Tractor Unit
+]
 
 WEAPON_RULES = [
   'bomb',
@@ -317,6 +327,11 @@ PILOTLESS = [
   1404, #  Engineering Complex
   1406, #  Refinery
   1657, #  Citadel
+]
+
+SPACE_TRASH = [
+  1246, # Mobile Depot
+  1250, # Mobile Tractor Unit
 ]
 
 
@@ -927,6 +942,11 @@ class Killmail(object):
     self.space_class = self.parser.space_class[self.data['solar_system_id']]
 
   def _process_flags(self):
+    self._set_victim_ship_category_flags()
+
+    if self._is_trash():
+      return
+
     self._is_solo()
     self._is_fleet()
     self._is_explorer()
@@ -935,8 +955,11 @@ class Killmail(object):
     self._is_pure()
     self._set_space_type_flag()
     self._is_thera()
-    self._set_ship_flags()
+    self._set_attacker_ship_category_flags()
     self._set_weapon_flags()
+
+  def _is_trash(self):
+    return self.get_ship_flag(self.data['victim']['ship_type_id']) == 'trash'
 
   def _is_solo(self):
     if self.data['zkb']['solo']:
@@ -1021,13 +1044,15 @@ class Killmail(object):
     if self.space_class == 'c12':
       self.flags.append('thera')
 
-  def _set_ship_flags(self):
+  def _set_victim_ship_category_flags(self):
     victim = self.get_ship_flag(self.data['victim']['ship_type_id'])
+    for pilot in self.attackers['wingspan']:
+      pilot['flags'][victim + '_killer'] = True
 
+  def _set_attacker_ship_category_flags(self):
     for pilot in self.attackers['wingspan']:
       ship = self.get_ship_flag(pilot['ship_type_id'])
       pilot['flags'][ship + '_driver'] = True
-      pilot['flags'][victim + '_killer'] = True
 
   @staticmethod
   def get_ship_flag(ship):
