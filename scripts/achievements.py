@@ -61,6 +61,17 @@
 # 1246	Mobile Depot
 # 1250	Mobile Tractor Unit
 
+# 16240	Catalyst
+# 32840	Catalyst
+# 32842	Catalyst
+# 32844	Catalyst
+# 32846	Catalyst
+# 32848	Catalyst
+# 33877	Catalyst
+
+# 16242	Thrasher
+# 33883	Thrasher
+
 
 class Achievements(object):
   ACHIEVEMENTS = [

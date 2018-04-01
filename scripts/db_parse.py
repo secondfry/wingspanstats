@@ -42,6 +42,8 @@ SHIP_RULES = [
   'concord',
   'AT',
   'trash',
+  'codegreen',
+  'codered',
 ]
 
 SHIPS = {}
@@ -247,6 +249,20 @@ SHIPS['trash'] = [
   33700, # 'Packrat' Mobile Tractor Unit
   33702, # 'Magpie' Mobile Tractor Unit
 ]
+SHIPS['codegreen'] = [
+  16240, # Catalyst
+  32840, # Catalyst
+  32842, # Catalyst
+  32844, # Catalyst
+  32846, # Catalyst
+  32848, # Catalyst
+  33877, # Catalyst
+]
+SHIPS['codered'] = [
+  16242, # Thrasher
+  33883, # Thrasher
+]
+
 
 WEAPON_RULES = [
   'bomb',
