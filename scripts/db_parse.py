@@ -577,6 +577,7 @@ class DbParserJSON2Mongo(DbParser):
     self._count_flags(timestamp)
     self._init_dori_memory(timestamp)
     self._make_month_leaderboards(timestamp)
+    self._make_month_summary(timestamp)
 
   def _count_flags(self, timestamp):
     query = [
@@ -718,6 +719,33 @@ class DbParserJSON2Mongo(DbParser):
 
     return self._parse_data_for_leaderboard(data, 'diversity')
 
+  def _make_month_summary(self, timestamp):
+    data = self.DB.killmails.aggregate([
+      {
+        '$match': {
+          'date.month': timestamp.month,
+          'date.year': timestamp.year,
+        }
+      },
+      {
+        '$project': {
+          'value': '$zkb.totalValue',
+          'damage_done': {'$sum': '$attackers_processed.wingspan.damage_done'}
+        }
+      },
+      {
+        '$group': {
+          '_id': timestamp.strftime('%Y%m'),
+          'count': {'$sum': 1},
+          'value': {'$sum': '$value'},
+          'damage': {'$sum': '$damage_done'}
+        }
+      }
+    ])
+
+    for item in data:
+      self.DB.summary.replace_one({'_id': item['_id']}, item, upsert=True)
+
   def _make_alltime(self):
     log(self.LOG_LEVEL, 'Making alltime categories')
 
@@ -758,9 +786,7 @@ class DbParserJSON2Mongo(DbParser):
     self.DB.killmails.aggregate(query)
 
   def _make_summary(self):
-    log(self.LOG_LEVEL, 'Making summary')
-
-    self.DB.summary.drop()
+    log(self.LOG_LEVEL, 'Making overall summary')
 
     data = self.DB.killmails.aggregate([
       {
@@ -771,7 +797,7 @@ class DbParserJSON2Mongo(DbParser):
       },
       {
         '$group': {
-          '_id'      : ObjectId(),
+          '_id'      : 'overall',
           'count'    : {'$sum': 1},
           'value'    : {'$sum': '$value'},
           'damage'   : {'$sum': '$damage_done'}
@@ -779,7 +805,8 @@ class DbParserJSON2Mongo(DbParser):
       }
     ])
 
-    self.DB.summary.insert_many(data)
+    for item in data:
+      self.DB.summary.replace_one({'_id': item['_id']}, item, upsert=True)
 
   def _process_pilots(self):
     log(self.LOG_LEVEL, 'Processing pilots')
