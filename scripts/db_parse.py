@@ -860,17 +860,22 @@ class DbParserJSON2Mongo(DbParser):
         self.DB.pilot_names.update_one({'_id': int(pilot['character_id'])}, {'$set': {'name': pilot['character_name']}})
 
   def _assign_medals(self):
+    skip_ids = [
+      'alltime',
+      datetime.now().strftime('%Y%m'),
+    ]
+
     medals = {}
 
     categories = deepcopy(CATEGORIES)
     categories.extend(['dedication', 'diversity'])
 
     for category in categories:
-      data = self.DB['leaderboard_' + category].find()
+      data = self.DB['leaderboard_' + category].find({'_id': {'$nin': skip_ids}})
       for month in data:
-        if month['_id'] == 'alltime':
-          # TODO add super SWAG alltime medals
-          continue
+        ## TODO add super SWAG alltime medals
+        # if month['_id'] == 'alltime':
+        #   continue
 
         for pilot in month['places']:
           place = pilot['place']
