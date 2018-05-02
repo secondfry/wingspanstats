@@ -288,7 +288,8 @@ for weapon_type, arr in WEAPONS.iteritems():
     LOOKUP[weapon_id] = weapon_type
 
 FLAGS_SIMPLE = [
-  'solo',
+  'solo-count',
+  'solo-value',
   'solo_bomber',
   'fleet',
   'explorer',
@@ -967,6 +968,10 @@ class Killmail(object):
         self.attackers['count']['npc'] += 1
         continue
 
+      if 'faction_id' in attacker and not self.is_fw_faction(attacker['faction_id']):
+        self.attackers['count']['npc'] += 1
+        continue
+
       self.attackers['count']['capsuleer'] += 1
 
       attacker['flags'] = {}
@@ -1010,8 +1015,11 @@ class Killmail(object):
     return self.get_ship_flag(self.data['victim']['ship_type_id']) == 'trash'
 
   def _is_solo(self):
+    if self.attackers['count']['capsuleer'] == self.attackers['count']['wingspan'] == 1:
+      self.flags.append('solo-value')
+
     if self.data['zkb']['solo']:
-      self.flags.append('solo')
+      self.flags.append('solo-count')
 
   def _is_fleet(self):
     if not self.data['zkb']['solo'] and self.attackers['count']['wingspan'] > 1:
