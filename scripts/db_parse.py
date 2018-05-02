@@ -1069,7 +1069,8 @@ class Killmail(object):
       return
 
   def _is_pure(self):
-    if self.attackers['count']['wingspan'] == self.attackers['count']['capsuleer']:
+    if self.attackers['count']['wingspan'] == self.attackers['count']['capsuleer']\
+      and self.attackers['count']['wingspan'] > 1:
       self.flags.append('pure')
 
   def _set_space_type_flag(self):
