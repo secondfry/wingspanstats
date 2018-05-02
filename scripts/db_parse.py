@@ -813,9 +813,9 @@ class DbParserJSON2Mongo(DbParser):
     log(self.LOG_LEVEL, 'Processing pilots')
 
     self._populate_pilots()
-    self._fetch_names()
     self._assign_medals()
     self._assign_achievements()
+    self._fetch_names()
 
   def _populate_pilots(self):
     pilots = self.DB.killmails.aggregate([
