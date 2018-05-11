@@ -628,7 +628,10 @@ class DbParserJSON2Mongo(DbParser):
       '_id': str(doristamp.year) + '{:0>2}'.format(doristamp.month)
     }
 
-    for category in CATEGORIES:
+    categories = deepcopy(CATEGORIES)
+    categories.extend(['dedication', 'diversity'])
+
+    for category in categories:
       data = self.DB['leaderboard_' + category].find_one(doristamp_query)
 
       if data:
