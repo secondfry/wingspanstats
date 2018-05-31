@@ -620,7 +620,11 @@ class DbParserJSON2Mongo(DbParser):
 
     query.append(group)
     data = self.DB.killmails.aggregate(query)
-    self.DB.months.insert_many(data)
+
+    try:
+      self.DB.months.insert_many(data)
+    except:
+      log(self.LOG_LEVEL, 'Failed to count flags on ' + str(timestamp.year) + '-' + str(timestamp.month))
 
   def _init_dori_memory(self, timestamp):
     doristamp = timestamp - relativedelta(months=1)
