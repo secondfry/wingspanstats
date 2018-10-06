@@ -4,12 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Not merged to master yet]
+## [2.2.0] - 2018-10-06
 ### Added
 - `zkb_points` category.
 
 ### Changed
 - Killmail is considered invalid if victim has no `character_id` with exception for anchorable structures.
+- Using Python 3 now.
+
+### Fixed
+- Adapts to 2018-10-02 zKillboard change. Now uses ESI to fetch extended killmail information.
 
 ## [2.1.1] - 2018-03-18
 ### Fixed
