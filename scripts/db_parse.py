@@ -9,7 +9,7 @@ from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
-import unicodecsv as csv
+import csv
 import gzip
 import json
 import os
@@ -18,8 +18,6 @@ import sys
 
 from config.statsconfig import StatsConfig
 from scripts.achievements import Achievements
-from scripts.alliance import Alliance
-from scripts.corporation import Corporation
 from scripts.log import log
 from scripts.state import State
 
@@ -280,10 +278,10 @@ WEAPONS['bomb'] = [
 ]
 
 LOOKUP = {}
-for ship_type, arr in SHIPS.iteritems():
+for ship_type, arr in SHIPS.items():
   for ship_id in arr:
     LOOKUP[ship_id] = ship_type
-for weapon_type, arr in WEAPONS.iteritems():
+for weapon_type, arr in WEAPONS.items():
   for weapon_id in arr:
     LOOKUP[weapon_id] = weapon_type
 
@@ -352,7 +350,7 @@ SPACE_TRASH = [
 ]
 
 
-class DbParser(object):
+class DBParser(object):
   LOG_LEVEL = 1
 
   @staticmethod
@@ -362,13 +360,13 @@ class DbParser(object):
 
     :param type Selects type of DB creator
     """
-    if type == "json-mongo":
-      log(DbParser.LOG_LEVEL, 'Creating JSON-to-MongoDB database parser')
-      return DbParserJSON2Mongo()
+    if type == "mongo":
+      log(DBParser.LOG_LEVEL, 'Creating MongoDB database parser')
+      return DBParserMongo()
     assert 0, "Source '" + type + "' is not defined"
 
 
-class DbParserJSON2Mongo(DbParser):
+class DBParserMongo(DBParser):
   LOG_LEVEL = 2
   DEFAULT_STATE = {}
   DEDICATION_QUERY = [
@@ -464,41 +462,24 @@ class DbParserJSON2Mongo(DbParser):
   ]
 
   def __init__(self):
-    DbParserJSON2Mongo.DEFAULT_STATE = {
-      str(x): {'page': 1} for x in StatsConfig.ENTITY_IDS
-    }
-    DbParserJSON2Mongo.DEFAULT_STATE['leaderboard'] = StatsConfig.EARLIEST
+    DBParserMongo.DEFAULT_STATE['leaderboard'] = StatsConfig.EARLIEST
 
-    self._init_entities()
     self._init_directories()
 
-    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), 'r') as f:
+    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), 'r', encoding="utf-8") as f:
       reader = csv.reader(f)
       self.space_class = {int(rows[0]): rows[1] for rows in reader}
 
-    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'typeIDs.csv'), 'r') as f:
-      reader = csv.reader(f, encoding='utf-8')
+    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'typeIDs.csv'), 'r', encoding="utf-8") as f:
+      reader = csv.reader(f)
       self.items = {int(row[0]): int(row[1]) for row in reader}
 
     self.DBClient = MongoClient('localhost', 27017)
-    self.DB = self.DBClient.wingspan_statistics_new
+    self.DB = self.DBClient.WDS_statistics_v3
 
     self.state = State(os.path.join(StatsConfig.RESULTS_PATH, 'state.json'), self.DEFAULT_STATE)
 
     self.dori_memory = {}
-
-  def _init_entities(self):
-    self.entities = {}
-    self._init_alliances()
-    self._init_corporations()
-
-  def _init_alliances(self):
-    for id in StatsConfig.ALLIANCE_IDS:
-      self.entities[id] = Alliance(id)
-
-  def _init_corporations(self):
-    for id in StatsConfig.CORPORATION_IDS:
-      self.entities[id] = Corporation(id)
 
   def _init_directories(self):
     self.dir = StatsConfig.RESULTS_PATH
@@ -513,38 +494,18 @@ class DbParserJSON2Mongo(DbParser):
     return self.items[ship_type_id]
 
   def run(self):
-    self._read_pages()
+    self._read_DB()
     self._process_months()
     self._make_alltime()
     self._make_summary()
     self._process_pilots()
 
-  def _read_pages(self):
-    log(self.LOG_LEVEL, 'Reading pages')
+  def _read_DB(self):
+    log(self.LOG_LEVEL, 'Reading DB')
 
-    for key, alliance in self.entities.iteritems():
-      local = self.state.get(str(key))
-      while local['page'] <= alliance.state.get('page'):
-        path = os.path.join(StatsConfig.DATABASE_PATH, str(key), str(local['page']) + '.json.gz')
-        self._read_page(path)
-
-        local['page'] += 1
-        self.state.set(str(key), local)
-        self.state.save()
-
-      # We want to reread last page
-      # So we need to reset state to previous page
-      local['page'] -= 1
-      self.state.set(str(key), local)
-      self.state.save()
-
-  def _read_page(self, path):
-    log(self.LOG_LEVEL + 1, 'Reading page @ ' + path)
-    with gzip.open(path, 'r') as f:
-      data = json.load(f)
-
-    for chunk in data:
-      killmail = Killmail(self, chunk)
+    lines = self.DB.killmails.find({'status.zkb': True, 'status.esi': True, 'status.parser': False})
+    for line in lines:
+      killmail = Killmail(self, line)
       killmail.process()
 
   def _process_months(self):
@@ -619,7 +580,7 @@ class DbParserJSON2Mongo(DbParser):
       }
 
     query.append(group)
-    data = self.DB.killmails.aggregate(query)
+    data = self.DB.parser_killmails.aggregate(query)
 
     try:
       self.DB.months.insert_many(data)
@@ -716,19 +677,19 @@ class DbParserJSON2Mongo(DbParser):
   def _make_month_dedication(self, timestamp):
     query = deepcopy(self.DEDICATION_QUERY)
     query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
-    data = self.DB.killmails.aggregate(query)
+    data = self.DB.parser_killmails.aggregate(query)
 
     return self._parse_data_for_leaderboard(data, 'dedication')
 
   def _make_month_diversity(self, timestamp):
     query = deepcopy(self.DIVERSITY_QUERY)
     query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
-    data = self.DB.killmails.aggregate(query)
+    data = self.DB.parser_killmails.aggregate(query)
 
     return self._parse_data_for_leaderboard(data, 'diversity')
 
   def _make_month_summary(self, timestamp):
-    data = self.DB.killmails.aggregate([
+    data = self.DB.parser_killmails.aggregate([
       {
         '$match': {
           'date.month': timestamp.month,
@@ -786,17 +747,17 @@ class DbParserJSON2Mongo(DbParser):
   def _make_dedication(self):
     query = deepcopy(self.DEDICATION_QUERY)
     query.append({'$out': 'alltime_dedication'})
-    self.DB.killmails.aggregate(query)
+    self.DB.parser_killmails.aggregate(query)
 
   def _make_diversity(self):
     query = deepcopy(self.DIVERSITY_QUERY)
     query.append({'$out': 'alltime_diversity'})
-    self.DB.killmails.aggregate(query)
+    self.DB.parser_killmails.aggregate(query)
 
   def _make_summary(self):
     log(self.LOG_LEVEL, 'Making overall summary')
 
-    data = self.DB.killmails.aggregate([
+    data = self.DB.parser_killmails.aggregate([
       {
         '$project': {
           'value'     : '$zkb.totalValue',
@@ -825,7 +786,7 @@ class DbParserJSON2Mongo(DbParser):
     self._fetch_names()
 
   def _populate_pilots(self):
-    pilots = self.DB.killmails.aggregate([
+    pilots = self.DB.parser_killmails.aggregate([
       {'$unwind': '$attackers_processed.wingspan'},
       {
         '$group': {
@@ -846,14 +807,14 @@ class DbParserJSON2Mongo(DbParser):
         pass
 
   def _fetch_names(self):
-    url = 'https://esi.tech.ccp.is/latest/characters/names/?character_ids={}&datasource=tranquility'
+    url = StatsConfig.ENDPOINT_ESI_UNIVERSE_NAMES
 
     pilots = self.DB.pilot_names.find({'name': None})
-    max = pilots.count() / 100
+    max = int(pilots.count() / 100)
 
-    for i in xrange(0, max + 1):
+    for i in range(0, max + 1):
       arr = []
-      for k in xrange(0, 100):
+      for k in range(0, 100):
         obj = next(pilots, None)
         if not obj:
           if i == 0 and k == 0:
@@ -863,9 +824,9 @@ class DbParserJSON2Mongo(DbParser):
 
         arr.append(str(obj['_id']))
 
-      res = requests.get(url.format(','.join(arr)))
+      res = requests.post(url, json=arr)
       for pilot in res.json():
-        self.DB.pilot_names.update_one({'_id': int(pilot['character_id'])}, {'$set': {'name': pilot['character_name']}})
+        self.DB.pilot_names.update_one({'_id': int(pilot['id'])}, {'$set': {'name': pilot['name']}})
 
   def _assign_medals(self):
     skip_ids = [
@@ -1211,12 +1172,15 @@ class Killmail(object):
 
   def _save(self):
     if self.isLegit:
-      table = self.parser.DB.killmails
+      table = self.parser.DB.parser_killmails
     else:
-      table = self.parser.DB.fail_killmails
+      table = self.parser.DB.parser_killmails_fail
 
-    # FIXME should have some intelligent logic to avoid processing same killmails twice
+    self.data['status']['parser'] = True
+
     table.replace_one({'_id': self.data['_id']}, self.data, upsert=True)
+
+    self.parser.DB.killmails.update_one({'_id': self.data['_id']}, {'$set': {'status.parser': True}})
 
 
 # def kills(self):

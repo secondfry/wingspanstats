@@ -1,20 +1,24 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 # Author: Rustam Gubaydullin (@second_fry)
+# Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
 
 from datetime import datetime
 from scripts.log import log
-from scripts.db_create import DbCreator
-from scripts.db_parse import DbParser
+from scripts.db_fetch import DBFetcher
+from scripts.db_parse import DBParser
 
 if __name__ == "__main__":
   timestamp_start = datetime.now()
   log(0, 'Wingspan Statistics script start')
 
-  creator = DbCreator.factory('zkillboard-json')
-  creator.run()
+  zkb_fetcher = DBFetcher.factory('zkillboard-mongo')
+  zkb_fetcher.run()
 
-  parser = DbParser.factory('json-mongo')
+  esi_fetcher = DBFetcher.factory('esi-mongo')
+  esi_fetcher.run()
+
+  parser = DBParser.factory('mongo')
   parser.run()
 
   time = datetime.now() - timestamp_start
