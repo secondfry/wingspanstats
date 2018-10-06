@@ -9,7 +9,7 @@ from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
-import unicodecsv as csv
+import csv
 import gzip
 import json
 import os
@@ -18,8 +18,6 @@ import sys
 
 from config.statsconfig import StatsConfig
 from scripts.achievements import Achievements
-from scripts.alliance import Alliance
-from scripts.corporation import Corporation
 from scripts.log import log
 from scripts.state import State
 
@@ -40,7 +38,10 @@ SHIP_RULES = [
   'industrial',
   'pod',
   'concord',
-  'AT'
+  'AT',
+  'trash',
+  'codegreen',
+  'codered',
 ]
 
 SHIPS = {}
@@ -237,6 +238,29 @@ SHIPS['AT'] = [
   42246, # Caedes, AT XIV, Covert Ops
   45530, # Virtuoso, AT XV, Stealth Bomber
 ]
+SHIPS['trash'] = [
+  33474, # Mobile Depo
+  33520, # 'Wetu' Mobile Depo,
+  33522, # 'Yurt' Mobile Depo,
+
+  33475, # Mobile Tractor Unit
+  33700, # 'Packrat' Mobile Tractor Unit
+  33702, # 'Magpie' Mobile Tractor Unit
+]
+SHIPS['codegreen'] = [
+  16240, # Catalyst
+  32840, # Catalyst
+  32842, # Catalyst
+  32844, # Catalyst
+  32846, # Catalyst
+  32848, # Catalyst
+  33877, # Catalyst
+]
+SHIPS['codered'] = [
+  16242, # Thrasher
+  33883, # Thrasher
+]
+
 
 WEAPON_RULES = [
   'bomb',
@@ -254,15 +278,16 @@ WEAPONS['bomb'] = [
 ]
 
 LOOKUP = {}
-for ship_type, arr in SHIPS.iteritems():
+for ship_type, arr in SHIPS.items():
   for ship_id in arr:
     LOOKUP[ship_id] = ship_type
-for weapon_type, arr in WEAPONS.iteritems():
+for weapon_type, arr in WEAPONS.items():
   for weapon_id in arr:
     LOOKUP[weapon_id] = weapon_type
 
 FLAGS_SIMPLE = [
-  'solo',
+  'solo-count',
+  'solo-value',
   'solo_bomber',
   'fleet',
   'explorer',
@@ -283,12 +308,49 @@ for ship in SHIP_RULES:
 for weapon in WEAPON_RULES:
   FLAGS_ADVANCED.append(weapon + '_user')
 
-CATEGORIES = ['count', 'value', 'damage']
+CATEGORIES = ['count', 'value', 'damage', 'zkb_points']
 CATEGORIES += [flag + '_count' for flag in FLAGS_ADVANCED]
 CATEGORIES += [flag + '_value' for flag in FLAGS_ADVANCED]
 
+PILOTLESS = [
+  311, # Reprocessing Array
+  363, # Ship Maintenance Array
+  365, # Control Tower
+  397, # Assembly Array
+  404, # Silo
+  413, # Laboratory
+  416, # Moon Mining
+  417, # Mobile Missile Sentry
+  426, # Mobile Projectile Sentry
+  430, # Mobile Laser Sentry
+  439, # Electronic Warfare Battery
+  440, # Sensor Dampening Battery
+  441, # Stasis Webification Battery
+  443, # Warp Scrambling Battery
+  444, # Shield Hardening Array
+  449, # Mobile Hybrid Sentry
+  471, # Corporate Hangar Array
+  707, # Jump Portal Array
+  837, # Energy Neutralizing Battery
+  838, # Cynosural Generator Array
+  839, # Cynosural System Jammer
+  1212, #  Personal Hangar Array
+  1405, #  Laboratory
 
-class DbParser(object):
+  1003, #  Territorial Claim Unit
+  1025, #  Orbital Infrastructure
+  1404, #  Engineering Complex
+  1406, #  Refinery
+  1657, #  Citadel
+]
+
+SPACE_TRASH = [
+  1246, # Mobile Depot
+  1250, # Mobile Tractor Unit
+]
+
+
+class DBParser(object):
   LOG_LEVEL = 1
 
   @staticmethod
@@ -298,13 +360,13 @@ class DbParser(object):
 
     :param type Selects type of DB creator
     """
-    if type == "json-mongo":
-      log(DbParser.LOG_LEVEL, 'Creating JSON-to-MongoDB database parser')
-      return DbParserJSON2Mongo()
+    if type == "mongo":
+      log(DBParser.LOG_LEVEL, 'Creating MongoDB database parser')
+      return DBParserMongo()
     assert 0, "Source '" + type + "' is not defined"
 
 
-class DbParserJSON2Mongo(DbParser):
+class DBParserMongo(DBParser):
   LOG_LEVEL = 2
   DEFAULT_STATE = {}
   DEDICATION_QUERY = [
@@ -400,41 +462,24 @@ class DbParserJSON2Mongo(DbParser):
   ]
 
   def __init__(self):
-    DbParserJSON2Mongo.DEFAULT_STATE = {
-      str(x): {'page': 1} for x in StatsConfig.ENTITY_IDS
-    }
-    DbParserJSON2Mongo.DEFAULT_STATE['leaderboard'] = StatsConfig.EARLIEST
+    DBParserMongo.DEFAULT_STATE['leaderboard'] = StatsConfig.EARLIEST
 
-    self._init_entities()
     self._init_directories()
 
-    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), 'r') as f:
+    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'security.csv'), 'r', encoding="utf-8") as f:
       reader = csv.reader(f)
       self.space_class = {int(rows[0]): rows[1] for rows in reader}
 
-    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'typeIDs.csv'), 'r') as f:
-      reader = csv.reader(f, encoding='utf-8')
+    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'typeIDs.csv'), 'r', encoding="utf-8") as f:
+      reader = csv.reader(f)
       self.items = {int(row[0]): int(row[1]) for row in reader}
 
     self.DBClient = MongoClient('localhost', 27017)
-    self.DB = self.DBClient.wingspan_statistics_new
+    self.DB = self.DBClient.WDS_statistics_v3
 
     self.state = State(os.path.join(StatsConfig.RESULTS_PATH, 'state.json'), self.DEFAULT_STATE)
 
     self.dori_memory = {}
-
-  def _init_entities(self):
-    self.entities = {}
-    self._init_alliances()
-    self._init_corporations()
-
-  def _init_alliances(self):
-    for id in StatsConfig.ALLIANCE_IDS:
-      self.entities[id] = Alliance(id)
-
-  def _init_corporations(self):
-    for id in StatsConfig.CORPORATION_IDS:
-      self.entities[id] = Corporation(id)
 
   def _init_directories(self):
     self.dir = StatsConfig.RESULTS_PATH
@@ -445,40 +490,27 @@ class DbParserJSON2Mongo(DbParser):
       os.mkdir(dir)
       log(self.LOG_LEVEL + 1, 'Directory ' + dir + ' created')
 
+  def get_ship_group_id(self, ship_type_id):
+    return self.items[ship_type_id]
+
   def run(self):
-    self._read_pages()
+    self._read_DB()
     self._process_months()
     self._make_alltime()
     self._make_summary()
     self._process_pilots()
 
-  def _read_pages(self):
-    for key, alliance in self.entities.iteritems():
-      local = self.state.get(str(key))
-      while local['page'] <= alliance.state.get('page'):
-        path = os.path.join(StatsConfig.DATABASE_PATH, str(key), str(local['page']) + '.json.gz')
-        self._read_page(path)
+  def _read_DB(self):
+    log(self.LOG_LEVEL, 'Reading DB')
 
-        local['page'] += 1
-        self.state.set(str(key), local)
-        self.state.save()
-
-      # We want to reread last page
-      # So we need to reset state to previous page
-      local['page'] -= 1
-      self.state.set(str(key), local)
-      self.state.save()
-
-  def _read_page(self, path):
-    log(self.LOG_LEVEL + 1, 'Reading page @ ' + path)
-    with gzip.open(path, 'r') as f:
-      data = json.load(f)
-
-    for chunk in data:
-      killmail = Killmail(self, chunk)
+    lines = self.DB.killmails.find({'status.zkb': True, 'status.esi': True, 'status.parser': False})
+    for line in lines:
+      killmail = Killmail(self, line)
       killmail.process()
 
   def _process_months(self):
+    log(self.LOG_LEVEL, 'Processing months')
+
     timestamp = datetime.strptime(self.state.get('leaderboard'), '%Y-%m')
     limit = datetime.now()
 
@@ -507,6 +539,7 @@ class DbParserJSON2Mongo(DbParser):
     self._count_flags(timestamp)
     self._init_dori_memory(timestamp)
     self._make_month_leaderboards(timestamp)
+    self._make_month_summary(timestamp)
 
   def _count_flags(self, timestamp):
     query = [
@@ -521,6 +554,7 @@ class DbParserJSON2Mongo(DbParser):
         },
         'count': {'$sum': 1},
         'value': {'$sum': '$zkb.totalValue'},
+        'zkb_points': {'$sum': '$zkb.points'},
         'damage': {'$sum': '$attackers_processed.wingspan.damage_done'}
         # 'killmails': {'$push': '$$ROOT'} # don't need them?
       }
@@ -546,8 +580,12 @@ class DbParserJSON2Mongo(DbParser):
       }
 
     query.append(group)
-    data = self.DB.killmails.aggregate(query)
-    self.DB.months.insert_many(data)
+    data = self.DB.parser_killmails.aggregate(query)
+
+    try:
+      self.DB.months.insert_many(data)
+    except:
+      log(self.LOG_LEVEL, 'Failed to count flags on ' + str(timestamp.year) + '-' + str(timestamp.month))
 
   def _init_dori_memory(self, timestamp):
     doristamp = timestamp - relativedelta(months=1)
@@ -555,7 +593,10 @@ class DbParserJSON2Mongo(DbParser):
       '_id': str(doristamp.year) + '{:0>2}'.format(doristamp.month)
     }
 
-    for category in CATEGORIES:
+    categories = deepcopy(CATEGORIES)
+    categories.extend(['dedication', 'diversity'])
+
+    for category in categories:
       data = self.DB['leaderboard_' + category].find_one(doristamp_query)
 
       if data:
@@ -636,18 +677,47 @@ class DbParserJSON2Mongo(DbParser):
   def _make_month_dedication(self, timestamp):
     query = deepcopy(self.DEDICATION_QUERY)
     query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
-    data = self.DB.killmails.aggregate(query)
+    data = self.DB.parser_killmails.aggregate(query)
 
     return self._parse_data_for_leaderboard(data, 'dedication')
 
   def _make_month_diversity(self, timestamp):
     query = deepcopy(self.DIVERSITY_QUERY)
     query.insert(0, {'$match': {'date.year': timestamp.year, 'date.month': timestamp.month}})
-    data = self.DB.killmails.aggregate(query)
+    data = self.DB.parser_killmails.aggregate(query)
 
     return self._parse_data_for_leaderboard(data, 'diversity')
 
+  def _make_month_summary(self, timestamp):
+    data = self.DB.parser_killmails.aggregate([
+      {
+        '$match': {
+          'date.month': timestamp.month,
+          'date.year': timestamp.year,
+        }
+      },
+      {
+        '$project': {
+          'value': '$zkb.totalValue',
+          'damage_done': {'$sum': '$attackers_processed.wingspan.damage_done'}
+        }
+      },
+      {
+        '$group': {
+          '_id': timestamp.strftime('%Y%m'),
+          'count': {'$sum': 1},
+          'value': {'$sum': '$value'},
+          'damage': {'$sum': '$damage_done'}
+        }
+      }
+    ])
+
+    for item in data:
+      self.DB.summary.replace_one({'_id': item['_id']}, item, upsert=True)
+
   def _make_alltime(self):
+    log(self.LOG_LEVEL, 'Making alltime categories')
+
     for category in CATEGORIES:
       self.DB['alltime_' + category].drop()
       self._make_category(category)
@@ -677,17 +747,17 @@ class DbParserJSON2Mongo(DbParser):
   def _make_dedication(self):
     query = deepcopy(self.DEDICATION_QUERY)
     query.append({'$out': 'alltime_dedication'})
-    self.DB.killmails.aggregate(query)
+    self.DB.parser_killmails.aggregate(query)
 
   def _make_diversity(self):
     query = deepcopy(self.DIVERSITY_QUERY)
     query.append({'$out': 'alltime_diversity'})
-    self.DB.killmails.aggregate(query)
+    self.DB.parser_killmails.aggregate(query)
 
   def _make_summary(self):
-    self.DB.summary.drop()
+    log(self.LOG_LEVEL, 'Making overall summary')
 
-    data = self.DB.killmails.aggregate([
+    data = self.DB.parser_killmails.aggregate([
       {
         '$project': {
           'value'     : '$zkb.totalValue',
@@ -696,7 +766,7 @@ class DbParserJSON2Mongo(DbParser):
       },
       {
         '$group': {
-          '_id'      : ObjectId(),
+          '_id'      : 'overall',
           'count'    : {'$sum': 1},
           'value'    : {'$sum': '$value'},
           'damage'   : {'$sum': '$damage_done'}
@@ -704,16 +774,19 @@ class DbParserJSON2Mongo(DbParser):
       }
     ])
 
-    self.DB.summary.insert_many(data)
+    for item in data:
+      self.DB.summary.replace_one({'_id': item['_id']}, item, upsert=True)
 
   def _process_pilots(self):
+    log(self.LOG_LEVEL, 'Processing pilots')
+
     self._populate_pilots()
-    self._fetch_names()
     self._assign_medals()
     self._assign_achievements()
+    self._fetch_names()
 
   def _populate_pilots(self):
-    pilots = self.DB.killmails.aggregate([
+    pilots = self.DB.parser_killmails.aggregate([
       {'$unwind': '$attackers_processed.wingspan'},
       {
         '$group': {
@@ -734,14 +807,14 @@ class DbParserJSON2Mongo(DbParser):
         pass
 
   def _fetch_names(self):
-    url = 'https://esi.tech.ccp.is/latest/characters/names/?character_ids={}&datasource=tranquility'
+    url = StatsConfig.ENDPOINT_ESI_UNIVERSE_NAMES
 
     pilots = self.DB.pilot_names.find({'name': None})
-    max = pilots.count() / 100
+    max = int(pilots.count() / 100)
 
-    for i in xrange(0, max + 1):
+    for i in range(0, max + 1):
       arr = []
-      for k in xrange(0, 100):
+      for k in range(0, 100):
         obj = next(pilots, None)
         if not obj:
           if i == 0 and k == 0:
@@ -751,22 +824,27 @@ class DbParserJSON2Mongo(DbParser):
 
         arr.append(str(obj['_id']))
 
-      res = requests.get(url.format(','.join(arr)))
+      res = requests.post(url, json=arr)
       for pilot in res.json():
-        self.DB.pilot_names.update_one({'_id': int(pilot['character_id'])}, {'$set': {'name': pilot['character_name']}})
+        self.DB.pilot_names.update_one({'_id': int(pilot['id'])}, {'$set': {'name': pilot['name']}})
 
   def _assign_medals(self):
+    skip_ids = [
+      'alltime',
+      datetime.now().strftime('%Y%m'),
+    ]
+
     medals = {}
 
     categories = deepcopy(CATEGORIES)
     categories.extend(['dedication', 'diversity'])
 
     for category in categories:
-      data = self.DB['leaderboard_' + category].find()
+      data = self.DB['leaderboard_' + category].find({'_id': {'$nin': skip_ids}})
       for month in data:
-        if month['_id'] == 'alltime':
-          # TODO add super SWAG alltime medals
-          continue
+        ## TODO add super SWAG alltime medals
+        # if month['_id'] == 'alltime':
+        #   continue
 
         for pilot in month['places']:
           place = pilot['place']
@@ -858,6 +936,10 @@ class Killmail(object):
         self.attackers['count']['npc'] += 1
         continue
 
+      if 'faction_id' in attacker and not self.is_fw_faction(attacker['faction_id']):
+        self.attackers['count']['npc'] += 1
+        continue
+
       self.attackers['count']['capsuleer'] += 1
 
       attacker['flags'] = {}
@@ -881,6 +963,11 @@ class Killmail(object):
     self.space_class = self.parser.space_class[self.data['solar_system_id']]
 
   def _process_flags(self):
+    self._set_victim_ship_category_flags()
+
+    if self._is_trash():
+      return
+
     self._is_solo()
     self._is_fleet()
     self._is_explorer()
@@ -889,12 +976,18 @@ class Killmail(object):
     self._is_pure()
     self._set_space_type_flag()
     self._is_thera()
-    self._set_ship_flags()
+    self._set_attacker_ship_category_flags()
     self._set_weapon_flags()
 
+  def _is_trash(self):
+    return self.get_ship_flag(self.data['victim']['ship_type_id']) == 'trash'
+
   def _is_solo(self):
+    if self.attackers['count']['capsuleer'] == self.attackers['count']['wingspan'] == 1:
+      self.flags.append('solo-value')
+
     if self.data['zkb']['solo']:
-      self.flags.append('solo')
+      self.flags.append('solo-count')
 
   def _is_fleet(self):
     if not self.data['zkb']['solo'] and self.attackers['count']['wingspan'] > 1:
@@ -944,7 +1037,8 @@ class Killmail(object):
       return
 
   def _is_pure(self):
-    if self.attackers['count']['wingspan'] == self.attackers['count']['capsuleer']:
+    if self.attackers['count']['wingspan'] == self.attackers['count']['capsuleer']\
+      and self.attackers['count']['wingspan'] > 1:
       self.flags.append('pure')
 
   def _set_space_type_flag(self):
@@ -975,13 +1069,15 @@ class Killmail(object):
     if self.space_class == 'c12':
       self.flags.append('thera')
 
-  def _set_ship_flags(self):
+  def _set_victim_ship_category_flags(self):
     victim = self.get_ship_flag(self.data['victim']['ship_type_id'])
+    for pilot in self.attackers['wingspan']:
+      pilot['flags'][victim + '_killer'] = True
 
+  def _set_attacker_ship_category_flags(self):
     for pilot in self.attackers['wingspan']:
       ship = self.get_ship_flag(pilot['ship_type_id'])
       pilot['flags'][ship + '_driver'] = True
-      pilot['flags'][victim + '_killer'] = True
 
   @staticmethod
   def get_ship_flag(ship):
@@ -1048,14 +1144,43 @@ class Killmail(object):
       self.isLegit = False
       return
 
+    victim = self.data['victim']
+    victim_ship_group_id = self.parser.get_ship_group_id(victim['ship_type_id'])
+    if 'character_id' not in victim and victim_ship_group_id not in PILOTLESS:
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 237 and self.data['zkb']['totalValue'] < 100000: # Corvette kills less than 100k
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 25 and self.data['zkb']['totalValue'] < 1000000: # Frigate kills less than 1M
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 420 and self.data['zkb']['totalValue'] < 1500000: # Destroyer kills less than 1.5M
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 26 and self.data['zkb']['totalValue'] < 10000000: # Cruiser kills less than 10M
+      self.isLegit = False
+      return
+
+    if victim_ship_group_id == 28 and self.data['zkb']['totalValue'] < 2000000: # Industrial kills less than 2M
+      self.isLegit = False
+      return
+
   def _save(self):
     if self.isLegit:
-      table = self.parser.DB.killmails
+      table = self.parser.DB.parser_killmails
     else:
-      table = self.parser.DB.fail_killmails
+      table = self.parser.DB.parser_killmails_fail
 
-    # FIXME should have some intelligent logic to avoid processing same killmails twice
+    self.data['status']['parser'] = True
+
     table.replace_one({'_id': self.data['_id']}, self.data, upsert=True)
+
+    self.parser.DB.killmails.update_one({'_id': self.data['_id']}, {'$set': {'status.parser': True}})
 
 
 # def kills(self):

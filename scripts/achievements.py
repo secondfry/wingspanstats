@@ -5,6 +5,7 @@
 # 29	Capsule
 # 30	Titan
 # 31	Shuttle
+# 237	Corvette
 # 358	HAC
 # 419	Combat BC
 # 420	Destroyer
@@ -26,6 +27,50 @@
 # 1305	T3D
 # 1534	Command Destroyer
 # 1538	AUX
+
+# 311 Reprocessing Array
+# 363 Ship Maintenance Array
+# 365 Control Tower
+# 397 Assembly Array
+# 404 Silo
+# 413 Laboratory
+# 416 Moon Mining
+# 417 Mobile Missile Sentry
+# 426 Mobile Projectile Sentry
+# 430 Mobile Laser Sentry
+# 439 Electronic Warfare Battery
+# 440 Sensor Dampening Battery
+# 441 Stasis Webification Battery
+# 443 Warp Scrambling Battery
+# 444 Shield Hardening Array
+# 449 Mobile Hybrid Sentry
+# 471 Corporate Hangar Array
+# 707 Jump Portal Array
+# 837 Energy Neutralizing Battery
+# 838 Cynosural Generator Array
+# 839 Cynosural System Jammer
+# 1212  Personal Hangar Array
+# 1405  Laboratory
+
+# 1003	Territorial Claim Unit
+# 1025  Orbital Infrastructure
+# 1404	Engineering Complex
+# 1406	Refinery
+# 1657	Citadel
+
+# 1246	Mobile Depot
+# 1250	Mobile Tractor Unit
+
+# 16240	Catalyst
+# 32840	Catalyst
+# 32842	Catalyst
+# 32844	Catalyst
+# 32846	Catalyst
+# 32848	Catalyst
+# 33877	Catalyst
+
+# 16242	Thrasher
+# 33883	Thrasher
 
 
 class Achievements(object):
@@ -116,7 +161,7 @@ class Achievements(object):
   def check(database, achievement):
     query = Achievements._construct_query(achievement['rule'])
 
-    res = database.killmails.find(query)
+    res = database.parser_killmails.find(query)
 
     return res
 

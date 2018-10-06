@@ -47,7 +47,7 @@
 53,95,Trade Session
 54,15,Caldari Logistics Station
 56,15,Gallente Military Station
-57,15,Gallente Station Hub
+57,15,Gallente Station Hub 
 58,15,C-O-1
 59,15,C-O-2
 60,1319,Asset Safety Wrap
@@ -997,8 +997,8 @@
 2196,176,Praetor II Blueprint
 2197,314,Environmentally-friendly Mining Equipment
 2198,314,Crate of Environmentally-friendly Mining Equipment
-2199,314,Prototype Body Armor Fabric
-2200,314,Crate of Prototype Body Armor Fabric
+2199,314,Prototype Body Armor Fabric 
+2200,314,Crate of Prototype Body Armor Fabric 
 2201,314,Riot Interdiction Team
 2202,314,Riot Interdiction Teams
 2203,100,Acolyte I
@@ -1013,13 +1013,13 @@
 2212,385,Ghost Heavy Missile
 2213,166,Ghost Heavy Missile Blueprint
 2214,952,Guard Post
-2215,314,Amarr TIL-1A Nexus Chips
+2215,314,Amarr TIL-1A Nexus Chips 
 2216,314,Crate of Amarr TIL-1A Nexus Chips
 2217,283,Preacher
 2218,306,Locced's Bribe
 2219,314,Large Group of Civilian Workers and Dependents
 2220,314,Civilian Workers and Dependents
-2221,314,Manportable Electromagnetic Pulse Weapons
+2221,314,Manportable Electromagnetic Pulse Weapons 
 2222,673,Scions of the Superior Gene
 2223,306,Preacher's Quarters
 2224,1006,Tolmak's Zealots
@@ -1557,7 +1557,7 @@
 2859,1054,Romi Thalamus
 2860,306,The Seven Holding Cells
 2861,314,Crate of Manportable Electromagnetic Pulse Weapons
-2862,314,Special Forces Weapons and Equipment
+2862,314,Special Forces Weapons and Equipment 
 2863,28,Primae
 2864,108,Primae Blueprint
 2865,55,1200mm Artillery Cannon II
@@ -2152,7 +2152,7 @@
 3490,1056,Slave Endoma01
 3491,306,Sansha Communications Array
 3492,1053,Sansha's Nation Commander
-3493,920,Incursion ship attributes effects Assault
+3493,920,Incursion ship attributes effects Assault 
 3494,920,Incursion ship attributes effects HQ
 3495,952,Shield Transfer Control Tower
 3496,61,Medium Cap Battery II
@@ -2244,14 +2244,14 @@
 3582,917,Purloined Sansha Data Analyzer Blueprint
 3583,314,Badly Mangled Components
 3584,314,True Slave Decryption Node
-3585,314,Mangled Sansha Data Analyzer
+3585,314,Mangled Sansha Data Analyzer 
 3586,41,Small Remote Shield Booster I
 3587,121,Small Remote Shield Booster I Blueprint
 3588,41,Small Remote Shield Booster II
 3589,121,Small Remote Shield Booster II Blueprint
 3590,917,Mangled Sansha Data Analyzer Blueprint
 3591,319,Angel Control Tower
-3592,226,Caldari Wyvern Carrier
+3592,226,Caldari Wyvern Carrier 
 3593,226,Caldari Phoenix Dreadnought
 3594,226,Caldari Leviathan Titan
 3595,226,Caldari Badger Industrial Ship
@@ -2346,7 +2346,7 @@
 3687,280,Electronic Parts
 3688,226,Caldari Rokh Battleship
 3689,1034,Mechanical Parts
-3690,226,Caldari Scorpion Battleship
+3690,226,Caldari Scorpion Battleship 
 3691,1034,Synthetic Oil
 3693,1034,Fertilizer
 3695,1034,Polytextiles
@@ -2442,7 +2442,7 @@
 3789,226,Minmatar Mammoth Industrial Ship
 3790,226,Minmatar Wreathe Industrial Ship
 3791,226,Minmatar Fenrir Freighter
-3792,306,Caldari Academy Office
+3792,306,Caldari Academy Office  
 3793,538,Data Subverter I
 3794,917,Data Subverter I Blueprint
 3795,495,Blood Raider Central Bastion
@@ -2513,7 +2513,7 @@
 3877,10,Stargate (Minmatar Constellation)
 3880,226,Ripped Superstructure
 3881,226,Ruined Monument
-3882,820,Exsanguinator
+3882,820,Exsanguinator 
 3883,288,DED Army Officer
 3884,820,Guristas Distributor
 3885,301,CONCORD Police Captain
@@ -9192,7 +9192,7 @@
 20114,333,Datacore - Propulsion Subsystems Engineering
 20115,333,Datacore - Core Subsystems Engineering
 20116,333,Datacore - Electronic Subsystems Engineering
-20117,333,Datacore - Advanced Starship Engineering
+20117,333,Datacore - Advanced Starship Engineering 
 20121,300,High-grade Crystal Alpha
 20124,316,Siege Warfare Link - Active Shielding I
 20125,906,Curse
@@ -12589,7 +12589,7 @@
 24563,255,Doomsday Operation
 24564,526,Chanounian Wine
 24565,319,Stargate - Caldari 1
-24566,226,Stargate - Caldari
+24566,226,Stargate - Caldari 
 24567,413,Experimental Laboratory
 24568,1210,Capital Remote Armor Repair Systems
 24569,325,Capital Remote Armor Repairer I
@@ -15266,7 +15266,7 @@
 28179,685,Republic Tribal Caluka
 28180,685,Republic Tribal Vorshud
 28181,706,Republic Tribal Kinai
-28182,706,Republic Tribal Akila
+28182,706,Republic Tribal Akila 
 28183,876,Rank 1 Upgrade
 28184,876,Rank 2 Upgrade
 28185,876,Rank 3 Upgrade
@@ -15373,7 +15373,7 @@
 28317,404,Freedom Hospital
 28318,438,Trauma Treatment Facility
 28319,438,Vitoc Injection Center
-28320,881,Basic Freedom Program
+28320,881,Basic Freedom Program 
 28324,83,Republic Fleet Carbonized Lead L
 28325,165,Republic Fleet Carbonized Lead L Blueprint
 28326,83,Republic Fleet Carbonized Lead M
@@ -15819,13 +15819,13 @@
 28869,283,Amarrian Double-Agent
 28870,314,AIMEDs
 28871,1207,Angel Narcotics Storage Facility
-28872,1207,Angel Chemical Laboratory
+28872,1207,Angel Chemical Laboratory 
 28873,1207,Guristas Narcotics Storage Facility
-28874,1207,Guristas Chemical Laboratory
+28874,1207,Guristas Chemical Laboratory 
 28875,1207,Serpentis Narcotics Storage Facility
-28876,1207,Serpentis Chemical Laboratory
+28876,1207,Serpentis Chemical Laboratory 
 28877,1207,Sansha Narcotics Storage Facility
-28878,1207,Blood Raider Chemical Laboratory
+28878,1207,Blood Raider Chemical Laboratory 
 28879,1216,Nanite Operation
 28880,1216,Nanite Interfacing
 28881,1207,Metadrones - LM-A-1 - B
@@ -16208,7 +16208,7 @@
 29382,226,Caldari Prime Station (Under Construction)
 29386,226,CONCORD Battleship Wreck
 29387,15,Repaired Amarr Station Hub
-29388,15,Repaired Amarr Military Station
+29388,15,Repaired Amarr Military Station 
 29389,15,Repaired Amarr Trading Post
 29390,15,Damaged CONCORD Station
 29391,319,Visera Yanala
@@ -16223,7 +16223,7 @@
 29423,922,30km Minmatar Capture Point
 29437,319,Starbase Auxiliary Power Array I
 29438,306,Disabled Badger
-29439,283,Admiral Meledier
+29439,283,Admiral Meledier 
 29445,306,Cargo Container - Physical Samples
 29446,319,Large Container of Explosives
 29447,283,Gallente Politician
@@ -16303,7 +16303,7 @@
 29577,226,Fortified Guristas Barrier
 29578,226,Fortified Guristas Battery
 29579,226,Fortified Guristas Wall
-29580,226,Fortified Guristas Lookout
+29580,226,Fortified Guristas Lookout 
 29581,226,Fortified Guristas Junction
 29582,226,Fortified Guristas Fence
 29583,226,Fortified Guristas Elevator
@@ -16364,9 +16364,9 @@
 29665,667,Independent Green-Crewed Armageddon
 29667,667,Independent Green-Crewed Apocalypse
 29668,943,30 Day Pilot's License Extension (PLEX)
-29671,667,Independent Green-Crewed Abaddon
-29673,667,Independent Armageddon
-29674,667,Independent Apocalypse
+29671,667,Independent Green-Crewed Abaddon 
+29673,667,Independent Armageddon 
+29674,667,Independent Apocalypse 
 29675,667,Independent Abaddon
 29676,667,Independent Veteran Armageddon
 29677,667,Independent Veteran Apocalypse
@@ -16454,7 +16454,7 @@
 29772,673,Independent Veteran Osprey
 29775,678,Independent Green-Crewed Exequror
 29776,678,Independent Green-Crewed Celestis
-29777,678,Independent Green-Crewed Thorax
+29777,678,Independent Green-Crewed Thorax 
 29778,678,Independent Green-Crewed Vexor
 29779,678,Independent Celestis
 29780,678,Independent Exequror
@@ -18487,7 +18487,7 @@
 32349,319,Proximity Charge
 32350,314,Proof of Discovery: Anomalies
 32351,314,Proof of Discovery: Ore
-32352,314,Proof of Discovery: Ore Passkey
+32352,314,Ore Passkey
 32353,306,Training Container - Anomalies
 32357,1010,Compact Doom Torpedo I
 32359,1010,Compact Purgatory Torpedo I
@@ -18502,7 +18502,7 @@
 32371,314,Capital Ship Design – “Dictator”
 32372,283,Minedrill – E518 Crew
 32374,280,Holoreel GRS-81A
-32375,314,Proof of Discovery: Gas Passkey
+32375,314,Gas Passkey
 32376,314,Proof of Discovery: Gas
 32377,306,Venal Regional Comms Tower
 32378,306,Training Container - Ore
@@ -22110,7 +22110,7 @@
 37155,1824,Standup M-Set Basic Small Ship Manufacturing Material Efficiency II
 37156,1822,Standup M-Set Drone and Fighter Manufacturing Material Efficiency I
 37157,1822,Standup M-Set Drone and Fighter Manufacturing Material Efficiency II
-37158,1820,Standup M-Set Ammunition Manufacturing Material Efficiency I
+37158,1820,Standup M-Set Ammunition Manufacturing Material Efficiency I
 37159,1820,Standup M-Set Ammunition Manufacturing Material Efficiency II
 37160,1819,Standup M-Set Equipment Manufacturing Time Efficiency I
 37161,1819,Standup M-Set Equipment Manufacturing Time Efficiency II
@@ -25536,11 +25536,11 @@
 40721,140,Capital Indefatigable Enduring Emergency Hull Energizer Blueprint
 40722,140,Capital Emergency Hull Energizer II Blueprint
 40723,140,Sisters Capital Emergency Hull Energizer Blueprint
-40725,1568,Guristas Frigate
-40726,1665,Guristas Cruiser
-40727,1666,Guristas Battlecruiser
-40728,1667,Guristas Battleship
-40729,1665,Guristas Cruiser
+40725,1568,Guri Hivaa Killer
+40726,1665,Guri Hivaa Assassin
+40727,1667,Guri Hivaa Rokosabai
+40728,1667,Rakka's Rattlesnake
+40729,1724,Kazue's Caiman
 40730,52,Heavy Warp Disruptor I
 40731,52,Heavy Fleeting Compact Warp Disruptor
 40732,52,Heavy J5 Enduring Warp Disruptor
@@ -26889,7 +26889,7 @@
 42229,1194,Copper Ouroboros
 42230,1194,Silver Ouroboros
 42231,1194,Gold Ouroboros
-42232,303,Expired Cerebral Accelerator
+42232,303,Expired Gold Ouroboros Accelerator
 42233,303,Expired Cerebral Accelerator
 42234,303,Expired Cerebral Accelerator
 42235,1735,Blood Raider Patroller
@@ -29475,8 +29475,8 @@
 45531,833,Victor
 45532,106,Victor Blueprint
 45533,105,Virtuoso Blueprint
-45534,540,Prototype Seven
-45535,489,Prototype Seven Blueprint
+45534,1972,Monitor
+45535,106,Monitor Blueprint
 45536,314,Modified G-67 Nexus Chip
 45537,1322,Standup Composite Reactor I
 45538,1322,Standup Hybrid Reactor I
@@ -30940,11 +30940,6 @@
 47077,1953,Gold Magnate Serenity YC119 SKIN (30 Days)
 47078,1954,Gold Magnate Serenity YC119 SKIN (90 Days)
 47079,1955,Gold Magnate Serenity YC119 SKIN (365 Days)
-47080,1950,Hyperion Serenity YC119 SKIN (Permanent)
-47081,1952,Hyperion Serenity YC119 SKIN (7 Days)
-47082,1953,Hyperion Serenity YC119 SKIN (30 Days)
-47083,1954,Hyperion Serenity YC119 SKIN (90 Days)
-47084,1955,Hyperion Serenity YC119 SKIN (365 Days)
 47085,1950,Naga Serenity YC119 SKIN (Permanent)
 47086,1952,Naga Serenity YC119 SKIN (7 Days)
 47087,1953,Naga Serenity YC119 SKIN (30 Days)
@@ -31011,7 +31006,7 @@
 47150,1652,Standup Satyr II
 47151,1652,Standup Gram II
 47152,227,Guardians Gala Spawner
-47153,1956,Drifter Responder
+47153,1956,Drifter Cruiser
 47154,1194,Galaxy Pack - Spectral
 47158,1950,Marshal Exoplanets Hunter SKIN (Permanent)
 47159,1950,Marshal CONCORD Aerospace 'Prototype' SKIN (Permanent)
@@ -31037,18 +31032,18 @@
 47179,1950,Hel Bloody Hands SKIN (Permanent)
 47180,1726,Khaitetha's Nidhoggur
 47181,1726,Otuwiri's Thanatos
-47182,1089,TshirtM01_XV_Amarr.type
-47183,1089,TshirtM01_XV_Minmatar.type
-47184,1089,TshirtM01_XV_Gallente.type
-47185,1089,TshirtF01_XV_Gallente.type
-47186,1089,TshirtF01_XV_Amarr.type
-47187,1089,TshirtF01_XV_Minmatar.type
-47188,1089,TshirtM01_XV_Caldari.type
-47189,1089,TshirtF01_XV_Caldari.type
-47190,1089,TshirtM01_XV_StarOrange.type
-47191,1092,HeadWear_Cap_M01_XV_BlackOrange.type
-47192,1089,TshirtF01_XV_StarOrange.type
-47193,1092,HeadWear_Cap_F01_XV_BlackOrange.type
+47182,1089,Men's Amarr 'Loyalist' T-Shirt
+47183,1089,Men's Minmatar 'Liberator' T-Shirt
+47184,1089,Men's Gallente 'Defender' T-Shirt
+47185,1089,Women's Gallente 'Defender' T-Shirt
+47186,1089,Women's Amarr 'Loyalist' T-Shirt
+47187,1089,Women's Minmatar 'Liberator' T-Shirt
+47188,1089,Women's Caldari 'Patriot' T-Shirt
+47189,1089,Men's Caldari 'Patriot' T-Shirt
+47190,1089,Men's Capsuleer Elite XV T-Shirt
+47191,1092,Men's Capsuleer Elite XV Cap
+47192,1089,Women's Capsuleer Elite XV T-Shirt
+47193,1092,Women's Capsuleer Elite XV Cap
 47194,1803,♦ test_drone_damage
 47195,1803,♦ test_drone_logi
 47196,1803,♦ test_damage
@@ -31120,12 +31115,25 @@
 47262,740,Inquest 'Eros' Stasis Webifier MR-805
 47263,740,Inquest 'Eros' Stasis Webifier MR-807
 47264,500,Eros Blossom Firework
-47265,303,Guardian Angels 'Standard' Cerebral Accelerator
-47266,303,Guardian Angels 'Advanced' Cerebral Accelerator
-47267,303,Serpentis Inquest 'Dripfeed' Cerebral Accelerator
+47265,303,Expired Guardian Angels 'Standard' Cerebral Accelerator
+47266,303,Expired Guardian Angels 'Advanced' Cerebral Accelerator
+47267,303,Expired Serpentis Inquest 'Dripfeed' Cerebral Accelerator
+47269,25,Trig Small
+47270,26,Trig Medium
+47271,27,Trig Large
+47272,53,ABC Small
+47273,53,ABC Medium
+47274,53,ABC Large
 47275,1667,Guardian Angels Barachael
 47276,1454,Guardian Angels Cherubim
 47277,1454,Serpentis Inquest Viper
+47281,1955,Talos Serenity YC119 SKIN (365 Days)
+47282,1950,Talos Serenity YC119 SKIN (Permanent)
+47283,1952,Talos Serenity YC119 SKIN (7 Days)
+47284,1953,Talos Serenity YC119 SKIN (30 Days)
+47285,1954,Talos Serenity YC119 SKIN (90 Days)
+47286,1088,Men's SARO 'Black Troop' Combat Suit
+47287,1088,Women's SARO 'Black Troop' Combat Suit
 47288,1962,Standup QA Shield Extender
 47289,1950,Aeon Eros Blossom SKIN (Permanent)
 47290,1950,Thanatos Eros Blossom SKIN (Permanent)
@@ -31134,7 +31142,13 @@
 47293,1950,Dramiel Eros Blossom SKIN (Permanent)
 47294,1950,Cynabal Eros Blossom SKIN (Permanent)
 47295,1950,Machariel Eros Blossom SKIN (Permanent)
+47297,1964,KalliType
 47298,1562,Standup Multirole Missile Launcher II
+47299,1964,KalliType2
+47300,1976,Capsuleer Dawn Firework (Large)
+47301,1976,Crimson Helix Firework (Large)
+47302,1976,Yoiul Blizzard Firework (Large)
+47303,1974,Standup Large Festival Launcher
 47304,1950,Crucifier Spirit SKIN (Permanent)
 47305,1950,Augoror Spirit SKIN (Permanent)
 47306,1950,Harbinger Spirit SKIN (Permanent)
@@ -31203,9 +31217,297 @@
 47369,1707,Standup Remote Sensor Dampener II Blueprint
 47371,1950,Ragnarok Shakim Warlord SKIN (Permanent)
 47372,1950,Vexor Navy Issue Empyrean Dragons SKIN (Permanent)
+47374,310,bacon_PLACEHOLDER
 47375,1950,Astero One Eden SKIN (Permanent)
 47376,1950,Stratios One Eden SKIN (Permanent)
 47377,1950,Nestor One Eden SKIN (Permanent)
+47378,1882,red_1_PLACEHOLDER
+47379,1882,red_2_PLACEHOLDER
+47380,1882,red_3_PLACEHOLDER
+47381,1882,blue_1_PLACEHOLDER
+47382,1882,blue_2_PLACEHOLDER
+47383,1882,blue_3_PLACEHOLDER
+47384,1882,green_1_PLACEHOLDER
+47385,1882,green_2_PLACEHOLDER
+47386,1882,green_3_PLACEHOLDER
+47387,1882,yellow_1_PLACEHOLDER
+47388,1882,yellow_2_PLACEHOLDER
+47389,1882,yellow_3_PLACEHOLDER
+47390,1882,orange_1_PLACEHOLDER
+47391,1882,orange_2_PLACEHOLDER
+47392,1882,orange_3_PLACEHOLDER
+47393,1882,white_1_PLACEHOLDER
+47395,303,Expired Standard 'Guri Hivaa' Cerebral Accelerator
+47396,303,Expired Advanced 'Guri Hivaa' Cerebral Accelerator
+47397,303,Expired Extended 'Guri Hivaa' Cerebral Accelerator
+47398,227,The Hunt - Easy Trash Spawner
+47399,227,The Hunt - Hard Trash Spawner
+47400,227,The Hunt - Boss Spawner
+47401,319,Sleeper Bunker
+47402,226,Small asteroid environment 
+47403,226,Small asteroid environment 
+47404,226,Small asteroid environment
+47405,226,Small asteroid environment
+47406,226,Medium asteroid environment
+47407,226,Medium asteroid environment
+47408,1969,DynamicKalli
+47409,226,Medium asteroid environment
+47410,226,Medium asteroid environment
+47412,226,Large asteroid environment
+47413,226,Large asteroid environment
+47414,226,Large asteroid environment
+47415,226,Huge asteroid environment
+47416,226,Huge asteroid environment
+47417,226,Small pillar environment
+47418,226,Small pillar environment
+47419,226,Small pillar environment
+47420,226,Medium pillar environment
+47421,226,Medium pillar environment
+47422,226,Medium pillar environment
+47423,226,Large pillar environment
+47424,226,Large pillar environment
+47425,226,Large pillar environment
+47426,226,Huge pillar environment
+47427,226,Huge pillar environment
+47428,226,Huge pillar environment
+47430,1105,A_30
+47431,1105,A_31
+47432,1105,A_32
+47433,1105,A_33
+47434,1105,A_34
+47435,1105,A_35
+47436,1971,small_PD_PLACEHOLDER
+47437,1971,medium_PD_PLACEHOLDER
+47438,1971,large_PD_PLACEHOLDER
+47439,1971,small_biocloud_PLACEHOLDER
+47440,1971,medium_biocloud_PLACEHOLDER
+47441,1971,large_biocloud_PLACEHOLDER
+47442,1971,small_stretch_PLACEHOLDER
+47443,1971,large_stretch_PLACEHOLDER
+47444,1971,medium_stretch_PLACEHOLDER
+47445,257,Flag Cruisers
+47446,53,Lux Xiphos
+47447,367,C3-A 'Hivaa Saitsuo' Ballistic Control System
+47448,367,C3-X 'Hivaa Saitsuo' Ballistic Control System
+47449,306,Inert Capsule
+47450,526,Compressed Capsule Shell
+47451,1882,Background planet Moon
+47452,1882,Background planet Sandstorm
+47453,1882,Background planet Lava
+47454,1882,Background planet Plasma
+47455,1882,Background planet Gas
+47456,1882,Background planet Terestrial
+47457,1207,Secured Guristas Cache
+47459,1956,Drifter Cruiser
+47460,1973,AOE_10k_locator
+47461,1973,AOE_30k_locator
+47462,1973,AOE_80k_locator
+47463,1973,entry_locator
+47464,1973,exit_locator
+47466,27,Praxis
+47475,1088,Women's Capsuleer Networker XV Suit
+47476,1088,Men's Capsuleer Networker XV Suit
+47477,1092,Women's Capsuleer Networker XV Cap
+47478,1092,Men's Capsuleer Networker XV Cap
+47479,1089,Women's Capsuleer Networker XV T-Shirt
+47480,1089,Men's Capsuleer Networker XV T-Shirt
+47481,303,CDIA SPACE Cerebral Accelerator
+47482,1194,CDIA Training Exercise Supply Crate
+47493,1950,Armageddon Hunter's Quiver SKIN (Permanent)
+47494,1950,Maller Hunter's Quiver SKIN (Permanent)
+47495,1950,Inquisitor Hunter's Quiver SKIN (Permanent)
+47496,1950,Archon Hunter's Quiver SKIN (Permanent)
+47497,1950,Chimera Hunter's Quiver SKIN (Permanent)
+47498,1950,Raven Hunter's Quiver SKIN (Permanent)
+47499,1950,Caracal Hunter's Quiver SKIN (Permanent)
+47500,1950,Merlin Hunter's Quiver SKIN (Permanent)
+47501,1950,Hyperion Hunter's Quiver SKIN (Permanent)
+47502,1950,Exequror Hunter's Quiver SKIN (Permanent)
+47503,1950,Atron Hunter's Quiver SKIN (Permanent)
+47504,1950,Thanatos Hunter's Quiver SKIN (Permanent)
+47505,1950,Typhoon Hunter's Quiver SKIN (Permanent)
+47506,1950,Stabber Hunter's Quiver SKIN (Permanent)
+47507,1950,Breacher Hunter's Quiver SKIN (Permanent)
+47508,1950,Hel Hunter's Quiver SKIN (Permanent)
+47509,1950,Worm Ace of Podhunters SKIN (Permanent)
+47510,1950,Gila Ace of Podhunters SKIN (Permanent)
+47511,1950,Rattlesnake Ace of Podhunters SKIN (Permanent)
+47512,1657,Immensea Faction Citadel
+47513,1657,Amarr Faction Citadel
+47514,1657,Caldari Faction Citadel
+47515,1657,Gallente Faction Citadel
+47516,1657,Minmatar Faction Citadel
+47517,186,Immensea Faction Citadel Wreck
+47518,186,Amarr Faction Citadel Wreck
+47519,186,Caldari Faction Citadel Wreck
+47520,186,Gallente Faction Citadel Wreck
+47521,186,Minmatar Faction Citadel Wreck
+47522,1950,Incursus Glittering Dream SKIN (Permanent)
+47523,1950,Ishkur Glittering Dream SKIN (Permanent)
+47524,1950,Enyo Glittering Dream SKIN (Permanent)
+47526,1950,Algos Glittering Dream SKIN (Permanent)
+47527,1950,Magus Glittering Dream SKIN (Permanent)
+47528,1950,Hecate Glittering Dream SKIN (Permanent)
+47529,1950,Thorax Glittering Dream SKIN (Permanent)
+47530,1950,Vexor Glittering Dream SKIN (Permanent)
+47531,1950,Vexor Navy Issue Glittering Dream SKIN (Permanent)
+47532,1950,Ishtar Glittering Dream SKIN (Permanent)
+47533,1950,Talos Glittering Dream SKIN (Permanent)
+47534,1950,Dominix Glittering Dream SKIN (Permanent)
+47535,1950,Dominix Navy Issue Glittering Dream SKIN (Permanent)
+47536,1950,Sin Glittering Dream SKIN (Permanent)
+47537,1950,Ninazu Glittering Dream SKIN (Permanent)
+47538,1950,Thanatos Glittering Dream SKIN (Permanent)
+47539,1950,Nyx Glittering Dream SKIN (Permanent)
+47540,1950,Erebus Glittering Dream SKIN (Permanent)
+47541,1950,Dramiel Sariel's Flames SKIN (Permanent)
+47544,1950,Apotheosis Versus Redforce SKIN (Permanent)
+47545,1950,Sunesis Versus Redforce SKIN (Permanent)
+47546,1950,Gnosis Versus Redforce SKIN (Permanent)
+47547,1950,Apotheosis Versus Blueforce  SKIN (Permanent)
+47548,1950,Sunesis Versus Blueforce  SKIN (Permanent)
+47549,1950,Gnosis Versus Blueforce  SKIN (Permanent)
+47550,1950,Apotheosis Silver Racer SKIN (Permanent)
+47551,1950,Sunesis Silver Racer SKIN (Permanent)
+47552,1950,Gnosis Silver Racer SKIN (Permanent)
+47558,1977,Corrupted Trinary Data Vault
+47560,186,Drifter Cruiser Wreck
+47561,1977,Corrupted Trinary Data Vault
+47562,1977,Corrupted Trinary Data Vault
+47563,1977,Corrupted Trinary Data Vault
+47564,1977,Corrupted Trinary Data Vault
+47565,1977,Corrupted Trinary Data Vault
+47566,1977,Corrupted Trinary Data Vault
+47567,1977,Corrupted Trinary Data Vault
+47568,1977,Corrupted Trinary Data Vault
+47569,1977,Corrupted Trinary Data Vault
+47570,1977,Corrupted Trinary Data Vault
+47571,1977,Corrupted Trinary Data Vault
+47572,1977,Corrupted Trinary Data Vault
+47573,1977,Corrupted Trinary Data Vault
+47574,1977,Corrupted Trinary Data Vault
+47575,1977,Corrupted Trinary Data Vault
+47576,1977,Corrupted Trinary Data Vault
+47577,1977,Corrupted Trinary Data Vault
+47578,1977,Corrupted Trinary Data Vault
+47579,1977,Corrupted Trinary Data Vault
+47580,1977,Corrupted Trinary Data Vault
+47581,1977,Corrupted Trinary Data Vault
+47582,1977,Corrupted Trinary Data Vault
+47583,1977,Corrupted Trinary Data Vault
+47584,1977,Corrupted Trinary Data Vault
+47585,1977,Corrupted Trinary Data Vault
+47586,1977,Corrupted Trinary Data Vault
+47587,1977,Corrupted Trinary Data Vault
+47588,1977,Corrupted Trinary Data Vault
+47589,1977,Corrupted Trinary Data Vault
+47590,1977,Corrupted Trinary Data Vault
+47591,1977,Corrupted Trinary Data Vault
+47592,1977,Corrupted Trinary Data Vault
+47593,1977,Corrupted Trinary Data Vault
+47594,1977,Corrupted Trinary Data Vault
+47595,1977,Corrupted Trinary Data Vault
+47596,1977,Corrupted Trinary Data Vault
+47597,1977,Corrupted Trinary Data Vault
+47598,1977,Corrupted Trinary Data Vault
+47599,1977,Corrupted Trinary Data Vault
+47600,1977,Corrupted Trinary Data Vault
+47601,1977,Corrupted Trinary Data Vault
+47602,1977,Corrupted Trinary Data Vault
+47603,1977,Corrupted Trinary Data Vault
+47604,1977,Corrupted Trinary Data Vault
+47605,1977,Corrupted Trinary Data Vault
+47606,1977,Corrupted Trinary Data Vault
+47607,1977,Corrupted Trinary Data Vault
+47608,1977,Corrupted Trinary Data Vault
+47609,1977,Corrupted Trinary Data Vault
+47610,1950,Cormorant Octopus Orange Flight SKIN (Permanent)
+47611,1950,Jackdaw Octopus Orange Flight SKIN (Permanent)
+47612,1950,Caracal Octopus Orange Flight SKIN (Permanent)
+47613,1950,Caracal Navy Issue Octopus Orange Flight SKIN (Permanent)
+47614,1950,Cerberus Octopus Orange Flight SKIN (Permanent)
+47615,1950,Drake Octopus Orange Flight SKIN (Permanent)
+47616,1950,Drake Navy Issue Octopus Orange Flight SKIN (Permanent)
+47617,1950,Raven Octopus Orange Flight SKIN (Permanent)
+47618,1950,Raven Navy Issue Octopus Orange Flight SKIN (Permanent)
+47619,1950,Golem Octopus Orange Flight SKIN (Permanent)
+47621,1950,Malediction Capsuleer Day XV SKIN (Permanent)
+47622,1950,Zealot Capsuleer Day XV SKIN (Permanent)
+47623,1950,Omen Capsuleer Day XV SKIN (Permanent)
+47624,1950,Oracle Capsuleer Day XV SKIN (Permanent)
+47625,1950,Apocalypse Capsuleer Day XV SKIN (Permanent)
+47626,1950,Executioner Capsuleer Day XV SKIN (Permanent)
+47627,1950,Raptor Capsuleer Day XV SKIN (Permanent)
+47628,1950,Cerberus Capsuleer Day XV SKIN (Permanent)
+47629,1950,Drake Capsuleer Day XV SKIN (Permanent)
+47630,1950,Wyvern Capsuleer Day XV SKIN (Permanent)
+47631,1950,Incursus Capsuleer Day XV SKIN (Permanent)
+47632,1950,Ishtar Capsuleer Day XV SKIN (Permanent)
+47633,1950,Myrmidon Capsuleer Day XV SKIN (Permanent)
+47634,1950,Hyperion Capsuleer Day XV SKIN (Permanent)
+47635,1950,Claw Capsuleer Day XV SKIN (Permanent)
+47636,1950,Vagabond Capsuleer Day XV SKIN (Permanent)
+47637,1950,Tornado Capsuleer Day XV SKIN (Permanent)
+47638,1950,Tempest Capsuleer Day XV SKIN (Permanent)
+47639,1950,Avatar Capsuleer Elite XV SKIN (Permanent)
+47640,1950,Apostle Capsuleer Elite XV SKIN (Permanent)
+47641,1950,Leviathan Capsuleer Elite XV SKIN (Permanent)
+47642,1950,Minokawa Capsuleer Elite XV SKIN (Permanent)
+47643,1950,Erebus Capsuleer Elite XV SKIN (Permanent)
+47644,1950,Ninazu Capsuleer Elite XV SKIN (Permanent)
+47645,1950,Ragnarok Capsuleer Elite XV SKIN (Permanent)
+47646,1950,Lif Capsuleer Elite XV SKIN (Permanent)
+47647,1950,Apotheosis Capsuleer Elite XV SKIN (Permanent)
+47648,1950,Sunesis Capsuleer Elite XV SKIN (Permanent)
+47649,1950,Gnosis Capsuleer Elite XV SKIN (Permanent)
+47650,1950,Praxis Capsuleer Elite XV SKIN (Permanent)
+47651,1950,Capsule Capsuleer Elite XV SKIN (Permanent)
+47652,1950,Apotheosis Capsuleer Networker XV SKIN (Permanent)
+47653,1950,Sunesis Capsuleer Networker XV SKIN (Permanent)
+47654,1950,Gnosis Capsuleer Networker XV SKIN (Permanent)
+47655,1950,Praxis Capsuleer Networker XV SKIN (Permanent)
+47680,1950,Pacifier SARO 'Black Troop' SKIN (Permanent)
+47681,1950,Enforcer SARO 'Black Troop' SKIN (Permanent)
+47682,1950,Monitor SARO 'Black Troop' SKIN (Permanent)
+47683,1950,Marshal SARO 'Black Troop' SKIN (Permanent)
+47684,1950,Monitor Firewatch SKIN (Permanent)
+47688,1977,Corrupted Trinary Data Vault
+47689,1977,Corrupted Trinary Data Vault
+47690,1977,Corrupted Trinary Data Vault
+47691,1977,Corrupted Trinary Data Vault
+47692,1977,Corrupted Trinary Data Vault
+47693,1977,Corrupted Trinary Data Vault
+47694,1977,Corrupted Trinary Data Vault
+47695,1977,Corrupted Trinary Data Vault
+47696,1977,Corrupted Trinary Data Vault
+47697,1977,Corrupted Trinary Data Vault
+47698,1950,Dominix IGC Victory SKIN (Permanent)
+47705,303,Basic X-Sense 'Consciousness' Cerebral Accelerator
+47706,303,Improved X-Sense 'Consciousness' Cerebral Accelerator
+47707,303,Advanced X-Sense 'Consciousness' Cerebral Accelerator
+47708,303,Extended X-Sense 'Consciousness' Cerebral Accelerator
+47710,1978,Upwell General Industrial Support Facility
+47712,1978,Upwell Advanced Manufacturing Support Facility
+47713,1978,Upwell Advanced Research Support Facility
+47715,1568,Noumenal Impeder
+47716,107,Praxis Blueprint
+47717,1568,Noumenal Obstructor
+47718,1664,Noumenal Divider
+47719,1665,Noumenal Silencer
+47720,1665,Noumenal Suppressor
+47721,1666,Noumenal Interruptor
+47722,1665,Drifter Strike Cruiser
+47723,1667,Drifter Strike Battleship
+47724,1667,Drifter Strike Commander
+47758,186,Sleeper Small Wreck
+47861,227,Capsuleer Day - Dungeon Spawner
+47881,1984,Outpost Conversion Rig 1
+47882,1984,Outpost Conversion Rig 2
+47883,1984,Outpost Conversion Rig 3
+47884,1984,Outpost Conversion Rig 4
+47961,1194,Genolution CA-X 
+47962,1194,XV Anniversary Gift Box (Alpha)
+47963,1194,XV Anniversary Gift Box (Omega)
 350916,350858,Plasma Cannon
 351063,350858,Heavy Machine Gun
 351071,351064,Assault C-I

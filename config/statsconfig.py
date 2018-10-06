@@ -20,11 +20,13 @@ class StatsConfig(object):
   ENTITY_IDS = ALLIANCE_IDS + CORPORATION_IDS
 
   HEADERS = {
-    "User-Agent" : "wingspanstats fork, secondfry@gmail.com",
+    "User-Agent" : "WDS statistics v3, secondfry@gmail.com",
     "Accept-encoding": "gzip"
   }
-  ENDPOINT_ALLIANCE = 'https://zkillboard.com/api/alliance/{}/orderDirection/asc/'
-  ENDPOINT_CORPORATION = 'https://zkillboard.com/api/corporation/{}/endTime/201508260400/orderDirection/asc/'
+  ENDPOINT_ZKB_ALLIANCE = 'https://zkillboard.com/api/allianceID/{}/' # .format(id)
+  ENDPOINT_ZKB_CORPORATION = 'https://zkillboard.com/api/corporationID/{}/' # .format(id)
+  ENDPOINT_ESI_KILLMAIL = 'https://esi.evetech.net/latest/killmails/{}/{}/?datasource=tranquility' # .format(id, hash)
+  ENDPOINT_ESI_UNIVERSE_NAMES = 'https://esi.evetech.net/latest/universe/names/' # POST request! ids is array
 
   LOG_PATH = os.path.join('logs')
   DATABASE_PATH = os.path.join('database')

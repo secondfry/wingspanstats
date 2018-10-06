@@ -9,6 +9,10 @@ logging.basicConfig(filename='wingspanstats.log', level=logging.DEBUG)
 
 
 def log(level, message):
-    logging.info('[' + str(datetime.now()) + '] ' + '-' * level + '> ' + message)
-    if level < 3:
-        print '[' + datetime.now().strftime('%H:%M:%S') + '] ' + '-' * level + '> ' + message
+  logging.info('[' + str(datetime.now()) + '] ' + '-' * level + '> ' + message)
+  if level < 3:
+    print('[{}] {}> {}'.format(
+      datetime.now().strftime('%H:%M:%S'),
+      '-' * level,
+      message,
+    ))
