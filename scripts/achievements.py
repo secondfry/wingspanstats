@@ -161,7 +161,7 @@ class Achievements(object):
   def check(database, achievement):
     query = Achievements._construct_query(achievement['rule'])
 
-    res = database.killmails.find(query)
+    res = database.parser_killmails.find(query)
 
     return res
 
