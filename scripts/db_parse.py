@@ -364,7 +364,8 @@ class DBParser(object):
     if type == "mongo":
       log(DBParser.LOG_LEVEL, 'Creating MongoDB database parser')
       return DBParserMongo()
-    assert 0, "Source '" + type + "' is not defined"
+
+    raise AssertionError('Source {} is not defined'.format(type))
 
 
 class DBParserMongo(DBParser):
