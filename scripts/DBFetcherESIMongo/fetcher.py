@@ -3,6 +3,7 @@
 
 from multiprocessing import Pool
 from pymongo import MongoClient
+from pymongo.errors import PyMongoError
 import requests
 import time
 
@@ -101,9 +102,14 @@ class DBFetcherESIMongoWorker(object):
 
     try:
       self.DB.esi_killmails.insert_one(line)
-    except:
-      # self._log('[KM#{}] DB.esi_killmails insert error'.format(line['_id']))
-      pass
+    except PyMongoError as e:
+      # E11000 duplicate key error...
+      if e.code == 11000:
+        # It is fine!
+        pass
+      else:
+        self._log('[KM#{}] DB.esi_killmails insert error'.format(line['_id']))
+        self._log('Exception: {}'.format(e))
 
     line = {}
     line.update(killmail)
@@ -115,11 +121,12 @@ class DBFetcherESIMongoWorker(object):
         {'_id': killmail['_id']},
         {'$set': line}
       )
-    except:
+    except pymongo.errors.PyMongoError as e:
       self._log('[KM#{}] DB.killmails update error'.format(line['_id']))
-      self._log(killmail)
-      self._log(esi_data)
-      self._log(line)
+      self._log('> killmail: {}'.format(killmail))
+      self._log('> esi_data: {}'.format(esi_data))
+      self._log('> line: {}'.format(line))
+      self._log('Exception: {}'.format(e))
       raise
 
   def close(self):

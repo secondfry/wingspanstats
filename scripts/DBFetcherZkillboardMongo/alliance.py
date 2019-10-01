@@ -2,6 +2,7 @@
 # Author: Rustam Gubaydullin (@second_fry)
 # License: MIT (https://opensource.org/licenses/MIT)
 
+from pymongo.errors import PyMongoError
 import os
 import requests
 import time
@@ -109,9 +110,14 @@ class Alliance(object):
 
     try:
       self.fetcher.DB.zkillboard.insert_one(line)
-    except:
-      # self._log('[KM#{}] DB.zkillboard insert error'.format(line['_id']))
-      pass
+    except PyMongoError as e:
+      # E11000 duplicate key error...
+      if e.code == 11000:
+        # It is fine!
+        pass
+      else:
+        self._log('[KM#{}] DB.esi_killmails insert error'.format(line['_id']))
+        self._log('Exception: {}'.format(e))
 
     line.update({
       'status': {
@@ -123,9 +129,14 @@ class Alliance(object):
 
     try:
       self.fetcher.DB.killmails.insert_one(line)
-    except:
-      # self._log('[KM#{}] DB.killmails insert error'.format(line['_id']))
-      pass
+    except PyMongoError as e:
+      # E11000 duplicate key error...
+      if e.code == 11000:
+        # It is fine!
+        pass
+      else:
+        self._log('[KM#{}] DB.esi_killmails insert error'.format(line['_id']))
+        self._log('Exception: {}'.format(e))
 
   def _check_status(self):
     current_finish = self.state.get('current_killmail_id_finish')

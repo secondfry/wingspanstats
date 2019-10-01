@@ -24,4 +24,4 @@ class DBFetcher(object):
       log(DBFetcher.LOG_LEVEL, 'Creating ESI fetcher with MongoDB on our side')
       return DBFetcherESIMongo()
 
-    assert 0, "Source '" + type + "' is not defined"
+    raise AssertionError('Source {} is not defined'.format(type))
