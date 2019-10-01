@@ -9,6 +9,7 @@ from copy import deepcopy
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
+from pymongo.errors import PyMongoError
 import csv
 import gzip
 import json
@@ -798,13 +799,23 @@ class DBParserMongo(DBParser):
     for pilot in pilots:
       try:
         self.DB.pilot_names.insert_one(pilot)
-      except:
-        pass
+      except PyMongoError as e:
+        # E11000 duplicate key error...
+        if e.code == 11000:
+          # It is fine!
+          pass
+        else:
+          self._log('DB.pilot_names insert error.\nException: {}'.format(e))
 
       try:
         self.DB.pilot_achievements.insert_one(pilot)
-      except:
-        pass
+      except PyMongoError as e:
+        # E11000 duplicate key error...
+        if e.code == 11000:
+          # It is fine!
+          pass
+        else:
+          self._log('DB.pilot_names insert error.\nException: {}'.format(e))
 
   def _fetch_names(self):
     url = StatsConfig.ENDPOINT_ESI_UNIVERSE_NAMES
