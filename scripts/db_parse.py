@@ -472,7 +472,7 @@ class DBParserMongo(DBParser):
       reader = csv.reader(f)
       self.space_class = {int(rows[0]): rows[1] for rows in reader}
 
-    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'typeIDs.csv'), 'r', encoding="utf-8") as f:
+    with open(os.path.join(StatsConfig.SCRIPTS_PATH, 'invTypes.csv'), 'r', encoding="utf-8") as f:
       reader = csv.reader(f)
       self.items = {int(row[0]): int(row[1]) for row in reader}
 
