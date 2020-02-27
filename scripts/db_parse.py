@@ -335,14 +335,14 @@ PILOTLESS = [
   837, # Energy Neutralizing Battery
   838, # Cynosural Generator Array
   839, # Cynosural System Jammer
-  1212, #  Personal Hangar Array
-  1405, #  Laboratory
+  1212, # Personal Hangar Array
+  1405, # Laboratory
 
-  1003, #  Territorial Claim Unit
-  1025, #  Orbital Infrastructure
-  1404, #  Engineering Complex
-  1406, #  Refinery
-  1657, #  Citadel
+  1003, # Territorial Claim Unit
+  1025, # Orbital Infrastructure
+  1404, # Engineering Complex
+  1406, # Refinery
+  1657, # Citadel
 ]
 
 SPACE_TRASH = [

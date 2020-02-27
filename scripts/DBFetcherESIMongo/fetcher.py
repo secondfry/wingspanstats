@@ -38,7 +38,7 @@ class DBFetcherESIMongo(DBFetcher):
 
     killmails = self.DB.killmails.find({'status.zkb': True, 'status.esi': False})
 
-    with Pool(50) as p:
+    with Pool(StatsConfig.ESI_WORKERS_POOL) as p:
       p.map(spawn_fetcher_worker, killmails)
 
 
