@@ -34,7 +34,7 @@ class DBFetcherZkillboardMongo(DBFetcher):
       self.entities[id] = Corporation(self, id)
 
   def _init_DB(self):
-    self.DBClient = MongoClient('localhost', 27017)
+    self.DBClient = MongoClient(StatsConfig.MONGODB_URL)
     self.DB = self.DBClient.WDS_statistics_v3
 
   def _fetch_killmails(self):
