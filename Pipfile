@@ -9,6 +9,7 @@ verify_ssl = true
 pymongo = "*"
 python-dateutil = "*"
 requests = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"
