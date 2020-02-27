@@ -3,8 +3,10 @@
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
 
-from datetime import datetime
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 
 class StatsConfig(object):
@@ -38,3 +40,5 @@ class StatsConfig(object):
   MAX_PLACES = 10
 
   EARLIEST = '2014-07'
+
+  MONGODB_URL = os.getenv('MONGODB_URL')

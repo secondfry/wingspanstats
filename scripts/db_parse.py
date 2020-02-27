@@ -476,7 +476,7 @@ class DBParserMongo(DBParser):
       reader = csv.reader(f)
       self.items = {int(row[0]): int(row[1]) for row in reader}
 
-    self.DBClient = MongoClient('localhost', 27017)
+    self.DBClient = MongoClient(StatsConfig.MONGODB_URL)
     self.DB = self.DBClient.WDS_statistics_v3
 
     self.state = State(os.path.join(StatsConfig.RESULTS_PATH, 'state.json'), self.DEFAULT_STATE)

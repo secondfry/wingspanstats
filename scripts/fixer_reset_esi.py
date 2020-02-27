@@ -3,7 +3,9 @@
 
 from pymongo import MongoClient
 
-DBClient = MongoClient('localhost', 27017)
+from statsconfig import StatsConfig
+
+DBClient = MongoClient(StatsConfig.MONGODB_URL)
 DB = DBClient.WDS_statistics_v3
 
 kms = DB.killmails.find()

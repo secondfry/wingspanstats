@@ -28,7 +28,7 @@ class DBFetcherESIMongo(DBFetcher):
     self._fetch_killmails()
 
   def _init_DB(self):
-    self.DBClient = MongoClient('localhost', 27017)
+    self.DBClient = MongoClient(StatsConfig.MONGODB_URL)
     self.DB = self.DBClient.WDS_statistics_v3
 
   def _fetch_killmails(self):
@@ -65,7 +65,7 @@ class DBFetcherESIMongoWorker(object):
     self._fetch_killmail(self.killmail)
 
   def _init_DB(self):
-    self.DBClient = MongoClient('localhost', 27017)
+    self.DBClient = MongoClient(StatsConfig.MONGODB_URL)
     self.DB = self.DBClient.WDS_statistics_v3
 
   def _fetch_killmail(self, killmail):
