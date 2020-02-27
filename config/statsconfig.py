@@ -44,7 +44,8 @@ class StatsConfig(object):
 
   # # Network related configuration
   # Amount of threads to create for fetching ESI data
-  ESI_WORKERS_POOL = os.getenv('ESI_WORKERS_POOL') or 20
+  ESI_WORKERS_POOL = int(os.getenv('ESI_WORKERS_POOL') or 20)
+  ESI_WORKER_PAYLOAD_LENGTH = int(os.getenv('ESI_WORKER_PAYLOAD_LENGTH') or 100)
 
   HEADERS = {
     "User-Agent": 'WDS statistics v3, {} [{}]'.format(os.getenv('MAIL'), os.getenv('OS_HASH')),
@@ -63,3 +64,6 @@ class StatsConfig(object):
 
   # # Deployment related cofiguration
   MONGODB_URL = os.getenv('MONGODB_URL')
+
+  # # etc.
+  LOG_LEVEL_CONSOLE = int(os.getenv('LOG_LEVEL_CONSOLE') or 3)

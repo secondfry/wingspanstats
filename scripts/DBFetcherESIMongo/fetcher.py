@@ -36,14 +36,17 @@ class DBFetcherESIMongo(DBFetcher):
     if size == 0:
       return
 
-    killmails = self.DB.killmails.find({'status.zkb': True, 'status.esi': False})
+    self._log('We are about to process {} entities, please grab a tea and enjoy the logs'.format(size))
+
+    killmails = list(self.DB.killmails.find({'status.zkb': True, 'status.esi': False}))
+    killmail_chunks = [killmails[i:i + StatsConfig.ESI_WORKER_PAYLOAD_LENGTH] for i in range(0, len(killmails), StatsConfig.ESI_WORKER_PAYLOAD_LENGTH)]
 
     with Pool(StatsConfig.ESI_WORKERS_POOL) as p:
-      p.map(spawn_fetcher_worker, killmails)
+      p.map(spawn_fetcher_worker, killmail_chunks)
 
 
-def spawn_fetcher_worker(killmail):
-  worker = DBFetcherESIMongoWorker(killmail)
+def spawn_fetcher_worker(killmails):
+  worker = DBFetcherESIMongoWorker(killmails)
   worker.run()
   worker.close()
 
@@ -51,10 +54,10 @@ def spawn_fetcher_worker(killmail):
 class DBFetcherESIMongoWorker(object):
   LOG_LEVEL = 3
 
-  def __init__(self, killmail):
+  def __init__(self, killmails):
     self.endpoint = StatsConfig.ENDPOINT_ESI_KILLMAIL
     self.session = requests.Session()
-    self.killmail = killmail
+    self.killmails = killmails
 
     self._init_DB()
 
@@ -62,11 +65,15 @@ class DBFetcherESIMongoWorker(object):
     log(self.LOG_LEVEL, message)
 
   def run(self):
-    self._fetch_killmail(self.killmail)
+    self._fetch_killmails()
 
   def _init_DB(self):
     self.DBClient = MongoClient(StatsConfig.MONGODB_URL)
     self.DB = self.DBClient.WDS_statistics_v3
+
+  def _fetch_killmails(self):
+    for killmail in self.killmails:
+      self._fetch_killmail(killmail)
 
   def _fetch_killmail(self, killmail):
     data = self._fetch(killmail)
@@ -131,3 +138,4 @@ class DBFetcherESIMongoWorker(object):
 
   def close(self):
     self.DBClient.close()
+    self._log('{} done!'.format(len(self.killmails)))
