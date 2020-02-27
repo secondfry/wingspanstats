@@ -10,7 +10,6 @@ pymongo = "*"
 python-dateutil = "*"
 requests = "*"
 python-dotenv = "*"
-pathos = "*"
 
 [requires]
 python_version = "3.8"
