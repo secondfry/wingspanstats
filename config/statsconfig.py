@@ -25,10 +25,10 @@ class StatsConfig(object):
     "User-Agent" : "WDS statistics v3, secondfry@gmail.com",
     "Accept-encoding": "gzip"
   }
-  ENDPOINT_ZKB_ALLIANCE = 'https://zkillboard.com/api/allianceID/{}/' # .format(id)
-  ENDPOINT_ZKB_CORPORATION = 'https://zkillboard.com/api/corporationID/{}/' # .format(id)
-  ENDPOINT_ESI_KILLMAIL = 'https://esi.evetech.net/latest/killmails/{}/{}/?datasource=tranquility' # .format(id, hash)
-  ENDPOINT_ESI_UNIVERSE_NAMES = 'https://esi.evetech.net/latest/universe/names/' # POST request! ids is array
+  ENDPOINT_ZKB_ALLIANCE = 'https://zkillboard.com/api/allianceID/{}/'  # .format(id)
+  ENDPOINT_ZKB_CORPORATION = 'https://zkillboard.com/api/corporationID/{}/'  # .format(id)
+  ENDPOINT_ESI_KILLMAIL = 'https://esi.evetech.net/latest/killmails/{}/{}/?datasource=tranquility'  # .format(id, hash)
+  ENDPOINT_ESI_UNIVERSE_NAMES = 'https://esi.evetech.net/latest/universe/names/'  # POST request! ids is array
 
   LOG_PATH = os.path.join('logs')
   DATABASE_PATH = os.path.join('database')
