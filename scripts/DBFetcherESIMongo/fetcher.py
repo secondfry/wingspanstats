@@ -1,7 +1,7 @@
 # Author: Rustam Gubaydullin (@second_fry)
 # License: MIT (https://opensource.org/licenses/MIT)
 
-from multiprocessing import Pool
+from pathos.multiprocessing import ProcessPool as Pool
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 import requests
