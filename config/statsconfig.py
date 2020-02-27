@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 # Author: Rustam Gubaydullin (@second_fry)
 # Original author: Valtyr Farshield (github.com/farshield)
 # License: MIT (https://opensource.org/licenses/MIT)
@@ -15,7 +15,7 @@ if not get_key(dotenvPath, 'MONGODB_URL'):
 if not re.match('\w+@\w+', os.getenv('MAIL')) and not get_key(dotenvPath, 'MAIL'):
   raise Exception('You must specify your contact MAIL in your .env file')
 if not get_key(dotenvPath, 'OS_HASH'):
-  osHash = hashlib.sha256(str(os.environ)).hexdigest()
+  osHash = hashlib.sha256(str(os.environ).encode('utf-8')).hexdigest()
   set_key(dotenvPath, 'OS_HASH', osHash)
 load_dotenv(dotenvPath)
 
