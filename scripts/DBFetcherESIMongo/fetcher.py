@@ -36,7 +36,7 @@ class DBFetcherESIMongo(DBFetcher):
     if size == 0:
       return
 
-    killmails = self.DB.killmails.find({'status.zkb': True, 'status.esi': False})
+    killmails = list(self.DB.killmails.find({'status.zkb': True, 'status.esi': False}))
     killmail_chunks = [killmails[i:i + StatsConfig.ESI_WORKER_PAYLOAD_LENGTH] for i in range(0, len(killmails), StatsConfig.ESI_WORKER_PAYLOAD_LENGTH)]
 
     with Pool(StatsConfig.ESI_WORKERS_POOL) as p:
