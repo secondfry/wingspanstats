@@ -64,3 +64,6 @@ class StatsConfig(object):
 
   # # Deployment related cofiguration
   MONGODB_URL = os.getenv('MONGODB_URL')
+
+  # # etc.
+  LOG_LEVEL_CONSOLE = int(os.getenv('LOG_LEVEL_CONSOLE') or 3)
