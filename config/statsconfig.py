@@ -45,6 +45,7 @@ class StatsConfig(object):
   # # Network related configuration
   # Amount of threads to create for fetching ESI data
   ESI_WORKERS_POOL = os.getenv('ESI_WORKERS_POOL') or 20
+  ESI_WORKER_PAYLOAD_LENGTH = os.getenv('ESI_WORKER_PAYLOAD_LENGTH') or 100
 
   HEADERS = {
     "User-Agent": 'WDS statistics v3, {} [{}]'.format(os.getenv('MAIL'), os.getenv('OS_HASH')),
