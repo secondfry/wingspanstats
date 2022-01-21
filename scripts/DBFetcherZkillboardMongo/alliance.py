@@ -76,7 +76,14 @@ class Alliance(object):
 
     url = '{}page/{}/'.format(self.endpoint, self.state.get('page'))
     res = self.session.get(url, headers=StatsConfig.HEADERS)
-    return res.json()
+    data = res.json()
+
+    self._log('[P#{}] Got {} kills'.format(
+      self.state.get('page'),
+      len(data),
+    ))
+
+    return data
 
   def _process(self, data):
     self._log('[P#{}] Processing'.format(
