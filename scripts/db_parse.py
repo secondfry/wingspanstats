@@ -972,7 +972,7 @@ class Killmail(object):
            ('corporation_id' in pilot and pilot['corporation_id'] in StatsConfig.CORPORATION_IDS)
 
   def _process_space_class(self):
-    self.space_class = self.parser.space_class[self.data['solar_system_id']]
+    self.space_class = self.parser.space_class.get(self.data['solar_system_id'], 'ns')
 
   def _process_flags(self):
     self._set_victim_ship_category_flags()
